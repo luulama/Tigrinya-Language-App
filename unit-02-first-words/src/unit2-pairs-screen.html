@@ -1,0 +1,16 @@
+      <section class="view" id="pairsScreen" hidden aria-labelledby="pairsHeading">
+        <div class="pair-frame">
+          <div class="pair-top">
+            <button class="round-button" data-action="home" aria-label="Leave pair game"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+            <div class="pair-progress" id="pairProgress" role="img" aria-label="Picture pairs matched"></div>
+            <button class="round-button" disabled aria-label="Native audio unavailable: awaiting qualified native Tigrinya review" aria-describedby="audioNotice"><svg class="icon" aria-hidden="true"><use href="#i-volume"/></svg></button>
+          </div>
+          <h1 class="game-heading" id="pairsHeading" tabindex="-1">Find pairs</h1>
+          <div class="pair-grid" id="pairGrid" role="group" aria-label="Turn two cards to find matching pictures"></div>
+          <div class="feedback-word pair-feedback" id="pairFeedback" role="status" aria-live="polite"></div>
+          <div class="activity-bottom pair-bottom">
+            <button class="helper-button" id="pairHelpButton" data-action="help" aria-label="Show me a visual hint"><svg viewBox="0 0 260 240" aria-hidden="true"><use href="#art-guide"/></svg><svg class="icon" aria-hidden="true"><use href="#i-question"/></svg></button>
+            <button class="next-button" id="pairNextButton" data-action="finish-pairs" disabled>Next<svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></button>
+          </div>
+        </div>
+      </section>

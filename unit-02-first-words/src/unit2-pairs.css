@@ -1,0 +1,52 @@
+.pair-frame{max-width:670px;margin:auto}
+.pair-top{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.pair-progress{display:flex;align-items:center;justify-content:center;gap:12px}
+.pair-progress-picture{position:relative;width:49px;height:45px;border:2px solid #e4dded;border-radius:15px;background:#fff;display:grid;place-items:center}
+.pair-progress-picture>svg{width:39px;height:34px}
+.pair-progress-picture.is-matched{border-color:#77ac80;background:#e7f3db}
+.pair-progress-picture>.icon{position:absolute;width:17px;height:17px;right:-5px;bottom:-5px;padding:2px;border-radius:50%;background:var(--green);color:#fff}
+.pair-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:620px;margin:auto}
+.pair-grid[data-pairs="2"]{grid-template-columns:repeat(2,minmax(0,1fr));max-width:440px}
+.pair-card{position:relative;min-height:173px;border-radius:26px;border:3px solid #baaddc;background:#eae3f8;box-shadow:0 5px #c7b6df;display:grid;place-items:center;padding:10px;isolation:isolate}
+.pair-card:hover{border-color:var(--violet);transform:translateY(-2px)}
+.pair-back{display:grid;justify-items:center;gap:17px;pointer-events:none}
+.pair-back>.icon{width:45px;height:45px;color:#8a6abd;stroke-width:1.5}
+.pair-seeds{display:flex;gap:6px}
+.pair-seeds i{width:9px;height:9px;border-radius:50%;background:#b6a0d7}
+.pair-front{display:grid;justify-items:center;pointer-events:none}
+.pair-front>svg{width:140px;height:96px}
+.pair-word{font:700 36px/1.4 "Noto Sans Ethiopic","Kefa",Nyala,Arial,sans-serif;color:var(--violet-dark)}
+.pair-card.is-open{background:#fff;border-color:#c2b1de}
+.pair-card.is-open .pair-back{display:none}
+.pair-card.is-matched{background:#edf6e5;border-color:#85b482;box-shadow:0 5px #b9d5a5}
+.pair-card.is-matched .pair-word{color:#356d42}
+.pair-card.is-matched:hover{transform:none}
+.pair-card.is-mismatch{border-color:#c7a77f;background:#fff8e9}
+.pair-tick{position:absolute;right:8px;top:8px;width:23px;height:23px;display:grid;place-items:center;background:var(--green);color:#fff;border-radius:50%}
+.pair-tick .icon{width:16px;height:16px}
+.pair-card.hint-target{outline:4px solid #9478c0;outline-offset:5px;animation:hint-breathe .85s ease-in-out 2}
+.pair-card .demo-hand{left:calc(50% - 20px);bottom:3px}
+.pair-feedback{margin-top:16px}
+.pair-bottom{margin-top:9px}
+@media(max-width:600px){
+  .pair-progress{gap:7px}
+  .pair-progress-picture{width:39px;height:38px;border-radius:12px}
+  .pair-progress-picture>svg{width:32px;height:28px}
+  .pair-grid{gap:12px 10px}
+  .pair-card{min-height:136px;padding:6px 3px;border-radius:21px;border-width:2px}
+  .pair-front>svg{width:92px;height:76px}
+  .pair-word{font-size:29px}
+  .pair-back>.icon{width:36px;height:36px}
+  .pair-tick{width:19px;height:19px;right:4px;top:4px}
+  .pair-tick .icon{width:13px;height:13px}
+  .pair-feedback{margin-top:13px}
+}
+@media(max-width:350px){
+  .pair-card{min-height:120px;border-radius:18px}
+  .pair-front>svg{height:64px}
+  .pair-word{font-size:26px}
+}
+@media(forced-colors:active){
+  .pair-card,.pair-progress-picture{border:2px solid ButtonText}
+  .pair-card.is-matched{outline:3px solid Highlight}
+}

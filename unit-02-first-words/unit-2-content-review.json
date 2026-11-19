@@ -1,0 +1,6426 @@
+{
+  "unit": 2,
+  "title": "Two-letter Words",
+  "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+  "approvedForLearnerRelease": false,
+  "countingRule": "Exactly two Ethiopic syllable-letter graphemes in the NFC-normalized dictionary headword. Attached Ethiopic combining marks do not add a letter. Spaces, punctuation, affix markers, Latin text and numbers are not stripped to manufacture matches. No words are shortened.",
+  "scope": "All matching headwords in the downloaded Tigrinya dictionary snapshot, not an exhaustive inventory of the Tigrinya language. Inflected forms embedded inside entries are not added as separate headwords. Alternative headwords are retained; senses with the same spelling are grouped, not discarded.",
+  "source": {
+    "name": "Kaikki.org Tigrinya dictionary, extracted from English Wiktionary",
+    "indexUrl": "https://kaikki.org/dictionary/Tigrinya/index.html",
+    "downloadUrl": "https://kaikki.org/dictionary/Tigrinya/kaikki.org-dictionary-Tigrinya.jsonl",
+    "retrievedOn": "2026-11-17",
+    "wiktionaryDumpDate": "2026-10-01",
+    "extractedOn": "2026-10-30",
+    "sha256": "3868a084e386f2fed365353480c2b7e6646810c400fcf316950bb6d5ba3faed1",
+    "recordCount": 942,
+    "distinctHeadwordCount": 917,
+    "matchedRecordCount": 148,
+    "distinctTwoLetterHeadwordCount": 142,
+    "attribution": "English Wiktionary contributors; data extraction by Kaikki.org / Wiktextract. Headwords, dictionary glosses and romanizations adapted by filtering and grouping; no native approval or endorsement is implied.",
+    "contentLicense": "CC BY-SA 4.0 (dictionary-derived content)",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "copyrightPolicyUrl": "https://en.wiktionary.org/wiki/Wiktionary:Copyrights"
+  },
+  "requiredReview": [
+    "word-selection-and-two-letter-count",
+    "script-and-canonical-spelling",
+    "meaning-and-child-appropriate-usage",
+    "transliteration-and-regional-variation",
+    "image-association",
+    "activity-prompts",
+    "native-audio-and-usage-rights"
+  ],
+  "pictureLessonCandidateCount": 32,
+  "worlds": [
+    {
+      "id": "home",
+      "name": "At home",
+      "number": "01",
+      "art": "house",
+      "concept": "House",
+      "description": "Places and things you know.",
+      "background": "#f7edce",
+      "ink": "#8a6631"
+    },
+    {
+      "id": "food",
+      "name": "Food & drink",
+      "number": "02",
+      "art": "banana",
+      "concept": "Banana",
+      "description": "Little words at the table.",
+      "background": "#e0eff3",
+      "ink": "#3c7081"
+    },
+    {
+      "id": "nature",
+      "name": "Animals & nature",
+      "number": "03",
+      "art": "cat",
+      "concept": "Cat",
+      "description": "Things to spot in your world.",
+      "background": "#e6edda",
+      "ink": "#506c3c"
+    },
+    {
+      "id": "people",
+      "name": "People & me",
+      "number": "04",
+      "art": "hand",
+      "concept": "Hand",
+      "description": "Family, faces, and little fingers.",
+      "background": "#f0e4ef",
+      "ink": "#875c82"
+    }
+  ],
+  "items": [
+    {
+      "id": "u2-1203-12e8",
+      "scriptCandidate": "ሃየ",
+      "letters": [
+        "ሃ",
+        "የ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "hayä",
+        "hayyä"
+      ],
+      "canonicalSpellingsInSource": [
+        "ሃየ",
+        "ሃየ፟"
+      ],
+      "englishMeaningCandidates": [
+        "hello, hi"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "intj",
+          "glossCandidates": [
+            "hello, hi"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሃየ-ti-intj-OWSax3nb",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%83%E1%8B%A8#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%83%E1%8B%A8&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1209-120d",
+      "scriptCandidate": "ሉል",
+      "letters": [
+        "ሉ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lul"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "pearl",
+        "bead"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "pearl"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሉል-ti-noun-JuOypdxU",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "bead"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሉል-ti-noun-u1HhLEj7",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%89%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%89%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1209-1215",
+      "scriptCandidate": "ሉሕ",
+      "letters": [
+        "ሉ",
+        "ሕ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "luḥ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "plank of wood, board"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "plank of wood, board"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሉሕ-ti-noun-b9SNZ070",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%89%E1%88%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%89%E1%88%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-120a-120b",
+      "scriptCandidate": "ሊላ",
+      "letters": [
+        "ሊ",
+        "ላ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lila"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "falcon"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "falcon"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሊላ-ti-noun-qEVxOUte",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%88%8B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8A%E1%88%8B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-120a-1245",
+      "scriptCandidate": "ሊቅ",
+      "letters": [
+        "ሊ",
+        "ቅ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "liḳ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "learned man, scholar, intellectual, savant",
+        "chief, ecclesiastical dignitary, church doctor",
+        "head"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "learned man, scholar, intellectual, savant"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሊቅ-ti-noun-QyN92iB2",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "chief, ecclesiastical dignitary, church doctor"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሊቅ-ti-noun-mXhfZOlt",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "head"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሊቅ-ti-noun-ny5tM6Nx",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%89%85#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8A%E1%89%85&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-120a-1295",
+      "scriptCandidate": "ሊን",
+      "letters": [
+        "ሊ",
+        "ን"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lin"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "slime",
+        "mud"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "slime"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሊን-ti-noun-ZxFqi1Qm",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "mud"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሊን-ti-noun-rwf~kat8",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%8A%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8A%E1%8A%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-120a-134d",
+      "scriptCandidate": "ሊፍ",
+      "letters": [
+        "ሊ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lif"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "filter"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "filter"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሊፍ-ti-noun-38M3a4Jm",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8A%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-120b-121b",
+      "scriptCandidate": "ላማ",
+      "letters": [
+        "ላ",
+        "ማ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lama"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "blade"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "blade"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ላማ-ti-noun-E~-7L5u6",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8B%E1%88%9B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8B%E1%88%9B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-120b-121d",
+      "scriptCandidate": "ላም",
+      "letters": [
+        "ላ",
+        "ም"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lam"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "cow"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "cow"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ላም-ti-noun-vrE0dUkQ",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8B%E1%88%9D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8B%E1%88%9D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Cow",
+        "art": "cow",
+        "notice": "Look at the cow and its patches. Can you spot its ears?",
+        "offline": "Find a cow in a picture book together. Point to its tail."
+      }
+    },
+    {
+      "id": "u2-120d-1262",
+      "scriptCandidate": "ልቢ",
+      "letters": [
+        "ል",
+        "ቢ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lǝbbi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "heart"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "heart"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ልቢ-ti-noun-PLloqYII",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8D%E1%89%A2#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8D%E1%89%A2&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "people",
+        "englishConcept": "Heart",
+        "art": "heart",
+        "notice": "This heart is a picture symbol. Can you trace its shape in the air?",
+        "offline": "Draw a heart shape with a grown-up. A native reviewer will check this picture association."
+      }
+    },
+    {
+      "id": "u2-120e-121a",
+      "scriptCandidate": "ሎሚ",
+      "letters": [
+        "ሎ",
+        "ሚ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "lomi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "today",
+        "lime, lemon, citrus"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adv",
+          "glossCandidates": [
+            "today"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሎሚ-ti-adv-4PT3Z6yI",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "lime, lemon, citrus"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሎሚ-ti-noun-wbACYqQ2",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8E%E1%88%9A#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%8E%E1%88%9A&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1211-133b",
+      "scriptCandidate": "ሑጻ",
+      "letters": [
+        "ሑ",
+        "ጻ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥuṣa"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "sand"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "sand"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሑጻ-ti-noun-9519JFWD",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%91%E1%8C%BB#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%91%E1%8C%BB&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Sand",
+        "art": "sand",
+        "notice": "Notice the soft curves in this little mound of sand.",
+        "offline": "Draw a little mound of sand together, or find one in a picture."
+      }
+    },
+    {
+      "id": "u2-1212-1290",
+      "scriptCandidate": "ሒነ",
+      "letters": [
+        "ሒ",
+        "ነ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥinä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "revenge, vengeance"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "revenge, vengeance"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሒነ-ti-noun-zJ4GuV7E",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%92%E1%8A%90#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%92%E1%8A%90&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1213-12c8",
+      "scriptCandidate": "ሓወ",
+      "letters": [
+        "ሓ",
+        "ወ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥawä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "alternative form of ሓው (ḥaw)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "alternative form of ሓው (ḥaw)"
+          ],
+          "tags": [
+            "alt-of",
+            "alternative",
+            "masculine"
+          ],
+          "sourceSenseId": "en-ሓወ-ti-noun--m4gTdgr",
+          "alternativeOf": [
+            {
+              "word": "ሓው",
+              "extra": "ḥaw"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%88#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%93%E1%8B%88&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1213-12ca",
+      "scriptCandidate": "ሓዊ",
+      "letters": [
+        "ሓ",
+        "ዊ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥawwi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "fire"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "fire"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሓዊ-ti-noun-3J8osS3R",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%8A#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%93%E1%8B%8A&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1213-12cd",
+      "scriptCandidate": "ሓው",
+      "letters": [
+        "ሓ",
+        "ው"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥaw"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "brother"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "brother"
+          ],
+          "tags": [
+            "masculine"
+          ],
+          "sourceSenseId": "en-ሓው-ti-noun-C0vXfOxw",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%93%E1%8B%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1213-12d8",
+      "scriptCandidate": "ሓዘ",
+      "letters": [
+        "ሓ",
+        "ዘ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥazä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "to hold, seize"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "glossCandidates": [
+            "to hold, seize"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሓዘ-ti-verb-35RifMKa",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%98#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%93%E1%8B%98&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1213-12f0",
+      "scriptCandidate": "ሓደ",
+      "letters": [
+        "ሓ",
+        "ደ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥadä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "one",
+        "sole, only",
+        "equal, identical",
+        "certain, some",
+        "nobody"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "num",
+          "glossCandidates": [
+            "one"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሓደ-ti-num-dpLDrTVA",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "sole, only"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሓደ-ti-adj-1RoqmILP",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "equal, identical"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሓደ-ti-adj-HUN88ctI",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "pron",
+          "glossCandidates": [
+            "certain, some"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሓደ-ti-pron-QlNJCAeW",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "pron",
+          "glossCandidates": [
+            "nobody"
+          ],
+          "tags": [
+            "with-negation"
+          ],
+          "sourceSenseId": "en-ሓደ-ti-pron-Y4KzzIgU",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%B0#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%93%E1%8B%B0&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1215-1256",
+      "scriptCandidate": "ሕቖ",
+      "letters": [
+        "ሕ",
+        "ቖ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥəx̣o"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "back"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "back"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሕቖ-ti-noun-PEgjRvN1",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%95%E1%89%96#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%95%E1%89%96&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1215-130a",
+      "scriptCandidate": "ሕጊ",
+      "letters": [
+        "ሕ",
+        "ጊ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḥəggi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "law, rule"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "law, rule"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሕጊ-ti-noun-zchgEL6Y",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%95%E1%8C%8A#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%95%E1%8C%8A&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1218-1295",
+      "scriptCandidate": "መን",
+      "letters": [
+        "መ",
+        "ን"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "män"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "who"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "pron",
+          "glossCandidates": [
+            "who"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-መን-ti-pron-btAzcUC9",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%98%E1%8A%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%98%E1%8A%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1219-12dd",
+      "scriptCandidate": "ሙዝ",
+      "letters": [
+        "ሙ",
+        "ዝ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "muz"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "banana"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "banana"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሙዝ-ti-noun-tJPUg2Sv",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%99%E1%8B%9D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%99%E1%8B%9D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Banana",
+        "art": "banana",
+        "notice": "Look at the curved banana. Can you trace a curve in the air?",
+        "offline": "Find a banana in a book or at home with a grown-up."
+      }
+    },
+    {
+      "id": "u2-121b-120d",
+      "scriptCandidate": "ማል",
+      "letters": [
+        "ማ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "mal"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "cattle, livestock",
+        "wealth"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "cattle, livestock"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ማል-ti-noun-8k7h5HJr",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "wealth"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ማል-ti-noun-c5v0hPfx",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9B%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%9B%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-121b-1233",
+      "scriptCandidate": "ማሳ",
+      "letters": [
+        "ማ",
+        "ሳ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "masa"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "sledge"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "sledge"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ማሳ-ti-noun-vZ84ruFd",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9B%E1%88%B3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%9B%E1%88%B3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-121b-12ed",
+      "scriptCandidate": "ማይ",
+      "letters": [
+        "ማ",
+        "ይ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "may"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "water"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "water"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ማይ-ti-noun-D0FoSQ44",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9B%E1%8B%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%9B%E1%8B%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Water",
+        "art": "water",
+        "notice": "Look at the clear glass. Can you point to the water inside?",
+        "offline": "With a grown-up, notice how light shines through a glass of drinking water."
+      }
+    },
+    {
+      "id": "u2-121d-1214",
+      "scriptCandidate": "ምሔ",
+      "letters": [
+        "ም",
+        "ሔ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "məḥe"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "rug"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "rug"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ምሔ-ti-noun-n9qn7j8T",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9D%E1%88%94#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%9D%E1%88%94&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "home",
+        "englishConcept": "Rug",
+        "art": "rug",
+        "notice": "Look at the rug and its pattern. What colours can you see?",
+        "offline": "With a grown-up, find a rug in a room or in a picture book."
+      }
+    },
+    {
+      "id": "u2-121d-1235",
+      "scriptCandidate": "ምስ",
+      "letters": [
+        "ም",
+        "ስ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "məs"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "when, as soon as",
+        "when",
+        "if",
+        "with (accompaniment)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "conj",
+          "glossCandidates": [
+            "when, as soon as"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ምስ-ti-conj-RfwKITMO",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "conj",
+          "glossCandidates": [
+            "when"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ምስ-ti-conj-FeqnUkCu",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "conj",
+          "glossCandidates": [
+            "if"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ምስ-ti-conj-k19oMZ1P",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "prep",
+          "glossCandidates": [
+            "with (accompaniment)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ምስ-ti-prep-v9jaDHGd",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9D%E1%88%B5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%9D%E1%88%B5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-121e-1270",
+      "scriptCandidate": "ሞተ",
+      "letters": [
+        "ሞ",
+        "ተ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "motä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "to die"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "glossCandidates": [
+            "to die"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሞተ-ti-verb-L2Mli9fq",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9E%E1%89%B0#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%9E%E1%89%B0&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-121e-1275",
+      "scriptCandidate": "ሞት",
+      "letters": [
+        "ሞ",
+        "ት"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "mot"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "death"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "death"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሞት-ti-noun-UsjgKYfM",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9E%E1%89%B5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%9E%E1%89%B5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1220-1265",
+      "scriptCandidate": "ሠብ",
+      "letters": [
+        "ሠ",
+        "ብ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "śäb"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "alternative spelling of ሰብ (säb, “person”)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "alternative spelling of ሰብ (säb, “person”)"
+          ],
+          "tags": [
+            "alt-of",
+            "alternative"
+          ],
+          "sourceSenseId": "en-ሠብ-ti-noun-jx8Q3nw7",
+          "alternativeOf": [
+            {
+              "word": "ሰብ",
+              "extra": "säb, “person”"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%A0%E1%89%A5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%A0%E1%89%A5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1225-130b",
+      "scriptCandidate": "ሥጋ",
+      "letters": [
+        "ሥ",
+        "ጋ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "śəga"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "alternative spelling of ስጋ (səga, “meat”)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "alternative spelling of ስጋ (səga, “meat”)"
+          ],
+          "tags": [
+            "alt-of",
+            "alternative"
+          ],
+          "sourceSenseId": "en-ሥጋ-ti-noun-ZhIntJb7",
+          "alternativeOf": [
+            {
+              "word": "ስጋ",
+              "extra": "səga, “meat”"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%A5%E1%8C%8B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%A5%E1%8C%8B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1229-1263",
+      "scriptCandidate": "ሩባ",
+      "letters": [
+        "ሩ",
+        "ባ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ruba"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "stream"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "stream"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሩባ-ti-noun-3Kg-cXsf",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%A9%E1%89%A3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%A9%E1%89%A3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Stream",
+        "art": "stream",
+        "notice": "Notice the water winding between the green banks.",
+        "offline": "Find a stream in a picture book with a grown-up. Trace its path with your finger."
+      }
+    },
+    {
+      "id": "u2-1229-12dd",
+      "scriptCandidate": "ሩዝ",
+      "letters": [
+        "ሩ",
+        "ዝ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ruz"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "rice"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "rice"
+          ],
+          "tags": [
+            "masculine"
+          ],
+          "sourceSenseId": "en-ሩዝ-ti-noun-IJ92QY7O",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%A9%E1%8B%9D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%A9%E1%8B%9D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Rice",
+        "art": "rice",
+        "notice": "Look closely at the rice in the bowl. Can you spot the little grains?",
+        "offline": "Find rice in a picture or look at some together with a grown-up."
+      }
+    },
+    {
+      "id": "u2-122b-1215",
+      "scriptCandidate": "ራሕ",
+      "letters": [
+        "ራ",
+        "ሕ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "raḥ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "palm of the hand"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "palm of the hand"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ራሕ-ti-noun-sYxgb~Nq",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%AB%E1%88%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%AB%E1%88%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-122c-1233",
+      "scriptCandidate": "ሬሳ",
+      "letters": [
+        "ሬ",
+        "ሳ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "resa"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "corpse"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "corpse"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሬሳ-ti-noun-QsdTlq8d",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%AC%E1%88%B3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%AC%E1%88%B3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1230-1290",
+      "scriptCandidate": "ሰነ",
+      "letters": [
+        "ሰ",
+        "ነ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sänä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "June",
+        "Sene (tenth month of the Ge'ez calendar)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "June"
+          ],
+          "tags": [
+            "formal"
+          ],
+          "sourceSenseId": "en-ሰነ-ti-noun-1YCMDgpH",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "Sene (tenth month of the Ge'ez calendar)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሰነ-ti-noun-vpOBEWZL",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B0%E1%8A%90#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B0%E1%8A%90&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1231-122a",
+      "scriptCandidate": "ሱሪ",
+      "letters": [
+        "ሱ",
+        "ሪ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "surri"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "trousers, pants"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "trousers, pants"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሱሪ-ti-noun-Ts~onAsI",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B1%E1%88%AA#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B1%E1%88%AA&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "home",
+        "englishConcept": "Trousers",
+        "art": "trousers",
+        "notice": "Notice the two trouser legs. Can you trace their shape in the air?",
+        "offline": "Point to a pair of trousers or a picture of some with a grown-up."
+      }
+    },
+    {
+      "id": "u2-1231-122d",
+      "scriptCandidate": "ሱር",
+      "letters": [
+        "ሱ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sur"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "root"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "root"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሱር-ti-noun-SBNJTRN-",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B1%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B1%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1231-134d",
+      "scriptCandidate": "ሱፍ",
+      "letters": [
+        "ሱ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "suf"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "suit"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "suit"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሱፍ-ti-noun-IYOeDrJg",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B1%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B1%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1233-1313",
+      "scriptCandidate": "ሳጓ",
+      "letters": [
+        "ሳ",
+        "ጓ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sagʷa"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "nickname"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "nickname"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሳጓ-ti-noun-oPs~EVnJ",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B3%E1%8C%93#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B3%E1%8C%93&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1234-134d",
+      "scriptCandidate": "ሴፍ",
+      "letters": [
+        "ሴ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sef"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "sword"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "sword"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሴፍ-ti-noun-pExHse4k",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B4%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B4%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1235-121d",
+      "scriptCandidate": "ስም",
+      "letters": [
+        "ስ",
+        "ም"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "səm"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "name",
+        "noun"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "name"
+          ],
+          "tags": [
+            "masculine"
+          ],
+          "sourceSenseId": "en-ስም-ti-noun-gqNTf~Db",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "noun"
+          ],
+          "tags": [
+            "masculine"
+          ],
+          "sourceSenseId": "en-ስም-ti-noun-E1HVLO5s",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%9D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B5%E1%88%9D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1235-1228",
+      "scriptCandidate": "ስረ",
+      "letters": [
+        "ስ",
+        "ረ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sərrä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "alternative form of ሱሪ (surri, “trousers”)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "alternative form of ሱሪ (surri, “trousers”)"
+          ],
+          "tags": [
+            "alt-of",
+            "alternative"
+          ],
+          "sourceSenseId": "en-ስረ-ti-noun-sW28j4Oo",
+          "alternativeOf": [
+            {
+              "word": "ሱሪ",
+              "extra": "surri, “trousers”"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%A8#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B5%E1%88%A8&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1235-122c",
+      "scriptCandidate": "ስሬ",
+      "letters": [
+        "ስ",
+        "ሬ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sərre"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "alternative form of ሱሪ (surri, “trousers”)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "alternative form of ሱሪ (surri, “trousers”)"
+          ],
+          "tags": [
+            "alt-of",
+            "alternative"
+          ],
+          "sourceSenseId": "en-ስሬ-ti-noun-sW28j4Oo",
+          "alternativeOf": [
+            {
+              "word": "ሱሪ",
+              "extra": "surri, “trousers”"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%AC#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B5%E1%88%AC&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1235-1233",
+      "scriptCandidate": "ስሳ",
+      "letters": [
+        "ስ",
+        "ሳ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "səssa"
+      ],
+      "canonicalSpellingsInSource": [
+        "ስሳ፟"
+      ],
+      "englishMeaningCandidates": [
+        "sixty"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "num",
+          "glossCandidates": [
+            "sixty"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ስሳ-ti-num-30EWThUS",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%B3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B5%E1%88%B3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1235-1292",
+      "scriptCandidate": "ስኒ",
+      "letters": [
+        "ስ",
+        "ኒ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sənni"
+      ],
+      "canonicalSpellingsInSource": [
+        "ስኒ፟"
+      ],
+      "englishMeaningCandidates": [
+        "tooth"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "tooth"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ስኒ-ti-noun-lyLUpLWc",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%8A%92#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B5%E1%8A%92&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "people",
+        "englishConcept": "Tooth",
+        "art": "tooth",
+        "notice": "Notice the tooth's shape. What do you see at the top?",
+        "offline": "With a grown-up, look at a tooth in a picture book, or show a smile."
+      }
+    },
+    {
+      "id": "u2-1235-130b",
+      "scriptCandidate": "ስጋ",
+      "letters": [
+        "ስ",
+        "ጋ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "səga"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "meat"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "meat"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ስጋ-ti-noun-WdbWFDH8",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%8C%8B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B5%E1%8C%8B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1236-120d",
+      "scriptCandidate": "ሶል",
+      "letters": [
+        "ሶ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sol"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "pad"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "pad"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሶል-ti-noun-9WP80~uF",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B6%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B6%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1236-122d",
+      "scriptCandidate": "ሶር",
+      "letters": [
+        "ሶ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "sor"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "castrated goat"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "castrated goat"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሶር-ti-noun-FFEPb95V",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B6%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B6%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1236-1292",
+      "scriptCandidate": "ሶኒ",
+      "letters": [
+        "ሶ",
+        "ኒ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "soni"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "alternative form of ሰኑይ (sänuy, “Monday”)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "alternative form of ሰኑይ (sänuy, “Monday”)"
+          ],
+          "tags": [
+            "alt-of",
+            "alternative",
+            "colloquial"
+          ],
+          "sourceSenseId": "en-ሶኒ-ti-noun-rA1L1TR9",
+          "alternativeOf": [
+            {
+              "word": "ሰኑይ",
+              "extra": "sänuy, “Monday”"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B6%E1%8A%92#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%B6%E1%8A%92&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-123b-1202",
+      "scriptCandidate": "ሻሂ",
+      "letters": [
+        "ሻ",
+        "ሂ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "šahi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "tea"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "tea"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሻሂ-ti-noun-qfdNHsNu",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%BB%E1%88%82#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%BB%E1%88%82&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-123d-120d",
+      "scriptCandidate": "ሽል",
+      "letters": [
+        "ሽ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "šəl"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "fetus still in the mother’s womb"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "fetus still in the mother’s womb"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሽል-ti-noun-DyNFkoh0",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%BD%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-123d-1215",
+      "scriptCandidate": "ሽሕ",
+      "letters": [
+        "ሽ",
+        "ሕ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "šəḥ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "thousand"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "num",
+          "glossCandidates": [
+            "thousand"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሽሕ-ti-num-oK86SM-t",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%88%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%BD%E1%88%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-123d-121d",
+      "scriptCandidate": "ሽም",
+      "letters": [
+        "ሽ",
+        "ም"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "šəm"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "name"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "name"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሽም-ti-noun-gqNTf~Db",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%88%9D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%BD%E1%88%9D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-123d-1266",
+      "scriptCandidate": "ሽቦ",
+      "letters": [
+        "ሽ",
+        "ቦ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "šəbo"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "ring"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "ring"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሽቦ-ti-noun-Frl0WDFV",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%89%A6#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%BD%E1%89%A6&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-123d-130d",
+      "scriptCandidate": "ሽግ",
+      "letters": [
+        "ሽ",
+        "ግ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "šəg"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "torch"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "torch"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ሽግ-ti-noun-N79Rv7pG",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%8C%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%88%BD%E1%8C%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1243-120d",
+      "scriptCandidate": "ቃል",
+      "letters": [
+        "ቃ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḳal"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "word"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "word"
+          ],
+          "tags": [
+            "masculine"
+          ],
+          "sourceSenseId": "en-ቃል-ti-noun-mMHrTuk0",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%83%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%83%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1246-122d",
+      "scriptCandidate": "ቆር",
+      "letters": [
+        "ቆ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḳor"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "strength",
+        "virtue",
+        "power"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "strength"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቆር-ti-noun-5riGI~cg",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "virtue"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቆር-ti-noun-M3EwUjLI",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "power"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቆር-ti-noun-B9cV7baW",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%86%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%86%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1248-1208",
+      "scriptCandidate": "ቈለ",
+      "letters": [
+        "ቈ",
+        "ለ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ḳʷälä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "malicious spirit"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "malicious spirit"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቈለ-ti-noun-1xkj5uB4",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%88%E1%88%88#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%88%E1%88%88&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1253-120d",
+      "scriptCandidate": "ቓል",
+      "letters": [
+        "ቓ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "x̣al"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "alternative form of ቃል (ḳal)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "alternative form of ቃል (ḳal)"
+          ],
+          "tags": [
+            "alt-of",
+            "alternative"
+          ],
+          "sourceSenseId": "en-ቓል-ti-noun-C2Az4znm",
+          "alternativeOf": [
+            {
+              "word": "ቃል",
+              "extra": "ḳal"
+            }
+          ]
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%93%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%93%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1255-132b",
+      "scriptCandidate": "ቕጫ",
+      "letters": [
+        "ቕ",
+        "ጫ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "x̣əč̣a"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "cake"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "cake"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቕጫ-ti-noun-Ms22GRli",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%95%E1%8C%AB#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%95%E1%8C%AB&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1260-1208",
+      "scriptCandidate": "በለ",
+      "letters": [
+        "በ",
+        "ለ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "bälä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "to say"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "glossCandidates": [
+            "to say"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-በለ-ti-verb-KlHIAFBs",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A0%E1%88%88#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%A0%E1%88%88&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1261-1295",
+      "scriptCandidate": "ቡን",
+      "letters": [
+        "ቡ",
+        "ን"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "bun"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "coffee"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "coffee"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቡን-ti-noun-NykNdKxN",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A1%E1%8A%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%A1%E1%8A%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1262-132b",
+      "scriptCandidate": "ቢጫ",
+      "letters": [
+        "ቢ",
+        "ጫ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "bič̣a"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "yellow"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "yellow"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቢጫ-ti-adj-xoWiybqy",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A2%E1%8C%AB#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%A2%E1%8C%AB&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1263-1292",
+      "scriptCandidate": "ባኒ",
+      "letters": [
+        "ባ",
+        "ኒ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "bani"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "bread"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "bread"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ባኒ-ti-noun-mFYEwrYC",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A3%E1%8A%92#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%A3%E1%8A%92&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Bread",
+        "art": "bread",
+        "notice": "Notice the loaf of bread. What shapes can you spot?",
+        "offline": "With a grown-up, find bread or a picture of bread. Notice its shape."
+      }
+    },
+    {
+      "id": "u2-1264-1275",
+      "scriptCandidate": "ቤት",
+      "letters": [
+        "ቤ",
+        "ት"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "bet"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "house"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "house"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቤት-ti-noun-1uIShmIa",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A4%E1%89%B5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%A4%E1%89%B5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "home",
+        "englishConcept": "House",
+        "art": "house",
+        "notice": "A roof and a door. What can you notice about this house?",
+        "offline": "With a grown-up, point to a house in a book or through a window."
+      }
+    },
+    {
+      "id": "u2-1266-1273",
+      "scriptCandidate": "ቦታ",
+      "letters": [
+        "ቦ",
+        "ታ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "bota"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "place"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "place"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ቦታ-ti-noun-gd9jWAzJ",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A6%E1%89%B3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%A6%E1%89%B3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1275-122a",
+      "scriptCandidate": "ትሪ",
+      "letters": [
+        "ት",
+        "ሪ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "təri"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "January"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "January"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ትሪ-ti-noun-NwguaN-F",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%B5%E1%88%AA#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%89%B5%E1%88%AA&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1293-1265",
+      "scriptCandidate": "ናብ",
+      "letters": [
+        "ና",
+        "ብ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "nab"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "to, toward"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "prep",
+          "glossCandidates": [
+            "to, toward"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ናብ-ti-prep-fSDqCc1V",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%93%E1%89%A5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%93%E1%89%A5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1293-12ed",
+      "scriptCandidate": "ናይ",
+      "letters": [
+        "ና",
+        "ይ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "nay"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "of"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "prep",
+          "glossCandidates": [
+            "of"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ናይ-ti-prep-KDkdO8ZO",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%93%E1%8B%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%93%E1%8B%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1295-1231",
+      "scriptCandidate": "ንሱ",
+      "letters": [
+        "ን",
+        "ሱ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "nəssu"
+      ],
+      "canonicalSpellingsInSource": [
+        "ንሱ፟"
+      ],
+      "englishMeaningCandidates": [
+        "he (third-person singular masculine personal pronoun)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "pron",
+          "glossCandidates": [
+            "he (third-person singular masculine personal pronoun)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ንሱ-ti-pron-7UpV5rQ3",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%95%E1%88%B1#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%95%E1%88%B1&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1295-1233",
+      "scriptCandidate": "ንሳ",
+      "letters": [
+        "ን",
+        "ሳ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "nəssa"
+      ],
+      "canonicalSpellingsInSource": [
+        "ንሳ፟"
+      ],
+      "englishMeaningCandidates": [
+        "she (third-person singular feminine personal pronoun)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "pron",
+          "glossCandidates": [
+            "she (third-person singular feminine personal pronoun)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ንሳ-ti-pron-Af5lzju7",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%95%E1%88%B3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%95%E1%88%B3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a0-134d",
+      "scriptCandidate": "አፍ",
+      "letters": [
+        "አ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾäf"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "mouth"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "mouth"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-አፍ-ti-noun-TPNc-HQ1",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A0%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A0%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a2-12f5",
+      "scriptCandidate": "ኢድ",
+      "letters": [
+        "ኢ",
+        "ድ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾid"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "hand, arm"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "hand, arm"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኢድ-ti-noun-cVrHjNMa",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A2%E1%8B%B5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A2%E1%8B%B5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "people",
+        "englishConcept": "Hand / arm",
+        "art": "hand",
+        "notice": "Look at the hand and arm. Can you wiggle your fingers?",
+        "offline": "With a grown-up, wave your hand or make a hand shape in the air."
+      }
+    },
+    {
+      "id": "u2-12a3-120e",
+      "scriptCandidate": "ኣሎ",
+      "letters": [
+        "ኣ",
+        "ሎ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾallo"
+      ],
+      "canonicalSpellingsInSource": [
+        "ኣሎ፟"
+      ],
+      "englishMeaningCandidates": [
+        "A stative auxiliary verb indicating existence: 'there is,' 'to be,' etc."
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "glossCandidates": [
+            "A stative auxiliary verb indicating existence: 'there is,' 'to be,' etc."
+          ],
+          "tags": [
+            "stative"
+          ],
+          "sourceSenseId": "en-ኣሎ-ti-verb-RZTu6gEO",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%88%8E#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A3%E1%88%8E&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a3-1265",
+      "scriptCandidate": "ኣብ",
+      "letters": [
+        "ኣ",
+        "ብ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾab"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "on, in, at"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "prep",
+          "glossCandidates": [
+            "on, in, at"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኣብ-ti-prep-s9HSp~RM",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%89%A5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A3%E1%89%A5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a3-1266",
+      "scriptCandidate": "ኣቦ",
+      "letters": [
+        "ኣ",
+        "ቦ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾabbo"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "father"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "father"
+          ],
+          "tags": [
+            "masculine"
+          ],
+          "sourceSenseId": "en-ኣቦ-ti-noun-iKGIHwAl",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%89%A6#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A3%E1%89%A6&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "people",
+        "englishConcept": "Father",
+        "art": "father",
+        "notice": "This is one picture of a father. Families can look different.",
+        "offline": "Look at a family picture or a picture book with a grown-up. Talk about the people you know."
+      }
+    },
+    {
+      "id": "u2-12a3-1290",
+      "scriptCandidate": "ኣነ",
+      "letters": [
+        "ኣ",
+        "ነ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾanä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "I (first-person singular pronoun)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "pron",
+          "glossCandidates": [
+            "I (first-person singular pronoun)"
+          ],
+          "tags": [
+            "feminine",
+            "masculine"
+          ],
+          "sourceSenseId": "en-ኣነ-ti-pron-SiuSKY5J",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%8A%90#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A3%E1%8A%90&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a3-12f0",
+      "scriptCandidate": "ኣደ",
+      "letters": [
+        "ኣ",
+        "ደ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾadä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "mother"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "mother"
+          ],
+          "tags": [
+            "feminine"
+          ],
+          "sourceSenseId": "en-ኣደ-ti-noun-zwYi7ypm",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%8B%B0#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A3%E1%8B%B0&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "people",
+        "englishConcept": "Mother",
+        "art": "mother",
+        "notice": "This is one picture of a mother. Families can look different.",
+        "offline": "With a grown-up, look at a family picture or a book and talk about the people in it."
+      }
+    },
+    {
+      "id": "u2-12a3-134d",
+      "scriptCandidate": "ኣፍ",
+      "letters": [
+        "ኣ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾaf"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "mouth"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "mouth"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኣፍ-ti-noun-TPNc-HQ1",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A3%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a5-12c8",
+      "scriptCandidate": "እወ",
+      "letters": [
+        "እ",
+        "ወ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾəwä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "yes"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adv",
+          "glossCandidates": [
+            "yes"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-እወ-ti-adv-inmIkP6T",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A5%E1%8B%88#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A5%E1%8B%88&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a5-12e9",
+      "scriptCandidate": "እዩ",
+      "letters": [
+        "እ",
+        "ዩ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾəyyu"
+      ],
+      "canonicalSpellingsInSource": [
+        "እዩ፟"
+      ],
+      "englishMeaningCandidates": [
+        "to be"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "verb",
+          "glossCandidates": [
+            "to be"
+          ],
+          "tags": [
+            "copulative"
+          ],
+          "sourceSenseId": "en-እዩ-ti-verb-CvEgfuq9",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A5%E1%8B%A9#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A5%E1%8B%A9&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a6-121d",
+      "scriptCandidate": "ኦም",
+      "letters": [
+        "ኦ",
+        "ም"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʾom"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "tree"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "tree"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኦም-ti-noun-3Jxe24st",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A6%E1%88%9D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A6%E1%88%9D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Tree",
+        "art": "tree",
+        "notice": "A trunk, branches, and leaves. What can you notice about this tree?",
+        "offline": "With a grown-up, point to a tree through a window or in a book."
+      }
+    },
+    {
+      "id": "u2-12a9-1209",
+      "scriptCandidate": "ኩሉ",
+      "letters": [
+        "ኩ",
+        "ሉ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "kulu"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "total, entire, all, any"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adv",
+          "glossCandidates": [
+            "total, entire, all, any"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኩሉ-ti-adv-4ILckxz1",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A9%E1%88%89#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A9%E1%88%89&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a9-12ad",
+      "scriptCandidate": "ኩክ",
+      "letters": [
+        "ኩ",
+        "ክ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "kuk"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "peach"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "peach"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኩክ-ti-noun-hTVgZNA4",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A9%E1%8A%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A9%E1%8A%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12a9-12bd",
+      "scriptCandidate": "ኩኽ",
+      "letters": [
+        "ኩ",
+        "ኽ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "kux"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "peach, apricot"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "peach, apricot"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኩኽ-ti-noun-TyKp4RET",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A9%E1%8A%BD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%A9%E1%8A%BD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12ab-1265",
+      "scriptCandidate": "ካብ",
+      "letters": [
+        "ካ",
+        "ብ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "kab"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "from (used to indicate origin or source)",
+        "from (used to indicate the start of a time or range)",
+        "of (used to indicate membership to a group or category)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "prep",
+          "glossCandidates": [
+            "from (used to indicate origin or source)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ካብ-ti-prep-E4m65TaX",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "prep",
+          "glossCandidates": [
+            "from (used to indicate the start of a time or range)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ካብ-ti-prep-Jf2IY4vb",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "prep",
+          "glossCandidates": [
+            "of (used to indicate membership to a group or category)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ካብ-ti-prep-IydXOntP",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%AB%E1%89%A5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%AB%E1%89%A5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12ac-122d",
+      "scriptCandidate": "ኬር",
+      "letters": [
+        "ኬ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ker"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "merciful",
+        "kind"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "merciful"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኬር-ti-adj-t9UEwaYM",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "kind"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኬር-ti-adj-CyfBWP6z",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%AC%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%AC%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12ae-122d",
+      "scriptCandidate": "ኮር",
+      "letters": [
+        "ኮ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "kor"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "saddle"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "saddle"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኮር-ti-noun-ugja0YrI",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%AE%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%AE%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12b3-12ad",
+      "scriptCandidate": "ኳክ",
+      "letters": [
+        "ኳ",
+        "ክ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "kʷak"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "crow"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "crow"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ኳክ-ti-noun-hR1J0wh2",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%B3%E1%8A%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8A%B3%E1%8A%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12c5-1209",
+      "scriptCandidate": "ዅሉ",
+      "letters": [
+        "ዅ",
+        "ሉ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "xʷəllu"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "all, everything"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "all, everything"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዅሉ-ti-noun-pKOxTyw8",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%85%E1%88%89#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%85%E1%88%89&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12c8-1228",
+      "scriptCandidate": "ወረ",
+      "letters": [
+        "ወ",
+        "ረ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "wärä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "news"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "news"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ወረ-ti-noun-Gfug6ZW5",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%88%E1%88%A8#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%88%E1%88%A8&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12c8-12f2",
+      "scriptCandidate": "ወዲ",
+      "letters": [
+        "ወ",
+        "ዲ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "wäddi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "son",
+        "boy"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "son"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ወዲ-ti-noun-mKpmdUgl",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "boy"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ወዲ-ti-noun-zGp3hATq",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%88%E1%8B%B2#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%88%E1%8B%B2&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12cb-130b",
+      "scriptCandidate": "ዋጋ",
+      "letters": [
+        "ዋ",
+        "ጋ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "waga"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "price"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "price"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዋጋ-ti-noun-aDtTH0Hs",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%8B%E1%8C%8B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%8B%E1%8C%8B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12d1-134d",
+      "scriptCandidate": "ዑፍ",
+      "letters": [
+        "ዑ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʿuf"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "bird"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "bird"
+          ],
+          "tags": [
+            "feminine"
+          ],
+          "sourceSenseId": "en-ዑፍ-ti-noun-elF57swP",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%91%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%91%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Bird",
+        "art": "bird",
+        "notice": "Notice the bird's beak and wing. Can you point to them?",
+        "offline": "With a grown-up, spot a bird through a window or in a book."
+      }
+    },
+    {
+      "id": "u2-12d2-1209",
+      "scriptCandidate": "ዒሉ",
+      "letters": [
+        "ዒ",
+        "ሉ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʿillu"
+      ],
+      "canonicalSpellingsInSource": [
+        "ዒሉ፟"
+      ],
+      "englishMeaningCandidates": [
+        "young donkey"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "young donkey"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዒሉ-ti-noun-Y~1yIaLo",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%92%E1%88%89#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%92%E1%88%89&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12d2-1243",
+      "scriptCandidate": "ዒቃ",
+      "letters": [
+        "ዒ",
+        "ቃ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʿiḳḳa"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "African bowstring hemp (Sanseviera guineensis syn. Sansevieria hyacinthoides)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "African bowstring hemp (Sanseviera guineensis syn. Sansevieria hyacinthoides)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዒቃ-ti-noun-7JlqdCT9",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%92%E1%89%83#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%92%E1%89%83&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12d3-1233",
+      "scriptCandidate": "ዓሳ",
+      "letters": [
+        "ዓ",
+        "ሳ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʿasa"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "fish"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "fish"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዓሳ-ti-noun-tHSpmicF",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%88%B3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%93%E1%88%B3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Fish",
+        "art": "fish",
+        "notice": "Notice the fish and its tail. Can you make a swimming motion?",
+        "offline": "Find a fish in a book together, or draw a fish with a tail."
+      }
+    },
+    {
+      "id": "u2-12d3-123b",
+      "scriptCandidate": "ዓሻ",
+      "letters": [
+        "ዓ",
+        "ሻ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʿašša"
+      ],
+      "canonicalSpellingsInSource": [
+        "ዓሻ፟"
+      ],
+      "englishMeaningCandidates": [
+        "foolish, stupid, silly",
+        "fool"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "foolish, stupid, silly"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዓሻ-ti-adj-bma-IbXk",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "fool"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዓሻ-ti-noun-GGefEOUG",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%88%BB#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%93%E1%88%BB&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12d3-1262",
+      "scriptCandidate": "ዓቢ",
+      "letters": [
+        "ዓ",
+        "ቢ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʿabi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "big"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "big"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዓቢ-ti-adj-KiH-bVkq",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%89%A2#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%93%E1%89%A2&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12d3-12f2",
+      "scriptCandidate": "ዓዲ",
+      "letters": [
+        "ዓ",
+        "ዲ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ʿadi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "country"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "country"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዓዲ-ti-noun-r~ZOT9Ug",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%8B%B2#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%93%E1%8B%B2&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12f0-121d",
+      "scriptCandidate": "ደም",
+      "letters": [
+        "ደ",
+        "ም"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "däm"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "blood"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "blood"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ደም-ti-noun-Po5AwK9f",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B0%E1%88%9D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B0%E1%88%9D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12f1-122d",
+      "scriptCandidate": "ዱር",
+      "letters": [
+        "ዱ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "dur"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "forest"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "forest"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዱር-ti-noun-YZoszxJs",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B1%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B1%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12f1-1263",
+      "scriptCandidate": "ዱባ",
+      "letters": [
+        "ዱ",
+        "ባ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "dubba"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "pumpkin"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "pumpkin"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዱባ-ti-noun-~0jlEeFj",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B1%E1%89%A3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B1%E1%89%A3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Pumpkin",
+        "art": "pumpkin",
+        "notice": "Look at the pumpkin and its curved stripes. What else do you notice?",
+        "offline": "Find a pumpkin in a book or draw a round pumpkin together."
+      }
+    },
+    {
+      "id": "u2-12f2-1295",
+      "scriptCandidate": "ዲን",
+      "letters": [
+        "ዲ",
+        "ን"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "din"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "sulphur"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "sulphur"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዲን-ti-noun-x8TUVFIR",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B2%E1%8A%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B2%E1%8A%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12f3-1209",
+      "scriptCandidate": "ዳሉ",
+      "letters": [
+        "ዳ",
+        "ሉ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "dalu"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "pail"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "pail"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዳሉ-ti-noun-J3yf7N9j",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B3%E1%88%89#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B3%E1%88%89&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "home",
+        "englishConcept": "Pail",
+        "art": "pail",
+        "notice": "Notice the handle on this pail. Can you point to it?",
+        "offline": "Find a picture of a pail together. Notice how its handle curves."
+      }
+    },
+    {
+      "id": "u2-12f3-1235",
+      "scriptCandidate": "ዳስ",
+      "letters": [
+        "ዳ",
+        "ስ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "das"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "ceremonial tent"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "ceremonial tent"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዳስ-ti-noun-e7QV8Tz2",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B3%E1%88%B5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B3%E1%88%B5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12f5-1219",
+      "scriptCandidate": "ድሙ",
+      "letters": [
+        "ድ",
+        "ሙ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "dəmu"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "cat"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "cat"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ድሙ-ti-noun-d693i1Gr",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%88%99#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B5%E1%88%99&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Cat",
+        "art": "cat",
+        "notice": "A little cat with ears and whiskers. What can you point to?",
+        "offline": "Find a cat in a picture book together. Can you spot its whiskers?"
+      }
+    },
+    {
+      "id": "u2-12f5-1262",
+      "scriptCandidate": "ድቢ",
+      "letters": [
+        "ድ",
+        "ቢ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "dəbbi"
+      ],
+      "canonicalSpellingsInSource": [
+        "ድቢ፟"
+      ],
+      "englishMeaningCandidates": [
+        "bear"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "bear"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ድቢ-ti-noun-vJi7UOgJ",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%89%A2#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B5%E1%89%A2&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Bear",
+        "art": "bear",
+        "notice": "Round ears and a little nose. What do you notice about this bear?",
+        "offline": "Find a bear in a book or a toy bear with a grown-up."
+      }
+    },
+    {
+      "id": "u2-12f5-1290",
+      "scriptCandidate": "ድነ",
+      "letters": [
+        "ድ",
+        "ነ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "dənä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "shade"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "shade"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ድነ-ti-noun-4C1~yoUq",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%8A%90#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B5%E1%8A%90&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-12f6-121b",
+      "scriptCandidate": "ዶማ",
+      "letters": [
+        "ዶ",
+        "ማ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "doma"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "coconut"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "coconut"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዶማ-ti-noun-I-vOcsRC",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B6%E1%88%9B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B6%E1%88%9B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Coconut",
+        "art": "coconut",
+        "notice": "Notice the brown outside and the white inside of this coconut.",
+        "offline": "Find a coconut in a book together. Point to its outside and inside."
+      }
+    },
+    {
+      "id": "u2-12f6-1265",
+      "scriptCandidate": "ዶብ",
+      "letters": [
+        "ዶ",
+        "ብ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "dob"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "border"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "border"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ዶብ-ti-noun-TxpV3kC8",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B6%E1%89%A5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8B%B6%E1%89%A5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1303-12f2",
+      "scriptCandidate": "ጃዲ",
+      "letters": [
+        "ጃ",
+        "ዲ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ǧadi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "kid"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "kid"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጃዲ-ti-noun-XHfX~Y9R",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%83%E1%8B%B2#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%83%E1%8B%B2&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1308-1293",
+      "scriptCandidate": "ገና",
+      "letters": [
+        "ገ",
+        "ና"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gäna"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "yet not, still not"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adv",
+          "glossCandidates": [
+            "yet not, still not"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ገና-ti-adv-iXxU3Kpj",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%88%E1%8A%93#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%88%E1%8A%93&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1308-12db",
+      "scriptCandidate": "ገዛ",
+      "letters": [
+        "ገ",
+        "ዛ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gäza"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "house"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "house"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ገዛ-ti-noun-1uIShmIa",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%88%E1%8B%9B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%88%E1%8B%9B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "home",
+        "englishConcept": "House",
+        "art": "house",
+        "notice": "Notice the roof, windows, and door. What can you point to?",
+        "offline": "Find a house in a picture book together. This dictionary has more than one two-letter house word; a native reviewer will explain their usage."
+      }
+    },
+    {
+      "id": "u2-1308-133d",
+      "scriptCandidate": "ገጽ",
+      "letters": [
+        "ገ",
+        "ጽ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gäṣ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "face"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "face"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ገጽ-ti-noun-AoLZt59C",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%88%E1%8C%BD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%88%E1%8C%BD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "people",
+        "englishConcept": "Face",
+        "art": "face",
+        "notice": "Look at the face. Can you point to its nose?",
+        "offline": "With a grown-up, look in a mirror or at a picture of a face."
+      }
+    },
+    {
+      "id": "u2-1309-12d5",
+      "scriptCandidate": "ጉዕ",
+      "letters": [
+        "ጉ",
+        "ዕ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "guʿ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "chilli"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "chilli"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጉዕ-ti-noun-F6edPIE9",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%89%E1%8B%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%89%E1%8B%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-130a-134d",
+      "scriptCandidate": "ጊፍ",
+      "letters": [
+        "ጊ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gif"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "bush"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "bush"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጊፍ-ti-noun-dJoaFsND",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8A%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8A%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-130b-122d",
+      "scriptCandidate": "ጋር",
+      "letters": [
+        "ጋ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gar"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "wergeld"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "wergeld"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጋር-ti-noun-53wMg-h0",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8B%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-130b-123b",
+      "scriptCandidate": "ጋሻ",
+      "letters": [
+        "ጋ",
+        "ሻ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gaša"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "guest"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "guest"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጋሻ-ti-noun-hJg8YPfa",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%88%BB#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8B%E1%88%BB&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-130b-1295",
+      "scriptCandidate": "ጋን",
+      "letters": [
+        "ጋ",
+        "ን"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gan"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "owl"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "owl"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጋን-ti-noun-EPcSe5gL",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%8A%95#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8B%E1%8A%95&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-130b-12cd",
+      "scriptCandidate": "ጋው",
+      "letters": [
+        "ጋ",
+        "ው"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gaw"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "cistern"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "cistern"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጋው-ti-noun-nXd0Yg5N",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%8B%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8B%E1%8B%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-130c-133d",
+      "scriptCandidate": "ጌጽ",
+      "letters": [
+        "ጌ",
+        "ጽ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "geṣ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "gift"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "gift"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጌጽ-ti-noun-oZVLFadF",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8C%E1%8C%BD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8C%E1%8C%BD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "home",
+        "englishConcept": "Gift",
+        "art": "gift",
+        "notice": "Look at the ribbon around this gift. Can you follow its shape?",
+        "offline": "Draw a little gift together, or make a pretend one with paper."
+      }
+    },
+    {
+      "id": "u2-130d-1232",
+      "scriptCandidate": "ግሲ",
+      "letters": [
+        "ግ",
+        "ሲ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gəsi"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "verb"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "verb"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ግሲ-ti-noun-aAb4ahfw",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8D%E1%88%B2#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8D%E1%88%B2&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-130e-122d",
+      "scriptCandidate": "ጎር",
+      "letters": [
+        "ጎ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gor"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "neighbour"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "neighbour"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጎር-ti-noun-lozPZUw1",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8E%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%8E%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1313-120d",
+      "scriptCandidate": "ጓል",
+      "letters": [
+        "ጓ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "gʷal"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "girl"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "girl"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጓል-ti-noun-QxuhxpNn",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%93%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%93%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1321-1265",
+      "scriptCandidate": "ጡብ",
+      "letters": [
+        "ጡ",
+        "ብ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṭub"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "nipple",
+        "udder",
+        "brick"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "nipple"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጡብ-ti-noun-2E9pH8SY",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "udder"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጡብ-ti-noun-VxPBLrlm",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "brick"
+          ],
+          "tags": [
+            "colloquial"
+          ],
+          "sourceSenseId": "en-ጡብ-ti-noun-x2KDB0HB",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%A1%E1%89%A5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%A1%E1%89%A5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1321-1325",
+      "scriptCandidate": "ጡጥ",
+      "letters": [
+        "ጡ",
+        "ጥ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṭuṭ"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "cotton, cotton wool"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "cotton, cotton wool"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጡጥ-ti-noun-28lEeMHw",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%A1%E1%8C%A5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%A1%E1%8C%A5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1324-120d",
+      "scriptCandidate": "ጤል",
+      "letters": [
+        "ጤ",
+        "ል"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṭel"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "goat"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "goat"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጤል-ti-noun-VIDwjzWW",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%A4%E1%88%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%A4%E1%88%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Goat",
+        "art": "goat",
+        "notice": "Notice the goat's horns and little beard.",
+        "offline": "Find a goat in a picture book with a grown-up. What do you notice?"
+      }
+    },
+    {
+      "id": "u2-1325-1228",
+      "scriptCandidate": "ጥረ",
+      "letters": [
+        "ጥ",
+        "ረ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṭərä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "raw",
+        "crude, coarse"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "raw"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጥረ-ti-adj-10Ob7iR3",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "adj",
+          "glossCandidates": [
+            "crude, coarse"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጥረ-ti-adj-MFhBpPSu",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%A5%E1%88%A8#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%A5%E1%88%A8&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1328-12cd",
+      "scriptCandidate": "ጨው",
+      "letters": [
+        "ጨ",
+        "ው"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "č̣äw"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "salt"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "salt"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጨው-ti-noun-Y0ea1poJ",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%A8%E1%8B%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%A8%E1%8B%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Salt",
+        "art": "salt",
+        "notice": "Notice the little grains beside the salt shaker.",
+        "offline": "Point to salt in a picture or at the table with a grown-up."
+      }
+    },
+    {
+      "id": "u2-132b-121b",
+      "scriptCandidate": "ጫማ",
+      "letters": [
+        "ጫ",
+        "ማ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "č̣ama"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "shoe"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "shoe"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጫማ-ti-noun-79ocklKR",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%AB%E1%88%9B#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%AB%E1%88%9B&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "home",
+        "englishConcept": "Shoe",
+        "art": "shoe",
+        "notice": "Look at the shoe. Can you point to its sole?",
+        "offline": "With a grown-up, point to a shoe. Notice its shape."
+      }
+    },
+    {
+      "id": "u2-132b-134d",
+      "scriptCandidate": "ጫፍ",
+      "letters": [
+        "ጫ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "č̣af"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "tip",
+        "corner"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "tip"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጫፍ-ti-noun-lzgBh6h4",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "corner"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጫፍ-ti-noun-RdInxLKX",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%AB%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%AB%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-132c-134d",
+      "scriptCandidate": "ጬፍ",
+      "letters": [
+        "ጬ",
+        "ፍ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "č̣ef"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "summit"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "summit"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጬፍ-ti-noun-E5hKTn4O",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%AC%E1%8D%8D#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%AC%E1%8D%8D&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-132d-122b",
+      "scriptCandidate": "ጭራ",
+      "letters": [
+        "ጭ",
+        "ራ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "č̣əra"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "tail"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "tail"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጭራ-ti-noun-DGL4du8d",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%AD%E1%88%AB#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%AD%E1%88%AB&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-1338-1263",
+      "scriptCandidate": "ጸባ",
+      "letters": [
+        "ጸ",
+        "ባ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṣäba"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "milk"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "milk"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጸባ-ti-noun-iCXnZTD4",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%B8%E1%89%A3#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%B8%E1%89%A3&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Milk",
+        "art": "milk",
+        "notice": "Notice the milk inside the glass. What colour is it?",
+        "offline": "With a grown-up, point to milk or a picture of a glass of milk."
+      }
+    },
+    {
+      "id": "u2-1338-133e",
+      "scriptCandidate": "ጸጾ",
+      "letters": [
+        "ጸ",
+        "ጾ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṣäṣo"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "African boxwood (Myrsine africana)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "African boxwood (Myrsine africana)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጸጾ-ti-noun-42ujxWZQ",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%B8%E1%8C%BE#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%B8%E1%8C%BE&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-133b-1338",
+      "scriptCandidate": "ጻጸ",
+      "letters": [
+        "ጻ",
+        "ጸ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṣaṣä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "ant"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "ant"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጻጸ-ti-noun-Z6MzNWzc",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%BB%E1%8C%B8#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%BB%E1%8C%B8&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "nature",
+        "englishConcept": "Ant",
+        "art": "ant",
+        "notice": "Look at the ant's little legs. Can you point to them?",
+        "offline": "Find an ant in a picture book together. Notice its little body parts."
+      }
+    },
+    {
+      "id": "u2-133e-122d",
+      "scriptCandidate": "ጾር",
+      "letters": [
+        "ጾ",
+        "ር"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "ṣor"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "load, burden"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "load, burden"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ጾር-ti-noun-n-bdmo27",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%BE%E1%88%AD#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8C%BE%E1%88%AD&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-134b-1235",
+      "scriptCandidate": "ፋስ",
+      "letters": [
+        "ፋ",
+        "ስ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "fas"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "axe"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "axe"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፋስ-ti-noun-AlQS09-A",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8D%8B%E1%88%B5#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8D%8B%E1%88%B5&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-134b-1293",
+      "scriptCandidate": "ፋና",
+      "letters": [
+        "ፋ",
+        "ና"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "fana"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "torch",
+        "flame",
+        "light",
+        "lamp"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "torch"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፋና-ti-noun-N79Rv7pG",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "flame"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፋና-ti-noun-vZ3F942s",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "light"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፋና-ti-noun-macCYXLU",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "lamp"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፋና-ti-noun-yY6F8kkA",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8D%8B%E1%8A%93#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8D%8B%E1%8A%93&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": false,
+      "childSuitabilityStatus": "grownup-review-bank-only"
+    },
+    {
+      "id": "u2-134d-1228",
+      "scriptCandidate": "ፍረ",
+      "letters": [
+        "ፍ",
+        "ረ"
+      ],
+      "letterCount": 2,
+      "transliterationCandidates": [
+        "fərä"
+      ],
+      "canonicalSpellingsInSource": [],
+      "englishMeaningCandidates": [
+        "fruit",
+        "kernel",
+        "outcome, result",
+        "piece, unit (of something)"
+      ],
+      "senses": [
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "fruit"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፍረ-ti-noun-kglSaqph",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "kernel"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፍረ-ti-noun-aSPdG8BG",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "outcome, result"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፍረ-ti-noun-3i1AYp34",
+          "alternativeOf": []
+        },
+        {
+          "partOfSpeech": "noun",
+          "glossCandidates": [
+            "piece, unit (of something)"
+          ],
+          "tags": [],
+          "sourceSenseId": "en-ፍረ-ti-noun-4If0h6lI",
+          "alternativeOf": []
+        }
+      ],
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8D%8D%E1%88%A8#Tigrinya",
+      "sourceHistoryUrl": "https://en.wiktionary.org/w/index.php?title=%E1%8D%8D%E1%88%A8&action=history",
+      "status": "awaiting-qualified-native-tigrinya-review",
+      "imageAssociationStatus": "awaiting-qualified-native-tigrinya-review",
+      "audio": {
+        "status": "awaiting-qualified-native-tigrinya-review",
+        "src": null,
+        "usageRights": null
+      },
+      "reviewer": null,
+      "approvedAt": null,
+      "includedInChildActivity": true,
+      "childSuitabilityStatus": "picture-lesson-candidate-awaiting-native-and-age-review",
+      "pictureLesson": {
+        "group": "food",
+        "englishConcept": "Fruit",
+        "art": "fruit",
+        "notice": "Look at the fruit together. What colours can you notice?",
+        "offline": "With a grown-up, point to fruit in a book or at home."
+      }
+    }
+  ],
+  "previousConceptsExcluded": [
+    {
+      "scriptCandidate": "በጊዕ",
+      "englishConcept": "sheep",
+      "reason": "Three Ethiopic letters, so outside Unit 2's two-letter criterion.",
+      "status": "awaiting-qualified-native-tigrinya-review"
+    },
+    {
+      "scriptCandidate": null,
+      "englishConcept": "ball",
+      "reason": "No sourced two-letter dictionary headword was selected. No translation was invented or shortened.",
+      "status": "awaiting-qualified-native-tigrinya-review"
+    }
+  ]
+}
