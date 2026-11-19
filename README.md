@@ -51,9 +51,12 @@ python3 unit-02-first-words/scripts/build_unit2.py
 python3 unit-02-first-words/tests/check_unit2.py
 node --check unit-02-first-words/src/unit2-child-app.js
 node unit-02-first-words/tests/check_unit2_pairs.cjs
+node unit-02-first-words/tests/check_unit2_literacy.cjs
 ```
 
-The build uses the tracked `src/` files and review-candidate JSON to generate the standalone `index.html`; an earlier generated HTML file is not required. Keep the source and built demo together in commits. Tests verify corpus completeness, review status, two-letter counting, embedded-source parity and 14 pair-game behaviors. They do not replace visual, accessibility, native-language or real-child testing.
+The build uses the tracked `src/` files and review-candidate JSON to generate the standalone `index.html`; an earlier generated HTML file is not required. Keep the source and built demo together in commits. Tests verify corpus completeness, review status, two-letter counting, embedded-source parity, 14 pair-game behaviors and 12 literacy-flow behaviors. They do not replace visual, accessibility, native-language or real-child testing.
+
+Unit 2 now follows Look → Make it → Find it: the child first sees the draft word, assembles its shapes with a model, then chooses the printed word for its picture. The first choice is guided; subsequent alternatives use only introduced words. The [first-lesson review brief](unit-02-first-words/lesson-01-review-brief.md) prepares this learning goal and its three existing word candidates for qualified native review.
 
 ## Content provenance and release status
 

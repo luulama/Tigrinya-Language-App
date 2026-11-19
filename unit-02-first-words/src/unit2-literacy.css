@@ -1,0 +1,37 @@
+.word-prompt{display:grid;justify-items:center;width:min(300px,100%);padding:9px 22px 12px;border-radius:27px;background:var(--tile-bg);margin-bottom:22px}
+#gameScreen[data-activity="recognize"] .activity{min-height:260px}
+.word-prompt>svg{width:220px;height:147px}
+.word-cue{margin-top:4px;text-align:center}
+.word-cue .native-word{font-size:39px}
+.word-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;width:100%;max-width:620px}
+.word-choices[data-count="1"]{grid-template-columns:1fr;max-width:245px}
+.word-choices[data-count="2"]{grid-template-columns:repeat(2,minmax(0,1fr));max-width:430px}
+.word-choice{min-height:105px;display:grid;place-items:center;padding:13px 10px;border-radius:23px}
+.choice-word{font:700 43px/1.45 "Noto Sans Ethiopic","Kefa",Nyala,Arial,sans-serif;color:var(--violet-dark)}
+.word-choice[data-result="match"] .choice-word{color:var(--green)}
+@media(max-width:600px){
+  .word-prompt{width:240px;padding:7px 18px 9px;margin-bottom:21px;border-radius:23px}
+  .word-prompt>svg{width:185px;height:127px}
+  .word-cue .native-word{font-size:34px}
+  .word-choices{gap:10px}
+  .word-choice{min-height:82px;padding:12px 4px;border-radius:19px}
+  .choice-word{font-size:34px}
+  .word-choices[data-count="1"]{max-width:195px}
+  .word-choices[data-count="2"]{max-width:320px}
+}
+@media(max-width:350px), (max-height:700px){
+  .word-prompt{margin-bottom:17px}
+  .word-prompt>svg{height:111px}
+  .word-cue .native-word{font-size:31px}
+  .word-choices{gap:8px}
+  .word-choice{min-height:77px}
+  .choice-word{font-size:30px}
+}
+@media(max-width:600px) and (max-height:700px){
+  #gameScreen[data-activity="recognize"] .game-heading{margin:4px 0 8px;line-height:1.2}
+  #gameScreen[data-activity="recognize"] .activity{min-height:220px}
+  .word-prompt{padding:6px 16px;margin-bottom:12px}
+  .word-prompt>svg{height:90px}
+  .word-cue .native-word{font-size:30px}
+  .word-choice{min-height:66px}
+}

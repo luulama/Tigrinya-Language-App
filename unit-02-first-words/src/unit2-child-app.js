@@ -109,10 +109,10 @@ function renderGallery() {
 }
 
 function choiceWords(word) {
-  const preferred = [wordByScript('ቤት'),wordByScript('ማይ'),wordByScript('ድሙ'),wordByScript('ሙዝ')];
-  const distractors = preferred.filter(candidate => candidate.art !== word.art).slice(0,2);
+  const introduced = state.session.slice(0,state.wordIndex+1);
+  const distractors = introduced.filter(candidate => candidate.id !== word.id && candidate.art !== word.art).slice(-2);
   const options = [...distractors];
-  options.splice((word.order+state.wordIndex)%3,0,word);
+  options.splice((word.order+state.wordIndex)%(options.length+1),0,word);
   return options;
 }
 
@@ -124,7 +124,8 @@ function renderGame(demonstrate=false) {
   clearDemonstration();
   select('#nextButton').classList.remove('hint-target');
   const word = state.session[state.wordIndex];
-  const stages = [{name:'Look',icon:'eye'},{name:'Find it',icon:'tap'},{name:'Make it',icon:'puzzle'}];
+  const stages = [{name:'Look',icon:'eye'},{name:'Make it',icon:'puzzle'},{name:'Find it',icon:'tap'}];
+  select('#gameScreen').dataset.activity = ['look','build','recognize'][state.stage];
   select('#gameHeading').textContent = stages[state.stage].name;
   select('#stageTrail').innerHTML = stages.map((stage,index) => `${index ? '<li class="trail-line" aria-hidden="true"></li>' : ''}<li class="${index === state.stage ? 'active' : index < state.stage ? 'complete' : ''}" ${index === state.stage ? 'aria-current="step"' : ''} aria-label="${stage.name}${index === state.stage ? ', current step' : ''}">${icon(index < state.stage ? 'check' : stage.icon)}</li>`).join('');
   select('#sessionPebbles').innerHTML = state.session.map((entry,index) => `<i class="${index === state.wordIndex ? 'current' : ''}" aria-hidden="true"></i>`).join('');
@@ -133,10 +134,12 @@ function renderGame(demonstrate=false) {
   if (state.stage === 0) {
     select('#activity').innerHTML = `<button class="teach-scene" data-action="notice" style="--tile-bg:${word.background}" aria-label="Explore the ${escapeText(word.concept)} picture" aria-describedby="reviewNotice">${artwork(word)}<span class="tap-dot" aria-hidden="true">${icon('tap')}</span></button><div class="teach-word">${native(word)}</div><div class="two-letter-mini" aria-label="Two letters" aria-describedby="reviewNotice">${word.letters.map(letter => `<span lang="ti">${escapeText(letter)}</span>`).join('')}</div>`;
   } else if (state.stage === 1) {
-    select('#activity').innerHTML = `${reference(word)}<div class="picture-choices">${choiceWords(word).map(candidate => `<button class="match-choice" data-choice="${candidate.id}" ${state.matched ? 'aria-disabled="true"' : ''} ${state.matched && candidate.id === word.id ? 'data-result="match"' : ''} aria-label="Choose ${escapeText(candidate.concept)} picture" aria-describedby="reviewNotice">${artwork(candidate)}${state.matched && candidate.id === word.id ? `<span class="choice-tick" aria-hidden="true">${icon('check')}</span>` : ''}</button>`).join('')}</div>`;
-  } else {
     const tokenOrder = word.order%2 ? [0,1] : [1,0];
     select('#activity').innerHTML = `${reference(word,'build-model')}<div class="letter-slots" aria-label="Build the two-letter word" aria-describedby="reviewNotice">${word.letters.map((letter,index) => `<div class="letter-slot ${state.placed.length > index ? 'filled' : state.placed.length === index ? 'next-slot' : ''}" ${state.placed.length > index ? 'lang="ti"' : ''} aria-label="${state.placed.length > index ? 'Placed letter '+escapeText(letter) : 'Empty letter place '+(index+1)}">${state.placed.length > index ? escapeText(letter) : `<span class="ghost" aria-hidden="true">${state.hint && state.placed.length === index ? escapeText(letter) : ''}</span>`}</div>`).join('')}</div><div class="letter-pool">${tokenOrder.map(index => `<button class="letter-token" data-token="${index}" ${state.placed.includes(index) ? 'disabled' : ''} lang="ti" aria-label="Place letter ${escapeText(word.letters[index])}" aria-describedby="reviewNotice">${escapeText(word.letters[index])}</button>`).join('')}</div>`;
+  } else {
+    const options = choiceWords(word);
+    const showModel = options.length === 1 || state.hint || state.matched;
+    select('#activity').innerHTML = `<div class="word-prompt" style="--tile-bg:${word.background}">${artwork(word)}<div class="word-cue" id="wordCue" ${showModel ? '' : 'hidden'} aria-label="Word model" aria-describedby="reviewNotice">${native(word)}</div></div><div class="word-choices" data-count="${options.length}" role="group" aria-label="Choose the written word for this picture">${options.map(candidate => `<button class="match-choice word-choice" data-choice="${candidate.id}" ${state.matched ? 'aria-disabled="true"' : ''} ${state.matched && candidate.id === word.id ? 'data-result="match"' : ''} aria-label="Choose ${escapeText(candidate.word)}" aria-describedby="reviewNotice">${native(candidate,'choice-word')}${state.matched && candidate.id === word.id ? `<span class="choice-tick" aria-hidden="true">${icon('check')}</span>` : ''}</button>`).join('')}</div>`;
   }
   updateNext();
   if (demonstrate && (state.stage === 0 || !state.demonstrated.has(state.stage))) demoTimer = window.setTimeout(() => {
@@ -148,7 +151,7 @@ function renderGame(demonstrate=false) {
 }
 
 function updateNext() {
-  select('#nextButton').disabled = state.stage === 1 ? !state.matched : state.stage === 2 ? state.placed.length !== 2 : false;
+  select('#nextButton').disabled = state.stage === 1 ? state.placed.length !== 2 : state.stage === 2 ? !state.matched : false;
 }
 
 function handMarkup() {
@@ -167,8 +170,12 @@ function showHint(explicit=true) {
   selectAll('.hint-target').forEach(target => target.classList.remove('hint-target'));
   let target = null;
   if (state.stage === 0) target = select('.teach-scene');
-  if (state.stage === 1 && !state.matched) target = select(`[data-choice="${word.id}"]`);
-  if (state.stage === 2 && state.placed.length < 2) {
+  if (state.stage === 2 && !state.matched) {
+    state.hint = true;
+    select('#wordCue').hidden = false;
+    target = select(`[data-choice="${word.id}"]`);
+  }
+  if (state.stage === 1 && state.placed.length < 2) {
     state.hint = true;
     const requiredIndex = word.letters.findIndex((letter,index) => letter === word.letters[state.placed.length] && !state.placed.includes(index));
     target = select(`[data-token="${requiredIndex}"]`);
@@ -193,9 +200,10 @@ function noticePicture(button) {
   select('#nextButton').classList.add('hint-target');
 }
 
-function matchPicture(button) {
-  if (state.stage !== 1 || state.matched) return;
+function matchWord(button) {
+  if (state.screen !== 'game' || state.stage !== 2 || state.matched) return;
   const word = state.session[state.wordIndex];
+  if (!choiceWords(word).some(candidate => candidate.id === button.dataset.choice)) return;
   clearDemonstration();
   if (button.dataset.choice === word.id) {
     state.matched = true;
@@ -204,7 +212,8 @@ function matchPicture(button) {
     button.dataset.result = 'match';
     button.insertAdjacentHTML('beforeend',`<span class="choice-tick" aria-hidden="true">${icon('check')}</span>`);
     selectAll('.match-choice').forEach(choice => choice.setAttribute('aria-disabled','true'));
-    select('#gameFeedback').textContent = 'Same picture!';
+    select('#wordCue').hidden = false;
+    select('#gameFeedback').textContent = 'Found it!';
     updateNext();
     select('#nextButton').classList.add('hint-target');
   } else {
@@ -218,7 +227,7 @@ function matchPicture(button) {
 }
 
 function placeLetter(button) {
-  if (state.stage !== 2 || state.placed.length === 2) return;
+  if (state.screen !== 'game' || state.stage !== 1 || state.placed.length === 2) return;
   const word = state.session[state.wordIndex];
   const index = Number(button.dataset.token);
   if (state.placed.includes(index)) return;
@@ -412,7 +421,7 @@ document.addEventListener('click',event => {
     if (word) startSession([word]);
   }
   if (button.dataset.action) handleAction(button.dataset.action,button);
-  if (button.dataset.choice) matchPicture(button);
+  if (button.dataset.choice) matchWord(button);
   if (button.dataset.token !== undefined) placeLetter(button);
   if (button.dataset.pair) flipPairCard(button.dataset.pair);
 });

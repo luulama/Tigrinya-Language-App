@@ -5,13 +5,17 @@ root = Path(__file__).resolve().parent.parent
 output_path = root / "index.html"
 sprite = (root / "src/unit2-sprite.svg").read_text(encoding="utf-8").rstrip()
 shell = (root / "src/unit2-child-shell.html").read_text(encoding="utf-8")
-styles = (root / "src/unit2-pairs.css").read_text(encoding="utf-8")
+styles = "\n".join((root / name).read_text(encoding="utf-8") for name in ["src/unit2-pairs.css", "src/unit2-literacy.css"])
 pairs_screen = (root / "src/unit2-pairs-screen.html").read_text(encoding="utf-8")
 shell = shell.replace("    @media(prefers-reduced-motion:reduce)", styles + "\n    @media(prefers-reduced-motion:reduce)")
 shell = shell.replace('      <section class="view" id="finishScreen"', pairs_screen + '      <section class="view" id="finishScreen"')
 shell = shell.replace(
     "Play offers three pictures at a time. A chosen picture can also be played on its own.",
     "Play offers three pictures at a time, followed by a six-card picture-pair game using those same pictures and draft words. A chosen picture can also be played on its own.",
+)
+shell = shell.replace(
+    "matches its picture, and fits the two letter shapes.",
+    "fits the two letter shapes with a model, then chooses the written word for its picture. The first choice is a guided example; later choices use only words already introduced in this session. The lion can reveal the word model whenever needed.",
 )
 shell = shell.replace(
     "Only explicit Keep saves pictures in this tab; this does not record mastery or approval.",

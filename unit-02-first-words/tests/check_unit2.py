@@ -66,6 +66,7 @@ assert 'id="gameScreen"' in html
 assert 'id="pairsScreen"' in html
 assert 'id="pairGrid"' in html
 assert (root / "src/unit2-pairs.css").read_text(encoding="utf-8") in html
+assert (root / "src/unit2-literacy.css").read_text(encoding="utf-8") in html
 assert (root / "src/unit2-pairs-screen.html").read_text(encoding="utf-8") in html
 assert 'id="art-guide"' in html
 assert 'id="reviewNotice"' in html and "Native review pending" in html

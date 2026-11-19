@@ -69,6 +69,44 @@
   .pair-card.is-matched{outline:3px solid Highlight}
 }
 
+.word-prompt{display:grid;justify-items:center;width:min(300px,100%);padding:9px 22px 12px;border-radius:27px;background:var(--tile-bg);margin-bottom:22px}
+#gameScreen[data-activity="recognize"] .activity{min-height:260px}
+.word-prompt>svg{width:220px;height:147px}
+.word-cue{margin-top:4px;text-align:center}
+.word-cue .native-word{font-size:39px}
+.word-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;width:100%;max-width:620px}
+.word-choices[data-count="1"]{grid-template-columns:1fr;max-width:245px}
+.word-choices[data-count="2"]{grid-template-columns:repeat(2,minmax(0,1fr));max-width:430px}
+.word-choice{min-height:105px;display:grid;place-items:center;padding:13px 10px;border-radius:23px}
+.choice-word{font:700 43px/1.45 "Noto Sans Ethiopic","Kefa",Nyala,Arial,sans-serif;color:var(--violet-dark)}
+.word-choice[data-result="match"] .choice-word{color:var(--green)}
+@media(max-width:600px){
+  .word-prompt{width:240px;padding:7px 18px 9px;margin-bottom:21px;border-radius:23px}
+  .word-prompt>svg{width:185px;height:127px}
+  .word-cue .native-word{font-size:34px}
+  .word-choices{gap:10px}
+  .word-choice{min-height:82px;padding:12px 4px;border-radius:19px}
+  .choice-word{font-size:34px}
+  .word-choices[data-count="1"]{max-width:195px}
+  .word-choices[data-count="2"]{max-width:320px}
+}
+@media(max-width:350px), (max-height:700px){
+  .word-prompt{margin-bottom:17px}
+  .word-prompt>svg{height:111px}
+  .word-cue .native-word{font-size:31px}
+  .word-choices{gap:8px}
+  .word-choice{min-height:77px}
+  .choice-word{font-size:30px}
+}
+@media(max-width:600px) and (max-height:700px){
+  #gameScreen[data-activity="recognize"] .game-heading{margin:4px 0 8px;line-height:1.2}
+  #gameScreen[data-activity="recognize"] .activity{min-height:220px}
+  .word-prompt{padding:6px 16px;margin-bottom:12px}
+  .word-prompt>svg{height:90px}
+  .word-cue .native-word{font-size:30px}
+  .word-choice{min-height:66px}
+}
+
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hint-target{outline:4px solid #9478c0!important}.demo-hand{transform:none!important}}
     @media(forced-colors:active){button,.letter-slot,.reference-card,.pending-label{border:2px solid ButtonText}.stage-trail li.active,.map-node,.match-choice[data-result="match"]{outline:2px solid Highlight}.letter-slot .ghost{opacity:1}.letter-token:disabled{visibility:hidden}}
   </style>
@@ -229,7 +267,7 @@
         </div>
       </section>
       <section class="view" id="finishScreen" hidden aria-labelledby="finishHeading"><div class="finish-view"><svg class="finish-guide one-shot-wave" viewBox="0 0 260 240" role="img" aria-label="The little lion smiles"><use href="#art-guide"/></svg><h1 id="finishHeading" tabindex="-1">All done!</h1><div class="finish-pictures" id="finishPictures" aria-label="Pictures explored"></div><div class="finish-actions"><button class="play-button" data-action="keep">Keep<svg class="icon" aria-hidden="true"><use href="#i-shelf"/></svg></button><button class="plain-button" data-action="home">Home<svg class="icon" aria-hidden="true"><use href="#i-world"/></svg></button></div></div></section>
-      <section class="view adult-screen" id="grownupsScreen" hidden aria-labelledby="grownupsHeading"><div class="adult-top"><h1 id="grownupsHeading" tabindex="-1">Grown-ups</h1><button class="plain-button" data-action="home">Back to play</button></div><p class="adult-notice"><strong>All content awaits qualified native Tigrinya review.</strong> Every spelling, transliteration, meaning, two-letter display, illustration association, prompt and future audio file is pending. This is a visual design prototype, not an approved independent language course. Native pronunciation recordings and spoken instructions are not available.</p><div class="adult-grid"><article class="adult-card"><h2>Pictures lead the way</h2><p>The child chooses a picture, sees its draft two-letter word, matches its picture, and fits the two letter shapes. Model pictures and letters stay visible. A small lion and animated hand provide repeatable visual demonstrations. No child-facing instruction is longer than a few words.</p><p>Play offers three pictures at a time, followed by a six-card picture-pair game using those same pictures and draft words. A chosen picture can also be played on its own. A mismatch offers a visual cue without a penalty. The pair game has no timer or penalties. Two different pictures stay visible until the next tap; the lion can point to a matching card. Only explicit Keep saves pictures in this tab; matching pictures does not assess reading, pronunciation, mastery or approval.</p></article><article class="adult-card"><h2>What independent learning still needs</h2><p>Navigation and picture/shape play work without reading a paragraph or asking a grown-up to explain a button. A child cannot learn reliable Tigrinya pronunciation from this silent preview. Approved native word recordings and short spoken directions are required before releasing independent language lessons.</p><p>There are no child accounts, ads, purchases, scores, streaks, countdowns or persistent learner data. The shelf and unfinished play session are held in memory only. The settings entry is a two-tap separation, not a security or authentication gate.</p></article></div><p class="adult-counts">142 sourced headwords · 32 picture candidates · all pending native review</p><h2 class="bank-title">Complete two-letter word bank</h2><p>Every match from the selected Kaikki.org / English Wiktionary snapshot is retained here: 942 records, 917 distinct headwords, and 142 distinct two-letter matches. This is complete for that snapshot, not every word in Tigrinya. The other 110 entries are review-bank material, not automatically child lesson content.</p><div class="bank-filters"><label for="bankSearch">Find a word, meaning, or transliteration<input id="bankSearch" type="search" placeholder="Search the 142-word bank" autocomplete="off" spellcheck="false"></label><label for="bankPlacement">Show<select id="bankPlacement"><option value="all">All 142 dictionary matches</option><option value="picture">32 picture lesson candidates</option><option value="bank">110 other review-bank entries</option></select></label></div><p class="bank-count" id="bankCount" role="status" aria-live="polite"></p><div class="review-table-wrap"><table class="review-table"><caption class="sr">Dictionary candidates: all awaiting qualified native Tigrinya review</caption><thead><tr><th scope="col">Draft word / letters</th><th scope="col">Meaning candidates</th><th scope="col">Dictionary transliteration</th><th scope="col">Placement & review</th><th scope="col">Source</th></tr></thead><tbody id="reviewRows"></tbody></table></div><p class="bank-empty" id="bankEmpty" hidden>No matches. Try another search or filter.</p><div class="parent-links"><a href="unit-2-two-letter-words.md" download>All 142 words<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="unit-2-content-review.json" download>Source & review data<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="unit-2-plan.md">Design notes<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><p class="attribution">Dictionary-derived text: English Wiktionary contributors, extracted by <a href="https://kaikki.org/dictionary/Tigrinya/index.html" target="_blank" rel="noopener noreferrer">Kaikki.org / Wiktextract</a>, under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Retrieved 17 November 2026; extraction dated 30 October 2026 from the 1 October 2026 dump. Changes: two-letter filtering, sense grouping and provisional lesson placement. Original images, quotations and recordings are not copied. Counts and all 142 source links remain available for review.</p></section>
+      <section class="view adult-screen" id="grownupsScreen" hidden aria-labelledby="grownupsHeading"><div class="adult-top"><h1 id="grownupsHeading" tabindex="-1">Grown-ups</h1><button class="plain-button" data-action="home">Back to play</button></div><p class="adult-notice"><strong>All content awaits qualified native Tigrinya review.</strong> Every spelling, transliteration, meaning, two-letter display, illustration association, prompt and future audio file is pending. This is a visual design prototype, not an approved independent language course. Native pronunciation recordings and spoken instructions are not available.</p><div class="adult-grid"><article class="adult-card"><h2>Pictures lead the way</h2><p>The child chooses a picture, sees its draft two-letter word, fits the two letter shapes with a model, then chooses the written word for its picture. The first choice is a guided example; later choices use only words already introduced in this session. The lion can reveal the word model whenever needed. Model pictures and letters stay visible. A small lion and animated hand provide repeatable visual demonstrations. No child-facing instruction is longer than a few words.</p><p>Play offers three pictures at a time, followed by a six-card picture-pair game using those same pictures and draft words. A chosen picture can also be played on its own. A mismatch offers a visual cue without a penalty. The pair game has no timer or penalties. Two different pictures stay visible until the next tap; the lion can point to a matching card. Only explicit Keep saves pictures in this tab; matching pictures does not assess reading, pronunciation, mastery or approval.</p></article><article class="adult-card"><h2>What independent learning still needs</h2><p>Navigation and picture/shape play work without reading a paragraph or asking a grown-up to explain a button. A child cannot learn reliable Tigrinya pronunciation from this silent preview. Approved native word recordings and short spoken directions are required before releasing independent language lessons.</p><p>There are no child accounts, ads, purchases, scores, streaks, countdowns or persistent learner data. The shelf and unfinished play session are held in memory only. The settings entry is a two-tap separation, not a security or authentication gate.</p></article></div><p class="adult-counts">142 sourced headwords · 32 picture candidates · all pending native review</p><h2 class="bank-title">Complete two-letter word bank</h2><p>Every match from the selected Kaikki.org / English Wiktionary snapshot is retained here: 942 records, 917 distinct headwords, and 142 distinct two-letter matches. This is complete for that snapshot, not every word in Tigrinya. The other 110 entries are review-bank material, not automatically child lesson content.</p><div class="bank-filters"><label for="bankSearch">Find a word, meaning, or transliteration<input id="bankSearch" type="search" placeholder="Search the 142-word bank" autocomplete="off" spellcheck="false"></label><label for="bankPlacement">Show<select id="bankPlacement"><option value="all">All 142 dictionary matches</option><option value="picture">32 picture lesson candidates</option><option value="bank">110 other review-bank entries</option></select></label></div><p class="bank-count" id="bankCount" role="status" aria-live="polite"></p><div class="review-table-wrap"><table class="review-table"><caption class="sr">Dictionary candidates: all awaiting qualified native Tigrinya review</caption><thead><tr><th scope="col">Draft word / letters</th><th scope="col">Meaning candidates</th><th scope="col">Dictionary transliteration</th><th scope="col">Placement & review</th><th scope="col">Source</th></tr></thead><tbody id="reviewRows"></tbody></table></div><p class="bank-empty" id="bankEmpty" hidden>No matches. Try another search or filter.</p><div class="parent-links"><a href="unit-2-two-letter-words.md" download>All 142 words<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="unit-2-content-review.json" download>Source & review data<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a href="unit-2-plan.md">Design notes<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><p class="attribution">Dictionary-derived text: English Wiktionary contributors, extracted by <a href="https://kaikki.org/dictionary/Tigrinya/index.html" target="_blank" rel="noopener noreferrer">Kaikki.org / Wiktextract</a>, under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Retrieved 17 November 2026; extraction dated 30 October 2026 from the 1 October 2026 dump. Changes: two-letter filtering, sense grouping and provisional lesson placement. Original images, quotations and recordings are not copied. Counts and all 142 source links remain available for review.</p></section>
     </main>
     <footer class="child-status"><span class="pending-label" id="reviewNotice" title="Every Tigrinya word, transliteration, two-letter display, picture association and future audio is awaiting qualified native Tigrinya review."><svg class="icon" aria-hidden="true"><use href="#i-care"/></svg>Native review pending<span class="sr">. Awaiting qualified native Tigrinya review for all words, transliterations, two-letter displays, image associations and future audio.</span></span><span class="audio-label" id="audioNotice"><svg class="icon" aria-hidden="true"><use href="#i-volume"/></svg>Audio pending<span class="sr">. No native recordings or spoken directions are available. Future audio awaits qualified native Tigrinya review.</span></span></footer>
   </div>
@@ -6773,10 +6811,10 @@
     }
 
     function choiceWords(word) {
-      const preferred = [wordByScript('ቤት'),wordByScript('ማይ'),wordByScript('ድሙ'),wordByScript('ሙዝ')];
-      const distractors = preferred.filter(candidate => candidate.art !== word.art).slice(0,2);
+      const introduced = state.session.slice(0,state.wordIndex+1);
+      const distractors = introduced.filter(candidate => candidate.id !== word.id && candidate.art !== word.art).slice(-2);
       const options = [...distractors];
-      options.splice((word.order+state.wordIndex)%3,0,word);
+      options.splice((word.order+state.wordIndex)%(options.length+1),0,word);
       return options;
     }
 
@@ -6788,7 +6826,8 @@
       clearDemonstration();
       select('#nextButton').classList.remove('hint-target');
       const word = state.session[state.wordIndex];
-      const stages = [{name:'Look',icon:'eye'},{name:'Find it',icon:'tap'},{name:'Make it',icon:'puzzle'}];
+      const stages = [{name:'Look',icon:'eye'},{name:'Make it',icon:'puzzle'},{name:'Find it',icon:'tap'}];
+      select('#gameScreen').dataset.activity = ['look','build','recognize'][state.stage];
       select('#gameHeading').textContent = stages[state.stage].name;
       select('#stageTrail').innerHTML = stages.map((stage,index) => `${index ? '<li class="trail-line" aria-hidden="true"></li>' : ''}<li class="${index === state.stage ? 'active' : index < state.stage ? 'complete' : ''}" ${index === state.stage ? 'aria-current="step"' : ''} aria-label="${stage.name}${index === state.stage ? ', current step' : ''}">${icon(index < state.stage ? 'check' : stage.icon)}</li>`).join('');
       select('#sessionPebbles').innerHTML = state.session.map((entry,index) => `<i class="${index === state.wordIndex ? 'current' : ''}" aria-hidden="true"></i>`).join('');
@@ -6797,10 +6836,12 @@
       if (state.stage === 0) {
         select('#activity').innerHTML = `<button class="teach-scene" data-action="notice" style="--tile-bg:${word.background}" aria-label="Explore the ${escapeText(word.concept)} picture" aria-describedby="reviewNotice">${artwork(word)}<span class="tap-dot" aria-hidden="true">${icon('tap')}</span></button><div class="teach-word">${native(word)}</div><div class="two-letter-mini" aria-label="Two letters" aria-describedby="reviewNotice">${word.letters.map(letter => `<span lang="ti">${escapeText(letter)}</span>`).join('')}</div>`;
       } else if (state.stage === 1) {
-        select('#activity').innerHTML = `${reference(word)}<div class="picture-choices">${choiceWords(word).map(candidate => `<button class="match-choice" data-choice="${candidate.id}" ${state.matched ? 'aria-disabled="true"' : ''} ${state.matched && candidate.id === word.id ? 'data-result="match"' : ''} aria-label="Choose ${escapeText(candidate.concept)} picture" aria-describedby="reviewNotice">${artwork(candidate)}${state.matched && candidate.id === word.id ? `<span class="choice-tick" aria-hidden="true">${icon('check')}</span>` : ''}</button>`).join('')}</div>`;
-      } else {
         const tokenOrder = word.order%2 ? [0,1] : [1,0];
         select('#activity').innerHTML = `${reference(word,'build-model')}<div class="letter-slots" aria-label="Build the two-letter word" aria-describedby="reviewNotice">${word.letters.map((letter,index) => `<div class="letter-slot ${state.placed.length > index ? 'filled' : state.placed.length === index ? 'next-slot' : ''}" ${state.placed.length > index ? 'lang="ti"' : ''} aria-label="${state.placed.length > index ? 'Placed letter '+escapeText(letter) : 'Empty letter place '+(index+1)}">${state.placed.length > index ? escapeText(letter) : `<span class="ghost" aria-hidden="true">${state.hint && state.placed.length === index ? escapeText(letter) : ''}</span>`}</div>`).join('')}</div><div class="letter-pool">${tokenOrder.map(index => `<button class="letter-token" data-token="${index}" ${state.placed.includes(index) ? 'disabled' : ''} lang="ti" aria-label="Place letter ${escapeText(word.letters[index])}" aria-describedby="reviewNotice">${escapeText(word.letters[index])}</button>`).join('')}</div>`;
+      } else {
+        const options = choiceWords(word);
+        const showModel = options.length === 1 || state.hint || state.matched;
+        select('#activity').innerHTML = `<div class="word-prompt" style="--tile-bg:${word.background}">${artwork(word)}<div class="word-cue" id="wordCue" ${showModel ? '' : 'hidden'} aria-label="Word model" aria-describedby="reviewNotice">${native(word)}</div></div><div class="word-choices" data-count="${options.length}" role="group" aria-label="Choose the written word for this picture">${options.map(candidate => `<button class="match-choice word-choice" data-choice="${candidate.id}" ${state.matched ? 'aria-disabled="true"' : ''} ${state.matched && candidate.id === word.id ? 'data-result="match"' : ''} aria-label="Choose ${escapeText(candidate.word)}" aria-describedby="reviewNotice">${native(candidate,'choice-word')}${state.matched && candidate.id === word.id ? `<span class="choice-tick" aria-hidden="true">${icon('check')}</span>` : ''}</button>`).join('')}</div>`;
       }
       updateNext();
       if (demonstrate && (state.stage === 0 || !state.demonstrated.has(state.stage))) demoTimer = window.setTimeout(() => {
@@ -6812,7 +6853,7 @@
     }
 
     function updateNext() {
-      select('#nextButton').disabled = state.stage === 1 ? !state.matched : state.stage === 2 ? state.placed.length !== 2 : false;
+      select('#nextButton').disabled = state.stage === 1 ? state.placed.length !== 2 : state.stage === 2 ? !state.matched : false;
     }
 
     function handMarkup() {
@@ -6831,8 +6872,12 @@
       selectAll('.hint-target').forEach(target => target.classList.remove('hint-target'));
       let target = null;
       if (state.stage === 0) target = select('.teach-scene');
-      if (state.stage === 1 && !state.matched) target = select(`[data-choice="${word.id}"]`);
-      if (state.stage === 2 && state.placed.length < 2) {
+      if (state.stage === 2 && !state.matched) {
+        state.hint = true;
+        select('#wordCue').hidden = false;
+        target = select(`[data-choice="${word.id}"]`);
+      }
+      if (state.stage === 1 && state.placed.length < 2) {
         state.hint = true;
         const requiredIndex = word.letters.findIndex((letter,index) => letter === word.letters[state.placed.length] && !state.placed.includes(index));
         target = select(`[data-token="${requiredIndex}"]`);
@@ -6857,9 +6902,10 @@
       select('#nextButton').classList.add('hint-target');
     }
 
-    function matchPicture(button) {
-      if (state.stage !== 1 || state.matched) return;
+    function matchWord(button) {
+      if (state.screen !== 'game' || state.stage !== 2 || state.matched) return;
       const word = state.session[state.wordIndex];
+      if (!choiceWords(word).some(candidate => candidate.id === button.dataset.choice)) return;
       clearDemonstration();
       if (button.dataset.choice === word.id) {
         state.matched = true;
@@ -6868,7 +6914,8 @@
         button.dataset.result = 'match';
         button.insertAdjacentHTML('beforeend',`<span class="choice-tick" aria-hidden="true">${icon('check')}</span>`);
         selectAll('.match-choice').forEach(choice => choice.setAttribute('aria-disabled','true'));
-        select('#gameFeedback').textContent = 'Same picture!';
+        select('#wordCue').hidden = false;
+        select('#gameFeedback').textContent = 'Found it!';
         updateNext();
         select('#nextButton').classList.add('hint-target');
       } else {
@@ -6882,7 +6929,7 @@
     }
 
     function placeLetter(button) {
-      if (state.stage !== 2 || state.placed.length === 2) return;
+      if (state.screen !== 'game' || state.stage !== 1 || state.placed.length === 2) return;
       const word = state.session[state.wordIndex];
       const index = Number(button.dataset.token);
       if (state.placed.includes(index)) return;
@@ -7076,7 +7123,7 @@
         if (word) startSession([word]);
       }
       if (button.dataset.action) handleAction(button.dataset.action,button);
-      if (button.dataset.choice) matchPicture(button);
+      if (button.dataset.choice) matchWord(button);
       if (button.dataset.token !== undefined) placeLetter(button);
       if (button.dataset.pair) flipPairCard(button.dataset.pair);
     });

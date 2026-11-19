@@ -2,7 +2,7 @@
 
 ## Current design
 
-This revision responds to the user's request for an app children up to age seven can navigate themselves, with very little reading. The same standalone HTML now opens on a picture map and one clear Play button. The dictionary and detailed explanations are in a separate grown-up area.
+This revision responds to the user's request for an app children ages 4–8 can navigate themselves, with very little reading. The same standalone HTML now opens on a picture map and one clear Play button. The dictionary and detailed explanations are in a separate grown-up area.
 
 The goal is a more suitable experience for these children, not an untested claim to outperform another app in every respect. [Duolingo ABC](https://abc.duolingo.com/) and [Duolingo's learning path](https://blog.duolingo.com/new-duolingo-home-screen-design/) were comparison references. The guide character, map, illustrations and interaction design here are original or retained from this project's own prototype.
 
@@ -13,7 +13,7 @@ The goal is a more suitable experience for these children, not an untested claim
 - A friendly little lion, a picture map, and Play.
 - Four picture worlds labelled Home, Food, Animals and Me.
 - Up to four large picture cards at a time. English definitions and transliterations are not shown on child cards.
-- Three short activity labels: Look, Find it, Make it.
+- Three short activity labels: Look, Make it, Find it.
 - A six-card Find pairs game after a three-picture session, showing only the pictures and draft words just explored.
 - A large Next button, a visual hint button, and an always-available exit.
 - A quiet finish with All done, Keep and Home.
@@ -25,9 +25,9 @@ At the checked phone size, the home content has eight visible words, excluding t
 
 **Look:** A large picture, its draft whole word, and its two letter shapes. Tapping the picture gives a small visual response. A hand demonstrates the first interaction. The child can proceed with Next; exposure to the teaching card always precedes the question.
 
-**Find it:** The model picture and word remain visible. The child chooses between three big pictures. Position varies. On an early encounter, the hand demonstrates the action; later attempts keep hints available without automatically exposing every answer. A mismatch shows Look and a visual cue. There are no penalties, lives, scores or forced waiting. Next becomes available after matching.
-
 **Make it:** The model stays visible above two empty letter places. The child taps letter tokens to fit the two-letter shape sequence. Dragging is not required. A mismatch shows the needed shape and points to a suitable token; it does not erase progress. The next token or Next receives keyboard focus as appropriate. Completion says It fits, not that a word has been mastered.
+
+**Find it:** After seeing the picture/word and assembling its letters, the child chooses the printed word for the picture. The first example offers one choice and a visible model; subsequent pictures offer two, then three introduced words. Untaught words never become distractors, and same-art alternative headwords are not competing answers. The lion or a wrong choice reveals the word model and a visual cue without a penalty. A correct choice reveals the model again and says Found it, not that reading has been mastered. Positions vary, and Next becomes available after matching.
 
 **Find pairs:** After the three pictures, the child turns two cards to find matching pictures. Each revealed card includes the same picture and draft two-letter word shown in the preceding activities. A mismatch stays visible until the next card tap, so there is no forced waiting, countdown or penalty. The lion can point to the next matching card without turning it. Matched cards stay visible, and small picture markers show which pairs have been found. Next becomes available once all three pairs are matched. This is visual memory play, not a test or claim of Tigrinya reading or pronunciation.
 
@@ -99,6 +99,14 @@ The browser checks below describe the picture-map and Look / Find it / Make it r
 - JavaScript syntax passes. The standalone page is rebuilt from the working shell, pair-screen markup, pair styles, existing SVG sprite, unchanged review JSON and application script with `work/build_unit2.py`.
 - A loopback-only preview returned HTTP 200. Visual/browser QA of this update could not run: no browser automation surface was available, and native Chrome access reported that Computer Use permissions were not granted. Mobile fit, real keyboard focus and screen-reader behavior on the pair screen still require browser verification.
 - Existing screenshot files illustrate the earlier map, gallery and letter activity; there is no new pair-game screenshot yet.
+
+## Picture-to-print update — 19 November 2026
+
+This MVP refinement replaces identical-picture copying with supported printed-word recognition. The order is now Look → Make it → Find it, followed by the existing pair game. The completed assembly provides a whole-word/picture comparison before recognition. The first recognition step is a guided example, and later alternatives are restricted to words already introduced in the same session. No new vocabulary, pronunciation, persistent progress or review approvals are added.
+
+The [first-lesson review brief](lesson-01-review-brief.md) records the learning goal, three sourced candidates, adult teacher notes, activities, reinforcement, review, required assets and reviewer risks. The 3–5 minute lesson target and under-three-minute game target still need observation with children; there are no enforced timers.
+
+Validation: 12 new literacy-flow checks and all 14 existing pair-game checks pass, along with corpus, source-parity and JavaScript syntax checks. Browser QA could not run because no browser-control surface was available and native Chrome access reported that Computer Use permissions were not granted. New mobile layout and actual keyboard/screen-reader behavior remain unverified; older screenshots are not evidence for this new screen.
 
 ## What must be validated next
 
