@@ -1,0 +1,55 @@
+{
+  "LanguagePack": {
+    "id": "ti",
+    "languageTag": "ti",
+    "script": "Ethi",
+    "direction": "ltr",
+    "scriptModel": "abugida",
+    "normalisation": "NFC",
+    "segmentationAdapter": "fidal-graphemes-v1",
+    "searchAdapter": "fidal-search-v1",
+    "answerAdapter": "reviewed-variants-v1",
+    "fontFamilies": [
+      "Noto Sans Ethiopic",
+      "Kefa"
+    ],
+    "contentReleaseId": null
+  },
+  "Learner": {
+    "id": "example-local",
+    "tenantId": "device",
+    "ownerUserId": null,
+    "ageBand": "unspecified",
+    "presentation": "child",
+    "languageTag": "ti",
+    "path": "general",
+    "storageMode": "memory"
+  },
+  "Form": {
+    "script": "በ",
+    "familyId": "b-family",
+    "order": 1,
+    "audioVersionId": null,
+    "strokeVersionId": null,
+    "sourceIds": [
+      "existing-fidal-review-record"
+    ]
+  },
+  "Subscription": {
+    "id": "example-inactive",
+    "adultUserId": "example-adult",
+    "status": "inactive",
+    "externalCustomerKey": null,
+    "entitlements": []
+  },
+  "AIInteraction": {
+    "id": "example-abstention",
+    "learnerId": "example-local",
+    "purpose": "tutor",
+    "modelPolicyVersion": "disabled-v1",
+    "contentVersionIds": [],
+    "outcome": "abstained",
+    "occurredAt": 0,
+    "expiresAt": 0
+  }
+}

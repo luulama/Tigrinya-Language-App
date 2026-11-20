@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule: {interval: weekly}
+  - package-ecosystem: nuget
+    directories:
+      - /apps/api/Polyglot.Api
+      - /apps/api/Polyglot.Application
+      - /apps/api/Polyglot.Infrastructure
+      - /apps/api/Polyglot.Tests
+    schedule: {interval: weekly}
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: {interval: weekly}
+  - package-ecosystem: terraform
+    directory: /infrastructure/terraform
+    schedule: {interval: weekly}

@@ -1,0 +1,2274 @@
+[
+  {
+    "id": "89884de8-a6ae-53fa-9954-bfc518c38e64",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሃየ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሃየ",
+      "meaning": "hello, hi",
+      "senseId": "u2-1203-12e8",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%83%E1%8B%A8#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "f5c17994-0cb1-50bd-8ebb-3286195c80b7",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሉል",
+    "state": "Draft",
+    "payload": {
+      "script": "ሉል",
+      "meaning": "pearl; bead",
+      "senseId": "u2-1209-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%89%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5922e3b6-7f3a-51ee-8978-efeb21da4269",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሉሕ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሉሕ",
+      "meaning": "plank of wood, board",
+      "senseId": "u2-1209-1215",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%89%E1%88%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "638ee068-ba03-59d8-95dc-f24ff6fa09d0",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሊላ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሊላ",
+      "meaning": "falcon",
+      "senseId": "u2-120a-120b",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%88%8B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "c8021c57-1dea-547d-85bd-6ac79f1ac6d9",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሊቅ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሊቅ",
+      "meaning": "learned man, scholar, intellectual, savant; chief, ecclesiastical dignitary, church doctor; head",
+      "senseId": "u2-120a-1245",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%89%85#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9942d585-a602-5789-aed4-14a0cd255261",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሊን",
+    "state": "Draft",
+    "payload": {
+      "script": "ሊን",
+      "meaning": "slime; mud",
+      "senseId": "u2-120a-1295",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%8A%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "7736c405-11d1-5567-a3d4-a6854d548c5f",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሊፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሊፍ",
+      "meaning": "filter",
+      "senseId": "u2-120a-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8A%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "1ad73e7d-8b20-51d9-8310-e82056140f4e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ላማ",
+    "state": "Draft",
+    "payload": {
+      "script": "ላማ",
+      "meaning": "blade",
+      "senseId": "u2-120b-121b",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8B%E1%88%9B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "310472c8-9c78-58f7-b2ca-95d397853215",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ላም",
+    "state": "Draft",
+    "payload": {
+      "script": "ላም",
+      "meaning": "cow",
+      "senseId": "u2-120b-121d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8B%E1%88%9D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "977ee842-642b-5c7b-b7d0-e7bb32048ded",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ልቢ",
+    "state": "Draft",
+    "payload": {
+      "script": "ልቢ",
+      "meaning": "heart",
+      "senseId": "u2-120d-1262",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8D%E1%89%A2#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4fcc2ba1-4dd2-5b61-bcda-0171cc980a55",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሎሚ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሎሚ",
+      "meaning": "today; lime, lemon, citrus",
+      "senseId": "u2-120e-121a",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%8E%E1%88%9A#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "63d205b8-9402-5d63-9060-008e94143d59",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሑጻ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሑጻ",
+      "meaning": "sand",
+      "senseId": "u2-1211-133b",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%91%E1%8C%BB#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5cd7400e-d2c3-5f06-93fa-0ebb4f05e5aa",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሒነ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሒነ",
+      "meaning": "revenge, vengeance",
+      "senseId": "u2-1212-1290",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%92%E1%8A%90#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "721c047a-c8c5-5729-be30-feb089fb633d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሓወ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሓወ",
+      "meaning": "alternative form of ሓው (ḥaw)",
+      "senseId": "u2-1213-12c8",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%88#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "30b86feb-8d35-55b0-99cf-ae56682096c4",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሓዊ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሓዊ",
+      "meaning": "fire",
+      "senseId": "u2-1213-12ca",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%8A#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9453f102-e267-5322-8b97-5a0cae5c2777",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሓው",
+    "state": "Draft",
+    "payload": {
+      "script": "ሓው",
+      "meaning": "brother",
+      "senseId": "u2-1213-12cd",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9cd1c2e0-cbd2-5f8a-8452-77b3810a0774",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሓዘ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሓዘ",
+      "meaning": "to hold, seize",
+      "senseId": "u2-1213-12d8",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%98#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "60e8d779-506f-5773-9ae4-429cc7307147",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሓደ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሓደ",
+      "meaning": "one; sole, only; equal, identical; certain, some; nobody",
+      "senseId": "u2-1213-12f0",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%93%E1%8B%B0#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "fd28529e-99fc-5907-b9cb-83941b674050",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሕቖ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሕቖ",
+      "meaning": "back",
+      "senseId": "u2-1215-1256",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%95%E1%89%96#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4bb16dd4-d9cc-5f91-a252-87595e5b71e4",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሕጊ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሕጊ",
+      "meaning": "law, rule",
+      "senseId": "u2-1215-130a",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%95%E1%8C%8A#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "aa7a7337-cfc5-5154-8e40-c205985a7efe",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "መን",
+    "state": "Draft",
+    "payload": {
+      "script": "መን",
+      "meaning": "who",
+      "senseId": "u2-1218-1295",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%98%E1%8A%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "eaae578f-7865-5335-8c51-bbb80302b916",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሙዝ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሙዝ",
+      "meaning": "banana",
+      "senseId": "u2-1219-12dd",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%99%E1%8B%9D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "e1b140e8-9fdf-5c49-a730-d3f8bb7a6325",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ማል",
+    "state": "Draft",
+    "payload": {
+      "script": "ማል",
+      "meaning": "cattle, livestock; wealth",
+      "senseId": "u2-121b-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%9B%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "3729e7d1-24e0-5507-a005-f42dab31a3ad",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ማሳ",
+    "state": "Draft",
+    "payload": {
+      "script": "ማሳ",
+      "meaning": "sledge",
+      "senseId": "u2-121b-1233",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%9B%E1%88%B3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "f45383af-5de4-59d3-9617-765fab9ebc7a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ማይ",
+    "state": "Draft",
+    "payload": {
+      "script": "ማይ",
+      "meaning": "water",
+      "senseId": "u2-121b-12ed",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%9B%E1%8B%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "8ff3fff2-abee-51cb-9a30-c4580f316293",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ምሔ",
+    "state": "Draft",
+    "payload": {
+      "script": "ምሔ",
+      "meaning": "rug",
+      "senseId": "u2-121d-1214",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%9D%E1%88%94#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "2f6a852b-f134-5a0c-8a58-53fb2c5528fe",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ምስ",
+    "state": "Draft",
+    "payload": {
+      "script": "ምስ",
+      "meaning": "when, as soon as; when; if; with (accompaniment)",
+      "senseId": "u2-121d-1235",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%9D%E1%88%B5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "734d53ef-8c12-5f32-a181-a3e1fe86daba",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሞተ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሞተ",
+      "meaning": "to die",
+      "senseId": "u2-121e-1270",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%9E%E1%89%B0#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "d2e70e16-7b9c-5c59-bb78-52c71060f368",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሞት",
+    "state": "Draft",
+    "payload": {
+      "script": "ሞት",
+      "meaning": "death",
+      "senseId": "u2-121e-1275",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%9E%E1%89%B5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "831d8cbc-c092-5f9d-a611-1492535a9a49",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሠብ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሠብ",
+      "meaning": "alternative spelling of ሰብ (säb, “person”)",
+      "senseId": "u2-1220-1265",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%A0%E1%89%A5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "f0f4075e-7b2c-5527-8bd2-aa9c2ac62409",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሥጋ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሥጋ",
+      "meaning": "alternative spelling of ስጋ (səga, “meat”)",
+      "senseId": "u2-1225-130b",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%A5%E1%8C%8B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "99ea7e1a-7684-5f83-9900-b0209edbf1fd",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሩባ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሩባ",
+      "meaning": "stream",
+      "senseId": "u2-1229-1263",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%A9%E1%89%A3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5a200823-9576-5c5d-9d16-477a03d12a72",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሩዝ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሩዝ",
+      "meaning": "rice",
+      "senseId": "u2-1229-12dd",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%A9%E1%8B%9D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9310cefa-c2f0-5a66-a472-c49b62dbac3e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ራሕ",
+    "state": "Draft",
+    "payload": {
+      "script": "ራሕ",
+      "meaning": "palm of the hand",
+      "senseId": "u2-122b-1215",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%AB%E1%88%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "e108c8a8-118f-5b4c-a3eb-8963760e191e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሬሳ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሬሳ",
+      "meaning": "corpse",
+      "senseId": "u2-122c-1233",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%AC%E1%88%B3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "f270d09a-7388-5221-8cc8-3a406e238eb8",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሰነ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሰነ",
+      "meaning": "June; Sene (tenth month of the Ge'ez calendar)",
+      "senseId": "u2-1230-1290",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B0%E1%8A%90#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5bcbbaa6-6486-56bf-8680-bd7b0ef16dd9",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሱሪ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሱሪ",
+      "meaning": "trousers, pants",
+      "senseId": "u2-1231-122a",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B1%E1%88%AA#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "13c296ab-3acf-56e3-8f46-406ee62af639",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሱር",
+    "state": "Draft",
+    "payload": {
+      "script": "ሱር",
+      "meaning": "root",
+      "senseId": "u2-1231-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B1%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9c678e8f-906e-5699-a022-0952944e5533",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሱፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሱፍ",
+      "meaning": "suit",
+      "senseId": "u2-1231-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B1%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "05c24908-06a7-54e9-a8ae-c01f0b05ad1e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሳጓ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሳጓ",
+      "meaning": "nickname",
+      "senseId": "u2-1233-1313",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B3%E1%8C%93#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "762d649d-ed0b-5e1a-b088-43c99598da88",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሴፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሴፍ",
+      "meaning": "sword",
+      "senseId": "u2-1234-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B4%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "15ede238-6a43-5421-982e-846f0a35847d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ስም",
+    "state": "Draft",
+    "payload": {
+      "script": "ስም",
+      "meaning": "name; noun",
+      "senseId": "u2-1235-121d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%9D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "ca10a213-8741-5ab3-98fc-104eb68331f6",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ስረ",
+    "state": "Draft",
+    "payload": {
+      "script": "ስረ",
+      "meaning": "alternative form of ሱሪ (surri, “trousers”)",
+      "senseId": "u2-1235-1228",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%A8#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "88b170c8-9196-52d8-b0ea-6d1043328f75",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ስሬ",
+    "state": "Draft",
+    "payload": {
+      "script": "ስሬ",
+      "meaning": "alternative form of ሱሪ (surri, “trousers”)",
+      "senseId": "u2-1235-122c",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%AC#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "3cd3caaf-98d4-5603-9496-d976179a1b43",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ስሳ",
+    "state": "Draft",
+    "payload": {
+      "script": "ስሳ",
+      "meaning": "sixty",
+      "senseId": "u2-1235-1233",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%88%B3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9d8764bc-5a86-5240-be3c-45f9b5d16b8d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ስኒ",
+    "state": "Draft",
+    "payload": {
+      "script": "ስኒ",
+      "meaning": "tooth",
+      "senseId": "u2-1235-1292",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%8A%92#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "f33a6b4e-beb5-588c-bbf1-0ee7a9ad52cd",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ስጋ",
+    "state": "Draft",
+    "payload": {
+      "script": "ስጋ",
+      "meaning": "meat",
+      "senseId": "u2-1235-130b",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%8C%8B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "ed1d661e-6079-540f-b90f-1ca0831ab5a2",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሶል",
+    "state": "Draft",
+    "payload": {
+      "script": "ሶል",
+      "meaning": "pad",
+      "senseId": "u2-1236-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B6%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "e8e8d8da-b76c-5982-ae3b-2ef74eefc04b",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሶር",
+    "state": "Draft",
+    "payload": {
+      "script": "ሶር",
+      "meaning": "castrated goat",
+      "senseId": "u2-1236-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B6%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "a8f575fc-3c2a-53e8-948c-1ccbe13951fa",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሶኒ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሶኒ",
+      "meaning": "alternative form of ሰኑይ (sänuy, “Monday”)",
+      "senseId": "u2-1236-1292",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%B6%E1%8A%92#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "d6fd050c-8e39-5734-8e69-a90359dac82b",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሻሂ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሻሂ",
+      "meaning": "tea",
+      "senseId": "u2-123b-1202",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%BB%E1%88%82#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "bf63f107-893c-5125-b97a-0e7967e46d9d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሽል",
+    "state": "Draft",
+    "payload": {
+      "script": "ሽል",
+      "meaning": "fetus still in the mother’s womb",
+      "senseId": "u2-123d-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "0ac2accf-0449-5690-acc8-f21008f47099",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሽሕ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሽሕ",
+      "meaning": "thousand",
+      "senseId": "u2-123d-1215",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%88%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "b0e18166-6498-581b-a222-7b0b7c04f840",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሽም",
+    "state": "Draft",
+    "payload": {
+      "script": "ሽም",
+      "meaning": "name",
+      "senseId": "u2-123d-121d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%88%9D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "a9e25486-a66c-568f-81e8-89e267c8c90f",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሽቦ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሽቦ",
+      "meaning": "ring",
+      "senseId": "u2-123d-1266",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%89%A6#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "498f4a82-b0b3-5d6e-bc8b-1a6f72a1c782",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ሽግ",
+    "state": "Draft",
+    "payload": {
+      "script": "ሽግ",
+      "meaning": "torch",
+      "senseId": "u2-123d-130d",
+      "source": "https://en.wiktionary.org/wiki/%E1%88%BD%E1%8C%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "451cd3e2-7a44-5bee-af06-9b75b618c1fb",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቃል",
+    "state": "Draft",
+    "payload": {
+      "script": "ቃል",
+      "meaning": "word",
+      "senseId": "u2-1243-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%83%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "a10257e2-be3a-5668-8d3d-d7711ffef74e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቆር",
+    "state": "Draft",
+    "payload": {
+      "script": "ቆር",
+      "meaning": "strength; virtue; power",
+      "senseId": "u2-1246-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%86%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "431d90f5-1ff9-53e7-993e-5d9f7e3912c0",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቈለ",
+    "state": "Draft",
+    "payload": {
+      "script": "ቈለ",
+      "meaning": "malicious spirit",
+      "senseId": "u2-1248-1208",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%88%E1%88%88#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5909e178-7805-5400-964a-0d7ec99459a1",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቓል",
+    "state": "Draft",
+    "payload": {
+      "script": "ቓል",
+      "meaning": "alternative form of ቃል (ḳal)",
+      "senseId": "u2-1253-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%93%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "cb9019e4-07b9-5cae-9d67-cef5c1dfa662",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቕጫ",
+    "state": "Draft",
+    "payload": {
+      "script": "ቕጫ",
+      "meaning": "cake",
+      "senseId": "u2-1255-132b",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%95%E1%8C%AB#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "bd5f707f-b04e-58e7-a83d-37b0b9b39f48",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "በለ",
+    "state": "Draft",
+    "payload": {
+      "script": "በለ",
+      "meaning": "to say",
+      "senseId": "u2-1260-1208",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%A0%E1%88%88#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "ac4147be-dc0e-5e91-997b-c6405eca1349",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቡን",
+    "state": "Draft",
+    "payload": {
+      "script": "ቡን",
+      "meaning": "coffee",
+      "senseId": "u2-1261-1295",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%A1%E1%8A%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "8b336327-f835-5ba8-b115-968d027ee66d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቢጫ",
+    "state": "Draft",
+    "payload": {
+      "script": "ቢጫ",
+      "meaning": "yellow",
+      "senseId": "u2-1262-132b",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%A2%E1%8C%AB#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "90e2086f-9ed5-5781-9862-53f6ca0e5897",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ባኒ",
+    "state": "Draft",
+    "payload": {
+      "script": "ባኒ",
+      "meaning": "bread",
+      "senseId": "u2-1263-1292",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%A3%E1%8A%92#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "72c9acb4-49c2-5057-ac04-a8a6822a1830",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቤት",
+    "state": "Draft",
+    "payload": {
+      "script": "ቤት",
+      "meaning": "house",
+      "senseId": "u2-1264-1275",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%A4%E1%89%B5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "8b3c5e25-04fd-55bc-b6b8-f4bf5ee04dcc",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ቦታ",
+    "state": "Draft",
+    "payload": {
+      "script": "ቦታ",
+      "meaning": "place",
+      "senseId": "u2-1266-1273",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%A6%E1%89%B3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "aeba931e-ecce-5ed6-90c4-363f1d5506a2",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ትሪ",
+    "state": "Draft",
+    "payload": {
+      "script": "ትሪ",
+      "meaning": "January",
+      "senseId": "u2-1275-122a",
+      "source": "https://en.wiktionary.org/wiki/%E1%89%B5%E1%88%AA#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "6fa7329a-66cd-5586-91f8-800ef3433dc5",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ናብ",
+    "state": "Draft",
+    "payload": {
+      "script": "ናብ",
+      "meaning": "to, toward",
+      "senseId": "u2-1293-1265",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%93%E1%89%A5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4b8f6ea0-8822-54a8-8adf-089fcca7d474",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ናይ",
+    "state": "Draft",
+    "payload": {
+      "script": "ናይ",
+      "meaning": "of",
+      "senseId": "u2-1293-12ed",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%93%E1%8B%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "7c83f7cc-ab0c-5086-be58-0748f75b6e1b",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ንሱ",
+    "state": "Draft",
+    "payload": {
+      "script": "ንሱ",
+      "meaning": "he (third-person singular masculine personal pronoun)",
+      "senseId": "u2-1295-1231",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%95%E1%88%B1#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "c740a433-1da7-52e9-b187-b7f69b6f6929",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ንሳ",
+    "state": "Draft",
+    "payload": {
+      "script": "ንሳ",
+      "meaning": "she (third-person singular feminine personal pronoun)",
+      "senseId": "u2-1295-1233",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%95%E1%88%B3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "e7fb5cc4-a803-5868-b566-6721ac8b8607",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "አፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "አፍ",
+      "meaning": "mouth",
+      "senseId": "u2-12a0-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A0%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "1174aa3d-36bf-5007-ab35-2c9d1b86a6eb",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኢድ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኢድ",
+      "meaning": "hand, arm",
+      "senseId": "u2-12a2-12f5",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A2%E1%8B%B5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "79e521ec-b65b-5d2a-ba4a-791b9cd95a00",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኣሎ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኣሎ",
+      "meaning": "A stative auxiliary verb indicating existence: 'there is,' 'to be,' etc.",
+      "senseId": "u2-12a3-120e",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%88%8E#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "7e83bc3a-a2ab-5c05-83c3-fc5a12cddd0e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኣብ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኣብ",
+      "meaning": "on, in, at",
+      "senseId": "u2-12a3-1265",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%89%A5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "0a7f551f-dd98-598f-9b83-ee150f5d7972",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኣቦ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኣቦ",
+      "meaning": "father",
+      "senseId": "u2-12a3-1266",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%89%A6#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "d0ed67e4-cd4d-5f6a-96a6-0554c72a9ef7",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኣነ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኣነ",
+      "meaning": "I (first-person singular pronoun)",
+      "senseId": "u2-12a3-1290",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%8A%90#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "c022d7e2-59d2-5439-ba9d-6da5a2fc1d8a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኣደ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኣደ",
+      "meaning": "mother",
+      "senseId": "u2-12a3-12f0",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%8B%B0#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "fd61137f-7193-568e-84dd-7d7d339d0d68",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኣፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኣፍ",
+      "meaning": "mouth",
+      "senseId": "u2-12a3-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "145512d5-5d2d-572f-b457-f21ceb1e7395",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "እወ",
+    "state": "Draft",
+    "payload": {
+      "script": "እወ",
+      "meaning": "yes",
+      "senseId": "u2-12a5-12c8",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A5%E1%8B%88#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "6169abf6-a93a-5423-85f1-115e011c43ef",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "እዩ",
+    "state": "Draft",
+    "payload": {
+      "script": "እዩ",
+      "meaning": "to be",
+      "senseId": "u2-12a5-12e9",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A5%E1%8B%A9#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "fc1b3185-f901-58d4-b13c-c19efcd2c692",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኦም",
+    "state": "Draft",
+    "payload": {
+      "script": "ኦም",
+      "meaning": "tree",
+      "senseId": "u2-12a6-121d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A6%E1%88%9D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "31d54379-8b74-5501-a6ac-ea56ca53c175",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኩሉ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኩሉ",
+      "meaning": "total, entire, all, any",
+      "senseId": "u2-12a9-1209",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A9%E1%88%89#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "f845d194-5e46-5834-b5e6-09bf728a69cf",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኩክ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኩክ",
+      "meaning": "peach",
+      "senseId": "u2-12a9-12ad",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A9%E1%8A%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "ae0edf8d-dfb4-58c1-99fd-77d86708508d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኩኽ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኩኽ",
+      "meaning": "peach, apricot",
+      "senseId": "u2-12a9-12bd",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%A9%E1%8A%BD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4531f802-8979-55f4-bfe5-dab26f189422",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ካብ",
+    "state": "Draft",
+    "payload": {
+      "script": "ካብ",
+      "meaning": "from (used to indicate origin or source); from (used to indicate the start of a time or range); of (used to indicate membership to a group or category)",
+      "senseId": "u2-12ab-1265",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%AB%E1%89%A5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "3736e1d0-9122-5d25-822a-cf9e5d7f523e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኬር",
+    "state": "Draft",
+    "payload": {
+      "script": "ኬር",
+      "meaning": "merciful; kind",
+      "senseId": "u2-12ac-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%AC%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "628b4f25-b07d-5a96-94ae-a612abe5151f",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኮር",
+    "state": "Draft",
+    "payload": {
+      "script": "ኮር",
+      "meaning": "saddle",
+      "senseId": "u2-12ae-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%AE%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4a2a6ac1-ee42-56b4-851a-337795ebc5a9",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ኳክ",
+    "state": "Draft",
+    "payload": {
+      "script": "ኳክ",
+      "meaning": "crow",
+      "senseId": "u2-12b3-12ad",
+      "source": "https://en.wiktionary.org/wiki/%E1%8A%B3%E1%8A%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "baf23a7e-5cea-59b1-969f-13ada3f9182a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዅሉ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዅሉ",
+      "meaning": "all, everything",
+      "senseId": "u2-12c5-1209",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%85%E1%88%89#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "899e22e4-6fa5-5040-80e8-760fffabf2c3",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ወረ",
+    "state": "Draft",
+    "payload": {
+      "script": "ወረ",
+      "meaning": "news",
+      "senseId": "u2-12c8-1228",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%88%E1%88%A8#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "17652152-cd37-57e8-ac07-49f0668809eb",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ወዲ",
+    "state": "Draft",
+    "payload": {
+      "script": "ወዲ",
+      "meaning": "son; boy",
+      "senseId": "u2-12c8-12f2",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%88%E1%8B%B2#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "1b7777d0-ef32-5091-86a2-52e7886a876e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዋጋ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዋጋ",
+      "meaning": "price",
+      "senseId": "u2-12cb-130b",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%8B%E1%8C%8B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4dd0286a-07d0-5f9a-aa57-e060fd627bd7",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዑፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዑፍ",
+      "meaning": "bird",
+      "senseId": "u2-12d1-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%91%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "12ddc52e-3716-5a38-91d3-34e3e9c7278a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዒሉ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዒሉ",
+      "meaning": "young donkey",
+      "senseId": "u2-12d2-1209",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%92%E1%88%89#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "709b4ceb-af28-53f6-9cc3-63fcd020bc77",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዒቃ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዒቃ",
+      "meaning": "African bowstring hemp (Sanseviera guineensis syn. Sansevieria hyacinthoides)",
+      "senseId": "u2-12d2-1243",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%92%E1%89%83#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "e1c3f9a8-82a2-5478-9bfb-1ec395ff092a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዓሳ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዓሳ",
+      "meaning": "fish",
+      "senseId": "u2-12d3-1233",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%88%B3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "99cf79c2-ea95-55fd-b92b-33dd13fcc685",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዓሻ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዓሻ",
+      "meaning": "foolish, stupid, silly; fool",
+      "senseId": "u2-12d3-123b",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%88%BB#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "0358c309-2cb2-5546-85d4-5ac7831e34f1",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዓቢ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዓቢ",
+      "meaning": "big",
+      "senseId": "u2-12d3-1262",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%89%A2#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9f4ca968-8fe2-51a2-8796-0941632b53e7",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዓዲ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዓዲ",
+      "meaning": "country",
+      "senseId": "u2-12d3-12f2",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%8B%B2#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "2ce0fab3-1788-554d-82c5-82b21b7419ea",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ደም",
+    "state": "Draft",
+    "payload": {
+      "script": "ደም",
+      "meaning": "blood",
+      "senseId": "u2-12f0-121d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B0%E1%88%9D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "970b38c9-281e-5f67-a966-208e13a9911d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዱር",
+    "state": "Draft",
+    "payload": {
+      "script": "ዱር",
+      "meaning": "forest",
+      "senseId": "u2-12f1-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B1%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "ff05be86-4e12-5958-8e13-019330f0f47e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዱባ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዱባ",
+      "meaning": "pumpkin",
+      "senseId": "u2-12f1-1263",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B1%E1%89%A3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "27f37fc0-09ac-5c1a-abba-d268001e6a87",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዲን",
+    "state": "Draft",
+    "payload": {
+      "script": "ዲን",
+      "meaning": "sulphur",
+      "senseId": "u2-12f2-1295",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B2%E1%8A%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "e3ad3a28-7005-5562-b3cc-8d0fe0373487",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዳሉ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዳሉ",
+      "meaning": "pail",
+      "senseId": "u2-12f3-1209",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B3%E1%88%89#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "b34a9ff3-7a1d-502d-8115-9acab1e574e6",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዳስ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዳስ",
+      "meaning": "ceremonial tent",
+      "senseId": "u2-12f3-1235",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B3%E1%88%B5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "d04defa3-fd0c-5969-bb0e-892e2fd14ccb",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ድሙ",
+    "state": "Draft",
+    "payload": {
+      "script": "ድሙ",
+      "meaning": "cat",
+      "senseId": "u2-12f5-1219",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%88%99#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "c0b2585a-2851-59c7-a017-b6c5c1d1850c",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ድቢ",
+    "state": "Draft",
+    "payload": {
+      "script": "ድቢ",
+      "meaning": "bear",
+      "senseId": "u2-12f5-1262",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%89%A2#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "bc28a5b0-7b96-5e17-a3c5-42ca1fb379fa",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ድነ",
+    "state": "Draft",
+    "payload": {
+      "script": "ድነ",
+      "meaning": "shade",
+      "senseId": "u2-12f5-1290",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%8A%90#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "bd2c37fa-4b43-5ff4-96ef-03becae0266c",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዶማ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዶማ",
+      "meaning": "coconut",
+      "senseId": "u2-12f6-121b",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B6%E1%88%9B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4a361093-5b82-580d-8d38-f0f3b6c98cb3",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ዶብ",
+    "state": "Draft",
+    "payload": {
+      "script": "ዶብ",
+      "meaning": "border",
+      "senseId": "u2-12f6-1265",
+      "source": "https://en.wiktionary.org/wiki/%E1%8B%B6%E1%89%A5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "2b76912b-dfac-5c61-b318-e6324c219df6",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጃዲ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጃዲ",
+      "meaning": "kid",
+      "senseId": "u2-1303-12f2",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%83%E1%8B%B2#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "b257ceab-1c65-5944-8de3-96db1e0fd6b8",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ገና",
+    "state": "Draft",
+    "payload": {
+      "script": "ገና",
+      "meaning": "yet not, still not",
+      "senseId": "u2-1308-1293",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%88%E1%8A%93#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "68619639-e4fe-5f61-8df4-67f6a9020063",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ገዛ",
+    "state": "Draft",
+    "payload": {
+      "script": "ገዛ",
+      "meaning": "house",
+      "senseId": "u2-1308-12db",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%88%E1%8B%9B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "3868778b-8f56-5388-9a27-15fc1e80f530",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ገጽ",
+    "state": "Draft",
+    "payload": {
+      "script": "ገጽ",
+      "meaning": "face",
+      "senseId": "u2-1308-133d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%88%E1%8C%BD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "57a21b85-fddb-5eaf-b105-0e1c80548d53",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጉዕ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጉዕ",
+      "meaning": "chilli",
+      "senseId": "u2-1309-12d5",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%89%E1%8B%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "796fb36a-a90f-5347-ae03-b61f6a1381a6",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጊፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጊፍ",
+      "meaning": "bush",
+      "senseId": "u2-130a-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8A%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "305982c9-6b55-5a07-aad4-b8fd44f91880",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጋር",
+    "state": "Draft",
+    "payload": {
+      "script": "ጋር",
+      "meaning": "wergeld",
+      "senseId": "u2-130b-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "ac18fcde-15bb-5a40-955b-19920f0f3556",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጋሻ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጋሻ",
+      "meaning": "guest",
+      "senseId": "u2-130b-123b",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%88%BB#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "0a0c66b6-b9ca-5703-8cc4-f1f315dc28c6",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጋን",
+    "state": "Draft",
+    "payload": {
+      "script": "ጋን",
+      "meaning": "owl",
+      "senseId": "u2-130b-1295",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%8A%95#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "c1558a50-a216-5013-9213-35b563bc358e",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጋው",
+    "state": "Draft",
+    "payload": {
+      "script": "ጋው",
+      "meaning": "cistern",
+      "senseId": "u2-130b-12cd",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8B%E1%8B%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "420d6848-6916-5492-a949-aa5bf71af0d3",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጌጽ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጌጽ",
+      "meaning": "gift",
+      "senseId": "u2-130c-133d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8C%E1%8C%BD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "281c4ca7-535f-5426-be5d-5a436d08e0cf",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ግሲ",
+    "state": "Draft",
+    "payload": {
+      "script": "ግሲ",
+      "meaning": "verb",
+      "senseId": "u2-130d-1232",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8D%E1%88%B2#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5443065d-93ca-5845-afb0-2b56bf0c03f0",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጎር",
+    "state": "Draft",
+    "payload": {
+      "script": "ጎር",
+      "meaning": "neighbour",
+      "senseId": "u2-130e-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%8E%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "b43bb3d3-4990-536e-b31b-94a078be80b3",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጓል",
+    "state": "Draft",
+    "payload": {
+      "script": "ጓል",
+      "meaning": "girl",
+      "senseId": "u2-1313-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%93%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "32f463a9-ccdd-514d-a38d-323e9ccf2fa3",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጡብ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጡብ",
+      "meaning": "nipple; udder; brick",
+      "senseId": "u2-1321-1265",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%A1%E1%89%A5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "4edf54e6-5fc9-539a-ab5c-4423b1db94dc",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጡጥ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጡጥ",
+      "meaning": "cotton, cotton wool",
+      "senseId": "u2-1321-1325",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%A1%E1%8C%A5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "b99c5636-aab6-5a28-859d-32877c151f8a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጤል",
+    "state": "Draft",
+    "payload": {
+      "script": "ጤል",
+      "meaning": "goat",
+      "senseId": "u2-1324-120d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%A4%E1%88%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "22cf7e69-7c7c-5df0-b12a-93f377c462bd",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጥረ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጥረ",
+      "meaning": "raw; crude, coarse",
+      "senseId": "u2-1325-1228",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%A5%E1%88%A8#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "7a35863a-c012-5ea5-9278-e8bab000b472",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጨው",
+    "state": "Draft",
+    "payload": {
+      "script": "ጨው",
+      "meaning": "salt",
+      "senseId": "u2-1328-12cd",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%A8%E1%8B%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "0dcb9448-9cca-5b45-9b9b-a9fb2d39a273",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጫማ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጫማ",
+      "meaning": "shoe",
+      "senseId": "u2-132b-121b",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%AB%E1%88%9B#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9bf40074-b219-594f-b08f-d0ae88d0962a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጫፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጫፍ",
+      "meaning": "tip; corner",
+      "senseId": "u2-132b-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%AB%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5b36364d-286b-5204-b6de-a0b5c9bf1b0a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጬፍ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጬፍ",
+      "meaning": "summit",
+      "senseId": "u2-132c-134d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%AC%E1%8D%8D#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "9f73118c-5ae9-5004-8937-a756c247a44a",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጭራ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጭራ",
+      "meaning": "tail",
+      "senseId": "u2-132d-122b",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%AD%E1%88%AB#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "5ecd1038-efbf-5d96-bdb1-7fdc304a7e38",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጸባ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጸባ",
+      "meaning": "milk",
+      "senseId": "u2-1338-1263",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%B8%E1%89%A3#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "b3f4eba4-1a0b-5332-b37f-5a124ec259c3",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጸጾ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጸጾ",
+      "meaning": "African boxwood (Myrsine africana)",
+      "senseId": "u2-1338-133e",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%B8%E1%8C%BE#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "d6fd6c81-dbfc-5f6b-a824-e678f24068b6",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጻጸ",
+    "state": "Draft",
+    "payload": {
+      "script": "ጻጸ",
+      "meaning": "ant",
+      "senseId": "u2-133b-1338",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%BB%E1%8C%B8#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "cadf3776-b7d8-59b8-b339-0dc3cc08e686",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ጾር",
+    "state": "Draft",
+    "payload": {
+      "script": "ጾር",
+      "meaning": "load, burden",
+      "senseId": "u2-133e-122d",
+      "source": "https://en.wiktionary.org/wiki/%E1%8C%BE%E1%88%AD#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "02016a0e-0cf7-56ec-b47d-459c7bf6245b",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ፋስ",
+    "state": "Draft",
+    "payload": {
+      "script": "ፋስ",
+      "meaning": "axe",
+      "senseId": "u2-134b-1235",
+      "source": "https://en.wiktionary.org/wiki/%E1%8D%8B%E1%88%B5#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "1ba19904-9156-5df8-a124-8514bbf93bdb",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ፋና",
+    "state": "Draft",
+    "payload": {
+      "script": "ፋና",
+      "meaning": "torch; flame; light; lamp",
+      "senseId": "u2-134b-1293",
+      "source": "https://en.wiktionary.org/wiki/%E1%8D%8B%E1%8A%93#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  },
+  {
+    "id": "3a55ab5e-1e52-56d8-8cc3-90e784edd77d",
+    "languageTag": "ti",
+    "kind": "Word",
+    "title": "ፍረ",
+    "state": "Draft",
+    "payload": {
+      "script": "ፍረ",
+      "meaning": "fruit; kernel; outcome, result; piece, unit (of something)",
+      "senseId": "u2-134d-1228",
+      "source": "https://en.wiktionary.org/wiki/%E1%8D%8D%E1%88%A8#Tigrinya",
+      "attribution": "English Wiktionary contributors via Kaikki.org / Wiktextract; CC BY-SA 4.0; see legacy source/review records.",
+      "imageAssetId": null,
+      "audioAssetId": null
+    }
+  }
+]

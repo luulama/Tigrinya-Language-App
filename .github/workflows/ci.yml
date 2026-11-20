@@ -1,0 +1,62 @@
+name: Verify Polyglot Core
+on:
+  push:
+  pull_request:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+      DOTNET_CLI_TELEMETRY_OPTOUT: 1
+      POLYGLOT_TEST_POSTGRES: Host=localhost;Database=polyglot_test;Username=polyglot;Password=test-only-ci-password
+    services:
+      database:
+        image: postgres:16
+        env:
+          POSTGRES_DB: polyglot_test
+          POSTGRES_USER: polyglot
+          POSTGRES_PASSWORD: test-only-ci-password
+        ports: [5432:5432]
+        options: --health-cmd "pg_isready -U polyglot -d polyglot_test" --health-interval 5s --health-timeout 3s --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci --ignore-scripts
+      - run: dotnet restore --locked-mode
+      - run: dotnet build --no-restore -c Release
+      - run: dotnet test --no-build -c Release
+      - run: python3 scripts/check_all.py --node node
+      - run: python3 scripts/prepare_web_preview.py
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: test-diagnostics
+          path: |
+            test-results/
+            playwright-report/
+
+  infrastructure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform -chdir=infrastructure/terraform init -backend=false
+      - run: terraform -chdir=infrastructure/terraform fmt -check
+      - run: terraform -chdir=infrastructure/terraform validate

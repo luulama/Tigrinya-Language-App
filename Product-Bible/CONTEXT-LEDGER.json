@@ -1,0 +1,1209 @@
+{
+  "4": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "5": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "6": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "7": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "8": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "9": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "10": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "11": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "12": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "13": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "14": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 13,
+        "file": "13-Culture-System.md",
+        "sha256": "a94255011c46498445041594546953cfd1f8cd49fb7ca2c1e64e02a7cf4a66f8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "15": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 13,
+        "file": "13-Culture-System.md",
+        "sha256": "a94255011c46498445041594546953cfd1f8cd49fb7ca2c1e64e02a7cf4a66f8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 14,
+        "file": "14-Spaced-Repetition.md",
+        "sha256": "2fbc7b7a001ab743b2ed13064aabea20615a760d392b409dfcbd398a97523d8f",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "16": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 13,
+        "file": "13-Culture-System.md",
+        "sha256": "a94255011c46498445041594546953cfd1f8cd49fb7ca2c1e64e02a7cf4a66f8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 14,
+        "file": "14-Spaced-Repetition.md",
+        "sha256": "2fbc7b7a001ab743b2ed13064aabea20615a760d392b409dfcbd398a97523d8f",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 15,
+        "file": "15-Content-Architecture.md",
+        "sha256": "c341e2be245030ff5d4c19796e6d3523355a241a3ac8a4dfd87d6397c7f439e7",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "17": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 13,
+        "file": "13-Culture-System.md",
+        "sha256": "a94255011c46498445041594546953cfd1f8cd49fb7ca2c1e64e02a7cf4a66f8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 14,
+        "file": "14-Spaced-Repetition.md",
+        "sha256": "2fbc7b7a001ab743b2ed13064aabea20615a760d392b409dfcbd398a97523d8f",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 15,
+        "file": "15-Content-Architecture.md",
+        "sha256": "c341e2be245030ff5d4c19796e6d3523355a241a3ac8a4dfd87d6397c7f439e7",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 16,
+        "file": "16-AI-Strategy.md",
+        "sha256": "7db6f5cf1c3b66f41f4e4096c0b50a75a46cf3ea1882a73f8ab6beb1b33973e8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "18": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 13,
+        "file": "13-Culture-System.md",
+        "sha256": "a94255011c46498445041594546953cfd1f8cd49fb7ca2c1e64e02a7cf4a66f8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 14,
+        "file": "14-Spaced-Repetition.md",
+        "sha256": "2fbc7b7a001ab743b2ed13064aabea20615a760d392b409dfcbd398a97523d8f",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 15,
+        "file": "15-Content-Architecture.md",
+        "sha256": "c341e2be245030ff5d4c19796e6d3523355a241a3ac8a4dfd87d6397c7f439e7",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 16,
+        "file": "16-AI-Strategy.md",
+        "sha256": "7db6f5cf1c3b66f41f4e4096c0b50a75a46cf3ea1882a73f8ab6beb1b33973e8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 17,
+        "file": "17-Business-Strategy.md",
+        "sha256": "6d72d509e501e3be357b9dd6e35b68026ff40087f8143875f0deb136ff7615f6",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "19": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 13,
+        "file": "13-Culture-System.md",
+        "sha256": "a94255011c46498445041594546953cfd1f8cd49fb7ca2c1e64e02a7cf4a66f8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 14,
+        "file": "14-Spaced-Repetition.md",
+        "sha256": "2fbc7b7a001ab743b2ed13064aabea20615a760d392b409dfcbd398a97523d8f",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 15,
+        "file": "15-Content-Architecture.md",
+        "sha256": "c341e2be245030ff5d4c19796e6d3523355a241a3ac8a4dfd87d6397c7f439e7",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 16,
+        "file": "16-AI-Strategy.md",
+        "sha256": "7db6f5cf1c3b66f41f4e4096c0b50a75a46cf3ea1882a73f8ab6beb1b33973e8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 17,
+        "file": "17-Business-Strategy.md",
+        "sha256": "6d72d509e501e3be357b9dd6e35b68026ff40087f8143875f0deb136ff7615f6",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 18,
+        "file": "18-MVP.md",
+        "sha256": "2900c72b388c3694672dc92b089c9274c8bca112ffebefb10ebe4c04c4a82d60",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  },
+  "20": {
+    "inputs": [
+      {
+        "section": 1,
+        "file": "01-Vision.md",
+        "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+        "status": "FINAL_V1 approved"
+      },
+      {
+        "section": 2,
+        "file": "02-How-Humans-Learn.md",
+        "sha256": "6f6c87b68cadb8a735eb5afcbd9c49da85e12b480c282fc3c7d169dd78ecbe22",
+        "status": "DRAFT_V1 — research synthesis and proposed learning model  "
+      },
+      {
+        "section": 3,
+        "file": "03-User-Archetypes.md",
+        "sha256": "cb6b5c6bcc5ff6840464f2d21229eb313f18be861b28c49b57e4c5c0111cb7e0",
+        "status": "DRAFT_V1 — proposed archetypes for research and product decisions  "
+      },
+      {
+        "section": 4,
+        "file": "04-Learning-Framework.md",
+        "sha256": "e11e5d6a171488b82d3e26c00827f88cd986014864437e3ccf013dbe0b8d7e02",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 5,
+        "file": "05-Curriculum-Framework.md",
+        "sha256": "3cfe30cece1f9f703568c540af5a8b468f874858f97f49960dcf3a0e160a0dbd",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 6,
+        "file": "06-Skill-Tree.md",
+        "sha256": "60004c8020c71af3f90fd1a7fcb3bbda10e4335d6f51894fd606979fcad1b0c0",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 7,
+        "file": "07-Activity-System.md",
+        "sha256": "498e0dcc11721c88f6441ea4aadbab8e4d0ebdb0a0ccb87cb18e5968a56dec81",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 8,
+        "file": "08-Game-System.md",
+        "sha256": "47a00416ca30c1a82c3153ed7e43cff47bd950c64f5afa55c63ee9b34cf6db5b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 9,
+        "file": "09-Story-System.md",
+        "sha256": "bbc0ed7d1193f0678878d2a5a80ba785b052d29a8b4c3155de2543003ac4cc6b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 10,
+        "file": "10-Speaking-System.md",
+        "sha256": "024a8b7f7fa6c5ba5bc7840357bc6749bda57e0f764df726bd9c5574429ef78d",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 11,
+        "file": "11-Listening-System.md",
+        "sha256": "b9844b3d1bd1aefede7c21736e03a9fd79485198b276f3e59c3c08e8085de33b",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 12,
+        "file": "12-Writing-System.md",
+        "sha256": "ba4f8aeb54d6747284dd2e9f6661141467690731ef01699e0e7c8ab8d4b9db26",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 13,
+        "file": "13-Culture-System.md",
+        "sha256": "a94255011c46498445041594546953cfd1f8cd49fb7ca2c1e64e02a7cf4a66f8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 14,
+        "file": "14-Spaced-Repetition.md",
+        "sha256": "2fbc7b7a001ab743b2ed13064aabea20615a760d392b409dfcbd398a97523d8f",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 15,
+        "file": "15-Content-Architecture.md",
+        "sha256": "c341e2be245030ff5d4c19796e6d3523355a241a3ac8a4dfd87d6397c7f439e7",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 16,
+        "file": "16-AI-Strategy.md",
+        "sha256": "7db6f5cf1c3b66f41f4e4096c0b50a75a46cf3ea1882a73f8ab6beb1b33973e8",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 17,
+        "file": "17-Business-Strategy.md",
+        "sha256": "6d72d509e501e3be357b9dd6e35b68026ff40087f8143875f0deb136ff7615f6",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 18,
+        "file": "18-MVP.md",
+        "sha256": "2900c72b388c3694672dc92b089c9274c8bca112ffebefb10ebe4c04c4a82d60",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      },
+      {
+        "section": 19,
+        "file": "19-Roadmap.md",
+        "sha256": "74fa80328be10b5ffe40fd6c92543a8d79b1dfdff5224066c9460421e7488b23",
+        "status": "DRAFT_V1 — complete specification for whole-Bible review  "
+      }
+    ],
+    "note": "Context receipt, not evidence of user approval."
+  }
+}

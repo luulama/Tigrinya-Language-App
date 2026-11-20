@@ -1,0 +1,27 @@
+namespace Polyglot.Domain.Content;
+
+public sealed record Alphabet(string Script, string Model, IReadOnlyList<Guid> FamilyIds);
+public sealed record Letter(string Script, Guid FamilyId, int? VowelOrder, Guid? SoundId);
+public sealed record LetterFamily(string Label, IReadOnlyList<Guid> LetterIds, IReadOnlyList<int> Orders);
+public sealed record Sound(Guid AudioAssetId, string Variety, string Source);
+public sealed record Word(string Script, string Meaning, string SenseId, string Source, string Attribution, Guid? ImageAssetId, Guid? AudioAssetId);
+public sealed record Phrase(string Script, string Meaning, string Function, IReadOnlyList<Guid> WordIds, string Source);
+public sealed record Sentence(string Script, string Meaning, string Context, IReadOnlyList<Guid> PatternIds, string Source);
+public sealed record Dialogue(string Purpose, IReadOnlyList<DialogueTurn> Turns, IReadOnlyList<string> Roles);
+public sealed record Story(IReadOnlyList<StorySegment> Segments, string Stage, string Source, string Attribution);
+public sealed record ReadingPassage(string Text, string Stage, string Source, IReadOnlyList<Guid> TargetIds);
+public sealed record Lesson(string Objective, IReadOnlyList<LessonActivity> Activities, IReadOnlyList<Guid> PrerequisiteIds);
+public sealed record Unit(string Objective, IReadOnlyList<Guid> ModuleIds);
+public sealed record Module(string Objective, IReadOnlyList<Guid> LessonIds);
+public sealed record Course(string Description, IReadOnlyList<Guid> UnitIds);
+public sealed record AudioAsset(string BlobName, string Transcript, string Speaker, string Variety, string Rights, string Sha256, bool Generated, long DurationMs);
+public sealed record ImageAsset(string BlobName, string AltText, string Rights, string Sha256, string Meaning);
+public sealed record VideoAsset(string BlobName, string CaptionsBlobName, string Rights, string Sha256, long DurationMs);
+public sealed record Assessment(string Objective, string Skill, IReadOnlyList<Guid> QuestionIds, IReadOnlyList<string> RubricDimensions);
+public sealed record Question(Guid TargetId, string Prompt, IReadOnlyList<string> Options, string Answer, string Explanation, string Skill, Guid? AudioAssetId);
+public sealed record Quiz(IReadOnlyList<Guid> QuestionIds, string Objective);
+public sealed record Grammar(string Function, string Explanation, IReadOnlyList<Guid> ExampleIds, string Source);
+public sealed record Culture(string Community, string Region, string Perspective, string Source, IReadOnlyList<Guid> TargetIds);
+public sealed record DialogueTurn(string Role, Guid SentenceId, Guid? AudioAssetId);
+public sealed record StorySegment(string Text, Guid? ImageAssetId, Guid? AudioAssetId);
+public sealed record LessonActivity(string Kind, Guid TargetId, string Instruction);

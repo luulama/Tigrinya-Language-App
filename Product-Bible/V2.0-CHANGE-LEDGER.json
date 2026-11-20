@@ -1,0 +1,116 @@
+{
+  "2": {
+    "file": "02-How-Humans-Learn.md",
+    "improvement_section": "23. Shared support and claims contract",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "3": {
+    "file": "03-User-Archetypes.md",
+    "improvement_section": "18. Scope and support reconciliation",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "4": {
+    "file": "04-Learning-Framework.md",
+    "improvement_section": "7. Critical criterion coverage",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "5": {
+    "file": "05-Curriculum-Framework.md",
+    "improvement_section": "11. Whole-course authoring map",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "6": {
+    "file": "06-Skill-Tree.md",
+    "improvement_section": "9. Reviewed alternative routes",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "7": {
+    "file": "07-Activity-System.md",
+    "improvement_section": "7. Release-scoped mechanism selection",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "8": {
+    "file": "08-Game-System.md",
+    "improvement_section": "8. Guessing and equivalent-task review",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "9": {
+    "file": "09-Story-System.md",
+    "improvement_section": "9. Cue-controlled story evidence",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "10": {
+    "file": "10-Speaking-System.md",
+    "improvement_section": "8. Rubric disagreement and reconsideration",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "11": {
+    "file": "11-Listening-System.md",
+    "improvement_section": "8. Replay allowance is part of the task",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "12": {
+    "file": "12-Writing-System.md",
+    "improvement_section": "8. Qualified answer-comparison fixtures",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "13": {
+    "file": "13-Culture-System.md",
+    "improvement_section": "7. Correction without retroactive blame",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "14": {
+    "file": "14-Spaced-Repetition.md",
+    "improvement_section": "12. Observed independence and rollout boundary",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "15": {
+    "file": "15-Content-Architecture.md",
+    "improvement_section": "11. Change impact and offline assessment boundary",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "16": {
+    "file": "16-AI-Strategy.md",
+    "improvement_section": "8. Tool authority cannot come from retrieved text",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "17": {
+    "file": "17-Business-Strategy.md",
+    "improvement_section": "8. Entitlements are not educational prerequisites",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "18": {
+    "file": "18-MVP.md",
+    "improvement_section": "10. Readiness ledger and accountable staffing",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "19": {
+    "file": "19-Roadmap.md",
+    "improvement_section": "6. Conditional commitments and deferred obligations",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  },
+  "20": {
+    "file": "20-Final-Decisions.md",
+    "improvement_section": "7. Evidence-class and adoption check",
+    "review": "V2.0-IMPROVEMENTS.md",
+    "state": "applied to draft; owner approval pending"
+  }
+}

@@ -4,6 +4,8 @@ Every learner-facing item must be approved by a qualified native Tigrinya review
 
 ## Review record
 
+Fidäl writing records now live in `fidal-writing.json`; all 293 current character stroke/audio records remain pending. See [Fidäl writing requirements](../../FIDAL_WRITING.md) for source locators, reviewed directions, handwriting style, rights and normal/slow native audio. Existing Amharic material is not automatically Tigrinya approval. Printed font outlines and learner-drawn strokes are not teacher stroke-order evidence.
+
 For each word, sentence, audio clip, and exercise, record:
 
 - Tigrinya script

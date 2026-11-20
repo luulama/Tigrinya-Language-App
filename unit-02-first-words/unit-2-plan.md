@@ -2,7 +2,7 @@
 
 ## Current design
 
-This revision responds to the user's request for an app children ages 4–8 can navigate themselves, with very little reading. The same standalone HTML now opens on a picture map and one clear Play button. The dictionary and detailed explanations are in a separate grown-up area.
+This revision responds to the user's request for an app children ages 4–8 can navigate themselves, with very little reading. The same standalone HTML opens on a picture map and one clear Start / Continue action. The dictionary and detailed explanations are in a separate grown-up area. The root app now offers both units; see [Learning flow and validation](../LEARNING_FLOW.md) for the latest changes and QA limits.
 
 The goal is a more suitable experience for these children, not an untested claim to outperform another app in every respect. [Duolingo ABC](https://abc.duolingo.com/) and [Duolingo's learning path](https://blog.duolingo.com/new-duolingo-home-screen-design/) were comparison references. The guide character, map, illustrations and interaction design here are original or retained from this project's own prototype.
 
@@ -10,16 +10,16 @@ The goal is a more suitable experience for these children, not an untested claim
 
 ## What the child sees
 
-- A friendly little lion, a picture map, and Play.
+- A friendly little lion, a picture map, Start / Continue, and optional Review after practice.
 - Four picture worlds labelled Home, Food, Animals and Me.
 - Up to four large picture cards at a time. English definitions and transliterations are not shown on child cards.
 - Three short activity labels: Look, Make it, Find it.
 - A six-card Find pairs game after a three-picture session, showing only the pictures and draft words just explored.
-- A large Next button, a visual hint button, and an always-available exit.
-- A quiet finish with All done, Keep and Home.
+- A large button naming the next task, a Show me visual hint, and an always-available exit.
+- A quiet finish with All done, Next words and Keep pictures.
 - Compact Native review pending and Audio pending labels instead of adult paragraphs.
 
-At the checked phone size, the home content has eight visible words, excluding the brand and required review/audio utility labels. Child-facing activity directions are one or two words. Full status descriptions remain available to assistive technology and in grown-up settings.
+Activity directions stay short; a one-sentence home goal and visible practice count explain what to do next. The earlier eight-word screenshot count does not describe this revision. Full status descriptions remain available to assistive technology and in grown-up settings. Current visual/mobile QA is still pending.
 
 ## The play loop
 
@@ -34,6 +34,8 @@ At the checked phone size, the home content has eight visible words, excluding t
 If a session includes two headwords using the same picture, only one is used in Find pairs. This avoids asking children to distinguish identical images by an unreviewed spelling. A two-picture board uses four cards; a session with only one distinct picture retains the short finish flow.
 
 Play initially offers house, water and cat in a three-picture session followed by Find pairs. A picture chosen from a world can also be played on its own, retaining the original short finish flow without a one-pair board. An unfinished session, including its pair-card order, revealed cards and matched pairs, resumes when the child returns to Play. Only Keep saves completed-session pictures to the in-tab collection.
+
+Completing Look, Make it and Find it marks a word as practised in memory, independently of Keep. Later sessions normally combine one familiar and two new candidates. Review rotates through practised candidates only. Returning home shows Continue for an unfinished activity; review cannot replace it. After all 32 candidates have been practised, the main action becomes Review. None of these counts establish retention, reading, pronunciation or approval; all reset on reload.
 
 The hint animations run a small finite number of times. The hand and outline remain useful without movement, and a reduced-motion stylesheet disables animation.
 
@@ -109,6 +111,8 @@ The [first-lesson review brief](lesson-01-review-brief.md) records the learning 
 Validation: 12 new literacy-flow checks and all 14 existing pair-game checks pass, along with corpus, source-parity and JavaScript syntax checks. Browser QA could not run because no browser-control surface was available and native Chrome access reported that Computer Use permissions were not granted. New mobile layout and actual keyboard/screen-reader behavior remain unverified; older screenshots are not evidence for this new screen.
 
 ## What must be validated next
+
+The complete-activity revision adds shared goals/context/estimated time, recap, a cumulative picture-word check, supported correction and later revisits before the outcome screen. Start/Continue also resumes recap/check state. One-option gallery checks are guided and never counted as independent. See [research and decisions](../RESEARCH_NOTES.md) and [current complete flow](../LEARNING_FLOW.md) for the latest structure. Earlier screenshots and validation paragraphs document previous revisions.
 
 After native review and recordings, test with children across the intended age range. Observe whether a child starts a picture session, understands a visual hint, recovers from a wrong tap, fits two letters and returns home without adult instructions. Then evaluate actual word recognition, listening and pronunciation with qualified Tigrinya educators. These results, not a visual resemblance to a competitor, should guide claims about learning quality and independent use.
 

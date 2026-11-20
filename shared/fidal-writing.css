@@ -1,0 +1,41 @@
+:root{--fidal-font:"Noto Sans Ethiopic","Kefa III",Kefa,Nyala,"Abyssinica SIL",sans-serif}
+[lang="ti"],[lang="ti"][dir="ltr"],.word-card .word,.journey-recap .recap-script,.journey-model .recap-script{font-family:var(--fidal-font);direction:ltr;unicode-bidi:isolate;word-break:normal;overflow-wrap:anywhere;line-height:1.55}
+.fidal-workshop{padding:18px 0;text-align:left;max-width:560px;margin:auto}
+.fidal-workshop h2{margin:0 0 8px;font-size:1.4rem;color:#273849}
+.writing-intro,.writing-note,.writing-feedback,.fidal-workshop label,.fidal-workshop summary{font-size:1rem;line-height:1.5;color:#344c59}
+.writing-note{font-size:.875rem}
+.writing-feedback{min-height:48px;color:#205c47}
+.writing-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
+.fidal-workshop button,.fidal-workshop select,.fidal-workshop summary{min-height:44px;min-width:44px;border:2px solid #bdb1d5;border-radius:12px;background:#fff;color:#4c347d;padding:9px 13px;font:750 1rem/1.4 system-ui;cursor:pointer;touch-action:manipulation}
+.fidal-workshop button:disabled{opacity:.65;cursor:default}
+.fidal-workshop input[type="checkbox"]{width:24px;height:24px;accent-color:#6242b3;margin-right:7px}
+.writing-still{display:flex;align-items:center;min-height:44px}
+.fidal-workshop button:focus-visible,.fidal-workshop input:focus-visible,.fidal-workshop select:focus-visible,.fidal-workshop summary:focus-visible,.writing-pad:focus-visible{outline:3px solid #245abe;outline-offset:4px}
+.writing-pad{width:100%;height:auto;aspect-ratio:10/9;display:block;border:2px solid #8d9a95;border-radius:18px;background:white;touch-action:none;user-select:none;-webkit-user-select:none;cursor:crosshair}
+.writing-pad text{font:240px var(--fidal-font);fill:#7a8189;pointer-events:none;line-height:1.55}
+.writing-baseline{stroke:#aab9b1;stroke-width:1;stroke-dasharray:6 7;pointer-events:none}
+.writing-stroke{stroke:#44237d;stroke-width:7;fill:none;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.teacher-path{stroke:#7a8189;stroke-width:3;fill:none;pointer-events:none}
+.teacher-start{fill:#fff;stroke:#513492;stroke-width:2;pointer-events:none}
+.writing-pad .teacher-start-label{font:750 16px system-ui;fill:#513492;pointer-events:none}
+.teacher-direction{fill:none;stroke:#513492;stroke-width:3;pointer-events:none}
+.text-practice{margin:16px 0}
+.text-practice label{display:block;margin:14px 0 8px;font-weight:750}
+.text-practice input[type="text"]{display:block;width:100%;max-width:320px;min-height:65px;font:2rem/1.55 var(--fidal-font);border:2px solid #8d9a95;border-radius:12px;padding:8px 12px;margin:8px 0}
+.fidal-input-keys{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.fidal-input-keys button{font-size:1.8rem;min-width:52px;min-height:54px;padding:3px 10px}
+.order-strip{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;margin:16px 0;list-style:none;padding:0}
+.order-strip button{width:100%;min-height:76px;min-width:0;padding:5px 2px!important;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.order-strip [lang="ti"]{font-size:1.7rem;line-height:1.6}
+.order-number{font:750 .875rem/1.4 system-ui;color:#4e5c68;display:block}
+.order-explainer{font-size:1rem;line-height:1.5;color:#344c59;margin:10px auto;max-width:540px}
+.word-contexts{margin:14px auto;max-width:550px;text-align:left;padding:16px;border:2px solid #d6dfd6;border-radius:20px;background:#f1f7ee}
+.word-contexts h2{font-size:1rem;margin:0 0 8px}
+.context-word{display:inline-flex;flex-direction:column;gap:3px;margin:0 20px 10px 0;max-width:100%;color:#344c59}
+.context-word [lang="ti"]{font-size:2.1rem;line-height:1.6;color:#513492}
+.context-word mark{background:#ffe39a;color:#273849;border-radius:5px;outline:2px solid #9b6b00;outline-offset:1px}
+.word-card mark{background:#ffe39a;color:#273849;border-radius:5px;outline:2px solid #9b6b00;outline-offset:1px}
+.context-word .context-meaning{font:750 .875rem/1.5 system-ui}
+@media(max-width:480px){.order-strip{grid-template-columns:repeat(4,minmax(0,1fr))}.order-strip button{min-height:80px}.writing-toolbar{gap:8px}.fidal-workshop{padding:10px 0}.writing-note{font-size:.875rem}}
+@media(prefers-reduced-motion:reduce){.fidal-workshop *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media(forced-colors:active){.writing-pad{border:2px solid CanvasText}.writing-pad text{fill:GrayText}.writing-stroke{stroke:CanvasText}.context-word mark{outline:2px solid Highlight}}

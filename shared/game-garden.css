@@ -1,0 +1,864 @@
+:root {
+  --ink: #263b3b;
+  --muted: #526660;
+  --green: #17634f;
+  --violet: #6344a1;
+  --line: #d5dfd6;
+  --paper: #fcfaf4;
+  --gold: #f3ca68;
+  font-family: "Avenir Next", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 18px;
+  line-height: 1.5;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+  min-height: 48px;
+  border: 2px solid var(--line);
+  background: #fff;
+  border-radius: 16px;
+  padding: 11px 18px;
+  font-weight: 750;
+}
+button:hover:not(:disabled) {
+  border-color: var(--green);
+  background: #edf5ec;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+a {
+  color: var(--green);
+  text-underline-offset: 4px;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 4px solid #2459aa;
+  outline-offset: 4px;
+}
+h1,
+h2 {
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  margin: 12px 0 18px;
+}
+h2 {
+  font-size: 1.4rem;
+}
+p {
+  margin: 12px 0;
+}
+svg.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.garden-header,
+main,
+footer {
+  width: min(1040px, calc(100% - 32px));
+  margin: auto;
+}
+.garden-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  min-height: 88px;
+}
+.brand {
+  font-size: 1.5rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+.brand span {
+  color: #b45631;
+}
+main {
+  min-height: 65vh;
+  padding: 20px 0 48px;
+}
+footer {
+  border-top: 1px solid var(--line);
+  padding: 20px 0 35px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+footer details {
+  max-width: 72ch;
+}
+summary {
+  cursor: pointer;
+  min-height: 48px;
+  padding: 12px 0;
+}
+.skip {
+  position: fixed;
+  left: 8px;
+  top: -100px;
+  background: white;
+  z-index: 10;
+  padding: 12px;
+}
+.skip:focus {
+  top: 8px;
+}
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 850;
+  color: var(--green);
+}
+.garden-welcome {
+  position: relative;
+  padding: 20px 0 24px;
+}
+.unit-switch {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px 0 5px;
+}
+.unit-switch a {
+  padding: 10px 17px;
+  border: 2px solid var(--line);
+  border-radius: 99px;
+  text-decoration: none;
+  font-weight: 750;
+  min-height: 48px;
+}
+.unit-switch a[aria-current] {
+  color: white;
+  background: var(--green);
+  border-color: var(--green);
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.game-card {
+  position: relative;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 26px;
+  padding: 24px;
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: 0 5px 0 #dce5db;
+  transition: transform 0.15s;
+}
+.game-card:hover {
+  transform: translateY(-3px);
+}
+.game-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  min-height: 3em;
+}
+.game-icon {
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  background: #e3efdd;
+  color: var(--green);
+  border-radius: 22px;
+  font-size: 2.4rem;
+}
+.accent-1 .game-icon {
+  background: #eee5f5;
+  color: var(--violet);
+}
+.accent-2 .game-icon {
+  background: #fae9bf;
+  color: #795215;
+}
+.accent-3 .game-icon {
+  background: #deefed;
+  color: #306a69;
+}
+.game-number {
+  position: absolute;
+  right: 24px;
+  top: 28px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 800;
+}
+.card-go {
+  font-size: 0.85rem;
+  color: var(--green);
+  font-weight: 800;
+}
+.card-go span {
+  float: right;
+}
+.play-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 0.8rem;
+}
+.play-card,
+.introduction,
+.completion,
+.empty {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: clamp(18px, 4vw, 38px);
+  text-align: center;
+}
+.introduction .game-icon {
+  margin: auto;
+}
+.introduction > p,
+.completion > p {
+  max-width: 55ch;
+  margin: 14px auto;
+}
+.introduction > .primary {
+  margin-top: 25px;
+}
+.goal {
+  font-weight: 750;
+  color: var(--green);
+}
+.small {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.model-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.model-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: #f4f7ee;
+  min-width: 83px;
+  max-width: 100%;
+}
+.model-card > span:not([lang]) {
+  font-size: 0.8rem;
+}
+.model-script {
+  display: block;
+  font:
+    700 clamp(2rem, 6vw, 3.2rem)/1.6 "Noto Sans Ethiopic",
+    Kefa,
+    Nyala,
+    sans-serif;
+  overflow-wrap: anywhere;
+}
+.model-card .picture {
+  width: 115px;
+  height: 85px;
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+progress {
+  width: 100%;
+  height: 12px;
+  accent-color: var(--green);
+  margin: 8px 0 20px;
+  border: none;
+}
+.play-card h1 {
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+.glyph {
+  font:
+    700 clamp(1.7rem, 5vw, 2.7rem)/1.5 "Noto Sans Ethiopic",
+    Kefa,
+    Nyala,
+    sans-serif;
+}
+.focal {
+  display: block;
+  font:
+    700 clamp(5rem, 17vw, 8rem)/1.5 "Noto Sans Ethiopic",
+    Kefa,
+    Nyala,
+    sans-serif;
+}
+.inline-script {
+  font:
+    700 1.5rem/1.6 "Noto Sans Ethiopic",
+    Kefa,
+    Nyala,
+    sans-serif;
+}
+.choice-row,
+.actions,
+.picture-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 18px 0;
+}
+.tile {
+  min-width: 70px;
+  padding: 7px 16px;
+}
+.selected {
+  background: #e6f1dd !important;
+  border-color: var(--green) !important;
+  box-shadow: 0 0 0 2px var(--green);
+}
+.primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+.primary:hover:not(:disabled) {
+  background: #104a3b;
+  color: white;
+}
+.quiet {
+  font-size: 0.85rem;
+  background: #f4f7ef;
+}
+.feedback {
+  min-height: 3em;
+  font-size: 0.95rem;
+  max-width: 60ch;
+  margin: 18px auto;
+  border-radius: 14px;
+  padding: 8px;
+}
+.feedback.good {
+  background: #e4f2df;
+  color: #214f31;
+}
+.feedback.try {
+  background: #fff0cf;
+  color: #654819;
+}
+.picture {
+  display: block;
+  width: 160px;
+  height: 120px;
+  margin: auto;
+}
+.activity > .picture {
+  width: 200px;
+  height: 150px;
+}
+.picture-card,
+.domino-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.picture-card .picture {
+  width: 140px;
+  height: 105px;
+}
+.picture-card > span {
+  font-size: 0.8rem;
+}
+.delivered,
+.paired {
+  background: #e6f1dd;
+  border-color: var(--green);
+}
+.lantern {
+  margin: 20px auto;
+  border-radius: 50%;
+  width: 190px;
+  background: #fff1c9;
+  box-shadow: 0 0 0 12px #fff8e8;
+}
+.baskets {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+.basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+  border-bottom: 9px solid #b5c8aa;
+  border-radius: 18px 18px 40px 40px;
+}
+.basket > span:last-child {
+  font-size: 0.8rem;
+}
+.bridge {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+.bridge-slot {
+  min-width: 65px;
+  background: #edf4e9;
+  border-bottom: 6px solid #b3c5a8;
+  border-radius: 14px;
+  padding: 7px;
+}
+.bridge-slot small {
+  display: block;
+}
+.current {
+  border: 3px dashed var(--violet) !important;
+  background: #f4eff9 !important;
+}
+.memory-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 460px;
+  margin: 22px auto;
+}
+.memory-card {
+  height: 115px;
+  background: #eee8f6;
+  color: var(--violet);
+  font-size: 2rem;
+}
+.mosaic-layout {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mosaic-board {
+  display: grid;
+  grid-template-columns: repeat(2, 90px);
+  gap: 4px;
+}
+.mosaic-slot,
+.piece {
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  border-radius: 9px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: #f5f3ed;
+}
+.fragment {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.fragment > span {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  display: block;
+}
+.fragment-glyph {
+  display: block;
+  text-align: center;
+  font:
+    700 130px/160px "Noto Sans Ethiopic",
+    Kefa,
+    Nyala,
+    sans-serif;
+}
+.route-model {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.route-model .glyph {
+  font-size: 1.8rem;
+}
+.stone-grid,
+.letter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 390px;
+  gap: 10px;
+  margin: 20px auto;
+}
+.stone {
+  border-radius: 40% 48% 34% 45%;
+  background: #edf2e4;
+}
+.stone.flag {
+  border-color: var(--violet);
+}
+.visited {
+  background: #cfe6bf !important;
+  opacity: 1 !important;
+}
+.loom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  max-width: 650px;
+  margin: 25px auto;
+}
+.pattern-tile {
+  font:
+    700 2.2rem/1.5 "Noto Sans Ethiopic",
+    Kefa,
+    sans-serif;
+  background: #eee6f5;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.ink-layout {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ink-pad {
+  width: min(300px, 100%);
+  height: auto;
+  border: 2px dashed #95b5a0;
+  border-radius: 18px;
+  touch-action: none;
+  background: #f6f9f1;
+}
+.ink-pad polyline {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ink-ghost {
+  font:
+    210px "Noto Sans Ethiopic",
+    Kefa,
+    sans-serif;
+  fill: #d8e3d5;
+}
+.dot-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 10px;
+  justify-content: center;
+}
+.dot-pad button {
+  padding: 0;
+  color: var(--violet);
+}
+.target-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff1d1;
+  border-radius: 20px;
+  padding: 12px 25px;
+  margin: 20px auto;
+}
+.word-row {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+.word-slots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  direction: ltr;
+}
+.word-slots > span {
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--line);
+  background: #f2f5ec;
+  border-radius: 15px;
+  min-width: 90px;
+  min-height: 88px;
+}
+.shopping-list > div {
+  background: #fff6df;
+  border-radius: 20px;
+  padding: 10px;
+}
+.shopping-list span {
+  font-size: 0.8rem;
+}
+.position-prompt {
+  font-size: 1.3rem;
+}
+.domino-chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin: 25px auto;
+}
+.domino-card {
+  border: 2px solid var(--line);
+  background: #fcf5e3;
+  border-radius: 12px;
+  padding: 10px 18px;
+  min-width: 65px;
+  min-height: 75px;
+}
+.entry-label {
+  display: block;
+  font-size: 0.85rem;
+  margin: 15px auto 5px;
+}
+.word-entry {
+  display: block;
+  width: min(360px, 100%);
+  margin: auto;
+  border: 2px solid #91a69c;
+  border-radius: 16px;
+  min-height: 80px;
+  text-align: center;
+  font:
+    2.7rem/1.6 "Noto Sans Ethiopic",
+    Kefa,
+    sans-serif;
+  padding: 7px;
+}
+.keyboard .tile {
+  min-width: 52px;
+}
+.keyboard .glyph {
+  font-size: 1.7rem;
+}
+.shared-words {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.completion {
+  padding: 45px 20px;
+}
+.completion-flower {
+  color: var(--green);
+  font-size: 100px;
+  line-height: 1.3;
+  animation: bloom 0.5s ease-out;
+}
+.completion h1 {
+  font-size: clamp(2rem, 5vw, 3.3rem);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+#modelPanel {
+  border-top: 1px solid var(--line);
+  margin-top: 20px;
+  padding-top: 15px;
+}
+#modelPanel[hidden] {
+  display: none;
+}
+@keyframes bloom {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@media (max-width: 750px) {
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .game-card {
+    padding: 18px;
+  }
+  .play-top {
+    align-items: flex-start;
+  }
+  .play-top > span {
+    max-width: 45%;
+    text-align: right;
+  }
+  .play-card {
+    padding: 18px 12px;
+  }
+  .bridge-slot {
+    min-width: 46px;
+    padding: 6px;
+  }
+  .bridge-slot .glyph {
+    font-size: 1.7rem;
+  }
+  .picture-card .picture {
+    width: 105px;
+    height: 80px;
+  }
+  .picture-row {
+    gap: 8px;
+  }
+  .tile {
+    min-width: 60px;
+  }
+  .picture-card {
+    padding: 10px;
+  }
+  .fragment {
+    width: 70px;
+    height: 70px;
+  }
+  .fragment > span {
+    width: 140px;
+    height: 140px;
+  }
+  .fragment-glyph {
+    font-size: 115px;
+    line-height: 140px;
+  }
+  .piece {
+    width: 76px;
+    height: 76px;
+  }
+  .mosaic-board {
+    grid-template-columns: repeat(2, 76px);
+  }
+  .mosaic-slot {
+    width: 76px;
+    height: 76px;
+  }
+  .mosaic-layout {
+    gap: 12px;
+  }
+  .ink-model .focal {
+    font-size: 6rem;
+  }
+  .shared-words {
+    gap: 4px;
+  }
+  .shared-words .picture {
+    width: 120px;
+    height: 90px;
+  }
+  .domino-choice .picture {
+    width: 95px;
+    height: 72px;
+  }
+}
+@media (max-width: 440px) {
+  .garden-header,
+  main,
+  footer {
+    width: calc(100% - 24px);
+  }
+  .game-grid {
+    gap: 12px;
+  }
+  .game-card h2 {
+    font-size: 1.15rem;
+  }
+  .game-card p {
+    font-size: 0.8rem;
+    min-height: 4.5em;
+  }
+  .game-icon {
+    width: 52px;
+    height: 52px;
+    font-size: 2rem;
+  }
+  .game-number {
+    right: 14px;
+    top: 18px;
+    font-size: 0.7rem;
+  }
+  .game-card {
+    padding: 15px;
+  }
+  .memory-card {
+    height: 90px;
+  }
+  .model-list {
+    gap: 7px;
+  }
+  .model-card {
+    padding: 9px;
+    min-width: 65px;
+  }
+  .picture-card .picture {
+    width: 90px;
+    height: 68px;
+  }
+  .picture-card {
+    padding: 8px;
+  }
+  .tile {
+    padding: 7px 12px;
+  }
+  .shared-words .choice-row {
+    gap: 6px;
+  }
+  .bridge {
+    gap: 4px;
+  }
+  .bridge-slot {
+    min-width: 39px;
+    padding: 4px;
+  }
+  .bridge-slot .glyph {
+    font-size: 1.45rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

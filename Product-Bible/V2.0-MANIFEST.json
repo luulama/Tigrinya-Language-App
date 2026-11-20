@@ -1,0 +1,192 @@
+{
+  "edition": "Product Bible V2.0 review-ready",
+  "date": "2026-11-20",
+  "owner_adoption": "pending; completion is not approval",
+  "vision": "FINAL_V1 remains approved and unchanged",
+  "sections": [
+    {
+      "path": "Product-Bible/01-Vision.md",
+      "sha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+      "words": 5190,
+      "approval": "approved FINAL_V1"
+    },
+    {
+      "path": "Product-Bible/02-How-Humans-Learn.md",
+      "sha256": "004c33204ff880dc37e68a8a3e378ca473fc85987f21942b8224f45dfb0fb4bc",
+      "words": 7881,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/03-User-Archetypes.md",
+      "sha256": "6999d05d85d00c42850d586033939be098b58aa7c8dd10a0dc97405152b7cc2c",
+      "words": 8060,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/04-Learning-Framework.md",
+      "sha256": "e15911fc9601bd8369c2c431c748c9587a54aec1222a139eda0611e4e9b7d8b6",
+      "words": 1824,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/05-Curriculum-Framework.md",
+      "sha256": "6b98d90c90ab6dcf42ab694982c930cd49d3ce3a45bea42c8adc12be1b60c797",
+      "words": 1952,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/06-Skill-Tree.md",
+      "sha256": "3aeb72ed96203fe292280f883ec40fadac2709a945238d50f4e69e3ac03e910d",
+      "words": 1674,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/07-Activity-System.md",
+      "sha256": "8e87e8cb72739a0de2758587db044f8a1900514fccfd6a13077f61be87542848",
+      "words": 1873,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/08-Game-System.md",
+      "sha256": "d9615a208ba01a2de2952667f5dfa138d013b84e0f3605a73f8fdd77b20ce094",
+      "words": 1210,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/09-Story-System.md",
+      "sha256": "cb5346b05b45b41f1cdaf10780f492aa18f4b6d659373ff3a85a9a0cd8db5266",
+      "words": 1254,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/10-Speaking-System.md",
+      "sha256": "d9388f161660c683bb7ab0eab66c09ec721fd02134527043c7c53dbd8cf58954",
+      "words": 1159,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/11-Listening-System.md",
+      "sha256": "0381055252d9ab287b6cc2e41a713542664f6a69eb240cac4a124aa3d5369353",
+      "words": 1013,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/12-Writing-System.md",
+      "sha256": "2e5c820ec05edc8fe78905950ec199bad3dc833e0ed5f1ef1f5604376e1e551c",
+      "words": 1097,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/13-Culture-System.md",
+      "sha256": "8a8784a0b54579e51095d11848b01281ce547e357bb38c07e67ceb55773f19a0",
+      "words": 984,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/14-Spaced-Repetition.md",
+      "sha256": "57f062ed7bd334f7690b0b471e48b7c99961124b00c0867d5fbf2d9c383b8606",
+      "words": 1979,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/15-Content-Architecture.md",
+      "sha256": "5e787beee8737e91028aef16ccb50fbc0c0eaf1d27bb2def296ccc30d2b343ef",
+      "words": 1711,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/16-AI-Strategy.md",
+      "sha256": "6c5029851e61e59f4b566acc4265085a493fbbb032e5d387dbf880530962ee6e",
+      "words": 892,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/17-Business-Strategy.md",
+      "sha256": "128fd7735be4a8af37c0e350fc38e90eff98b70bb055fab3a3a425133080f6ab",
+      "words": 927,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/18-MVP.md",
+      "sha256": "4766df3c5964a4925bef7f8181f70f5941f17616e6f26b6a1a9666f1567568ae",
+      "words": 1509,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/19-Roadmap.md",
+      "sha256": "d0f3e14b04ed39a6064ab400856b6816fcebbe0fd500ad35ed1fc3f53b2fb5a6",
+      "words": 685,
+      "approval": "DRAFT_V2 owner approval pending"
+    },
+    {
+      "path": "Product-Bible/20-Final-Decisions.md",
+      "sha256": "f7e9eae37b667404f924fc973170582fb8c28f2a87eca74054de40441217f46f",
+      "words": 1902,
+      "approval": "DRAFT_V2 owner approval pending"
+    }
+  ],
+  "supporting": [
+    {
+      "path": "Product-Bible/00-Master-Vision.md",
+      "sha256": "860d4f355eddd563142fec70f6212efaf1a115ba1c9d6958f4ef89dcec2048a3",
+      "words": 639,
+      "approval": "supporting document, not independent expert approval"
+    },
+    {
+      "path": "Product-Bible/README.md",
+      "sha256": "e17424a9636a89e50d10fcd5d22b535fa5539474fea9bb8cc4511aed9c664e19",
+      "words": 1599,
+      "approval": "supporting document, not independent expert approval"
+    },
+    {
+      "path": "Product-Bible/RESEARCH-REGISTER.md",
+      "sha256": "716c1341a0797515e675efbd6b19561857f81c28fcc3f563c43903b110dfba0e",
+      "words": 465,
+      "approval": "supporting document, not independent expert approval"
+    },
+    {
+      "path": "Product-Bible/V2.0-IMPROVEMENTS.md",
+      "sha256": "d919822090faa47b977a094d3e110f17e85a506dd7bc3012fe6336a512b89af2",
+      "words": 1029,
+      "approval": "supporting document, not independent expert approval"
+    },
+    {
+      "path": "Product-Bible/Product-Bible-V2.0.md",
+      "sha256": "610eb3e77af03b5e8d6848f486d14800d7e8dd2772aff7d345c494014726834e",
+      "words": 45146,
+      "approval": "supporting document, not independent expert approval"
+    },
+    {
+      "path": "Product-Bible/VERIFICATION.md",
+      "sha256": "9965601548eb91f4938b87994ce5fd9885197424cf5e6abb763e671ee55d463d",
+      "words": 395,
+      "approval": "supporting verification/coverage, not approval of learning outcomes"
+    },
+    {
+      "path": "Product-Bible/REQUIREMENTS-COVERAGE.md",
+      "sha256": "1e0bc6fbc42f8f7cef70b25a11d700ca09accd4d16831f5288b33b4764233a74",
+      "words": 545,
+      "approval": "supporting verification/coverage, not approval of learning outcomes"
+    }
+  ],
+  "derivatives": [
+    {
+      "path": "Curriculum-Bible.md",
+      "sha256": "0e88c0da0339de6c9cd1ce9176e2d65cfedf94ef3e72ec8a485184d6b3d34da4",
+      "words": 1846,
+      "approval": "V2.0-DERIVED owner adoption pending"
+    },
+    {
+      "path": "Technical-Bible.md",
+      "sha256": "e29afacb8124b5e87a8def7a965cf30e99b8b4233bdc5b8dd1383bdae8c7ee97",
+      "words": 2026,
+      "approval": "V2.0-DERIVED owner adoption pending"
+    },
+    {
+      "path": "Design-Bible.md",
+      "sha256": "c7c850af3c25a6e386c0e4e55ea6e4c60dd36995750488ebb417e50843605284",
+      "words": 1826,
+      "approval": "V2.0-DERIVED owner adoption pending"
+    }
+  ]
+}

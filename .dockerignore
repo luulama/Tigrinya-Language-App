@@ -1,0 +1,12 @@
+.git
+.tools
+**/node_modules
+**/bin
+**/obj
+**/.next
+**/coverage
+**/test-results
+**/playwright-report
+.env*
+**/.env*
+**/*.tfstate*

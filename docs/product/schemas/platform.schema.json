@@ -1,0 +1,1939 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tigrinya:platform:1",
+  "title": "Language platform exchange contracts",
+  "$defs": {
+    "LanguagePack": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "languageTag": {
+          "type": "string",
+          "minLength": 1
+        },
+        "script": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "ltr",
+            "rtl"
+          ]
+        },
+        "scriptModel": {
+          "type": "string",
+          "enum": [
+            "alphabet",
+            "abugida",
+            "syllabary",
+            "mixed",
+            "other"
+          ]
+        },
+        "normalisation": {
+          "const": "NFC"
+        },
+        "segmentationAdapter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "searchAdapter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answerAdapter": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fontFamilies": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "contentReleaseId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "languageTag",
+        "script",
+        "direction",
+        "scriptModel",
+        "normalisation",
+        "segmentationAdapter",
+        "searchAdapter",
+        "answerAdapter",
+        "fontFamilies",
+        "contentReleaseId"
+      ]
+    },
+    "Word": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "script": {
+          "type": "string",
+          "minLength": 1
+        },
+        "senseId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "lexemeId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "transliteration": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "pronunciationConvention": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variety": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "register": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "audioVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "imageVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "script",
+        "senseId",
+        "lexemeId",
+        "transliteration",
+        "pronunciationConvention",
+        "meaning",
+        "variety",
+        "register",
+        "sourceIds",
+        "audioVersionId",
+        "imageVersionId"
+      ]
+    },
+    "Phrase": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "script": {
+          "type": "string",
+          "minLength": 1
+        },
+        "meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "functionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "wordVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "register": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "script",
+        "meaning",
+        "functionId",
+        "wordVersionIds",
+        "register",
+        "sourceIds"
+      ]
+    },
+    "Sentence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "script": {
+          "type": "string",
+          "minLength": 1
+        },
+        "meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "patternVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "script",
+        "meaning",
+        "context",
+        "patternVersionIds",
+        "sourceIds"
+      ]
+    },
+    "Form": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "script": {
+          "type": "string",
+          "minLength": 1
+        },
+        "familyId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "order": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "audioVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "strokeVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "script",
+        "familyId",
+        "order",
+        "audioVersionId",
+        "strokeVersionId",
+        "sourceIds"
+      ]
+    },
+    "Grammar": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "functionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "explanation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exampleVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "functionId",
+        "explanation",
+        "exampleVersionIds",
+        "sourceIds"
+      ]
+    },
+    "Segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audioVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "imageVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "targetVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "audioVersionId",
+        "imageVersionId",
+        "targetVersionIds"
+      ]
+    },
+    "Story": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "genre": {
+          "type": "string",
+          "enum": [
+            "picture_story",
+            "early_reader",
+            "graded_reader",
+            "chapter_story",
+            "native_story",
+            "article",
+            "news",
+            "podcast",
+            "audiobook"
+          ]
+        },
+        "stage": {
+          "type": "string",
+          "enum": [
+            "P",
+            "B",
+            "E",
+            "I",
+            "U",
+            "A",
+            "R"
+          ]
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Segment"
+          },
+          "minItems": 1
+        },
+        "introducedTargets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "recycledTargets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "ageBands": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "4-8",
+              "9-12",
+              "13-18",
+              "adult"
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "title",
+        "genre",
+        "stage",
+        "segments",
+        "introducedTargets",
+        "recycledTargets",
+        "sourceIds",
+        "ageBands"
+      ]
+    },
+    "Turn": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sentenceVersionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "audioVersionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "role",
+        "sentenceVersionId",
+        "audioVersionId"
+      ]
+    },
+    "Dialogue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2
+        },
+        "turns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Turn"
+          },
+          "minItems": 2
+        },
+        "functionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "acceptableResponseVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "purpose",
+        "roles",
+        "turns",
+        "functionIds",
+        "acceptableResponseVersionIds"
+      ]
+    },
+    "Activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "model",
+            "contrast",
+            "retrieval",
+            "production",
+            "communication",
+            "recap",
+            "transfer"
+          ]
+        },
+        "promptVersionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "targetVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "responseMode": {
+          "type": "string",
+          "enum": [
+            "tap",
+            "point",
+            "speak",
+            "write",
+            "type",
+            "accessible_alternative"
+          ]
+        },
+        "acceptedVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "requiresAudio": {
+          "type": "boolean"
+        },
+        "requiresVerifiedStrokes": {
+          "type": "boolean"
+        },
+        "modelBeforeAnswer": {
+          "type": "boolean"
+        },
+        "accessibleAlternativeId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "promptVersionId",
+        "targetVersionIds",
+        "responseMode",
+        "acceptedVersionIds",
+        "requiresAudio",
+        "requiresVerifiedStrokes",
+        "modelBeforeAnswer",
+        "accessibleAlternativeId"
+      ]
+    },
+    "Lesson": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "objectiveId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "stage": {
+          "type": "string",
+          "enum": [
+            "P",
+            "B",
+            "E",
+            "I",
+            "U",
+            "A",
+            "R"
+          ]
+        },
+        "prerequisiteObjectiveIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "activities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Activity"
+          },
+          "minItems": 1
+        },
+        "estimatedMinutes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 60
+        },
+        "requiredScopes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "language",
+              "teaching",
+              "rights",
+              "accessibility",
+              "audio",
+              "culture",
+              "strokes"
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "objectiveId",
+        "stage",
+        "prerequisiteObjectiveIds",
+        "activities",
+        "estimatedMinutes",
+        "requiredScopes"
+      ]
+    },
+    "Audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assetType": {
+          "const": "audio"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*://).+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rightsSourceId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "altText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "durationMs": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "transcriptVersionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "variety": {
+          "type": "string",
+          "minLength": 1
+        },
+        "speakerKey": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        }
+      },
+      "required": [
+        "assetType",
+        "path",
+        "sha256",
+        "rightsSourceId",
+        "altText",
+        "durationMs",
+        "transcriptVersionId",
+        "variety",
+        "speakerKey"
+      ]
+    },
+    "Image": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assetType": {
+          "const": "image"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*://).+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rightsSourceId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "altText": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "assetType",
+        "path",
+        "sha256",
+        "rightsSourceId",
+        "altText"
+      ]
+    },
+    "Video": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assetType": {
+          "const": "video"
+        },
+        "path": {
+          "type": "string",
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*://).+$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rightsSourceId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "altText": {
+          "type": "string",
+          "minLength": 1
+        },
+        "durationMs": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "transcriptVersionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "variety": {
+          "type": "string",
+          "minLength": 1
+        },
+        "captionsPath": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "assetType",
+        "path",
+        "sha256",
+        "rightsSourceId",
+        "altText",
+        "durationMs",
+        "transcriptVersionId",
+        "variety",
+        "captionsPath"
+      ]
+    },
+    "Assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "objectiveId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "skill": {
+          "type": "string",
+          "enum": [
+            "visual",
+            "listening",
+            "speaking",
+            "reading",
+            "writing"
+          ]
+        },
+        "parallelSetId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "promptVersionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "acceptedVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "rubricDimensions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "requiresHumanAssessor": {
+          "type": "boolean"
+        },
+        "modelBeforeAnswer": {
+          "const": false
+        }
+      },
+      "required": [
+        "objectiveId",
+        "skill",
+        "parallelSetId",
+        "promptVersionId",
+        "acceptedVersionIds",
+        "rubricDimensions",
+        "requiresHumanAssessor",
+        "modelBeforeAnswer"
+      ]
+    },
+    "Culture": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "community": {
+          "type": "string",
+          "minLength": 1
+        },
+        "region": {
+          "type": "string",
+          "minLength": 1
+        },
+        "perspective": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "targetVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "ageBands": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "4-8",
+              "9-12",
+              "13-18",
+              "adult"
+            ]
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "title",
+        "community",
+        "region",
+        "perspective",
+        "sourceIds",
+        "targetVersionIds",
+        "ageBands"
+      ]
+    },
+    "ContentVersion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "contentId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "languageTag": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "word",
+            "phrase",
+            "sentence",
+            "form",
+            "grammar",
+            "story",
+            "dialogue",
+            "lesson",
+            "audio",
+            "image",
+            "video",
+            "assessment",
+            "culture"
+          ]
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "submitted",
+            "changes_requested",
+            "approved",
+            "revoked"
+          ]
+        },
+        "authorId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "payload": {
+          "type": "object"
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "id",
+        "contentId",
+        "languageTag",
+        "kind",
+        "revision",
+        "status",
+        "authorId",
+        "sha256",
+        "payload",
+        "sourceIds"
+      ]
+    },
+    "Approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "contentVersionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "reviewerId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "language",
+            "teaching",
+            "rights",
+            "accessibility",
+            "audio",
+            "culture",
+            "strokes"
+          ]
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "approved",
+            "changes_requested",
+            "revoked"
+          ]
+        },
+        "payloadHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decidedAt": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "contentVersionId",
+        "reviewerId",
+        "scope",
+        "decision",
+        "payloadHash",
+        "notes",
+        "decidedAt"
+      ]
+    },
+    "User": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "tenantId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "adult",
+            "author",
+            "reviewer",
+            "administrator"
+          ]
+        },
+        "externalSubject": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "tenantId",
+        "role",
+        "externalSubject"
+      ]
+    },
+    "Learner": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "tenantId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "ownerUserId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ageBand": {
+          "type": "string",
+          "enum": [
+            "4-8",
+            "9-12",
+            "13-18",
+            "adult",
+            "unspecified"
+          ]
+        },
+        "presentation": {
+          "type": "string",
+          "enum": [
+            "child",
+            "teen",
+            "adult"
+          ]
+        },
+        "languageTag": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "enum": [
+            "general",
+            "heritage",
+            "traveller",
+            "professional",
+            "academic"
+          ]
+        },
+        "storageMode": {
+          "type": "string",
+          "enum": [
+            "memory",
+            "device",
+            "consented_cloud"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "tenantId",
+        "ownerUserId",
+        "ageBand",
+        "presentation",
+        "languageTag",
+        "path",
+        "storageMode"
+      ]
+    },
+    "Parent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "userId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "learnerIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "relationshipStatus": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "verified",
+            "revoked"
+          ]
+        },
+        "scopeIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "learnerIds",
+        "relationshipStatus",
+        "scopeIds"
+      ]
+    },
+    "Teacher": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "userId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "classIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "relationshipStatus": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "verified",
+            "revoked"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "classIds",
+        "relationshipStatus"
+      ]
+    },
+    "Reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "userId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "language",
+              "teaching",
+              "rights",
+              "accessibility",
+              "audio",
+              "culture",
+              "strokes"
+            ]
+          },
+          "minItems": 1
+        },
+        "qualificationEvidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "userId",
+        "languages",
+        "scopes",
+        "qualificationEvidence"
+      ]
+    },
+    "Attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "learnerId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "targetKey": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "contentVersionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "skill": {
+          "type": "string",
+          "enum": [
+            "visual",
+            "listening",
+            "speaking",
+            "reading",
+            "writing"
+          ]
+        },
+        "taskKind": {
+          "type": "string",
+          "enum": [
+            "word",
+            "phrase",
+            "sentence",
+            "story",
+            "pronunciation",
+            "grammar",
+            "conversation",
+            "form"
+          ]
+        },
+        "sessionId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "at": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "correct",
+            "incorrect",
+            "supported",
+            "skipped",
+            "exposure"
+          ]
+        },
+        "helped": {
+          "type": "boolean"
+        },
+        "modelFirst": {
+          "type": "boolean"
+        },
+        "transferScore": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 4
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assessor": {
+          "type": "string",
+          "enum": [
+            "answer_key",
+            "human",
+            "ai_practice",
+            "unscored"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "learnerId",
+        "targetKey",
+        "contentVersionId",
+        "skill",
+        "taskKind",
+        "sessionId",
+        "at",
+        "outcome",
+        "helped",
+        "modelFirst",
+        "transferScore",
+        "assessor"
+      ]
+    },
+    "ReviewState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "targetKey": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "schedulerVersion": {
+          "const": 2
+        },
+        "step": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "dueAt": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "lastAttemptAt": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastExposureAt": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastColdAt": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "firstColdAt": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastSessionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastOutcome": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "correct",
+                "incorrect",
+                "supported",
+                "exposure"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "coldCorrect": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "coldTotal": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "delayedCorrect": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "delayedTotal": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "transferSum": {
+          "type": "number",
+          "minimum": 0
+        },
+        "transferTotal": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "consumedEventIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "targetKey",
+        "schedulerVersion",
+        "step",
+        "dueAt",
+        "lastAttemptAt",
+        "lastExposureAt",
+        "lastColdAt",
+        "firstColdAt",
+        "lastSessionId",
+        "lastOutcome",
+        "coldCorrect",
+        "coldTotal",
+        "delayedCorrect",
+        "delayedTotal",
+        "transferSum",
+        "transferTotal",
+        "consumedEventIds"
+      ]
+    },
+    "Progress": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "learnerId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "objectiveId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "skill": {
+          "type": "string",
+          "enum": [
+            "visual",
+            "listening",
+            "speaking",
+            "reading",
+            "writing"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "introduced",
+            "practising",
+            "demonstrated",
+            "needs_review",
+            "not_assessed"
+          ]
+        },
+        "evidenceAttemptIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "policyVersion": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "assessedAt": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "learnerId",
+        "objectiveId",
+        "skill",
+        "status",
+        "evidenceAttemptIds",
+        "policyVersion",
+        "assessedAt"
+      ]
+    },
+    "Achievement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "objectiveId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceAttemptIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 1
+        },
+        "earnedAt": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "objectiveId",
+        "name",
+        "evidenceAttemptIds",
+        "earnedAt"
+      ]
+    },
+    "Collection": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "learnerId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contentVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "learnerId",
+        "title",
+        "contentVersionIds"
+      ]
+    },
+    "Subscription": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "adultUserId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "inactive",
+            "active",
+            "cancelled"
+          ]
+        },
+        "externalCustomerKey": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "entitlements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0
+        }
+      },
+      "required": [
+        "id",
+        "adultUserId",
+        "status",
+        "externalCustomerKey",
+        "entitlements"
+      ]
+    },
+    "AIInteraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "learnerId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "purpose": {
+          "type": "string",
+          "enum": [
+            "tutor",
+            "draft_lesson",
+            "review_assist",
+            "pronunciation",
+            "conversation",
+            "writing",
+            "listening"
+          ]
+        },
+        "modelPolicyVersion": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "contentVersionIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "minItems": 0
+        },
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "completed",
+            "abstained",
+            "failed"
+          ]
+        },
+        "occurredAt": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "expiresAt": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "id",
+        "learnerId",
+        "purpose",
+        "modelPolicyVersion",
+        "contentVersionIds",
+        "outcome",
+        "occurredAt",
+        "expiresAt"
+      ]
+    },
+    "Source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "locator",
+        "rights",
+        "attribution"
+      ]
+    }
+  },
+  "description": "Validate an entity against its named $defs entry; semantic release checks remain mandatory."
+}

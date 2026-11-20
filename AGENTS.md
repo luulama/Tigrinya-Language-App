@@ -2,6 +2,10 @@
 
 ## Scope and source of truth
 
+The official company vision is `Product-Bible/01-Vision.md` (FINAL_V1). Preserve its frozen baseline under `Product-Bible/versions/`; do not silently revise approved commitments. A successor requires explicit owner approval and recorded rationale. Use the brief and specifications for compatible operational detail; surface conflicts before changing the vision.
+
+Follow the owner's Product Bible workflow in `Product-Bible/README.md`. Read approved prior sections and relevant dependencies before drafting the requested section; distinguish draft context from approved authority. Respect the documented effort tiers and do not advance to another section without a request. Complete the full-Bible review, approved Version 2.0, and Curriculum, Technical, and Design Bibles before further app implementation unless the owner explicitly changes this sequence. Preserve existing code and functionality; do not treat prior implementation as completion of the new documentation gate.
+
 These instructions apply to this complete app and every unit beneath this folder. Read `PROJECT_BRIEF.md` for the owner's full vision and task-specific output formats. Read `shared/content-review/CONTENT_REVIEW.md` before changing learner-facing content.
 
 This is the master app folder. Unit 1 is Fidel Foundations; Unit 2 is First Words. Keep unit-specific work separate and shared assets and review records under `shared/`. Check whether a task-workspace prototype is newer before replacing either copy. Do not assume a file with the same name is the latest version.
@@ -31,7 +35,7 @@ This is the master app folder. Unit 1 is Fidel Foundations; Unit 2 is First Word
 
 ## Engineering and privacy
 
-- Preserve the existing standalone HTML, CSS, JavaScript and content-file architecture. Prefer small, focused improvements over a framework rewrite.
+- Preserve the existing standalone HTML, CSS, JavaScript and content-file architecture. The owner explicitly requested the Polyglot Core monorepo under `apps/` and `packages/`; use its Next.js/.NET/PostgreSQL stack there and read `docs/engineering/README.md`. Keep the standalone preview intact and avoid unrelated rewrites.
 - Do not introduce React, databases, user accounts, cloud services or Azure infrastructure merely because the brief describes how to design them when requested.
 - Use mobile-first layouts, clear visual hierarchy, readable text, touch targets, keyboard support, appropriate accessible names and reduced-motion behavior.
 - Keep source content reusable and separate from activity state. Do not invent progress metrics or imply that picture matching measures language mastery.
@@ -39,6 +43,14 @@ This is the master app folder. Unit 1 is Fidel Foundations; Unit 2 is First Word
 - When promoting a checked unit prototype into this master folder, carry its required assets, content data, review documents and relative-link targets with it. Do not replace unrelated unit work.
 - Test the changed behavior first, preserve corpus and review checks, and report any unperformed browser, accessibility or child-usability validation honestly.
 - Do not publish learner-facing content or spend on infrastructure as an incidental step in a local prototype task.
+
+## Automatic GitHub sync after verified changes
+
+Every time you finish creating or modifying files and verify there are no syntax errors, automatically stage all changes (`git add .`), commit them with a clear short message (`git commit -m "..."`), and push them to GitHub (`git push`).
+
+Never commit `.env` or secret files. Keep environment files, credentials, tokens, private keys and other secret-bearing files excluded in `.gitignore`. Before committing, inspect the staged file list and check for secrets, including in files already tracked by Git: `.gitignore` does not protect tracked files. If a secret-bearing file is staged, unstage it without deleting the local file and exclude it before continuing. Never print secret values in logs or reports.
+
+Run the relevant syntax, type and test checks for the changes before syncing. Do not commit a change with failing syntax checks. Use the current branch and its configured upstream; never force-push, rewrite history or deploy as part of this sync. If a commit or push fails, preserve the local work and report the exact blocking reason without claiming that GitHub was updated.
 
 ## Requested output formats
 

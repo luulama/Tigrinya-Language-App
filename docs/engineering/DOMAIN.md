@@ -1,0 +1,15 @@
+# Domain rules
+
+Content identities retain language, kind, author, current draft revision and published revision. Typed payloads cover alphabets, Fidäl letters/families, sounds, words, phrases, sentences, dialogues, stories, passages, lessons, units, modules, courses, audio/images/video, assessments, questions, quizzes, grammar and culture. The Tigrinya language record identifies Ethiopic script, LTR direction and the abugida model; alphabet terminology in generic contracts does not convert Fidäl to Latin letters.
+
+The workflow is Draft → Submitted → UnderReview → Approved → Published. A negative decision moves to NeedsRevision. A published/approved/archived item can create a new draft revision; its old version is preserved. Archive withdraws the item after dependent items have been addressed. No generic update endpoint can edit reviewed payloads in place.
+
+Required approval scopes are Language, Teaching, Rights and Accessibility, plus Audio for sound/audio, Culture for cultural material and Strokes when instructional stroke data is present. Each decision requires a qualified reviewer for that language/scope and an author-independent subject. An administrator can publish only after the aggregate has reached Approved, its references are published and its media file matches the reviewed digest. Tigrinya generated audio cannot substitute for a reviewed native teaching recording. Authorised owners/reviewers can fetch an unpublished file through a no-store protected endpoint and preview it in the CMS before making a decision.
+
+Learner identity comes from a validated token, never a learner ID supplied in a progress query. Parent and teacher links require explicit administrative verification evidence. A trusted role without a verified relationship cannot read another learner's progress. Subscription Manager and AI Coach are distinct role/service concepts, not permission to view child work or to publish teaching content.
+
+Review outcomes are server-checked against the published question version. The client submits an answer and support/confidence state, not a correctness score. Question answer keys are removed from public DTOs. A stable event ID and request fingerprint prevent network retries from creating extra evidence or changing an already recorded answer. An incorrect response returns a specific model/explanation and permits supported retry.
+
+Choice questions measure recognition: Visual, Reading or Listening. They cannot be labelled as assessments of spontaneous speaking or handwriting. Speaking/writing learning objects and progress contracts are present, but human assessment workflows and a broader reviewed curriculum remain separate increments. No native or CEFR certification is inferred from matching counts.
+
+The 142 dictionary records in content/tigrinya-drafts.json are imported from the preserved source bank with original headword, senses, source URL and attribution. They remain Draft, with no audio/image IDs and no reviewer approvals. The prototype's 32 picture candidates are not silently converted into an approved course.

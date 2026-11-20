@@ -1,0 +1,46 @@
+name: polyglot-core
+services:
+  database:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: polyglot
+      POSTGRES_USER: polyglot
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a local database password}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: ["database:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U polyglot -d polyglot"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  storage:
+    image: mcr.microsoft.com/azure-storage/azurite:3.35.0
+    command: azurite-blob --blobHost 0.0.0.0 --skipApiVersionCheck
+    ports: ["127.0.0.1:10000:10000"]
+    volumes: ["storage:/data"]
+  api:
+    build:
+      context: ../..
+      dockerfile: infrastructure/docker/api.Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__Database: Host=database;Database=polyglot;Username=polyglot;Password=${POSTGRES_PASSWORD}
+      AllowedHosts: localhost;127.0.0.1;api
+      Entra__Authority: ${ENTRA_AUTHORITY:-}
+      Entra__Audience: ${ENTRA_AUDIENCE:-}
+      Entra__WebClientId: ${ENTRA_WEB_CLIENT_ID:-}
+      Entra__ApiScope: ${ENTRA_API_SCOPE:-}
+    ports: ["127.0.0.1:5080:8080"]
+    depends_on:
+      database: {condition: service_healthy}
+  web:
+    build:
+      context: ../..
+      dockerfile: infrastructure/docker/web.Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://127.0.0.1:5080
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on: [api]
+volumes:
+  database:
+  storage:

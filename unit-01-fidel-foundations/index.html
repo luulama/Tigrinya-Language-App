@@ -7,52 +7,241 @@
 <style>
 :root{--ink:#25324b;--muted:#6c7890;--mint:#25be80;--mint-dark:#087957;--cream:#fff8e5;--violet:#8168e5;--coral:#ff7d69;--sun:#ffc94f;--line:#e5e9f1;--panel:#fff;--soft-mint:#e8fbf0;--soft-violet:#f0ecff;--soft-sun:#fff4d5}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 0 0,#ffeab9 0,transparent 25%),radial-gradient(circle at 100% 8%,#dfd4ff 0,transparent 26%),#f7fbf9;color:var(--ink);font-family:ui-rounded,"Avenir Next",system-ui,sans-serif}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:4px solid #1769e0;outline-offset:3px}.app{max-width:930px;margin:auto;padding:16px 18px 40px}.top{display:flex;align-items:center;justify-content:space-between;gap:10px}.brand{font-weight:950;font-size:25px;letter-spacing:-1px}.brand b{color:var(--coral)}.top-actions{display:flex;gap:8px}.icon-button,.mode button,.tab{border:1px solid var(--line);background:#fff;border-radius:15px;padding:10px 13px;color:#536177;font-weight:850}.icon-button:hover,.mode button:hover,.tab:hover{transform:translateY(-1px);border-color:#b9c7d6}.screen{display:none}.screen.show{display:block}.hero{position:relative;overflow:hidden;min-height:255px;border-radius:32px;margin-top:16px;padding:30px;color:#fff;background:linear-gradient(135deg,#087957,#2bc789 62%,#80e4ae)}.hero:after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-65px;top:-62px;background:#fff2a844}.hero small,.eyebrow{font-size:11px;font-weight:950;letter-spacing:.11em}.hero h1{font-size:clamp(36px,6vw,57px);line-height:.94;letter-spacing:-.07em;max-width:565px;margin:10px 0}.hero p{max-width:455px;font-weight:650;color:#e4fff0;line-height:1.4}.guide{position:absolute;width:190px;right:5px;bottom:-15px;z-index:2}.primary,.secondary,.next{border:0;border-radius:16px;padding:14px 18px;font-weight:950;box-shadow:0 5px 0 #cc584a;background:var(--coral);color:#fff}.primary:hover,.next:hover{transform:translateY(-2px);box-shadow:0 7px 0 #cc584a}.secondary{background:var(--violet);box-shadow:0 5px 0 #5f4aad}.journey{display:grid;grid-template-columns:1.15fr .85fr;gap:15px;margin-top:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px}.progress-card strong{font-size:20px}.progress-line{height:12px;border-radius:10px;background:#e8efeb;margin:12px 0 8px;overflow:hidden}.progress-line i{display:block;height:100%;width:4%;background:linear-gradient(90deg,var(--mint),#a8f2c9);border-radius:inherit}.today{background:linear-gradient(145deg,#fff7df,#fff)}.today h2{margin:6px 0 3px;font-size:23px;letter-spacing:-1px}.today p{color:var(--muted);font-size:14px;margin:0 0 14px}.tabs{display:flex;gap:8px;overflow:auto;padding:16px 0 2px}.tab{white-space:nowrap}.tab.active{background:var(--ink);color:#fff;border-color:var(--ink)}.unit-heading{padding:17px 3px 6px}.unit-heading h1{font-size:34px;letter-spacing:-1.6px;margin:4px 0}.unit-heading p{color:var(--muted);margin:0;max-width:650px}.notice{margin:15px 0;border:1px solid #efd891;background:#fff9e6;border-radius:17px;padding:12px 14px;color:#735b1e;font-size:13px;font-weight:700;line-height:1.4}.roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:17px 0}.road-step{border:1px solid var(--line);background:#fff;border-radius:18px;padding:14px;min-height:125px}.road-step span{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--soft-mint);color:var(--mint-dark);font-weight:950}.road-step b{display:block;margin:9px 0 3px}.road-step small{font-size:12px;color:var(--muted);line-height:1.25;display:block}.road-step.current{border:2px solid var(--mint);background:#f3fff8}.family-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:10px}.family{position:relative;min-height:91px;border:1px solid var(--line);background:#fff;border-radius:18px;font:950 34px Arial,"Noto Sans Ethiopic",sans-serif;color:var(--ink);box-shadow:0 8px 14px #1a3f3008}.family:nth-child(3n+2){background:#fff2d8}.family:nth-child(3n+3){background:#eeeaff}.family small{display:block;font:850 9px system-ui;letter-spacing:.05em;color:#6e7887}.family[data-ready="true"]:after{content:"";display:block;position:absolute;top:9px;right:9px;width:8px;height:8px;background:var(--mint);border-radius:50%}.family:hover{transform:translateY(-3px);box-shadow:0 12px 22px #1a3f3020}.garden{margin:18px 0;padding:17px 19px;border-radius:25px;background:linear-gradient(120deg,#e0fbeb,#fff6d9);display:flex;gap:14px;align-items:center}.garden .plants{font-size:31px;letter-spacing:6px}.garden b{display:block}.garden small{color:#5e6b76}.lesson-shell{max-width:730px;margin:15px auto}.lesson-top{display:flex;align-items:center;justify-content:space-between;margin:14px 0}.back{border:0;background:#e9f3ee;color:#426b59;border-radius:14px;padding:10px 13px;font-weight:900}.mode{display:flex;gap:6px}.mode button{padding:8px 10px;font-size:12px}.mode button.active{background:var(--violet);border-color:var(--violet);color:#fff}.stage-dots{display:flex;gap:6px;align-items:center}.stage-dots i{width:9px;height:9px;border-radius:99px;background:#dce5e0}.stage-dots i.active{width:23px;background:var(--mint)}.lesson-card{background:#fff;border:1px solid var(--line);border-radius:31px;padding:22px;text-align:center;min-height:520px}.form-meta{font-size:11px;font-weight:950;color:#748095;letter-spacing:.1em}.form{font:950 clamp(118px,25vw,165px) Arial,"Noto Sans Ethiopic",sans-serif;line-height:.93;margin:10px 0 4px}.sound{color:var(--mint-dark);font-size:28px;font-weight:950}.family-strip{display:flex;justify-content:center;gap:5px;margin:16px auto;flex-wrap:wrap}.family-strip button{width:37px;height:37px;padding:0;border:2px solid var(--line);border-radius:11px;background:#fff;font:900 20px Arial,"Noto Sans Ethiopic",sans-serif}.family-strip button.active{border-color:var(--mint);background:var(--soft-mint);color:var(--mint-dark)}.teaching-world{display:grid;grid-template-columns:1.1fr .9fr;gap:13px;max-width:550px;margin:0 auto;text-align:left}.visual{min-height:191px;border-radius:25px;background:linear-gradient(145deg,#ffdc8f,#fff6d7);display:grid;place-items:center;font-size:110px;box-shadow:inset 0 -7px #eaba4055}.word-card{border-radius:25px;padding:19px;background:var(--soft-violet);display:flex;flex-direction:column;justify-content:center}.word-card .word{font:950 35px Arial,"Noto Sans Ethiopic",sans-serif}.word-card b{font-size:16px;margin-top:3px}.word-card small{color:#69758a;line-height:1.35;margin-top:8px}.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px}.action{padding:12px 15px;border:2px solid #dfe7e4;background:#fff;border-radius:15px;color:#3a5d4e;font-weight:950}.action:hover{border-color:var(--mint);background:var(--soft-mint)}.next{margin-top:16px;background:var(--violet);box-shadow:0 5px 0 #5d4aac}.message{min-height:22px;margin:13px 0 0;color:#607083;font-weight:750;font-size:14px}.trace-area{display:none;border:3px dashed #9bdcbb;border-radius:25px;background:#f4fff8;max-width:480px;margin:14px auto 0;padding:12px}.trace-area.show{display:block}.trace-letter{font:900 105px Arial,"Noto Sans Ethiopic",sans-serif;color:#73c99c;text-shadow:2px 2px #fff}.trace-area small{display:block;color:#438362;font-weight:800}.build-area{display:none;max-width:480px;margin:14px auto 0;padding:14px;border-radius:22px;background:#fff5da}.build-area.show{display:block}.tiles{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:10px}.tiles button{border:2px solid #f0cf7e;background:#fff;border-radius:14px;padding:12px 14px;font:900 23px Arial,"Noto Sans Ethiopic",sans-serif}.tiles button:hover,.tiles button.selected{border-color:var(--mint);background:var(--soft-mint)}.story-card{display:none;max-width:520px;margin:14px auto 0;padding:16px;border-radius:23px;background:linear-gradient(140deg,#e8fbf0,#fff7dd);text-align:left}.story-card.show{display:block}.story-card h3{margin:0 0 5px}.story-pictures{font-size:43px;letter-spacing:9px;margin:7px 0}.story-words{font:900 24px Arial,"Noto Sans Ethiopic",sans-serif;word-spacing:9px}.finish-card{display:none;margin:18px auto 0;padding:20px;max-width:490px;border-radius:25px;background:linear-gradient(135deg,#f1eaff,#fff3d2)}.finish-card.show{display:block}.finish-card .star{font-size:48px}.review-layout{display:grid;grid-template-columns:1fr 1fr;gap:15px}.review-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:18px}.review-card h3{margin:0 0 5px}.review-card p{color:var(--muted);font-size:14px}.choice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.choice{padding:13px;border:2px solid var(--line);border-radius:15px;background:#fff;font-weight:900;font-size:18px}.choice:hover{border-color:var(--mint)}.review-result{font-weight:850;min-height:24px;margin-top:12px}.parent-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.parent-card{background:#fff;border:1px solid var(--line);border-radius:25px;padding:19px}.parent-card h2{font-size:22px;margin:3px 0 8px}.parent-card p,.parent-card li{color:var(--muted);line-height:1.45;font-size:14px}.parent-card ul{padding-left:20px}.switch{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding:12px 0;gap:10px}.switch button{border:0;border-radius:12px;background:#eaf5ef;color:#347158;padding:8px 10px;font-weight:900}.review-queue{width:100%;border-collapse:collapse;font-size:13px;margin-top:9px}.review-queue th,.review-queue td{text-align:left;padding:9px 4px;border-bottom:1px solid var(--line)}.review-queue th{font-size:10px;letter-spacing:.08em;color:#79869a}.status{display:inline-block;border-radius:99px;padding:5px 7px;background:#fff3d4;color:#806000;font-size:10px;font-weight:950}.footer{text-align:center;color:#728095;font-size:12px;margin:22px 0 0}.hidden{display:none!important}@media(max-width:650px){.guide{width:135px;opacity:.75}.hero h1{max-width:330px}.journey,.review-layout,.parent-grid{grid-template-columns:1fr}.roadmap{grid-template-columns:repeat(2,1fr)}.family-grid{grid-template-columns:repeat(6,1fr)}.teaching-world{grid-template-columns:1fr}.visual{min-height:146px;font-size:88px}.lesson-card{padding:17px;min-height:535px}.top-actions .icon-button:last-child{display:none}}@media(max-width:390px){.app{padding:13px}.family-grid{grid-template-columns:repeat(5,1fr)}.family{min-height:76px}.family-strip button{width:34px}.form{font-size:118px}}
 </style>
+<link rel="stylesheet" href="../shared/unit-journey.css">
+<link rel="stylesheet" href="experience.css">
+<link rel="stylesheet" href="../shared/fidal-writing.css">
+<link rel="stylesheet" href="../shared/learning-path.css">
 </head>
 <body>
 <main class="app">
- <header class="top"><div class="brand">Tigrinya<b>•</b></div><div class="top-actions"><button class="icon-button" id="homeBtn">⌂ Home</button><button class="icon-button" id="parentBtn">♢ Parent corner</button></div></header>
+ <div id="journeyAnnouncement" class="journey-announcement" role="status" aria-live="polite" aria-atomic="true"></div>
+ <a class="skip" href="#home">Skip to learning</a>
+ <header class="top"><a class="brand" href="../index.html" aria-label="Tigrinya: all lessons">Tigrinya<b>•</b></a><div class="top-actions"><button class="icon-button" id="homeBtn">⌂ Home</button><button class="icon-button" id="parentBtn">♢ For grown-ups</button></div></header>
+ <a class="course-link" href="../index.html">All lessons</a>
+ <a class="course-link" href="../games/index.html?unit=1">Game Garden · 10 Fidäl games →</a>
+ <p class="prototype-note" id="reviewNotice">Preview · Native review pending · Audio unavailable</p>
 
  <section id="home" class="screen show">
-  <div class="hero"><small>UNIT 1 · FIDEL FOUNDATIONS</small><h1>First sounds. First letters. First proud readers.</h1><p>A playful, teach-first journey through Tigrinya Fidel—built for short, happy learning moments.</p><button class="primary" id="startBtn">Start today’s lesson →</button><img src="assets/fidel-guide.png" class="guide" alt="Saba, the Tigrinya learning guide"></div>
-  <div class="journey"><article class="card progress-card"><span class="eyebrow">YOUR JOURNEY</span><br><strong id="journeyText">0 of 32 families explored</strong><div class="progress-line"><i id="journeyBar"></i></div><small>One family at a time. You can always come back.</small></article><article class="card today"><span class="eyebrow">TODAY’S SMALL WIN</span><h2>Meet በ · be</h2><p>Listen, look, trace, and grow one new Fidel flower.</p><button class="secondary" id="todayBtn">Meet the B family →</button></article></div>
-  <div class="tabs" aria-label="Main sections"><button class="tab active" data-view="map">Alphabet map</button><button class="tab" data-view="review">Gentle review</button><button class="tab" data-view="parent">For grown-ups</button></div>
+  <section id="learningPath" aria-label="Your learning plan"></section>
+  <div class="hero"><small>UNIT 1 · TIGRINYA FIDÄL</small><h1>Meet a Fidäl family.</h1><p>Explore its forms. Find them in words. Practise writing.</p><button class="primary" id="startBtn">Start with በ →</button><img src="assets/fidel-guide.png" class="guide" alt="Saba, the Tigrinya learning guide"></div>
+  <div id="unitOverview"></div>
+  <div class="journey"><article class="card progress-card"><span class="eyebrow">PRACTICE IN THIS TAB</span><br><strong id="journeyText">0 of 42 activities checked</strong><div class="progress-line" role="progressbar" id="journeyProgress" aria-label="Fidäl activities checked" aria-valuemin="0" aria-valuemax="42" aria-valuenow="0"><i id="journeyBar"></i></div><small id="nextFamily">Begin with the በ family.</small></article><article class="card today" hidden><button id="todayBtn">Meet the B family →</button></article></div>
+  <div class="tabs" aria-label="Main sections"><button class="tab active" data-view="map">Fidäl families</button><button class="tab" data-view="review">Gentle review</button><button class="tab" data-view="parent">For grown-ups</button></div>
   <div id="mapView" class="view">
-   <div class="unit-heading"><span class="eyebrow">THE LEARNING PATH</span><h1>Learn Fidel as families.</h1><p>Every family has seven related forms. We teach their sound, shape, words, and writing together—never as a dry list.</p></div>
-   <div class="notice">✦ <b>Content care:</b> all learner-facing words and audio must be approved by a qualified native Tigrinya reviewer before release. Cards in the review queue stay clearly labelled.</div>
-   <div class="roadmap"><div class="road-step current"><span>1</span><b>Listen & notice</b><small>Hear the sound before being asked to remember it.</small></div><div class="road-step"><span>2</span><b>Meet the family</b><small>See how the seven related forms change.</small></div><div class="road-step"><span>3</span><b>Trace & build</b><small>Use hands, eyes, and voice together.</small></div><div class="road-step"><span>4</span><b>Read & revisit</b><small>Find known forms in picture stories later.</small></div></div>
-   <div class="family-grid" id="familyGrid"></div>
+   <div class="unit-heading"><h2>Choose a family</h2><p>One family. Seven vowel orders. Begin with <span lang="ti" dir="ltr">በ</span>.</p></div>
+   <div class="family-grid ready-families" id="readyFamilies" aria-label="Available shape activities"></div>
+   <details class="more-families"><summary>More forms</summary><p>Six labialized families and additional fourth-order forms.</p><div class="family-grid ready-families" id="familyGrid"></div></details>
    <div class="garden"><div class="plants" id="plants">🌱 🌱 🌱</div><div><b>Your Fidel garden</b><small id="gardenText">Explore a family and a new flower will appear here.</small></div></div>
   </div>
-  <div id="reviewView" class="view hidden"><div class="unit-heading"><span class="eyebrow">GENTLE REVIEW</span><h1>Remember with a smile.</h1><p>These little games appear after teaching. There are no scores to lose and no hurry.</p></div><div class="review-layout"><article class="review-card"><h3>Sound detective</h3><p>Which picture begins with <b>በ · be</b>?</p><div class="choice-grid" id="soundChoices"><button class="choice" data-correct="true">🐑<br>በጊዕ</button><button class="choice">☕<br>ቡን</button><button class="choice">🏠<br>ቤት</button><button class="choice">🔤<br>ቤ</button></div><div class="review-result" id="soundResult">First, meet the B family. Then return here to play.</div></article><article class="review-card"><h3>Family match</h3><p>Tap the form you hear: <b>ቤ · bie</b></p><div class="choice-grid" id="formChoices"><button class="choice">ባ</button><button class="choice" data-correct="true">ቤ</button><button class="choice">በ</button><button class="choice">ቦ</button></div><div class="review-result" id="formResult">Listening audio will be added after native recording.</div></article></div></div>
-  <div id="parentView" class="view hidden"><div class="unit-heading"><span class="eyebrow">PARENT CORNER</span><h1>Learning that respects childhood.</h1><p>Controls, progress, and content care belong with grown-ups—not inside the child’s lesson.</p></div><div class="parent-grid"><article class="parent-card"><span class="eyebrow">LEARNING PLAN</span><h2>One small lesson at a time</h2><p>Unit 1 uses a simple sequence: teach first, practise with hands and voice, then revisit later. No child is pushed to “keep a streak.”</p><div class="switch"><span><b>Explorer mode</b><br><small>Listening, big visuals, tracing</small></span><button data-set-mode="explorer">Selected</button></div><div class="switch"><span><b>Builder mode</b><br><small>Word-building and mini-reading</small></span><button data-set-mode="builder">Choose</button></div><div class="switch"><span><b>Play break reminder</b><br><small>Suggest a movement break after a short session</small></span><button id="breakToggle">On</button></div></article><article class="parent-card"><span class="eyebrow">CONTENT REVIEW QUEUE</span><h2>Native review comes first</h2><table class="review-queue"><thead><tr><th>ITEM</th><th>MEANING</th><th>STATUS</th></tr></thead><tbody><tr><td>በጊዕ · begi’</td><td>sheep</td><td><span class="status">Awaiting review</span></td></tr><tr><td>ቡን · bun</td><td>coffee</td><td><span class="status">Awaiting review</span></td></tr><tr><td>ቤት · bet</td><td>home</td><td><span class="status">Awaiting review</span></td></tr></tbody></table><p>Before publishing, each item needs script, translation, transliteration, context, variation notes, licensed native audio, and reviewer approval.</p></article></div></div>
+  <div id="reviewView" class="view hidden"><div class="unit-heading"><h1>Look again.</h1><p id="reviewGate">Explore and check the በ family first.</p><button class="journey-primary" id="reviewStart">Start በ family</button></div><div class="review-layout"><article class="review-card"><h3>Picture word</h3><p>Find <span lang="ti" dir="ltr">በጊዕ</span> with the sheep 🐑.</p><div class="choice-grid" id="soundChoices"><button class="choice" data-correct="true" disabled>🐑<br><span lang="ti" dir="ltr">በጊዕ</span></button><button class="choice" disabled>☕<br><span lang="ti" dir="ltr">ቡን</span></button><button class="choice" disabled>🏠<br><span lang="ti" dir="ltr">ቤት</span></button></div><div class="review-result" id="soundResult" role="status" aria-live="polite"></div></article><article class="review-card"><h3>Shape match</h3><p>Find this shape: <b lang="ti" dir="ltr">ቤ</b></p><div class="choice-grid" id="formChoices"><button class="choice" lang="ti" dir="ltr" disabled>ባ</button><button class="choice" lang="ti" dir="ltr" data-correct="true" disabled>ቤ</button><button class="choice" lang="ti" dir="ltr" disabled>በ</button><button class="choice" lang="ti" dir="ltr" disabled>ቦ</button></div><div class="review-result" id="formResult" role="status" aria-live="polite"></div></article></div></div>
+  <div id="parentView" class="view hidden"><div class="unit-heading"><span class="eyebrow">FOR GROWN-UPS</span><h1>Small steps, without pressure.</h1><p>Tigrinya Fidäl uses the Ge’ez/Ethiopic script, an abugida. These character families organize consonant-vowel forms into seven orders. Text runs left to right. The sixth-order reading depends on word context, so a character count is not a spoken-syllable count. Native pronunciation recordings are still needed.</p><p>The writing pad offers freehand practice and replay of the learner’s own marks. Printed glyphs are not handwriting stroke instructions. Source-verified, licensed Tigrinya teacher strokes and recordings require an identified reviewer before their controls appear.</p></div><div class="parent-grid"><article class="parent-card"><h2>Look, match, revisit</h2><p>Each form appears before matching. Choices use the current form and up to two practised forms. After the guided matches, a recap and demonstrated difference-spotting task lead to a check of all introduced forms. Only completed checks count in the family progress. Results describe help used, not reading or sound knowledge.</p><div class="switch"><span><b>Explorer mode</b><br><small>Look, follow the shape, then match</small></span><button data-set-mode="explorer">Selected</button></div><div class="switch"><span><b>Builder mode</b><br><small>Also show a shortcut to shape matching</small></span><button data-set-mode="builder">Choose</button></div><div class="switch"><span><b>Break suggestion</b><br><small>Offer a stretch after a family, without a timer</small></span><button id="breakToggle">On</button></div><p>Progress stays in this tab and resets on reload. The picture-word and shape review opens after the B-family check.</p></article><article class="parent-card"><span class="eyebrow">CONTENT REVIEW QUEUE</span><h2>Native review comes first</h2><table class="review-queue"><thead><tr><th>ITEM</th><th>MEANING</th><th>STATUS</th></tr></thead><tbody><tr><td><span lang="ti" dir="ltr">በጊዕ</span> · begi’</td><td>sheep</td><td><span class="status">Awaiting review</span></td></tr><tr><td><span lang="ti" dir="ltr">ቡን</span> · bun</td><td>coffee</td><td><span class="status">Awaiting review</span></td></tr><tr><td><span lang="ti" dir="ltr">ቤት</span> · bet</td><td>home</td><td><span class="status">Awaiting review</span></td></tr></tbody></table><p>All forms, picture associations, spellings, meanings and transliterations need qualified native Tigrinya review. Licensed native recordings and spoken directions are missing. The full reference inventory is available for shape and writing practice. Existing picture-word candidates supply contexts where their characters match. Forms without a sourced word use shape practice. Source transliterations are retained in review materials; they are not presented as approved pronunciation labels.</p><a href="../shared/content-review/CONTENT_REVIEW.md">Content review process</a><p><a href="../FIDAL_WRITING.md">Fidäl sources, writing data and validation</a></p></article></div></div>
  </section>
 
- <section id="lesson" class="screen"><div class="lesson-shell"><div class="lesson-top"><button class="back" id="lessonBack">← Families</button><div class="stage-dots" id="stageDots" aria-label="Lesson progress"></div><div class="mode"><button id="explorerMode" class="active">Explorer</button><button id="builderMode">Builder</button></div></div><article class="lesson-card"><div class="form-meta" id="formMeta">B FAMILY · 1 OF 7</div><div class="form" id="form">በ</div><div class="sound" id="sound">be</div><div class="family-strip" id="familyStrip"></div><div class="teaching-world"><div class="visual" id="visual">🐑</div><div class="word-card"><span class="eyebrow">PICTURE WORD</span><div class="word" id="word">በጊዕ</div><b id="roman">begi’ · sheep</b><small id="wordNote">This candidate is awaiting native Tigrinya review before release.</small></div></div><div class="actions"><button class="action" id="listenAction">🔊 Hear slowly</button><button class="action" id="traceAction">✏️ Trace the shape</button><button class="action" id="buildAction">▦ Build the family</button></div><div class="trace-area" id="traceArea"><div class="trace-letter" id="traceLetter">በ</div><small>Use one finger to follow the big shape. Beautiful learning takes time.</small></div><div class="build-area" id="buildArea"><b>Which form matches “be”?</b><div class="tiles" id="buildTiles"></div></div><div class="story-card" id="storyCard"><span class="eyebrow">MINI PICTURE STORY · COMING TOGETHER</span><h3>Our B-family picture shelf</h3><div class="story-pictures">🐑 ☕ 🏠</div><div class="story-words">በጊዕ · ቡን · ቤት</div><small>Picture-story sentences unlock after this vocabulary and audio are native-reviewed.</small></div><div class="message" id="message">Look at the shape. Say “be” with your learning guide.</div><button class="next" id="nextBtn">I’m ready for the next form →</button><div class="finish-card" id="finishCard"><div class="star">🌟</div><h2>You met a whole family!</h2><p>You listened, looked, traced, and built. A flower is growing in your Fidel garden.</p><button class="primary" id="finishBtn">Return to the map →</button></div></article></div></section>
+ <section id="lesson" class="screen" aria-labelledby="lessonHeading"><div class="lesson-shell"><div class="lesson-top"><button class="back" id="lessonBack">← Families</button><div class="stage-dots" id="stageDots" aria-label="Lesson progress"></div><div class="mode" aria-label="Practice options"><button id="explorerMode" class="active">Explorer</button><button id="builderMode">Builder</button></div></div><article class="lesson-card"><h1 id="lessonHeading" tabindex="-1">Look at the shape</h1><div class="form-meta" id="formMeta">በ FAMILY · VOWEL ORDER 1 OF 7</div><div class="form" id="form" lang="ti" dir="ltr" aria-describedby="reviewNotice">በ</div><div class="sound" id="sound" hidden>be</div><div class="family-strip order-strip" id="familyStrip" aria-label="Explore the forms"></div><div class="teaching-world" id="teachingWorld"><div class="visual" id="visual">🐑</div><div class="word-card"><span class="eyebrow">PICTURE WORD</span><div class="word" id="word" lang="ti" dir="ltr">በጊዕ</div><b id="roman">begi’ · sheep</b><small id="wordNote">Native review pending.</small></div></div><p id="patternNote" hidden>Compare this vowel order with the rest of its family.</p><div class="word-contexts" id="wordContexts" hidden></div><div class="actions"><span class="audio-note" id="listenAction" aria-describedby="reviewNotice">Visual practice</span><button class="action" id="traceAction" aria-expanded="false" aria-controls="traceArea">Write it</button><button class="action" id="buildAction">▦ Find its match</button></div><div class="trace-area" id="traceArea"><div id="writingWorkshop"></div></div><div class="build-area" id="buildArea"><b>Find the same shape as the big letter.</b><div class="tiles" id="buildTiles"></div></div><div class="story-card" id="storyCard"><span class="eyebrow">PICTURE WORDS · REVIEW PENDING</span><h3>Words with the በ family</h3><div class="story-pictures">🐑 ☕ 🏠</div><div class="story-words" lang="ti" dir="ltr">በጊዕ · ቡን · ቤት</div><small>Look at the pictures and their draft words.</small></div><div class="message" id="message" role="status" aria-live="polite">Look at the big shape.</div><button class="next" id="nextBtn">Find it →</button><div class="finish-card" id="finishCard"><div class="star" aria-hidden="true">🌷</div><h2 id="familyFinishHeading" tabindex="-1">Seven shapes practised!</h2><p>You looked at each shape and found its match.</p><button class="primary" id="finishBtn">Next family →</button><a class="word-link" href="../unit-02-first-words/index.html">Try picture words →</a></div></article></div></section>
 
- <section id="notReady" class="screen"><div class="lesson-shell"><article class="lesson-card"><div class="form" id="lockedLetter">ሀ</div><h1>This family is being prepared with care.</h1><p class="message">Its seven forms are mapped, but we will only unlock the lesson after its exact picture words and native audio have been reviewed.</p><button class="primary" id="lockedBack">Back to families →</button></article></div></section>
- <div class="footer">Made for short, happy learning moments · No ads · No child-facing purchases · Parent-controlled progress</div>
+ <section id="journeyScreen" class="screen unit-panel" aria-label="Family recap and shape check"></section>
+ <div class="footer">No accounts or tracking · Optional device-only saving in My practice & settings</div>
 </main>
+<script src="../shared/learning-path.js"></script>
+<script src="../shared/unit-journey.js"></script>
+<script src="../shared/fidal-text.js"></script>
+<script src="../shared/fidal-content.js"></script>
+<script src="../shared/fidal-writing.js"></script>
 <script>
-const families=['ሀ','ለ','ሐ','መ','ረ','ሰ','ሸ','ቀ','በ','ቨ','ተ','ቸ','ነ','ኘ','አ','ከ','ኸ','ወ','ዐ','ዘ','ዠ','የ','ደ','ጀ','ገ','ጠ','ጨ','ጰ','ጸ','ፀ','ፈ','ፐ'];
-const lessons={
+const legacyLessons={
  'በ':{name:'B',forms:['በ','ቡ','ቢ','ባ','ቤ','ብ','ቦ'],sounds:['be','bu','bi','ba','bie','b','bo'],examples:[['🐑','በጊዕ','begi’ · sheep'],['☕','ቡን','bun · coffee'],['✨','—','Natural picture word pending native review'],['✨','—','Natural picture word pending native review'],['🏠','ቤት','bet · home / house'],['✨','—','Natural picture word pending native review'],['✨','—','Natural picture word pending native review']]},
  'ተ':{name:'T',forms:['ተ','ቱ','ቲ','ታ','ቴ','ት','ቶ'],sounds:['te','tu','ti','ta','tie','t','to'],examples:[]},
  'መ':{name:'M',forms:['መ','ሙ','ሚ','ማ','ሜ','ም','ሞ'],sounds:['me','mu','mi','ma','mie','m','mo'],examples:[]}
 };
-let explored=new Set(), active=null, index=0, learnerMode='explorer', breakOn=true;
+const lessons=Object.fromEntries(FidalContent.families.map(group=>[group.family,{...group,name:group.label,forms:group.forms.map(form=>form.character),orders:group.forms.map(form=>form.order),sounds:legacyLessons[group.family]?.sounds||[],examples:legacyLessons[group.family]?.examples||[]} ]));
+let explored=new Set(), active=null, activeLetter=null, index=0, learnerMode='explorer', breakOn=true, checking=false, shapeMatched=false;
+const practisedForms=new Map();
+const checkedFamilies=new Map();
+const familyJourney={phase:'none',check:null};
+const fidalProfiles=new Map(FidalContent.families.flatMap(family=>family.forms).map(form=>[form.character,form]));
+const writingNotebook=FidalWriting.createNotebook();
+let writingController=null;
 const qs=s=>document.querySelector(s), qsa=s=>[...document.querySelectorAll(s)];
-function show(id){qsa('.screen').forEach(el=>el.classList.toggle('show',el.id===id));window.scrollTo({top:0,behavior:'smooth'})}
-function updateProgress(){qs('#journeyText').textContent=`${explored.size} of 32 families explored`;qs('#journeyBar').style.width=`${Math.max(4,explored.size/32*100)}%`;qs('#plants').textContent='🌱 '.repeat(Math.max(0,3-explored.size))+ '🌷 '.repeat(Math.min(explored.size,5));qs('#gardenText').textContent=explored.size?`${explored.size} family${explored.size===1?'':'ies'} explored. Your garden grows with understanding, not speed.`:'Explore a family and a new flower will appear here.'}
-function buildMap(){qs('#familyGrid').innerHTML=families.map(letter=>`<button class="family" data-letter="${letter}" data-ready="${!!lessons[letter]}">${letter}<small>${lessons[letter]?'START':'IN REVIEW'}</small></button>`).join('')}
-function openFamily(letter){if(!lessons[letter]){qs('#lockedLetter').textContent=letter;show('notReady');return}active=lessons[letter];index=0;explored.add(letter);updateProgress();renderLesson();show('lesson')}
-function renderLesson(){const form=active.forms[index],sound=active.sounds[index],entry=active.examples[index]||['✨','—','Picture word will unlock after native review'];qs('#formMeta').textContent=`${active.name} FAMILY · ${index+1} OF 7`;qs('#form').textContent=form;qs('#sound').textContent=sound;qs('#visual').textContent=entry[0];qs('#word').textContent=entry[1];qs('#roman').textContent=entry[2];qs('#wordNote').textContent=entry[1]==='—'?'We never force a rare or inaccurate word just to fill a card.':'This candidate is awaiting native Tigrinya review before release.';qs('#traceLetter').textContent=form;qs('#familyStrip').innerHTML=active.forms.map((letter,n)=>`<button data-form="${n}" class="${n===index?'active':''}" aria-label="Open ${active.sounds[n]}">${letter}</button>`).join('');qs('#familyStrip').onclick=e=>{const btn=e.target.closest('button');if(btn){index=+btn.dataset.form;renderLesson()}};qs('#buildTiles').innerHTML=[...active.forms].sort(()=>Math.random()-.5).map(letter=>`<button data-tile="${letter}">${letter}</button>`).join('');qs('#buildTiles').onclick=e=>{const btn=e.target.closest('button');if(!btn)return;qsa('#buildTiles button').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');qs('#message').textContent=btn.dataset.tile===form?'Yes—your eyes found the right form!':'Nice try. Look at the big letter, then try once more.'};qs('#traceArea').classList.remove('show');qs('#buildArea').classList.remove('show');qs('#storyCard').classList.toggle('show',index===6);qs('#finishCard').classList.remove('show');qs('#nextBtn').classList.remove('hidden');renderDots();qs('#message').textContent=`Look at the shape. Say “${sound}” with your learning guide.`}
-function renderDots(){qs('#stageDots').innerHTML=active.forms.map((_,i)=>`<i class="${i===index?'active':''}"></i>`).join('')}
-function setMode(mode){learnerMode=mode;qs('#explorerMode').classList.toggle('active',mode==='explorer');qs('#builderMode').classList.toggle('active',mode==='builder');qs('#buildAction').classList.toggle('hidden',mode==='explorer');qs('#message').textContent=mode==='explorer'?'Explorer mode: look, listen, and trace at your own pace.':'Builder mode: after tracing, build the form from the family.';qsa('[data-set-mode]').forEach(b=>{const picked=b.dataset.setMode===mode;b.textContent=picked?'Selected':'Choose';b.style.background=picked?'#8168e5':'';b.style.color=picked?'#fff':''})}
+function show(id){
+ if(id!=='lesson'&&writingController)writingController.cancel();
+ qsa('.screen').forEach(el=>el.classList.toggle('show',el.id===id));
+ window.scrollTo({top:0,behavior:'instant'});
+ if(id==='home')updateProgress();
+ const heading=qs('#'+id+' h1');
+ if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true})}
+}
+function nextFamily(){
+ const due=new Set(LearningPath.due('shapes'));
+ return Object.keys(lessons).find(letter=>lessons[letter].forms.some((_,n)=>due.has(`${letter}-${n}`)))||Object.keys(lessons).find(letter=>!checkedFamilies.has(letter));
+}
+function updateProgress(){
+ LearningPath.render();
+ const total=Object.keys(lessons).length, next=nextFamily();
+ qs('#journeyText').textContent=`${checkedFamilies.size} of ${total} activities checked`;
+ qs('#journeyBar').style.width=`${checkedFamilies.size/total*100}%`;
+ qs('#journeyProgress').setAttribute('aria-valuenow',checkedFamilies.size);
+ qs('#journeyProgress').setAttribute('aria-valuemax',total);
+ qs('#plants').textContent=checkedFamilies.size?'🌷':'🌱';
+ qs('#gardenText').textContent=checkedFamilies.size?'Each completed check adds to your progress.':'Look, write, match and check one group at a time.';
+ const unfinished=active && !['none','result'].includes(familyJourney.phase);
+ qs('#startBtn').textContent=unfinished?`Continue ${activeLetter} family`:next?`Start with ${next}`:'Review በ family';
+ qs('#nextFamily').textContent=unfinished?`${practisedForms.get(activeLetter).size} of ${active.forms.length} forms practised.`:next?'Explore the family, write, then find each matching form.':'All Fidäl activities checked. Try picture words next.';
+ const ready=checkedFamilies.has('በ');
+ qs('#reviewGate').textContent=ready?'Revisit the በ-family forms and pictures.':'Explore and check the በ family first.';
+ qs('#reviewStart').hidden=ready;
+ qsa('.review-layout').forEach(section=>section.hidden=!ready);
+ qsa('#soundChoices .choice, #formChoices .choice').forEach(button=>button.disabled=!ready);
+}
+function buildMap(){
+ const card=letter=>`<button class="family" data-letter="${letter}" data-ready="${!!lessons[letter]}" aria-label="${lessons[letter].name}: explore, write and check"><span lang="ti" dir="ltr">${lessons[letter].forms[0]}</span><small>${lessons[letter]?'Explore':'Later'}</small></button>`;
+ qs('#readyFamilies').innerHTML=Object.keys(lessons).filter(key=>lessons[key].kind==='basic').map(card).join('');
+ qs('#familyGrid').innerHTML=Object.keys(lessons).filter(key=>lessons[key].kind!=='basic').map(card).join('');
+
+}
+function openFamily(letter){
+ if(!lessons[letter])return false;
+ active=lessons[letter];activeLetter=letter;index=0;
+ familyJourney.phase='learn';familyJourney.check=null;
+ if(!practisedForms.has(letter))practisedForms.set(letter,new Set());
+ renderLesson();show('lesson');
+}
+function startLearning(){
+ if(active&&!['none','result'].includes(familyJourney.phase)){if(familyJourney.phase==='learn')show('lesson');else renderFamilyJourney();return}
+ openFamily(nextFamily()||'በ');
+}
+function renderLesson(){
+ if(writingController){writingController.destroy();writingController=null}
+ const form=active.forms[index],entry=active.examples[index]||['✨','—','Picture word pending native review'];
+ checking=false;shapeMatched=false;
+ qs('#lessonHeading').textContent='Meet the Fidäl form';
+ qs('#formMeta').textContent=active.kind==='additional'?`Additional forms · ${index+1} of ${active.forms.length}`:`${activeLetter} FAMILY · VOWEL ORDER ${active.orders[index]} OF 7`;
+ qs('#form').textContent=form;qs('#sound').textContent=active.sounds[index]||'';
+ qs('#visual').textContent=entry[0];qs('#word').textContent=entry[1];qs('#roman').textContent=entry[2].split(' · ').slice(1).join(' · ');
+ qs('#wordNote').textContent='Native review pending.';
+ qs('#teachingWorld').hidden=entry[1]==='—';qs('#patternNote').hidden=entry[1]!=='—';
+ qs('#familyStrip').innerHTML=active.forms.map((letter,n)=>`<button data-form="${n}" class="${n===index?'active':''} ${practisedForms.get(activeLetter).has(n)?'practised':''}" ${n===index?'aria-current="step"':''} aria-label="${active.kind==='additional'?'Additional form':'Vowel order '+active.orders[n]}: ${letter}"><span lang="ti" dir="ltr">${letter}</span><span class="order-number">${active.kind==='additional'?'Form '+(n+1):'Order '+active.orders[n]}</span></button>`).join('');
+ renderWordContexts(form,entry[1]);
+ qs('#familyStrip').onclick=e=>{const btn=e.target.closest('button');if(btn){index=+btn.dataset.form;renderLesson();qs('#lessonHeading').focus({preventScroll:true})}};
+ const earlier=Array.from(practisedForms.get(activeLetter)).filter(n=>n!==index).slice(-2);
+ const tiles=[...earlier.map(n=>active.forms[n]),form];
+ for(let n=tiles.length-1;n>0;n--){const other=Math.floor(Math.random()*(n+1));[tiles[n],tiles[other]]=[tiles[other],tiles[n]]}
+ qs('#buildTiles').innerHTML=tiles.map(letter=>`<button data-tile="${letter}" lang="ti" dir="ltr" aria-label="Choose ${letter}">${letter}</button>`).join('');
+ qs('#buildTiles').onclick=e=>{const btn=e.target.closest('button');if(btn)chooseShape(btn)};
+ qs('#traceArea').classList.remove('show');qs('#buildArea').classList.remove('show');qs('#storyCard').classList.remove('show');qs('#finishCard').classList.remove('show');
+ qs('#traceAction').setAttribute('aria-expanded','false');
+ qs('#nextBtn').classList.remove('hidden');qs('#nextBtn').disabled=false;qs('#nextBtn').textContent='Find it';
+ renderDots();qs('#message').textContent=active.kind==='additional'?'Compare this additional form.':`This is order ${active.orders[index]} in the ${activeLetter} family.`;
+}
+function renderWordContexts(form,existingWord){
+ const escape=UnitJourney.escape,profile=fidalProfiles.get(form);
+ const highlight=word=>FidalText.graphemes(word).map(character=>character===form?`<mark>${escape(character)}</mark>`:escape(character)).join('');
+ const shown=profile.contexts.find(context=>context.word===existingWord);
+ if(shown){qs('#word').innerHTML=highlight(shown.word);qs('#roman').textContent=shown.meaning}
+ const otherContexts=profile.contexts.filter(context=>context.word!==existingWord).slice(0,2);
+ qs('#wordContexts').hidden=!otherContexts.length;
+ qs('#wordContexts').innerHTML=otherContexts.length?`<h2>Find it in a word</h2>${otherContexts.map(context=>`<div class="context-word"><span lang="ti" dir="ltr" aria-label="${escape(context.word)}" aria-describedby="reviewNotice">${highlight(context.word)}</span><span class="context-meaning">${escape(context.meaning)}</span></div>`).join('')}`:'';
+}
+function toggleWriting(){
+ const open=!qs('#traceArea').classList.contains('show');
+ qs('#traceArea').classList.toggle('show',open);qs('#traceAction').setAttribute('aria-expanded',String(open));
+ if(open){
+  if(!writingController)writingController=FidalWriting.mount(qs('#writingWorkshop'),{profile:fidalProfiles.get(active.forms[index]),family:active.forms,notebook:writingNotebook});
+  qs('#writingHeading').focus({preventScroll:true});
+ }else if(writingController)writingController.cancel();
+}
+function renderDots(){
+ qs('#stageDots').innerHTML=active.forms.map((_,i)=>`<i class="${i===index?'active':''}" aria-hidden="true"></i>`).join('');
+ qs('#stageDots').setAttribute('aria-label',`Shape ${index+1} of ${active.forms.length}; ${practisedForms.get(activeLetter).size} practised`);
+}
+function startShapeMatch(){
+ if(writingController)writingController.cancel();qs('#traceArea').classList.remove('show');qs('#traceAction').setAttribute('aria-expanded','false');
+ checking=true;qs('#buildArea').classList.add('show');qs('#lessonHeading').textContent='Find the same shape';
+ qs('#nextBtn').disabled=!shapeMatched;qs('#message').textContent='Compare each choice with the big shape.';
+ const first=qs('#buildTiles button');if(first)first.focus({preventScroll:true});
+}
+function chooseShape(button){
+ if(!checking||shapeMatched||!active.forms.includes(button.dataset.tile))return;
+ qsa('#buildTiles button').forEach(tile=>{tile.classList.remove('selected');tile.classList.remove('hint')});
+ if(button.dataset.tile===active.forms[index]){
+  shapeMatched=true;practisedForms.get(activeLetter).add(index);button.classList.add('selected');
+  qs('#message').textContent='Same shape!';qs('#nextBtn').disabled=false;qs('#nextBtn').textContent=index===active.forms.length-1?'Recap':'Next shape';renderDots();qs('#nextBtn').focus({preventScroll:true});
+ }else{
+  qs('#message').textContent='Look at the big shape. Try this match.';
+  qs(`[data-tile="${active.forms[index]}"]`).classList.add('hint');
+ }
+}
+function advanceShape(){
+ if(!checking){startShapeMatch();return}
+ if(!shapeMatched)return;
+ if(index<active.forms.length-1){index++;renderLesson();qs('#lessonHeading').focus({preventScroll:true});return}
+ const missing=active.forms.findIndex((_,n)=>!practisedForms.get(activeLetter).has(n));
+ if(missing!==-1){index=missing;renderLesson();qs('#message').textContent='One more shape to practise.';return}
+ explored.add(activeLetter);familyJourney.phase='recap';renderFamilyJourney();
+}
+function renderFamilyJourney(){
+ const forms=active.forms;
+ const cards=`<div class="journey-recap shapes">${forms.map(script=>`<div><span class="recap-script" lang="ti" dir="ltr">${script}</span></div>`).join('')}</div>`;
+ let config;
+ if(familyJourney.phase==='recap'){
+  config={label:`${activeLetter} FIDÄL FAMILY · RECAP`,title:active.kind==='basic'?'Your seven vowel orders':'Your '+forms.length+' forms',body:`${cards}<p>Next, find the different form.</p><div class="shape-example" aria-label="Example: two identical forms and one different form"><span lang="ti" dir="ltr">${forms[0]}</span><span lang="ti" dir="ltr">${forms[0]}</span><span class="different-example" lang="ti" dir="ltr">${forms[1]}<small aria-hidden="true">✓</small></span></div><p class="unit-time">Two match. One is different.</p>`,primary:{action:'shape-check',label:'Try the check'},secondary:'<button class="journey-secondary" data-journey-action="repeat-family">Explore again</button>'};
+ }else if(familyJourney.phase==='check'&&familyJourney.check&&!familyJourney.check.complete){
+  const check=familyJourney.check,entry=check.current,assisted=check.helped&&!entry.solved;
+  const body=`<p class="unit-time">${entry.repeat?'Revisit':'Shape '+(check.position+1)+' of '+forms.length}</p><p>Two are the same. Find the different one.</p><div class="journey-choices" role="group" aria-label="Choose the different shape">${entry.question.options.map(option=>`<button class="journey-choice" data-shape-check="${option.key}" ${entry.solved?'aria-disabled="true"':''} ${assisted&&option.key===entry.question.correctKey?'data-hint="true"':''} ${entry.solved&&option.key===entry.question.correctKey?'data-result="correct"':''} aria-label="Choose shape ${option.label}"><span lang="ti" dir="ltr">${option.label}</span>${entry.solved&&option.key===entry.question.correctKey?'<span class="check-mark" aria-hidden="true">✓</span>':''}</button>`).join('')}</div><p class="journey-feedback" id="shapeCheckFeedback" role="status" aria-live="polite">${entry.solved?'Different shape found.':assisted?'Two match. The highlighted shape is different.':''}</p>`;
+  config={label:`${activeLetter} FIDÄL FAMILY · FORM CHECK`,title:'Spot the difference',body,primary:{action:'advance-shape-check',label:'Continue'},disabled:!entry.solved,secondary:entry.solved?'':'<button class="journey-help" data-journey-action="shape-help">Show me</button>'};
+ }else if(familyJourney.phase==='result'){
+  const next=nextFamily();
+  config={label:`${activeLetter} FIDÄL FAMILY · COMPLETE`,title:'You checked '+forms.length+' Fidäl forms',body:`${UnitJourney.outcome(familyJourney.check.summary,'form differences')}<p>${breakOn?'Take a stretch break, or choose what comes next.':'Choose what comes next.'}</p>`,primary:{action:'next-family',label:next?'Next family':'Review በ family'},secondary:'<a class="journey-secondary" href="../unit-02-first-words/index.html">Picture words</a>'};
+ }else return;
+ qs('#journeyScreen').innerHTML=UnitJourney.panel(config)+'<button class="journey-exit" data-journey-action="home">Home · continue later</button>';
+ show('journeyScreen');
+}
+function answerShapeCheck(key){
+ if(familyJourney.phase!=='check'||!qs('#journeyScreen').classList.contains('show'))return;
+ const result=familyJourney.check.answer(key);if(result==='ignored')return;
+ renderFamilyJourney();
+ UnitJourney.announce(result==='correct'?'Different shape found.':'Two match. The highlighted shape is different. Try again.');
+ qs(result==='correct'?'[data-journey-action="advance-shape-check"]':`[data-shape-check="${familyJourney.check.current.question.correctKey}"]`).focus({preventScroll:true});
+}
+function handleFamilyJourney(action){
+ if(!qs('#journeyScreen').classList.contains('show'))return;
+ if(action==='home'){show('home');return}
+ if(action==='repeat-family'&&familyJourney.phase==='recap'){openFamily(activeLetter);return}
+ if(action==='shape-check'&&familyJourney.phase==='recap'){
+  familyJourney.check=UnitJourney.createCheck(active.forms.map((script,n)=>({id:`${activeLetter}-${n}`,script})),UnitJourney.shapeQuestion);
+  familyJourney.phase='check';renderFamilyJourney();
+ }
+ if(action==='shape-help'&&familyJourney.phase==='check'){
+  familyJourney.check.help();renderFamilyJourney();qs(`[data-shape-check="${familyJourney.check.current.question.correctKey}"]`).focus({preventScroll:true});
+ }
+ if(action==='advance-shape-check'&&familyJourney.phase==='check'&&familyJourney.check.advance()){
+  if(familyJourney.check.complete){LearningPath.record('shapes',familyJourney.check.itemResults);LearningPath.saveFamily(activeLetter,familyJourney.check.summary);checkedFamilies.set(activeLetter,familyJourney.check.summary);familyJourney.phase='result';updateProgress()}
+  renderFamilyJourney();
+ }
+ if(action==='next-family'&&familyJourney.phase==='result')openFamily(nextFamily()||'በ');
+}
+function setMode(mode){learnerMode=mode;qs('#explorerMode').classList.toggle('active',mode==='explorer');qs('#builderMode').classList.toggle('active',mode==='builder');qs('#explorerMode').setAttribute('aria-pressed',mode==='explorer');qs('#builderMode').setAttribute('aria-pressed',mode==='builder');qs('#buildAction').classList.toggle('hidden',mode==='explorer');qsa('[data-set-mode]').forEach(b=>{const picked=b.dataset.setMode===mode;b.textContent=picked?'Selected':'Choose';b.style.background=picked?'#8168e5':'';b.style.color=picked?'#fff':''})}
 qsa('.tab').forEach(tab=>tab.onclick=()=>{qsa('.tab').forEach(t=>t.classList.toggle('active',t===tab));['map','review','parent'].forEach(v=>qs('#'+v+'View').classList.toggle('hidden',v!==tab.dataset.view))});
 qs('#familyGrid').onclick=e=>{const button=e.target.closest('.family');if(button)openFamily(button.dataset.letter)};
-qs('#startBtn').onclick=()=>openFamily('በ');qs('#todayBtn').onclick=()=>openFamily('በ');qs('#homeBtn').onclick=()=>show('home');qs('#parentBtn').onclick=()=>{show('home');qsa('.tab').find(t=>t.dataset.view==='parent').click()};qs('#lessonBack').onclick=()=>show('home');qs('#lockedBack').onclick=()=>show('home');
-qs('#listenAction').onclick=()=>qs('#message').textContent=`Native recording for “${active.sounds[index]}” will be added after reviewer approval. For now, say it together slowly.`;qs('#traceAction').onclick=()=>{qs('#traceArea').classList.toggle('show');qs('#message').textContent='Use one finger to follow the shape. Try it again if you want—there is no rush.'};qs('#buildAction').onclick=()=>qs('#buildArea').classList.toggle('show');qs('#nextBtn').onclick=()=>{if(index<6){index++;renderLesson()}else{qs('#nextBtn').classList.add('hidden');qs('#finishCard').classList.add('show');qs('#message').textContent=breakOn?'Wonderful work. Time for a stretch, wiggle, or a story away from the screen.':'Wonderful work. Choose a new family whenever you feel ready.'}};qs('#finishBtn').onclick=()=>show('home');qs('#explorerMode').onclick=()=>setMode('explorer');qs('#builderMode').onclick=()=>setMode('builder');qsa('[data-set-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.setMode));qs('#breakToggle').onclick=()=>{breakOn=!breakOn;qs('#breakToggle').textContent=breakOn?'On':'Off'};
-qsa('#soundChoices .choice').forEach(b=>b.onclick=()=>qs('#soundResult').textContent=b.dataset.correct?'Lovely listening! በጊዕ begins with በ.':'That is another B-family word. Listen for the first form: በ.');qsa('#formChoices .choice').forEach(b=>b.onclick=()=>qs('#formResult').textContent=b.dataset.correct?'That is ቤ—great noticing!':'Look at the family strip, then give it another gentle try.');
+qs('#readyFamilies').onclick=qs('#familyGrid').onclick;
+qs('#startBtn').onclick=startLearning;qs('#todayBtn').onclick=()=>openFamily('በ');qs('#reviewStart').onclick=()=>openFamily('በ');qs('#homeBtn').onclick=()=>show('home');qs('#parentBtn').onclick=()=>{show('home');qsa('.tab').find(t=>t.dataset.view==='parent').click()};qs('#lessonBack').onclick=()=>show('home');
+qs('#traceAction').onclick=toggleWriting;qs('#buildAction').onclick=startShapeMatch;qs('#nextBtn').onclick=advanceShape;qs('#finishBtn').onclick=()=>openFamily(nextFamily()||'በ');qs('#explorerMode').onclick=()=>setMode('explorer');qs('#builderMode').onclick=()=>setMode('builder');qsa('[data-set-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.setMode));qs('#breakToggle').onclick=()=>{breakOn=!breakOn;qs('#breakToggle').textContent=breakOn?'On':'Off'};
+function reviewAnswer(button,result,correctModel){
+ if(!checkedFamilies.has('በ')||button.disabled)return;
+ qs(result).textContent=button.dataset.correct?'That matches!':`Look again: ${correctModel}`;
+ if(!button.dataset.correct){const group=button.closest('.choice-grid');group.querySelector('[data-correct]').classList.add('hint')}
+}
+qsa('#soundChoices .choice').forEach(b=>b.onclick=()=>reviewAnswer(b,'#soundResult','🐑 በጊዕ'));
+qsa('#formChoices .choice').forEach(b=>b.onclick=()=>reviewAnswer(b,'#formResult','ቤ'));
+qs('#journeyScreen').onclick=event=>{
+ const button=event.target.closest('button');if(!button||button.disabled)return;
+ if(button.dataset.journeyAction)handleFamilyJourney(button.dataset.journeyAction);
+ if(button.dataset.shapeCheck)answerShapeCheck(button.dataset.shapeCheck);
+};
+qs('#unitOverview').innerHTML=UnitJourney.overview('shapes');
 buildMap();updateProgress();setMode('explorer');
+
+Object.entries(LearningPath.families).forEach(([id,summary])=>{if(lessons[id]&&summary.total===lessons[id].forms.length)checkedFamilies.set(id,summary)});
+LearningPath.configure({unit:'shapes',refresh:updateProgress,reset(){checkedFamilies.clear();explored.clear();updateProgress()}});
+updateProgress();
 </script>
 </body></html>

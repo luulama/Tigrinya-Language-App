@@ -1,5 +1,5 @@
 const assert = require('node:assert/strict');
-const {createHarness} = require('./app_test_harness.cjs');
+const {createHarness,finishCheck} = require('./app_test_harness.cjs');
 
 const {app,nodeFor} = createHarness();
 const state = app.state;
@@ -102,6 +102,9 @@ check('finishing is blocked until every pair matches',() => {
   assert.equal(nodeFor('#pairNextButton').disabled,false);
   assert.equal(nodeFor('#pairHelpButton').disabled,true);
   app.handleAction('finish-pairs');
+  assert.equal(state.sessionPhase,'recap');
+  assert.equal(state.sessionComplete,false);
+  finishCheck(app);
   assert.equal(state.screen,'finish');
   assert.equal(state.sessionComplete,true);
 });
@@ -114,6 +117,9 @@ check('only explicit Keep saves completed-session pictures',() => {
   app.handleAction('finish-pairs');
   assert.equal(state.saved.size,0);
   app.keepPictures();
+  assert.equal(state.saved.size,0);
+  finishCheck(app);
+  app.keepPictures();
   assert.equal(state.saved.size,3);
 });
 check('a single-picture activity keeps its short original finish flow',() => {
@@ -122,6 +128,8 @@ check('a single-picture activity keeps its short original finish flow',() => {
   state.matched = true;
   app.updateNext();
   app.nextStep();
+  assert.equal(state.sessionPhase,'recap');
+  finishCheck(app);
   assert.equal(state.screen,'finish');
   assert.equal(state.pairDeck.length,0);
 });

@@ -1,0 +1,8 @@
+{
+ "name":"Polyglot Core",
+ "image":"mcr.microsoft.com/dotnet/sdk:10.0.404",
+ "features":{"ghcr.io/devcontainers/features/node:1":{"version":"24"},"ghcr.io/devcontainers/features/docker-outside-of-docker:1":{}},
+ "forwardPorts":[3000,5080],
+ "postCreateCommand":"npm ci --ignore-scripts && dotnet restore --locked-mode && python3 scripts/prepare_web_preview.py",
+ "containerEnv":{"NEXT_TELEMETRY_DISABLED":"1","DOTNET_CLI_TELEMETRY_OPTOUT":"1"}
+}

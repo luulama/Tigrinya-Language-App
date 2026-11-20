@@ -1,0 +1,39 @@
+.course-link{display:inline-flex;align-items:center;min-height:44px;padding:5px 0;font-size:.875rem;font-weight:750;color:var(--violet-dark);text-underline-offset:4px}
+.home-goal{font-size:1rem;line-height:1.5;max-width:330px;margin:0 0 17px;color:#4b5b68}
+#unitOverview .unit-purpose{margin:0 0 18px;max-width:360px}
+#unitOverview .unit-goal{font-size:1rem;font-weight:750}
+#unitOverview .unit-context{font-size:.875rem}
+.teach-meaning{font-size:1rem;color:#344c59;margin-top:4px}
+.home-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.review-button{min-height:48px;border:2px solid #d8ccea;background:#fff;color:var(--violet-dark);border-radius:16px;padding:10px 15px;font-size:1rem;font-weight:750}
+.practice-summary{font-size:.875rem;line-height:1.5;color:#4b5b68;margin-top:20px;max-width:320px}
+.practice-summary progress{display:block;width:100%;height:9px;margin:8px 0 0;accent-color:var(--green)}
+.resume-label{font-size:.875rem;color:#4b5b68;margin-top:8px}
+.session-pebbles{align-items:center;gap:8px;flex-wrap:wrap}
+.lesson-marker{display:grid;place-items:center;position:relative;width:44px;height:37px;border:2px solid #d9d2e2;border-radius:11px;background:#fff}
+.lesson-marker>svg{width:35px;height:29px}
+.lesson-marker.current{border-color:var(--violet);background:#f0eaf9}
+.lesson-marker.done{border-color:var(--green);background:#e8f4e7}
+.session-count{font-size:.875rem;font-weight:750;color:#4b5b68;margin-left:5px}
+.helper-button{flex-direction:column;justify-content:center;gap:0;min-width:76px;min-height:64px;padding:4px;color:#5d457e}
+.helper-button>svg{width:32px;height:32px}
+.helper-label{font-size:.875rem;font-weight:750;white-space:nowrap}
+.child-status{font-size:.875rem;flex-wrap:wrap;gap:10px;padding:12px 0}
+.map-node>span{font-size:.875rem}
+.keep-button{min-height:54px}
+@media(max-width:600px){
+  .course-link{font-size:.875rem}
+  .home-intro .home-goal{grid-column:1/-1;grid-row:2;margin:0 0 14px;padding-left:9px;font-size:1rem;max-width:none}
+  .home-intro #unitOverview{grid-column:1/-1;grid-row:2;padding-left:9px}
+  #unitOverview .unit-purpose{max-width:none;margin-bottom:16px}
+  .home-actions{grid-column:1/-1;grid-row:3;justify-content:center;width:100%}
+  .home-intro .play-button{min-width:170px;font-size:1.125rem}
+  .home-intro .practice-summary{grid-column:1/-1;grid-row:4;width:100%;max-width:360px;justify-self:center;margin-top:15px}
+  .home-intro .resume-label{grid-column:1/-1;grid-row:5;justify-self:center}
+  .home-intro .peek-tray{display:flex;grid-column:1/-1;grid-row:6;justify-content:center;margin-top:10px;max-width:none}
+  .home-intro .peek-tray>svg{width:52px;height:43px}
+  .home-intro .peek-tray>.icon{display:none}
+  .activity-bottom{gap:12px}
+  .next-button{min-width:150px}
+  .map-node>span{font-size:.875rem}
+}

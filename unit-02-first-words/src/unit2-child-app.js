@@ -8,13 +8,15 @@ const words = CONTENT.items.filter(item => item.includedInChildActivity).map((it
 });
 const wordByScript = script => words.find(word => word.word === script);
 const defaultPictures = ['ቤት','ማይ','ድሙ'].map(wordByScript);
-const state = {screen:'home',category:'home',page:0,collection:false,saved:new Set(),session:[],wordIndex:0,stage:0,matched:false,placed:[],mistakes:0,hint:false,sessionComplete:false,sessionPhase:'words',pairPictures:[],pairDeck:[],pairOpen:[],pairMatched:new Set(),demonstrated:new Set()};
+const state = {screen:'home',category:'home',page:0,collection:false,saved:new Set(),practised:new Set(),reviewCursor:0,session:[],wordIndex:0,stage:0,matched:false,placed:[],mistakes:0,hint:false,sessionComplete:false,sessionPhase:'words',pairPictures:[],pairDeck:[],pairOpen:[],pairMatched:new Set(),demonstrated:new Set()};
 const select = selector => document.querySelector(selector);
 const selectAll = selector => Array.from(document.querySelectorAll(selector));
 const escapeText = value => String(value).replace(/[&<>"']/g,character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const icon = name => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const artwork = (word,className='') => `<svg class="${className}" viewBox="0 0 320 240" role="img" aria-label="${escapeText(word.concept)} picture. ${REVIEW_STATUS}." aria-describedby="reviewNotice"><use href="#art-${word.art}"/></svg>`;
-const native = (word,className='native-word') => `<span class="${className}" lang="ti" data-review="pending" aria-describedby="reviewNotice">${escapeText(word.word)}</span>`;
+const native = (word,className='native-word') => `<span class="${className}" lang="ti" dir="ltr" data-review="pending" aria-describedby="reviewNotice">${escapeText(word.word)}</span>`;
+state.check = null;
+state.checkSummaries = [];
 let demoTimer = null;
 
 function clearDemonstration() {
@@ -25,7 +27,8 @@ function clearDemonstration() {
 function showScreen(screen) {
   clearDemonstration();
   state.screen = screen;
-  ['home','gallery','game','pairs','finish','grownups'].forEach(name => {select(`#${name}Screen`).hidden = name !== screen;});
+  select('#learningPath').hidden = screen !== 'home';
+  ['home','gallery','game','pairs','journey','finish','grownups'].forEach(name => {select(`#${name}Screen`).hidden = name !== screen;});
   if (screen === 'gallery') select('#collectionButton').setAttribute('aria-current',state.collection ? 'page' : 'false');
   else select('#collectionButton').removeAttribute('aria-current');
   if (screen === 'grownups') select('#grownupsButton').setAttribute('aria-current','page');
@@ -37,7 +40,47 @@ function showScreen(screen) {
 
 function goHome() {
   if (select('#parentDialog').open) select('#parentDialog').close();
+  renderHome();
   showScreen('home');
+}
+
+function reviewSelection() {
+  const familiar = words.filter(word => state.practised.has(word.id));
+  return Array.from({length:Math.min(3,familiar.length)},(_,index) => familiar[(state.reviewCursor+index)%familiar.length]);
+}
+
+function planLesson() {
+  const dueIds = LearningPath.due('words');
+  const dueWords = dueIds.map(id=>words.find(word=>word.id===id)).filter(Boolean);
+  if(dueWords.length)return dueWords.slice(0,LearningPath.wordLimit());
+  if(LearningPath.wordLimit()===1&&state.practised.size){
+    const fresh=words.find(word=>!state.practised.has(word.id));
+    if(fresh)return [fresh];
+  }
+  return newWordsPlan().slice(0,LearningPath.wordLimit());
+}
+
+function newWordsPlan() {
+  if (!state.practised.size) return defaultPictures;
+  const fresh = words.filter(word => !state.practised.has(word.id));
+  if (!fresh.length) return reviewSelection();
+  const familiar = reviewSelection().find(word => word.art !== fresh[0].art);
+  return familiar ? [familiar,...fresh.filter(word => word.art !== familiar.art).slice(0,2)] : fresh.slice(0,3);
+}
+
+function renderHome() {
+  LearningPath.render();
+  const unfinished = state.session.length > 0 && !state.sessionComplete;
+  const nextWords = unfinished ? state.session : planLesson();
+  const allPractised = state.practised.size === words.length;
+  select('#playButton').innerHTML = `${unfinished ? 'Continue' : LearningPath.due('words').some(id=>words.some(word=>word.id===id)) ? 'Review' : allPractised ? 'Review' : state.practised.size ? 'Next words' : 'Start'} ${icon('play')}`;
+  select('#reviewButton').hidden = !state.practised.size || unfinished || allPractised;
+  select('#practiceSummary').textContent = state.practised.size ? `${state.practised.size} of ${words.length} picture words practised` : `${nextWords.length} picture word${nextWords.length===1?'':'s'} to begin`;
+  select('#practiceProgress').value = state.practised.size;
+  select('#practiceProgress').max = words.length;
+  const newCount = nextWords.filter(word => !state.practised.has(word.id)).length;
+  select('#resumeLabel').textContent = unfinished ? (state.sessionPhase === 'pairs' ? 'Continue finding pairs' : state.sessionPhase === 'recap' ? 'Continue to your recap' : state.sessionPhase === 'check' ? 'Continue your picture-word check' : `Continue word ${state.wordIndex+1} of ${state.session.length}`) : state.practised.size && !allPractised ? `${nextWords.length-newCount} familiar. ${newCount} new.` : allPractised ? 'Revisit familiar picture words' : '';
+  select('#peekTray').innerHTML = nextWords.map(word => artwork(word)).join('')+icon('arrow');
 }
 
 function startSession(selectedWords) {
@@ -47,6 +90,7 @@ function startSession(selectedWords) {
   state.stage = 0;
   state.sessionComplete = false;
   state.sessionPhase = 'words';
+  state.check = null;
   state.pairPictures = selectedWords.filter((word,index) => selectedWords.findIndex(candidate => candidate.art === word.art) === index);
   state.pairDeck = [];
   state.pairOpen = [];
@@ -58,6 +102,10 @@ function startSession(selectedWords) {
 
 function play() {
   if (state.session.length && !state.sessionComplete) {
+    if (state.sessionPhase === 'recap' || state.sessionPhase === 'check') {
+      renderSessionPanel();
+      return;
+    }
     if (state.sessionPhase === 'pairs') {
       openPairs();
       return;
@@ -66,9 +114,16 @@ function play() {
     renderGame(true);
     return;
   }
-  const newWords = words.filter(word => !state.saved.has(word.id));
-  const firstPlay = state.saved.size === 0;
-  startSession(firstPlay ? defaultPictures : (newWords.length ? newWords.slice(0,3) : defaultPictures));
+  startSession(planLesson());
+  state.reviewCursor += 1;
+}
+
+function review() {
+  if (state.session.length && !state.sessionComplete) return;
+  const selectedWords = reviewSelection();
+  if (!selectedWords.length) return;
+  startSession(selectedWords);
+  state.reviewCursor += Math.min(3,selectedWords.length);
 }
 
 function resetActivity() {
@@ -94,7 +149,7 @@ function renderGallery() {
   const selectedWords = galleryItems();
   const pages = Math.max(1,Math.ceil(selectedWords.length/4));
   state.page = Math.max(0,Math.min(state.page,pages-1));
-  select('#galleryHeading').textContent = state.collection ? 'Pictures' : worldNames[state.category];
+  select('#galleryHeading').textContent = state.collection ? 'Kept pictures' : worldNames[state.category];
   if (!selectedWords.length) {
     select('#galleryGrid').className = 'empty-collection';
     select('#galleryGrid').innerHTML = `<svg viewBox="0 0 260 240" role="img" aria-label="The little lion waves"><use href="#art-guide"/></svg><button class="play-button" data-action="play">Play ${icon('play')}</button>`;
@@ -128,14 +183,14 @@ function renderGame(demonstrate=false) {
   select('#gameScreen').dataset.activity = ['look','build','recognize'][state.stage];
   select('#gameHeading').textContent = stages[state.stage].name;
   select('#stageTrail').innerHTML = stages.map((stage,index) => `${index ? '<li class="trail-line" aria-hidden="true"></li>' : ''}<li class="${index === state.stage ? 'active' : index < state.stage ? 'complete' : ''}" ${index === state.stage ? 'aria-current="step"' : ''} aria-label="${stage.name}${index === state.stage ? ', current step' : ''}">${icon(index < state.stage ? 'check' : stage.icon)}</li>`).join('');
-  select('#sessionPebbles').innerHTML = state.session.map((entry,index) => `<i class="${index === state.wordIndex ? 'current' : ''}" aria-hidden="true"></i>`).join('');
-  select('#sessionPebbles').setAttribute('aria-label',`Picture ${state.wordIndex+1} of ${state.session.length}`);
+  select('#sessionPebbles').innerHTML = `<span class="session-count">Word ${state.wordIndex+1} of ${state.session.length}</span>`+state.session.map((entry,index) => `<span class="lesson-marker ${index === state.wordIndex ? 'current' : index < state.wordIndex ? 'done' : ''}" aria-hidden="true">${artwork(entry)}</span>`).join('');
+  select('#sessionPebbles').setAttribute('aria-label',`Word ${state.wordIndex+1} of ${state.session.length}`);
   select('#gameFeedback').textContent = '';
   if (state.stage === 0) {
-    select('#activity').innerHTML = `<button class="teach-scene" data-action="notice" style="--tile-bg:${word.background}" aria-label="Explore the ${escapeText(word.concept)} picture" aria-describedby="reviewNotice">${artwork(word)}<span class="tap-dot" aria-hidden="true">${icon('tap')}</span></button><div class="teach-word">${native(word)}</div><div class="two-letter-mini" aria-label="Two letters" aria-describedby="reviewNotice">${word.letters.map(letter => `<span lang="ti">${escapeText(letter)}</span>`).join('')}</div>`;
+    select('#activity').innerHTML = `<button class="teach-scene" data-action="notice" style="--tile-bg:${word.background}" aria-label="Explore the ${escapeText(word.concept)} picture" aria-describedby="reviewNotice">${artwork(word)}<span class="tap-dot" aria-hidden="true">${icon('tap')}</span></button><div class="teach-word">${native(word)}</div><p class="teach-meaning">${escapeText(word.concept)}</p><div class="two-letter-mini" aria-label="Two Fidäl characters" aria-describedby="reviewNotice">${word.letters.map(letter => `<span lang="ti">${escapeText(letter)}</span>`).join('')}</div>`;
   } else if (state.stage === 1) {
     const tokenOrder = word.order%2 ? [0,1] : [1,0];
-    select('#activity').innerHTML = `${reference(word,'build-model')}<div class="letter-slots" aria-label="Build the two-letter word" aria-describedby="reviewNotice">${word.letters.map((letter,index) => `<div class="letter-slot ${state.placed.length > index ? 'filled' : state.placed.length === index ? 'next-slot' : ''}" ${state.placed.length > index ? 'lang="ti"' : ''} aria-label="${state.placed.length > index ? 'Placed letter '+escapeText(letter) : 'Empty letter place '+(index+1)}">${state.placed.length > index ? escapeText(letter) : `<span class="ghost" aria-hidden="true">${state.hint && state.placed.length === index ? escapeText(letter) : ''}</span>`}</div>`).join('')}</div><div class="letter-pool">${tokenOrder.map(index => `<button class="letter-token" data-token="${index}" ${state.placed.includes(index) ? 'disabled' : ''} lang="ti" aria-label="Place letter ${escapeText(word.letters[index])}" aria-describedby="reviewNotice">${escapeText(word.letters[index])}</button>`).join('')}</div>`;
+    select('#activity').innerHTML = `${reference(word,'build-model')}<div class="letter-slots" aria-label="Build the word using two Fidäl characters" aria-describedby="reviewNotice">${word.letters.map((letter,index) => `<div class="letter-slot ${state.placed.length > index ? 'filled' : state.placed.length === index ? 'next-slot' : ''}" ${state.placed.length > index ? 'lang="ti"' : ''} aria-label="${state.placed.length > index ? 'Placed character '+escapeText(letter) : 'Empty character place '+(index+1)}">${state.placed.length > index ? escapeText(letter) : `<span class="ghost" aria-hidden="true">${state.hint && state.placed.length === index ? escapeText(letter) : ''}</span>`}</div>`).join('')}</div><div class="letter-pool">${tokenOrder.map(index => `<button class="letter-token" data-token="${index}" ${state.placed.includes(index) ? 'disabled' : ''} lang="ti" aria-label="Place character ${escapeText(word.letters[index])}" aria-describedby="reviewNotice">${escapeText(word.letters[index])}</button>`).join('')}</div>`;
   } else {
     const options = choiceWords(word);
     const showModel = options.length === 1 || state.hint || state.matched;
@@ -152,6 +207,8 @@ function renderGame(demonstrate=false) {
 
 function updateNext() {
   select('#nextButton').disabled = state.stage === 1 ? state.placed.length !== 2 : state.stage === 2 ? !state.matched : false;
+  const label = state.stage === 0 ? 'Make it' : state.stage === 1 ? 'Find it' : state.wordIndex+1 < state.session.length ? 'Next word' : state.pairPictures.length > 1 ? 'Find pairs' : 'Finish';
+  select('#nextButton').innerHTML = `${label} ${icon('arrow')}`;
 }
 
 function handMarkup() {
@@ -221,7 +278,7 @@ function matchWord(button) {
     button.classList.remove('mismatch');
     void button.offsetWidth;
     button.classList.add('mismatch');
-    select('#gameFeedback').textContent = 'Look';
+    select('#gameFeedback').textContent = 'Compare the letters';
     showHint();
   }
 }
@@ -230,6 +287,7 @@ function placeLetter(button) {
   if (state.screen !== 'game' || state.stage !== 1 || state.placed.length === 2) return;
   const word = state.session[state.wordIndex];
   const index = Number(button.dataset.token);
+  if (!Number.isInteger(index) || index < 0 || index >= word.letters.length) return;
   if (state.placed.includes(index)) return;
   clearDemonstration();
   if (word.letters[index] === word.letters[state.placed.length]) {
@@ -247,7 +305,7 @@ function placeLetter(button) {
     }
   } else {
     state.mistakes += 1;
-    select('#gameFeedback').textContent = 'Look';
+    select('#gameFeedback').textContent = 'Try this shape';
     showHint();
   }
 }
@@ -255,6 +313,7 @@ function placeLetter(button) {
 function nextStep() {
   if (state.screen !== 'game' || select('#nextButton').disabled) return;
   select('#nextButton').classList.remove('hint-target');
+  if (state.stage === 2) state.practised.add(state.session[state.wordIndex].id);
   if (state.stage < 2) {
     state.stage += 1;
     resetActivity();
@@ -267,7 +326,7 @@ function nextStep() {
     renderGame(true);
     select('#gameHeading').focus({preventScroll:true});
   } else if (state.pairPictures.length > 1) openPairs(true);
-  else finishSession();
+  else openRecap();
 }
 
 function createPairDeck(selectedWords,random=Math.random) {
@@ -356,10 +415,66 @@ function showPairHint() {
   target.insertAdjacentHTML('beforeend',handMarkup());
 }
 
+function recapWords() {
+  return `<div class="journey-recap">${state.session.map(word=>`<div>${artwork(word)}${native(word,'recap-script')}<span class="recap-meaning">${escapeText(word.concept)}</span></div>`).join('')}</div>`;
+}
+
+function openRecap() {
+  state.sessionPhase = 'recap';
+  renderSessionPanel();
+}
+
+function startWordCheck() {
+  if (state.sessionPhase !== 'recap') return;
+  state.check = UnitJourney.createCheck(state.session,UnitJourney.wordQuestion);
+  state.sessionPhase = 'check';
+  renderSessionPanel();
+}
+
+function renderSessionPanel() {
+  if (state.sessionPhase === 'recap') {
+    select('#journeyScreen').innerHTML = UnitJourney.panel({label:'RECAP',title:'Your picture words',body:`<p>Look once more. Then try without the model.</p>${recapWords()}`,primary:{action:'word-check',label:'Try the check'},secondary:'<button class="journey-secondary" data-journey-action="repeat-words">Practise again</button>'});
+  } else if (state.sessionPhase === 'check' && state.check && !state.check.complete) {
+    const check=state.check,entry=check.current,word=entry.item;
+    const assisted=check.helped&&!entry.solved;
+    const body=`<p class="unit-time">${entry.repeat?'Revisit':'Picture '+(check.position+1)+' of '+state.session.length}</p><div class="journey-prompt">${artwork(word)}</div><div class="journey-model" id="checkModel" ${assisted?'':'hidden'}>${native(word,'recap-script')}<span class="recap-meaning">${escapeText(word.concept)}</span></div><div class="journey-choices" role="group" aria-label="Choose the word for this picture">${entry.question.options.map(option=>`<button class="journey-choice" data-check-key="${option.key}" ${entry.solved?'aria-disabled="true"':''} ${assisted&&option.key===entry.question.correctKey?'data-hint="true"':''} ${entry.solved&&option.key===entry.question.correctKey?'data-result="correct"':''} aria-label="Choose ${escapeText(option.label)}"><span lang="ti" dir="ltr">${escapeText(option.label)}</span>${entry.solved&&option.key===entry.question.correctKey?'<span class="check-mark" aria-hidden="true">✓</span>':''}</button>`).join('')}</div><p id="checkFeedback" class="journey-feedback" role="status" aria-live="polite">${entry.solved?'Picture and word matched.':assisted?'Compare the model. Try the highlighted word.':''}</p>`;
+    select('#journeyScreen').innerHTML=UnitJourney.panel({label:'PICTURE-WORD CHECK',title:'Find its word',body,primary:{action:'advance-check',label:'Continue'},disabled:!entry.solved,secondary:entry.solved?'':'<button class="journey-help" data-journey-action="check-help">Show me</button>'});
+  } else return;
+  select('#journeyScreen').insertAdjacentHTML('beforeend','<button class="journey-exit" data-action="home">Home · continue later</button>');
+  showScreen('journey');
+}
+
+function answerWordCheck(key) {
+  if (state.screen!=='journey'||state.sessionPhase!=='check'||!state.check) return;
+  const result=state.check.answer(key);
+  if(result==='ignored')return;
+  renderSessionPanel();
+  UnitJourney.announce(result==='correct'?'Picture and word matched.':'Compare the model. Try the highlighted word.');
+  if(result==='correct') select('[data-journey-action="advance-check"]').focus({preventScroll:true});
+  else select(`[data-check-key="${state.check.current.question.correctKey}"]`).focus({preventScroll:true});
+}
+
+function handleJourney(action) {
+  if(state.screen!=='journey')return;
+  if(action==='word-check')startWordCheck();
+  if(action==='repeat-words'&&state.sessionPhase==='recap')startSession([...state.session]);
+  if(action==='check-help'&&state.sessionPhase==='check'&&state.check){state.check.help();renderSessionPanel();select(`[data-check-key="${state.check.current.question.correctKey}"]`).focus({preventScroll:true})}
+  if(action==='advance-check'&&state.sessionPhase==='check'&&state.check&&state.check.advance()){
+    if(state.check.complete)finishSession();else renderSessionPanel();
+  }
+}
+
 function finishSession() {
+  if(!state.check||!state.check.complete||state.sessionComplete)return;
+  state.session.forEach(word=>state.practised.add(word.id));
+  LearningPath.record('words',state.check.itemResults);
   state.sessionComplete = true;
   state.sessionPhase = 'finish';
   select('#finishPictures').innerHTML = state.session.map(word => `<div aria-describedby="reviewNotice">${artwork(word)}</div>`).join('');
+  select('#finishNextButton').innerHTML = `${state.practised.size === words.length ? 'Review' : 'Next words'} ${icon('arrow')}`;
+  select('#finishSummary').textContent = `${state.session.length} picture word${state.session.length === 1 ? '' : 's'} practised`;
+  select('#checkOutcome').innerHTML=UnitJourney.outcome(state.check.summary,'picture words');
+  state.checkSummaries.push(state.check.summary);
   showScreen('finish');
 }
 
@@ -370,7 +485,7 @@ function keepPictures() {
 }
 
 function searchText(value) {
-  return String(value).normalize('NFD').replace(/\p{M}/gu,'').toLocaleLowerCase();
+  return FidalText.searchKey(value);
 }
 
 function renderReview() {
@@ -389,6 +504,7 @@ function renderReview() {
 function handleAction(action,button) {
   if (action === 'home') goHome();
   if (action === 'play') play();
+  if (action === 'review') review();
   if (action === 'collection') openGallery(null,true);
   if (action === 'previous-page' || action === 'next-page') {
     state.page += action === 'previous-page' ? -1 : 1;
@@ -398,7 +514,7 @@ function handleAction(action,button) {
   if (action === 'notice') noticePicture(button);
   if (action === 'next') nextStep();
   if (action === 'help') showHint();
-  if (action === 'finish-pairs' && state.screen === 'pairs' && state.pairMatched.size === state.pairPictures.length) finishSession();
+  if (action === 'finish-pairs' && state.screen === 'pairs' && state.pairMatched.size === state.pairPictures.length) openRecap();
   if (action === 'keep') keepPictures();
   if (action === 'grownup-dialog') {
     clearDemonstration();
@@ -421,11 +537,18 @@ document.addEventListener('click',event => {
     if (word) startSession([word]);
   }
   if (button.dataset.action) handleAction(button.dataset.action,button);
+  if (button.dataset.journeyAction) handleJourney(button.dataset.journeyAction);
+  if (button.dataset.checkKey) answerWordCheck(button.dataset.checkKey);
   if (button.dataset.choice) matchWord(button);
   if (button.dataset.token !== undefined) placeLetter(button);
   if (button.dataset.pair) flipPairCard(button.dataset.pair);
 });
 select('#bankSearch').addEventListener('input',renderReview);
 select('#bankPlacement').addEventListener('change',renderReview);
-select('#peekTray').innerHTML = defaultPictures.map(word => artwork(word)).join('')+icon('arrow');
+select('#unitOverview').innerHTML=UnitJourney.overview('words');
+renderHome();
 renderReview();
+
+LearningPath.completedWords().forEach(id=>{if(words.some(word=>word.id===id))state.practised.add(id)});
+LearningPath.configure({unit:'words',refresh:renderHome,reset(){state.practised.clear();state.saved.clear();renderHome()}});
+renderHome();
