@@ -72,3 +72,7 @@ Visual inspection covered the character sheet, small-size identity, desktop home
 - Native normal/slow recordings and exact separately reviewed timing data are still needed for real Tigrinya audio synchronization. The feature currently has zero such assets; only the transport mechanism was tested with tones.
 - Real iOS/Android devices, real microphone hardware/permission UI, screen-reader use, observed child usability and learning effectiveness remain unverified. Chromium phone emulation, synthetic recording tests and source checks do not replace those evaluations.
 - Nothing was staged or sent to GitHub. Existing uncommitted work was retained.
+
+## Standalone SVG export correction
+
+During the subsequent appearance preview, a standalone SVG rendered only the content preceding its mouth group: the exporter retained an HTML-style boolean `data-neri-mouth` attribute, which is invalid XML. The exporter now emits an explicit empty attribute value. All 17 static exports were regenerated, and the build now parses every exported SVG as XML before accepting it. The live inline component was already parsed as HTML and was unaffected. All fourteen mascot checks passed again, and isolated Chrome verified the corrected standalone SVG has no parser error and renders the smile. The correction was made after the full 262-case run above; that full suite was not rerun for this export-only fix.

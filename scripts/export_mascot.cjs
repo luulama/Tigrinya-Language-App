@@ -12,6 +12,7 @@ const dir = path.join(root, "shared/mascot/assets");
 fs.mkdirSync(dir, { recursive: true });
 function save(name, svg, title) {
   const art = svg
+    .replaceAll("data-neri-mouth>", 'data-neri-mouth="">')
     .replace('aria-hidden="true"', 'role="img" aria-label="' + title + '"')
     .replace(
       /(<svg[^>]*>)/,

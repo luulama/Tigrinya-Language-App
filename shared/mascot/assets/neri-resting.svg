@@ -17,7 +17,7 @@
       <g class="neri-face"><path d="M111 105 Q123 100 136 105" fill="none" stroke="#614837" stroke-width="5" stroke-linecap="round"/><path d="M164 105 Q177 100 189 105" fill="none" stroke="#614837" stroke-width="5" stroke-linecap="round"/>
       <path d="M113 122 Q124 112 135 122 M165 122 Q176 112 187 122" fill="none" stroke="#273849" stroke-width="4" stroke-linecap="round"/>
       <path d="M147 133 Q143 138 148 139 M153 133 Q157 138 152 139" fill="none" stroke="#bd9570" stroke-width="2" stroke-linecap="round"/>
-      <g data-neri-mouth><path d="M137 153 Q150 157 164 153" fill="none" stroke="#614837" stroke-width="3.5" stroke-linecap="round"/></g>
+      <g data-neri-mouth=""><path d="M137 153 Q150 157 164 153" fill="none" stroke="#614837" stroke-width="3.5" stroke-linecap="round"/></g>
       <ellipse cx="110" cy="145" rx="8" ry="4" fill="#c86443" opacity=".16"/><ellipse cx="190" cy="145" rx="8" ry="4" fill="#c86443" opacity=".16"/>
       </g><path d="M101 196 H113 M101 204 H109" stroke="#176f58" stroke-width="3" stroke-linecap="round"/>
     </g></svg>

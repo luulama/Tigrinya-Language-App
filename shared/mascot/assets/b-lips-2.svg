@@ -17,7 +17,7 @@
       <g class="neri-face">
 
       <path d="M147 133 Q143 138 148 139 M153 133 Q157 138 152 139" fill="none" stroke="#bd9570" stroke-width="2" stroke-linecap="round"/>
-      <g data-neri-mouth><g class="neri-mouth" data-mouth-opening="0.000" data-mouth-contact="0.000">
+      <g data-neri-mouth=""><g class="neri-mouth" data-mouth-opening="0.000" data-mouth-contact="0.000">
       <path class="neri-cavity" d="M126 151 Q150 151 174 151 Q171 151 150 151 Q129 151 126 151Z" fill="#603d36" opacity="0"/>
       <path d="M127 151 Q150 142 173 151" fill="none" stroke="#b86b55" stroke-width="5" stroke-linecap="round"/>
       <path d="M137 148 Q150 146 163 148 L163 157 Q150 159 137 157Z" fill="#fffdf5" stroke="#bba78f" stroke-width=".8" opacity="0"/>
