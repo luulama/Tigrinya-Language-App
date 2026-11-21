@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Stories · Tigrinya</title>
+    <link rel="stylesheet" href="stories.css" />
+  </head>
+  <body>
+    <a class="story-skip" href="#storyMain">Skip to stories</a>
+    <header class="story-header">
+      <a class="story-brand" href="../index.html"
+        >Tigrinya<span aria-hidden="true">✦</span></a
+      >
+      <nav aria-label="Sections">
+        <a href="../index.html">Learn</a
+        ><a href="index.html" data-story="library" aria-current="page"
+          >Stories</a
+        >
+      </nav>
+      <button
+        type="button"
+        data-story="settings"
+        aria-expanded="false"
+        aria-controls="storySettings"
+      >
+        Reading settings
+      </button>
+    </header>
+    <p id="storySaveNote" class="story-save-note" role="status">
+      Reading choices stay in this tab. Device saving is optional.
+    </p>
+    <main id="storyMain" tabindex="-1">
+      <div id="storyApp">
+        <p role="status">Opening your story collection…</p>
+      </div>
+    </main>
+    <section
+      id="storySettings"
+      class="story-settings"
+      aria-label="Reading settings"
+      hidden
+    ></section>
+    <p
+      id="storyLive"
+      class="story-sr"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    ></p>
+    <footer class="story-footer">
+      <p>
+        Fiction for a quiet moment. Marking a story read records your choice,
+        not a learning assessment.
+      </p>
+      <p>
+        Original story drafts · Native review pending · Tigrinya is read left to
+        right.
+      </p>
+      <details>
+        <summary>For grown-ups &amp; reviewers</summary>
+        <p>
+          All 20 complete narratives await independent fluent Tigrinya editing,
+          age suitability and illustration review. The order moves from shorter
+          to longer narratives; it is not a validated language level. No stories
+          unlock or change the course.
+        </p>
+        <p>
+          <a href="STORY_REVIEW.md">Story list, sources and review checklist</a>
+          · <a href="catalog.json" download>Download the story collection</a
+          ><span id="publishedStoriesLink"></span>
+        </p>
+      </details>
+    </footer>
+    <noscript
+      ><p>
+        Enable JavaScript to open the illustrated reader. The complete text is
+        also available in the downloadable story collection.
+      </p></noscript
+    >
+    <script src="data.js"></script>
+    <script src="core.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -364,6 +364,7 @@
       <div class="header-tools"><button class="round-button" id="collectionButton" data-action="collection" aria-label="Pictures"><svg class="icon" aria-hidden="true"><use href="#i-shelf"/></svg></button><button class="round-button" id="grownupsButton" data-action="grownup-dialog" aria-label="Grown-up settings"><svg class="icon" aria-hidden="true"><use href="#i-gear"/></svg></button></div>
     </header>
     <a class="course-link" href="../index.html">All lessons</a>
+    <a class="course-link" href="path.html">Follow the word path · Unit 2 onward →</a>
     <a class="course-link" href="../games/index.html?unit=2">Game Garden · 10 word games →</a>
     <main id="main" tabindex="-1">
       <div id="journeyAnnouncement" class="journey-announcement" role="status" aria-live="polite" aria-atomic="true"></div>
@@ -459,6 +460,18 @@
     };
   }
   root.LearningPath={due,record,saveFamily,completedWords,wordLimit,configure,render,get families(){return data.families},get saving(){return data.save}};
+  /* BEGIN pronunciation-card storage extension */
+  root.LearningPath.cardPractice={
+    read(){return data.pronunciation?JSON.parse(JSON.stringify(data.pronunciation)):null},
+    write(value){data.pronunciation=JSON.parse(JSON.stringify(value));persist()},
+    setSaving(enabled){
+      if(enabled){data.save=true;persist()}
+      else{try{root.localStorage.removeItem(KEY);data.save=false;storageError=false}catch(error){storageError=true}}
+      render();return data.save;
+    },
+    get error(){return storageError}
+  };
+  /* END pronunciation-card storage extension */
   render();
 })(globalThis);
 </script>

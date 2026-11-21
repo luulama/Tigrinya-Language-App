@@ -53,5 +53,17 @@
     };
   }
   root.LearningPath={due,record,saveFamily,completedWords,wordLimit,configure,render,get families(){return data.families},get saving(){return data.save}};
+  /* BEGIN pronunciation-card storage extension */
+  root.LearningPath.cardPractice={
+    read(){return data.pronunciation?JSON.parse(JSON.stringify(data.pronunciation)):null},
+    write(value){data.pronunciation=JSON.parse(JSON.stringify(value));persist()},
+    setSaving(enabled){
+      if(enabled){data.save=true;persist()}
+      else{try{root.localStorage.removeItem(KEY);data.save=false;storageError=false}catch(error){storageError=true}}
+      render();return data.save;
+    },
+    get error(){return storageError}
+  };
+  /* END pronunciation-card storage extension */
   render();
 })(globalThis);

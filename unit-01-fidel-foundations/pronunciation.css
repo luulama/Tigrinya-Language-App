@@ -1,0 +1,413 @@
+:root {
+  --ink: #25324b;
+  --muted: #536177;
+  --green: #087957;
+  --violet: #6242b3;
+  --line: #dce3e5;
+  --cream: #faf8f2;
+  --pink: #f5edf8;
+  --gold: #ffdb87;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 10% 0, #e7f8ef, transparent 50%), var(--cream);
+  color: var(--ink);
+  font-family: ui-rounded, "Avenir Next", system-ui, sans-serif;
+  line-height: 1.5;
+}
+a {
+  color: var(--green);
+  text-underline-offset: 4px;
+}
+button,
+select {
+  font: inherit;
+  color: inherit;
+}
+button,
+a,
+summary,
+select {
+  touch-action: manipulation;
+}
+button,
+summary,
+select {
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible,
+select:focus-visible {
+  outline: 3px solid #1769e0;
+  outline-offset: 4px;
+}
+button {
+  border: 1.5px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  padding: 12px 18px;
+  min-height: 48px;
+  font-weight: 800;
+}
+button:hover:not(:disabled) {
+  border-color: var(--green);
+  background: #f0faf4;
+}
+button:disabled {
+  opacity: 0.58;
+  cursor: default;
+}
+button.primary {
+  color: #fff;
+  background: var(--green);
+  border-color: var(--green);
+  box-shadow: 0 4px 0 #05543e;
+}
+button.primary:hover:not(:disabled) {
+  background: #08684c;
+}
+.say-header {
+  max-width: 990px;
+  margin: auto;
+  padding: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.say-header > a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.say-brand {
+  font-size: 27px;
+  font-weight: 950;
+  text-decoration: none;
+  letter-spacing: -1.5px;
+}
+.say-brand span {
+  color: var(--violet);
+  font-size: 20px;
+  margin-left: 4px;
+}
+.say-main {
+  max-width: 720px;
+  margin: 15px auto 60px;
+  padding: 0 20px;
+}
+.say-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  margin-bottom: 8px;
+}
+.say-top > span,
+.say-eyebrow {
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+.say-panel {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: #fff;
+  padding: clamp(22px, 5vw, 42px);
+  text-align: center;
+  box-shadow: 0 16px 50px #25324b06;
+}
+.say-panel h1 {
+  font-size: clamp(27px, 5vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -1.3px;
+  margin: 13px 0;
+}
+.say-panel p {
+  max-width: 510px;
+  margin: 14px auto;
+  color: var(--muted);
+}
+.say-glyph {
+  font-family: "Noto Sans Ethiopic", "Nyala", "Kefa", sans-serif;
+  font-size: clamp(128px, 30vw, 190px);
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 8px 0 15px;
+  color: var(--ink);
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+.say-hero-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 22px auto 10px;
+  height: 145px;
+}
+.say-mini-card {
+  display: grid;
+  place-items: center;
+  width: 110px;
+  height: 135px;
+  border: 1px solid var(--line);
+  border-radius: 23px;
+  font-size: 65px;
+  background: var(--pink);
+  font-family: "Noto Sans Ethiopic", "Nyala", "Kefa", sans-serif;
+}
+.say-mini-card:first-child {
+  transform: rotate(-9deg);
+  background: #e8f7ee;
+}
+.say-mini-card:last-child {
+  transform: rotate(9deg);
+  background: #fff3d4;
+}
+.say-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.say-progress {
+  height: 7px;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #edf0ed;
+  margin: 12px 0 26px;
+}
+.say-progress > i {
+  display: block;
+  height: 100%;
+  background: var(--green);
+  border-radius: inherit;
+}
+.say-micro {
+  font-size: 13px;
+}
+.say-sequence {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 26px auto;
+}
+.say-sequence span {
+  border-radius: 12px;
+  padding: 8px 13px;
+  background: #f4f3f8;
+  font-size: 14px;
+  font-weight: 750;
+}
+.say-reveal {
+  background: #f5f2fa;
+  border-radius: 20px;
+  padding: 14px;
+  margin-top: 12px;
+}
+.say-reveal p {
+  margin: 7px auto;
+}
+.say-family {
+  font-size: 25px;
+  letter-spacing: 0.15em;
+  font-family: "Noto Sans Ethiopic", "Nyala", "Kefa", sans-serif;
+}
+.say-family b {
+  color: var(--violet);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.say-rating {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+}
+.say-rating button {
+  font-size: 14px;
+  padding: 14px 8px;
+}
+.say-rating span {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: var(--green);
+}
+.say-notice {
+  background: #fff5dc;
+  border: 1px solid #ead8a9;
+  border-radius: 16px;
+  padding: 12px 16px;
+  color: #634b16 !important;
+  font-size: 14px;
+}
+.say-settings,
+.say-sources {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+.say-settings summary,
+.say-sources summary {
+  min-height: 44px;
+  align-content: center;
+  color: var(--ink);
+  font-weight: 750;
+}
+.say-preview {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 20px 0 0;
+}
+.say-voice {
+  margin: 22px auto 0;
+  text-align: left;
+  max-width: 470px;
+  padding: 10px 0;
+  border-top: 1px solid var(--line);
+}
+.say-voice summary {
+  min-height: 44px;
+  align-content: center;
+  font-size: 14px;
+  font-weight: 750;
+}
+.say-voice p {
+  font-size: 13px;
+}
+.say-voice .say-actions {
+  margin-top: 12px;
+}
+.say-feedback {
+  background: #edf8f1;
+  border-radius: 20px;
+  padding: 18px;
+  margin-top: 15px;
+}
+.say-feedback strong {
+  font-size: 20px;
+}
+.say-check {
+  display: grid;
+  place-items: center;
+  width: 66px;
+  height: 66px;
+  background: #e7f6ed;
+  border-radius: 24px;
+  margin: 0 auto 18px;
+  font-size: 32px;
+  color: var(--green);
+}
+.say-options {
+  margin-top: 24px;
+}
+.say-options label {
+  display: block;
+  font-size: 14px;
+  font-weight: 750;
+  margin-bottom: 7px;
+}
+.say-options select {
+  padding: 12px;
+  min-height: 48px;
+  border-radius: 12px;
+  max-width: 100%;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+.say-recording {
+  color: #9c2933;
+  font-weight: 750;
+}
+.say-soft {
+  background: var(--pink);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 460px) {
+  .say-main {
+    padding: 0 12px;
+    margin-top: 0;
+  }
+  .say-header {
+    padding: 12px 16px;
+  }
+  .say-panel {
+    border-radius: 25px;
+    padding: 22px 15px;
+  }
+  .say-rating {
+    grid-template-columns: 1fr;
+  }
+  .say-rating button {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    padding: 11px 18px;
+  }
+  .say-rating span {
+    margin: 0;
+    font-size: 21px;
+  }
+  .say-actions > button.primary {
+    width: 100%;
+  }
+  .say-sequence {
+    gap: 6px;
+  }
+  .say-sequence span {
+    padding: 7px 9px;
+  }
+  .say-glyph {
+    padding-bottom: 0;
+  }
+  .say-hero-art {
+    height: 125px;
+  }
+  .say-mini-card {
+    width: 83px;
+    height: 111px;
+    font-size: 57px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .say-panel {
+    animation: say-in 0.16s ease-out;
+  }
+  @keyframes say-in {
+    from {
+      opacity: 0.6;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

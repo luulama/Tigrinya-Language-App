@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Say &amp; remember · Tigrinya Fidäl</title>
+    <link rel="stylesheet" href="pronunciation.css" />
+    <!-- NERI:BEGIN -->
+    <link rel="stylesheet" href="../shared/mascot/neri.css" />
+    <!-- NERI:END -->
+  </head>
+  <body>
+    <header class="say-header">
+      <a class="say-brand" href="index.html"
+        >Tigrinya<span aria-hidden="true">✦</span></a
+      >
+      <a href="index.html" data-say-exit>← Unit 1</a>
+    </header>
+    <main class="say-main">
+      <div class="say-top">
+        <span>UNIT 1 · FIDÄL</span
+        ><button type="button" data-say="pause" id="pauseButton" hidden>
+          Pause
+        </button>
+      </div>
+      <section id="cardsApp" aria-label="Say and remember">
+        <p role="status">Getting your cards ready…</p>
+      </section>
+      <p
+        id="sayAnnouncement"
+        class="sr-only"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+      <details class="say-settings">
+        <summary>My practice &amp; privacy</summary>
+        <div id="cardSettings"></div>
+        <p>
+          Speaking and recording are optional. There is no automatic
+          pronunciation score. Shared-device users share the local practice
+          profile.
+        </p>
+      </details>
+      <p class="say-preview">
+        Native review pending · No approved pronunciation recordings yet.
+      </p>
+      <details class="say-sources">
+        <summary>About these cards</summary>
+        <p>
+          Fidäl forms represent syllabic units, rather than English-style letter
+          names. Sixth-order readings need word context. Family and order labels
+          describe the script; they are not pronunciation hints.
+        </p>
+        <p>
+          <a href="../shared/content-review/CONTENT_REVIEW.md"
+            >Native review process</a
+          >
+          ·
+          <a href="../PRONUNCIATION_CARDS.md"
+            >Sources, recording requirements &amp; learning limits</a
+          >
+        </p>
+      </details>
+      <noscript
+        ><p>
+          These cards need JavaScript. You can still open the Unit 1 reference.
+        </p></noscript
+      >
+    </main>
+    <script src="../shared/learning-path.js"></script>
+    <script src="pronunciation-content.js"></script>
+    <script src="pronunciation-core.js"></script>
+    <!-- NERI:BEGIN -->
+    <script src="../shared/mascot/neri.js"></script>
+    <script src="../shared/mascot/articulation-data.js"></script>
+    <script src="../shared/mascot/articulation-core.js"></script>
+    <script src="../shared/mascot/practice.js"></script>
+    <!-- NERI:END -->
+    <script src="pronunciation-app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2270 @@
+// Generated from existing review records by scripts/build_unit2_path.py.
+globalThis.WordPathContent = {
+  "version": 1,
+  "language": "ti",
+  "script": "Ethi",
+  "direction": "ltr",
+  "words": [
+    {
+      "id": "u2-1264-1275",
+      "word": "ቤት",
+      "letters": [
+        "ቤ",
+        "ት"
+      ],
+      "concept": "House",
+      "art": "house",
+      "group": "home",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A4%E1%89%B5#Tigrinya"
+    },
+    {
+      "id": "u2-121b-12ed",
+      "word": "ማይ",
+      "letters": [
+        "ማ",
+        "ይ"
+      ],
+      "concept": "Water",
+      "art": "water",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9B%E1%8B%AD#Tigrinya"
+    },
+    {
+      "id": "u2-12f5-1219",
+      "word": "ድሙ",
+      "letters": [
+        "ድ",
+        "ሙ"
+      ],
+      "concept": "Cat",
+      "art": "cat",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%88%99#Tigrinya"
+    },
+    {
+      "id": "u2-120b-121d",
+      "word": "ላም",
+      "letters": [
+        "ላ",
+        "ም"
+      ],
+      "concept": "Cow",
+      "art": "cow",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8B%E1%88%9D#Tigrinya"
+    },
+    {
+      "id": "u2-120d-1262",
+      "word": "ልቢ",
+      "letters": [
+        "ል",
+        "ቢ"
+      ],
+      "concept": "Heart",
+      "art": "heart",
+      "group": "people",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%8D%E1%89%A2#Tigrinya"
+    },
+    {
+      "id": "u2-1211-133b",
+      "word": "ሑጻ",
+      "letters": [
+        "ሑ",
+        "ጻ"
+      ],
+      "concept": "Sand",
+      "art": "sand",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%91%E1%8C%BB#Tigrinya"
+    },
+    {
+      "id": "u2-1219-12dd",
+      "word": "ሙዝ",
+      "letters": [
+        "ሙ",
+        "ዝ"
+      ],
+      "concept": "Banana",
+      "art": "banana",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%99%E1%8B%9D#Tigrinya"
+    },
+    {
+      "id": "u2-121d-1214",
+      "word": "ምሔ",
+      "letters": [
+        "ም",
+        "ሔ"
+      ],
+      "concept": "Rug",
+      "art": "rug",
+      "group": "home",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%9D%E1%88%94#Tigrinya"
+    },
+    {
+      "id": "u2-1229-1263",
+      "word": "ሩባ",
+      "letters": [
+        "ሩ",
+        "ባ"
+      ],
+      "concept": "Stream",
+      "art": "stream",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%A9%E1%89%A3#Tigrinya"
+    },
+    {
+      "id": "u2-1229-12dd",
+      "word": "ሩዝ",
+      "letters": [
+        "ሩ",
+        "ዝ"
+      ],
+      "concept": "Rice",
+      "art": "rice",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%A9%E1%8B%9D#Tigrinya"
+    },
+    {
+      "id": "u2-1231-122a",
+      "word": "ሱሪ",
+      "letters": [
+        "ሱ",
+        "ሪ"
+      ],
+      "concept": "Trousers",
+      "art": "trousers",
+      "group": "home",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B1%E1%88%AA#Tigrinya"
+    },
+    {
+      "id": "u2-1235-1292",
+      "word": "ስኒ",
+      "letters": [
+        "ስ",
+        "ኒ"
+      ],
+      "concept": "Tooth",
+      "art": "tooth",
+      "group": "people",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%88%B5%E1%8A%92#Tigrinya"
+    },
+    {
+      "id": "u2-1263-1292",
+      "word": "ባኒ",
+      "letters": [
+        "ባ",
+        "ኒ"
+      ],
+      "concept": "Bread",
+      "art": "bread",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%89%A3%E1%8A%92#Tigrinya"
+    },
+    {
+      "id": "u2-12a2-12f5",
+      "word": "ኢድ",
+      "letters": [
+        "ኢ",
+        "ድ"
+      ],
+      "concept": "Hand / arm",
+      "art": "hand",
+      "group": "people",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A2%E1%8B%B5#Tigrinya"
+    },
+    {
+      "id": "u2-12a3-1266",
+      "word": "ኣቦ",
+      "letters": [
+        "ኣ",
+        "ቦ"
+      ],
+      "concept": "Father",
+      "art": "father",
+      "group": "people",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%89%A6#Tigrinya"
+    },
+    {
+      "id": "u2-12a3-12f0",
+      "word": "ኣደ",
+      "letters": [
+        "ኣ",
+        "ደ"
+      ],
+      "concept": "Mother",
+      "art": "mother",
+      "group": "people",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A3%E1%8B%B0#Tigrinya"
+    },
+    {
+      "id": "u2-12a6-121d",
+      "word": "ኦም",
+      "letters": [
+        "ኦ",
+        "ም"
+      ],
+      "concept": "Tree",
+      "art": "tree",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8A%A6%E1%88%9D#Tigrinya"
+    },
+    {
+      "id": "u2-12d1-134d",
+      "word": "ዑፍ",
+      "letters": [
+        "ዑ",
+        "ፍ"
+      ],
+      "concept": "Bird",
+      "art": "bird",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%91%E1%8D%8D#Tigrinya"
+    },
+    {
+      "id": "u2-12d3-1233",
+      "word": "ዓሳ",
+      "letters": [
+        "ዓ",
+        "ሳ"
+      ],
+      "concept": "Fish",
+      "art": "fish",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%93%E1%88%B3#Tigrinya"
+    },
+    {
+      "id": "u2-12f1-1263",
+      "word": "ዱባ",
+      "letters": [
+        "ዱ",
+        "ባ"
+      ],
+      "concept": "Pumpkin",
+      "art": "pumpkin",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B1%E1%89%A3#Tigrinya"
+    },
+    {
+      "id": "u2-12f3-1209",
+      "word": "ዳሉ",
+      "letters": [
+        "ዳ",
+        "ሉ"
+      ],
+      "concept": "Pail",
+      "art": "pail",
+      "group": "home",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B3%E1%88%89#Tigrinya"
+    },
+    {
+      "id": "u2-12f5-1262",
+      "word": "ድቢ",
+      "letters": [
+        "ድ",
+        "ቢ"
+      ],
+      "concept": "Bear",
+      "art": "bear",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B5%E1%89%A2#Tigrinya"
+    },
+    {
+      "id": "u2-12f6-121b",
+      "word": "ዶማ",
+      "letters": [
+        "ዶ",
+        "ማ"
+      ],
+      "concept": "Coconut",
+      "art": "coconut",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8B%B6%E1%88%9B#Tigrinya"
+    },
+    {
+      "id": "u2-1308-133d",
+      "word": "ገጽ",
+      "letters": [
+        "ገ",
+        "ጽ"
+      ],
+      "concept": "Face",
+      "art": "face",
+      "group": "people",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%88%E1%8C%BD#Tigrinya"
+    },
+    {
+      "id": "u2-130c-133d",
+      "word": "ጌጽ",
+      "letters": [
+        "ጌ",
+        "ጽ"
+      ],
+      "concept": "Gift",
+      "art": "gift",
+      "group": "home",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%8C%E1%8C%BD#Tigrinya"
+    },
+    {
+      "id": "u2-1324-120d",
+      "word": "ጤል",
+      "letters": [
+        "ጤ",
+        "ል"
+      ],
+      "concept": "Goat",
+      "art": "goat",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%A4%E1%88%8D#Tigrinya"
+    },
+    {
+      "id": "u2-1328-12cd",
+      "word": "ጨው",
+      "letters": [
+        "ጨ",
+        "ው"
+      ],
+      "concept": "Salt",
+      "art": "salt",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%A8%E1%8B%8D#Tigrinya"
+    },
+    {
+      "id": "u2-132b-121b",
+      "word": "ጫማ",
+      "letters": [
+        "ጫ",
+        "ማ"
+      ],
+      "concept": "Shoe",
+      "art": "shoe",
+      "group": "home",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%AB%E1%88%9B#Tigrinya"
+    },
+    {
+      "id": "u2-1338-1263",
+      "word": "ጸባ",
+      "letters": [
+        "ጸ",
+        "ባ"
+      ],
+      "concept": "Milk",
+      "art": "milk",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%B8%E1%89%A3#Tigrinya"
+    },
+    {
+      "id": "u2-133b-1338",
+      "word": "ጻጸ",
+      "letters": [
+        "ጻ",
+        "ጸ"
+      ],
+      "concept": "Ant",
+      "art": "ant",
+      "group": "nature",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8C%BB%E1%8C%B8#Tigrinya"
+    },
+    {
+      "id": "u2-134d-1228",
+      "word": "ፍረ",
+      "letters": [
+        "ፍ",
+        "ረ"
+      ],
+      "concept": "Fruit",
+      "art": "fruit",
+      "group": "food",
+      "sourceUrl": "https://en.wiktionary.org/wiki/%E1%8D%8D%E1%88%A8#Tigrinya"
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "id": "u2-1308-12db",
+      "reason": "Same-picture alternative needs a native usage distinction; retained in the original review bank."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "u2-01",
+      "unit": 2,
+      "title": "Three familiar pictures",
+      "kind": "introduce",
+      "chapter": "Begin",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ማ",
+        "ይ",
+        "ድ",
+        "ሙ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Relevant Fidäl forms from the unchanged Unit 1; model help is available.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ]
+    },
+    {
+      "id": "u2-02",
+      "unit": 2,
+      "title": "Your first word check",
+      "kind": "checkpoint",
+      "chapter": "Begin",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ],
+      "goal": "Find the same words in a different arrangement.",
+      "prerequisites": [
+        "u2-01"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ማ",
+        "ይ",
+        "ድ",
+        "ሙ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Recall familiar words without a pre-answer model",
+        "Optional model and corrective retry",
+        "Mixed visual check",
+        "Delayed review"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u2-03",
+      "unit": 2,
+      "title": "At the table · 1",
+      "kind": "introduce",
+      "chapter": "At the table",
+      "wordIds": [
+        "u2-12f5-1219",
+        "u2-1219-12dd",
+        "u2-1229-12dd"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-02"
+      ],
+      "characters": [
+        "ድ",
+        "ሙ",
+        "ዝ",
+        "ሩ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        },
+        {
+          "wordId": "u2-1219-12dd",
+          "script": "ሙዝ",
+          "concept": "Banana"
+        },
+        {
+          "wordId": "u2-1229-12dd",
+          "script": "ሩዝ",
+          "concept": "Rice"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-1219-12dd",
+        "u2-1229-12dd"
+      ]
+    },
+    {
+      "id": "u2-04",
+      "unit": 2,
+      "title": "At the table · 2",
+      "kind": "introduce",
+      "chapter": "At the table",
+      "wordIds": [
+        "u2-1229-12dd",
+        "u2-1263-1292",
+        "u2-12f1-1263"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-03"
+      ],
+      "characters": [
+        "ሩ",
+        "ዝ",
+        "ባ",
+        "ኒ",
+        "ዱ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1229-12dd",
+          "script": "ሩዝ",
+          "concept": "Rice"
+        },
+        {
+          "wordId": "u2-1263-1292",
+          "script": "ባኒ",
+          "concept": "Bread"
+        },
+        {
+          "wordId": "u2-12f1-1263",
+          "script": "ዱባ",
+          "concept": "Pumpkin"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-1263-1292",
+        "u2-12f1-1263"
+      ]
+    },
+    {
+      "id": "u2-05",
+      "unit": 2,
+      "title": "At the table · 3",
+      "kind": "introduce",
+      "chapter": "At the table",
+      "wordIds": [
+        "u2-12f1-1263",
+        "u2-12f6-121b",
+        "u2-1328-12cd"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-04"
+      ],
+      "characters": [
+        "ዱ",
+        "ባ",
+        "ዶ",
+        "ማ",
+        "ጨ",
+        "ው"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-12f1-1263",
+          "script": "ዱባ",
+          "concept": "Pumpkin"
+        },
+        {
+          "wordId": "u2-12f6-121b",
+          "script": "ዶማ",
+          "concept": "Coconut"
+        },
+        {
+          "wordId": "u2-1328-12cd",
+          "script": "ጨው",
+          "concept": "Salt"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-12f6-121b",
+        "u2-1328-12cd"
+      ]
+    },
+    {
+      "id": "u2-06",
+      "unit": 2,
+      "title": "At the table · 4",
+      "kind": "introduce",
+      "chapter": "At the table",
+      "wordIds": [
+        "u2-1328-12cd",
+        "u2-1338-1263",
+        "u2-134d-1228"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-05"
+      ],
+      "characters": [
+        "ጨ",
+        "ው",
+        "ጸ",
+        "ባ",
+        "ፍ",
+        "ረ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1328-12cd",
+          "script": "ጨው",
+          "concept": "Salt"
+        },
+        {
+          "wordId": "u2-1338-1263",
+          "script": "ጸባ",
+          "concept": "Milk"
+        },
+        {
+          "wordId": "u2-134d-1228",
+          "script": "ፍረ",
+          "concept": "Fruit"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-1338-1263",
+        "u2-134d-1228"
+      ]
+    },
+    {
+      "id": "u2-07",
+      "unit": 2,
+      "title": "At the table · review",
+      "kind": "checkpoint",
+      "chapter": "At the table",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-1338-1263",
+        "u2-134d-1228"
+      ],
+      "goal": "Retrieve familiar picture-word links in a mixed check.",
+      "prerequisites": [
+        "u2-06"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ጸ",
+        "ባ",
+        "ፍ",
+        "ረ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-1338-1263",
+          "script": "ጸባ",
+          "concept": "Milk"
+        },
+        {
+          "wordId": "u2-134d-1228",
+          "script": "ፍረ",
+          "concept": "Fruit"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Recall familiar words without a pre-answer model",
+        "Optional model and corrective retry",
+        "Mixed visual check",
+        "Delayed review"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u2-08",
+      "unit": 2,
+      "title": "Around home · 1",
+      "kind": "introduce",
+      "chapter": "Around home",
+      "wordIds": [
+        "u2-134d-1228",
+        "u2-121d-1214",
+        "u2-1231-122a"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-07"
+      ],
+      "characters": [
+        "ፍ",
+        "ረ",
+        "ም",
+        "ሔ",
+        "ሱ",
+        "ሪ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-134d-1228",
+          "script": "ፍረ",
+          "concept": "Fruit"
+        },
+        {
+          "wordId": "u2-121d-1214",
+          "script": "ምሔ",
+          "concept": "Rug"
+        },
+        {
+          "wordId": "u2-1231-122a",
+          "script": "ሱሪ",
+          "concept": "Trousers"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-121d-1214",
+        "u2-1231-122a"
+      ]
+    },
+    {
+      "id": "u2-09",
+      "unit": 2,
+      "title": "Around home · 2",
+      "kind": "introduce",
+      "chapter": "Around home",
+      "wordIds": [
+        "u2-1231-122a",
+        "u2-12f3-1209",
+        "u2-130c-133d"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-08"
+      ],
+      "characters": [
+        "ሱ",
+        "ሪ",
+        "ዳ",
+        "ሉ",
+        "ጌ",
+        "ጽ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1231-122a",
+          "script": "ሱሪ",
+          "concept": "Trousers"
+        },
+        {
+          "wordId": "u2-12f3-1209",
+          "script": "ዳሉ",
+          "concept": "Pail"
+        },
+        {
+          "wordId": "u2-130c-133d",
+          "script": "ጌጽ",
+          "concept": "Gift"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-12f3-1209",
+        "u2-130c-133d"
+      ]
+    },
+    {
+      "id": "u2-10",
+      "unit": 2,
+      "title": "Around home · 3",
+      "kind": "introduce",
+      "chapter": "Around home",
+      "wordIds": [
+        "u2-130c-133d",
+        "u2-132b-121b"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-09"
+      ],
+      "characters": [
+        "ጌ",
+        "ጽ",
+        "ጫ",
+        "ማ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-130c-133d",
+          "script": "ጌጽ",
+          "concept": "Gift"
+        },
+        {
+          "wordId": "u2-132b-121b",
+          "script": "ጫማ",
+          "concept": "Shoe"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-132b-121b"
+      ]
+    },
+    {
+      "id": "u2-11",
+      "unit": 2,
+      "title": "Around home · review",
+      "kind": "checkpoint",
+      "chapter": "Around home",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-130c-133d",
+        "u2-132b-121b"
+      ],
+      "goal": "Retrieve familiar picture-word links in a mixed check.",
+      "prerequisites": [
+        "u2-10"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ጌ",
+        "ጽ",
+        "ጫ",
+        "ማ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-130c-133d",
+          "script": "ጌጽ",
+          "concept": "Gift"
+        },
+        {
+          "wordId": "u2-132b-121b",
+          "script": "ጫማ",
+          "concept": "Shoe"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Recall familiar words without a pre-answer model",
+        "Optional model and corrective retry",
+        "Mixed visual check",
+        "Delayed review"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u2-12",
+      "unit": 2,
+      "title": "Outside · 1",
+      "kind": "introduce",
+      "chapter": "Outside",
+      "wordIds": [
+        "u2-132b-121b",
+        "u2-120b-121d",
+        "u2-1211-133b"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-11"
+      ],
+      "characters": [
+        "ጫ",
+        "ማ",
+        "ላ",
+        "ም",
+        "ሑ",
+        "ጻ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-132b-121b",
+          "script": "ጫማ",
+          "concept": "Shoe"
+        },
+        {
+          "wordId": "u2-120b-121d",
+          "script": "ላም",
+          "concept": "Cow"
+        },
+        {
+          "wordId": "u2-1211-133b",
+          "script": "ሑጻ",
+          "concept": "Sand"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-120b-121d",
+        "u2-1211-133b"
+      ]
+    },
+    {
+      "id": "u2-13",
+      "unit": 2,
+      "title": "Outside · 2",
+      "kind": "introduce",
+      "chapter": "Outside",
+      "wordIds": [
+        "u2-1211-133b",
+        "u2-1229-1263",
+        "u2-12a6-121d"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-12"
+      ],
+      "characters": [
+        "ሑ",
+        "ጻ",
+        "ሩ",
+        "ባ",
+        "ኦ",
+        "ም"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1211-133b",
+          "script": "ሑጻ",
+          "concept": "Sand"
+        },
+        {
+          "wordId": "u2-1229-1263",
+          "script": "ሩባ",
+          "concept": "Stream"
+        },
+        {
+          "wordId": "u2-12a6-121d",
+          "script": "ኦም",
+          "concept": "Tree"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-1229-1263",
+        "u2-12a6-121d"
+      ]
+    },
+    {
+      "id": "u2-14",
+      "unit": 2,
+      "title": "Outside · 3",
+      "kind": "introduce",
+      "chapter": "Outside",
+      "wordIds": [
+        "u2-12a6-121d",
+        "u2-12d1-134d",
+        "u2-12d3-1233"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-13"
+      ],
+      "characters": [
+        "ኦ",
+        "ም",
+        "ዑ",
+        "ፍ",
+        "ዓ",
+        "ሳ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-12a6-121d",
+          "script": "ኦም",
+          "concept": "Tree"
+        },
+        {
+          "wordId": "u2-12d1-134d",
+          "script": "ዑፍ",
+          "concept": "Bird"
+        },
+        {
+          "wordId": "u2-12d3-1233",
+          "script": "ዓሳ",
+          "concept": "Fish"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-12d1-134d",
+        "u2-12d3-1233"
+      ]
+    },
+    {
+      "id": "u2-15",
+      "unit": 2,
+      "title": "Outside · 4",
+      "kind": "introduce",
+      "chapter": "Outside",
+      "wordIds": [
+        "u2-12d3-1233",
+        "u2-12f5-1262",
+        "u2-1324-120d"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-14"
+      ],
+      "characters": [
+        "ዓ",
+        "ሳ",
+        "ድ",
+        "ቢ",
+        "ጤ",
+        "ል"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-12d3-1233",
+          "script": "ዓሳ",
+          "concept": "Fish"
+        },
+        {
+          "wordId": "u2-12f5-1262",
+          "script": "ድቢ",
+          "concept": "Bear"
+        },
+        {
+          "wordId": "u2-1324-120d",
+          "script": "ጤል",
+          "concept": "Goat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-12f5-1262",
+        "u2-1324-120d"
+      ]
+    },
+    {
+      "id": "u2-16",
+      "unit": 2,
+      "title": "Outside · 5",
+      "kind": "introduce",
+      "chapter": "Outside",
+      "wordIds": [
+        "u2-1324-120d",
+        "u2-133b-1338"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-15"
+      ],
+      "characters": [
+        "ጤ",
+        "ል",
+        "ጻ",
+        "ጸ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1324-120d",
+          "script": "ጤል",
+          "concept": "Goat"
+        },
+        {
+          "wordId": "u2-133b-1338",
+          "script": "ጻጸ",
+          "concept": "Ant"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-133b-1338"
+      ]
+    },
+    {
+      "id": "u2-17",
+      "unit": 2,
+      "title": "Outside · review",
+      "kind": "checkpoint",
+      "chapter": "Outside",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-1324-120d",
+        "u2-133b-1338"
+      ],
+      "goal": "Retrieve familiar picture-word links in a mixed check.",
+      "prerequisites": [
+        "u2-16"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ጤ",
+        "ል",
+        "ጻ",
+        "ጸ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-1324-120d",
+          "script": "ጤል",
+          "concept": "Goat"
+        },
+        {
+          "wordId": "u2-133b-1338",
+          "script": "ጻጸ",
+          "concept": "Ant"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Recall familiar words without a pre-answer model",
+        "Optional model and corrective retry",
+        "Mixed visual check",
+        "Delayed review"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u2-18",
+      "unit": 2,
+      "title": "People & me · 1",
+      "kind": "introduce",
+      "chapter": "People & me",
+      "wordIds": [
+        "u2-133b-1338",
+        "u2-120d-1262",
+        "u2-1235-1292"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-17"
+      ],
+      "characters": [
+        "ጻ",
+        "ጸ",
+        "ል",
+        "ቢ",
+        "ስ",
+        "ኒ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-133b-1338",
+          "script": "ጻጸ",
+          "concept": "Ant"
+        },
+        {
+          "wordId": "u2-120d-1262",
+          "script": "ልቢ",
+          "concept": "Heart"
+        },
+        {
+          "wordId": "u2-1235-1292",
+          "script": "ስኒ",
+          "concept": "Tooth"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-120d-1262",
+        "u2-1235-1292"
+      ]
+    },
+    {
+      "id": "u2-19",
+      "unit": 2,
+      "title": "People & me · 2",
+      "kind": "introduce",
+      "chapter": "People & me",
+      "wordIds": [
+        "u2-1235-1292",
+        "u2-12a2-12f5",
+        "u2-12a3-1266"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-18"
+      ],
+      "characters": [
+        "ስ",
+        "ኒ",
+        "ኢ",
+        "ድ",
+        "ኣ",
+        "ቦ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1235-1292",
+          "script": "ስኒ",
+          "concept": "Tooth"
+        },
+        {
+          "wordId": "u2-12a2-12f5",
+          "script": "ኢድ",
+          "concept": "Hand / arm"
+        },
+        {
+          "wordId": "u2-12a3-1266",
+          "script": "ኣቦ",
+          "concept": "Father"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-12a2-12f5",
+        "u2-12a3-1266"
+      ]
+    },
+    {
+      "id": "u2-20",
+      "unit": 2,
+      "title": "People & me · 3",
+      "kind": "introduce",
+      "chapter": "People & me",
+      "wordIds": [
+        "u2-12a3-1266",
+        "u2-12a3-12f0",
+        "u2-1308-133d"
+      ],
+      "goal": "Meet a small group of picture words, with older words returning when ready.",
+      "prerequisites": [
+        "u2-19"
+      ],
+      "characters": [
+        "ኣ",
+        "ቦ",
+        "ደ",
+        "ገ",
+        "ጽ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-12a3-1266",
+          "script": "ኣቦ",
+          "concept": "Father"
+        },
+        {
+          "wordId": "u2-12a3-12f0",
+          "script": "ኣደ",
+          "concept": "Mother"
+        },
+        {
+          "wordId": "u2-1308-133d",
+          "script": "ገጽ",
+          "concept": "Face"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the new targets only",
+        "Look, build and find new words",
+        "At most two spaced older items between new-word activities",
+        "Recap and check the new targets"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": [
+        "u2-12a3-12f0",
+        "u2-1308-133d"
+      ]
+    },
+    {
+      "id": "u2-21",
+      "unit": 2,
+      "title": "People & me · review",
+      "kind": "checkpoint",
+      "chapter": "People & me",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-12a3-12f0",
+        "u2-1308-133d"
+      ],
+      "goal": "Retrieve familiar picture-word links in a mixed check.",
+      "prerequisites": [
+        "u2-20"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ኣ",
+        "ደ",
+        "ገ",
+        "ጽ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-12a3-12f0",
+          "script": "ኣደ",
+          "concept": "Mother"
+        },
+        {
+          "wordId": "u2-1308-133d",
+          "script": "ገጽ",
+          "concept": "Face"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-word recognition",
+        "left-to-right form construction"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Recall familiar words without a pre-answer model",
+        "Optional model and corrective retry",
+        "Mixed visual check",
+        "Delayed review"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u3-01",
+      "unit": 3,
+      "title": "First and last",
+      "kind": "positions",
+      "chapter": "Read & write",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ],
+      "goal": "Locate the first and last Fidäl forms in taught words.",
+      "prerequisites": [
+        "u2-21"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ማ",
+        "ይ",
+        "ድ",
+        "ሙ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "word segmentation",
+        "first/last form recognition"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the two-form word",
+        "Locate first and last forms",
+        "Recap",
+        "Check both positions in each taught word"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u3-02",
+      "unit": 3,
+      "title": "One family, real words",
+      "kind": "family",
+      "chapter": "Read & write",
+      "wordIds": [
+        "u2-1263-1292",
+        "u2-1229-1263",
+        "u2-1264-1275"
+      ],
+      "goal": "Notice sourced vowel-order forms from the same family inside familiar words.",
+      "prerequisites": [
+        "u3-01"
+      ],
+      "characters": [
+        "ባ",
+        "ኒ",
+        "ሩ",
+        "ቤ",
+        "ት"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1263-1292",
+          "script": "ባኒ",
+          "concept": "Bread"
+        },
+        {
+          "wordId": "u2-1229-1263",
+          "script": "ሩባ",
+          "concept": "Stream"
+        },
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "source family/order relationships",
+        "locating forms in taught words"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Show the sourced seven-order family",
+        "Find related forms in real taught words",
+        "Recap",
+        "Locate the target forms again"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u3-03",
+      "unit": 3,
+      "title": "A word on the page",
+      "kind": "copy",
+      "chapter": "Read & write",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ],
+      "goal": "Copy taught words with actual Ethiopic input; explore a printed form by writing.",
+      "prerequisites": [
+        "u3-02"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ማ",
+        "ይ",
+        "ድ",
+        "ሙ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "guided Ethiopic copying",
+        "optional printed-form writing"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Show the word model",
+        "Copy with Ethiopic input; optional printed-form writing",
+        "Recap",
+        "Enter the taught word from a picture cue"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u3-04",
+      "unit": 3,
+      "title": "Read, then find",
+      "kind": "read",
+      "chapter": "Read & write",
+      "wordIds": [
+        "u2-121b-12ed",
+        "u2-1263-1292",
+        "u2-1338-1263"
+      ],
+      "goal": "Read a familiar word and select its picture.",
+      "prerequisites": [
+        "u3-03"
+      ],
+      "characters": [
+        "ማ",
+        "ይ",
+        "ባ",
+        "ኒ",
+        "ጸ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-1263-1292",
+          "script": "ባኒ",
+          "concept": "Bread"
+        },
+        {
+          "wordId": "u2-1338-1263",
+          "script": "ጸባ",
+          "concept": "Milk"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "word-to-picture visual reading"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the taught word-picture links",
+        "Read or copy with support",
+        "Recap",
+        "Read-to-picture check"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u3-05",
+      "unit": 3,
+      "title": "Remember and write",
+      "kind": "write",
+      "chapter": "Read & write",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ],
+      "goal": "Retrieve the two forms of a taught word from a picture cue.",
+      "prerequisites": [
+        "u3-04"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ማ",
+        "ይ",
+        "ድ",
+        "ሙ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "picture-cued Ethiopic text entry"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Show the word model",
+        "Copy with Ethiopic input; optional printed-form writing",
+        "Recap",
+        "Enter the taught word from a picture cue"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u3-06",
+      "unit": 3,
+      "title": "Your mixed word check",
+      "kind": "mixed",
+      "chapter": "Read & write",
+      "wordIds": [
+        "u2-12f5-1219",
+        "u2-1263-1292",
+        "u2-1338-1263"
+      ],
+      "goal": "Revisit taught word recognition and text entry without a visible answer.",
+      "prerequisites": [
+        "u3-05"
+      ],
+      "characters": [
+        "ድ",
+        "ሙ",
+        "ባ",
+        "ኒ",
+        "ጸ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        },
+        {
+          "wordId": "u2-1263-1292",
+          "script": "ባኒ",
+          "concept": "Bread"
+        },
+        {
+          "wordId": "u2-1338-1263",
+          "script": "ጸባ",
+          "concept": "Milk"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "word-to-picture visual reading",
+        "picture-cued Ethiopic text entry"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Existing two-character Tigrinya source candidates; no new sounds or grammar.",
+      "recipe": [
+        "Model the taught word-picture links",
+        "Read or copy with support",
+        "Recap",
+        "Mixed reading and text-entry check"
+      ],
+      "completionRule": "Solve every check prompt on a fresh run without answer-revealing help. This unlocks practice, not language mastery.",
+      "reviewPlan": "Older items return after lesson gaps and elapsed time, with 1/3/7/14/30/60-day intervals for successful delayed recall. Hints shorten spacing. At most two mixed items and one supported revisit; other items remain due.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": true,
+      "introduceWordIds": []
+    },
+    {
+      "id": "u4-01",
+      "unit": 4,
+      "title": "Hear familiar words",
+      "kind": "pending",
+      "chapter": "Listen & respond",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ],
+      "goal": "Connect reviewed native recordings with taught meanings.",
+      "prerequisites": [
+        "u3-06"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ማ",
+        "ይ",
+        "ድ",
+        "ሙ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "planned native listening",
+        "human-supported word rehearsal"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Known source words; native sound content missing.",
+      "recipe": [
+        "Reviewed model",
+        "Supported discrimination/rehearsal",
+        "Human-reviewed response",
+        "Delayed review"
+      ],
+      "completionRule": "Not assessed while content is unavailable. A qualified native reviewer must approve the task and rubric before release.",
+      "reviewPlan": "Brief cumulative checkpoints; due visual reviews after 1, 3 and 7 days. Same-day repeats do not advance the interval.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": false,
+      "blockedReason": "Needs reviewed, licensed Tigrinya word recordings, spoken directions and a human pronunciation rubric.",
+      "introduceWordIds": []
+    },
+    {
+      "id": "u4-02",
+      "unit": 4,
+      "title": "Say a familiar word",
+      "kind": "pending",
+      "chapter": "Listen & respond",
+      "wordIds": [
+        "u2-1264-1275",
+        "u2-121b-12ed",
+        "u2-12f5-1219"
+      ],
+      "goal": "Connect reviewed native recordings with taught meanings.",
+      "prerequisites": [
+        "u4-01"
+      ],
+      "characters": [
+        "ቤ",
+        "ት",
+        "ማ",
+        "ይ",
+        "ድ",
+        "ሙ"
+      ],
+      "vocabulary": [
+        {
+          "wordId": "u2-1264-1275",
+          "script": "ቤት",
+          "concept": "House"
+        },
+        {
+          "wordId": "u2-121b-12ed",
+          "script": "ማይ",
+          "concept": "Water"
+        },
+        {
+          "wordId": "u2-12f5-1219",
+          "script": "ድሙ",
+          "concept": "Cat"
+        }
+      ],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "planned native listening",
+        "human-supported word rehearsal"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Known source words; native sound content missing.",
+      "recipe": [
+        "Reviewed model",
+        "Supported discrimination/rehearsal",
+        "Human-reviewed response",
+        "Delayed review"
+      ],
+      "completionRule": "Not assessed while content is unavailable. A qualified native reviewer must approve the task and rubric before release.",
+      "reviewPlan": "Brief cumulative checkpoints; due visual reviews after 1, 3 and 7 days. Same-day repeats do not advance the interval.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": false,
+      "blockedReason": "Needs reviewed, licensed Tigrinya word recordings, spoken directions and a human pronunciation rubric.",
+      "introduceWordIds": []
+    },
+    {
+      "id": "u5-01",
+      "unit": 5,
+      "title": "A useful message",
+      "kind": "pending",
+      "chapter": "First connected meanings",
+      "wordIds": [],
+      "goal": "Use a native-authored, reviewed sentence pattern in a meaningful exchange.",
+      "prerequisites": [
+        "u4-02"
+      ],
+      "characters": [],
+      "vocabulary": [],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "planned meaningful messages",
+        "human-reviewed conversational response"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Sentence inventory not yet authored or verified.",
+      "recipe": [
+        "Reviewed model",
+        "Supported discrimination/rehearsal",
+        "Human-reviewed response",
+        "Delayed review"
+      ],
+      "completionRule": "Not assessed while content is unavailable. A qualified native reviewer must approve the task and rubric before release.",
+      "reviewPlan": "Brief cumulative checkpoints; due visual reviews after 1, 3 and 7 days. Same-day repeats do not advance the interval.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": false,
+      "blockedReason": "Needs native-authored Tigrinya constructions, translations, accepted responses and recordings. No sentence has been invented.",
+      "introduceWordIds": []
+    },
+    {
+      "id": "u5-02",
+      "unit": 5,
+      "title": "A short reply",
+      "kind": "pending",
+      "chapter": "First connected meanings",
+      "wordIds": [],
+      "goal": "Use a native-authored, reviewed sentence pattern in a meaningful exchange.",
+      "prerequisites": [
+        "u5-01"
+      ],
+      "characters": [],
+      "vocabulary": [],
+      "sounds": "Not taught or assessed: reviewed recordings are missing.",
+      "grammar": [],
+      "skills": [
+        "planned meaningful messages",
+        "human-reviewed conversational response"
+      ],
+      "prerequisiteKnowledge": "Pass the preceding visual practice check.",
+      "languageScope": "Sentence inventory not yet authored or verified.",
+      "recipe": [
+        "Reviewed model",
+        "Supported discrimination/rehearsal",
+        "Human-reviewed response",
+        "Delayed review"
+      ],
+      "completionRule": "Not assessed while content is unavailable. A qualified native reviewer must approve the task and rubric before release.",
+      "reviewPlan": "Brief cumulative checkpoints; due visual reviews after 1, 3 and 7 days. Same-day repeats do not advance the interval.",
+      "releaseStatus": "awaiting-qualified-native-tigrinya-review",
+      "available": false,
+      "blockedReason": "Needs native-authored Tigrinya constructions, translations, accepted responses and recordings. No sentence has been invented.",
+      "introduceWordIds": []
+    }
+  ],
+  "units": [
+    {
+      "number": 2,
+      "title": "First words",
+      "goal": "Move from familiar Fidäl forms to picture-linked two-character words."
+    },
+    {
+      "number": 3,
+      "title": "Read & write",
+      "goal": "Revisit taught words through positions, family relationships, reading and Ethiopic input."
+    },
+    {
+      "number": 4,
+      "title": "Listen & respond",
+      "goal": "Connect reviewed native sound with familiar meanings.",
+      "contentBlocked": true
+    },
+    {
+      "number": 5,
+      "title": "First connected meanings",
+      "goal": "Use native-authored useful messages and replies.",
+      "contentBlocked": true
+    }
+  ],
+  "source": "unit-2-content-review.json",
+  "reviewStatus": "pending",
+  "unit1Unchanged": true,
+  "contentVersion": "f6535f8afe9b3bc0968b19d7ec381cdab2b1c9223ff709e007d0e17b47037179",
+  "compatibleProgressVersions": [
+    "988c14e6e5fb0823a790e065e48649a18ad4a7a7c76e9475e711efd2d01da0db"
+  ],
+  "materialVersion": "127b3fd74b1e8c8b3e4f786886b95b12d8d6d3a44b01afddd2a44fde1050a6ed",
+  "spacedReview": {
+    "version": 1,
+    "timeIntervalsDays": [
+      1,
+      3,
+      7,
+      14,
+      30,
+      60
+    ],
+    "lessonGaps": [
+      2,
+      4,
+      7,
+      11
+    ],
+    "mixedBudget": 2,
+    "correctiveRevisits": 1
+  }
+};

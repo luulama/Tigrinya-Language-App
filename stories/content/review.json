@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 1,
+  "language": "ti",
+  "stories": [
+    {
+      "id": "cat-and-moonlight",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "paper-boat",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "lost-star",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "goat-and-bridge",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "whispering-book",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "under-the-sea",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "feather-in-the-wind",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "elephant-and-bird",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "small-seed",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "cloud-journey",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "mountain-voice",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "moon-garden",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "leaf-message",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "sleeping-lion",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "little-island",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "shadow-house",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "fox-and-bell",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "torn-map",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "beyond-the-hill",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    },
+    {
+      "id": "light-leading-home",
+      "status": "awaiting-fluent-tigrinya-review",
+      "revision": null,
+      "reviewer": null,
+      "reviewedAt": null,
+      "variety": null,
+      "checks": {
+        "meaning-and-story-coherence": "pending",
+        "natural-tigrinya": "pending",
+        "spelling-and-punctuation": "pending",
+        "gender-and-verb-agreement": "pending",
+        "variety-and-register": "pending",
+        "age-and-bedtime-suitability": "pending",
+        "fiction-and-cultural-care": "pending",
+        "illustration-alignment": "pending",
+        "reading-demand": "pending"
+      },
+      "notes": []
+    }
+  ]
+}

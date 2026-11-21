@@ -5,7 +5,9 @@ from urllib.parse import unquote, urlsplit
 import re
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = [ROOT / 'index.html', ROOT / 'unit-01-fidel-foundations/index.html', ROOT / 'unit-02-first-words/index.html', ROOT / 'games/index.html']
+PAGES = [ROOT / 'index.html', ROOT / 'unit-01-fidel-foundations/index.html', ROOT / 'unit-02-first-words/index.html', ROOT / 'games/index.html', ROOT / 'unit-02-first-words/path.html']
+PAGES.append(ROOT / 'unit-01-fidel-foundations/pronunciation.html')
+PAGES.append(ROOT / 'stories/index.html')
 
 
 class Page(HTMLParser):

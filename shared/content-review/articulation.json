@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "language": "ti",
+  "sources": [
+    {
+      "id": "harvard-fidal",
+      "url": "https://elias.fas.harvard.edu/languages/tigrinya/Beginning/1/Unit-1-Alphabets",
+      "title": "Harvard ELIAS Tigrinya alphabet",
+      "locator": "Table 1.1: B, M and F families; consonant-vowel orders"
+    },
+    {
+      "id": "bulakh-2019",
+      "url": "https://joverfelt.net/wp-content/uploads/2023/09/bulakh-2019-tigrinya.pdf",
+      "title": "Maria Bulakh: Tigrinya, The Semitic Languages (2019)",
+      "locator": "Section 3.1, Table 8.2, printed pp. 176–177; b spirantization and dialect/context limits"
+    },
+    {
+      "id": "ipa",
+      "url": "https://www.internationalphoneticassociation.org/IPAcharts/common_files/pdfs/pdfs_IPA_charts_E/IPA_unitipa.pdf",
+      "title": "International Phonetic Association chart",
+      "locator": "Pulmonic consonants: bilabial plosive b, bilabial nasal m, labiodental fricative f"
+    },
+    {
+      "id": "seeing-speech",
+      "url": "https://www.seeingspeech.ac.uk/ipa-charts/",
+      "title": "University of Glasgow Seeing Speech",
+      "locator": "IPA articulatory visualization method; external reference only, no recordings or diagrams reused"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "b-lips",
+      "ipa": "b",
+      "scope": "consonant-component",
+      "evidenceStatus": "source-supported",
+      "sourceIds": ["harvard-fidal", "bulakh-2019", "ipa"],
+      "title": "Lips meet, then open",
+      "limits": "This models the bilabial stop component only, not the vowel, voicing or a whole syllable. Tigrinya b can change in word context and across varieties. Contextual words and sixth-order readings are excluded.",
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "variety": null,
+        "notes": "A fluent Tigrinya speaker and phonetics reviewer must check the illustration, movement, prompts and scope before learner release."
+      },
+      "steps": [
+        {
+          "label": "Start",
+          "cue": "Let your lips come together.",
+          "pose": { "open": 0.35, "contact": 0, "nasal": 0 }
+        },
+        {
+          "label": "Middle",
+          "cue": "Your lips meet gently.",
+          "pose": { "open": 0, "contact": 0, "nasal": 0 }
+        },
+        {
+          "label": "End",
+          "cue": "Let your lips open again.",
+          "pose": { "open": 0.55, "contact": 0, "nasal": 0 }
+        }
+      ]
+    },
+    {
+      "id": "m-lips",
+      "ipa": "m",
+      "scope": "consonant-component",
+      "evidenceStatus": "source-supported",
+      "sourceIds": ["harvard-fidal", "bulakh-2019", "ipa"],
+      "title": "Lips together, air through the nose",
+      "limits": "This models the bilabial nasal component only, not a vowel or a whole syllable. The dotted paths are schematic nasal airflow, not a measured trajectory. Lip shape alone cannot distinguish b from m; reviewed audio is needed for their sound contrast.",
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "variety": null,
+        "notes": "Check nasal cue, diagram, prompts and context with a fluent speaker and phonetics reviewer before learner release."
+      },
+      "steps": [
+        {
+          "label": "Start",
+          "cue": "Bring your lips together.",
+          "pose": { "open": 0.35, "contact": 0, "nasal": 0 }
+        },
+        {
+          "label": "Middle",
+          "cue": "Keep your lips gently together.",
+          "pose": { "open": 0, "contact": 0, "nasal": 0.5 }
+        },
+        {
+          "label": "End",
+          "cue": "Lips stay together. Air goes through the nose.",
+          "pose": { "open": 0, "contact": 0, "nasal": 1 }
+        }
+      ]
+    },
+    {
+      "id": "f-lips",
+      "ipa": "f",
+      "scope": "consonant-component",
+      "evidenceStatus": "source-supported",
+      "sourceIds": ["harvard-fidal", "bulakh-2019", "ipa"],
+      "title": "Upper teeth meet the lower lip",
+      "limits": "This models the labiodental fricative component only, not a vowel or a complete syllable. The diagram is schematic, not a measurement of a speaker's mouth. Variety, prompts and animation still require qualified review.",
+      "review": {
+        "status": "pending",
+        "reviewer": null,
+        "reviewedAt": null,
+        "variety": null,
+        "notes": "Check the lower-lip/upper-teeth contact, phrasing and chosen Tigrinya variety before learner release."
+      },
+      "steps": [
+        {
+          "label": "Start",
+          "cue": "Keep your jaw comfortable.",
+          "pose": { "open": 0.35, "contact": 0, "nasal": 0 }
+        },
+        {
+          "label": "Middle",
+          "cue": "Upper teeth touch the lower lip gently.",
+          "pose": { "open": 0.2, "contact": 1, "nasal": 0 }
+        },
+        {
+          "label": "End",
+          "cue": "Let the lip move away again.",
+          "pose": { "open": 0.35, "contact": 0, "nasal": 0 }
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    { "character": "በ", "family": "በ", "order": 1, "profile": "b-lips" },
+    { "character": "ቡ", "family": "በ", "order": 2, "profile": "b-lips" },
+    { "character": "ቢ", "family": "በ", "order": 3, "profile": "b-lips" },
+    { "character": "ባ", "family": "በ", "order": 4, "profile": "b-lips" },
+    { "character": "ቤ", "family": "በ", "order": 5, "profile": "b-lips" },
+    { "character": "ቦ", "family": "በ", "order": 7, "profile": "b-lips" },
+    { "character": "መ", "family": "መ", "order": 1, "profile": "m-lips" },
+    { "character": "ሙ", "family": "መ", "order": 2, "profile": "m-lips" },
+    { "character": "ሚ", "family": "መ", "order": 3, "profile": "m-lips" },
+    { "character": "ማ", "family": "መ", "order": 4, "profile": "m-lips" },
+    { "character": "ሜ", "family": "መ", "order": 5, "profile": "m-lips" },
+    { "character": "ሞ", "family": "መ", "order": 7, "profile": "m-lips" },
+    { "character": "ፈ", "family": "ፈ", "order": 1, "profile": "f-lips" },
+    { "character": "ፉ", "family": "ፈ", "order": 2, "profile": "f-lips" },
+    { "character": "ፊ", "family": "ፈ", "order": 3, "profile": "f-lips" },
+    { "character": "ፋ", "family": "ፈ", "order": 4, "profile": "f-lips" },
+    { "character": "ፌ", "family": "ፈ", "order": 5, "profile": "f-lips" },
+    { "character": "ፎ", "family": "ፈ", "order": 7, "profile": "f-lips" }
+  ],
+  "alignments": []
+}

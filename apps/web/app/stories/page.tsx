@@ -1,10 +1,4 @@
-import { Library } from "../../components/learning";
+import { redirect } from "next/navigation";
 export default function Page() {
-  return (
-    <Library
-      resource="stories"
-      title="Read a little story."
-      description="Explore published, reviewed Tigrinya stories."
-    />
-  );
+  redirect("/preview/stories/index.html");
 }

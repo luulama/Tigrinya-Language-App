@@ -113,13 +113,13 @@ export function LearnHome() {
           <div className="card-art" lang="ti" dir="ltr">
             ቤት
           </div>
-          <h2>Picture words</h2>
-          <p>Connect pictures and two-character words.</p>
+          <h2>Unit 2 onward · Your word path</h2>
+          <p>Short picture-word lessons, clear checkpoints, then reading and writing.</p>
           <Link
             className="button button-outline"
-            href="/preview/unit-02-first-words/index.html"
+            href="/preview/unit-02-first-words/path.html"
           >
-            Open picture-word preview →
+            Follow the word path →
           </Link>
           <p><Link href="/preview/games/index.html?unit=2">10 word games →</Link></p>
         </Card>
