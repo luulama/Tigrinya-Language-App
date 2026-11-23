@@ -25,6 +25,7 @@ commands = [
     [args.node, '--check', 'shared/mascot/neri.js'],
     [args.node, '--check', 'shared/mascot/articulation-core.js'],
     [args.node, '--check', 'shared/mascot/practice.js'],
+    [args.node, '--check', 'shared/mascot/scenes.js'],
     [args.node, 'tests/check_mascot.cjs'],
     [args.node, 'tests/check_stories.cjs'],
     [args.node, '--check', 'unit-02-first-words/src/unit2-child-app.js'],

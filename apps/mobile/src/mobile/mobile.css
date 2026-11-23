@@ -1,0 +1,192 @@
+:root {
+  color-scheme: light;
+  --mobile-ink: #273849;
+  --mobile-paper: #fffdf7;
+  --mobile-green: #176f58;
+  --mobile-violet: #6242b3;
+  --mobile-fidal: "Noto Sans Ethiopic", Kefa, Nyala, sans-serif;
+}
+body {
+  padding-bottom: max(20px, env(safe-area-inset-bottom)) !important;
+}
+.mobile-home {
+  box-sizing: border-box;
+  max-width: 860px;
+  margin: auto;
+  padding: 24px max(20px, env(safe-area-inset-right)) 30px
+    max(20px, env(safe-area-inset-left));
+  font:
+    1rem/1.6 "Avenir Next",
+    system-ui,
+    sans-serif;
+  color: var(--mobile-ink);
+  background: var(--mobile-paper);
+}
+body:has(.mobile-home) {
+  margin: 0;
+  background: var(--mobile-paper);
+}
+.mobile-home h1 {
+  font-size: clamp(1.8rem, 6vw, 2.7rem);
+  line-height: 1.15;
+  margin: 12px 0;
+}
+.mobile-home a {
+  color: var(--mobile-violet);
+  text-underline-offset: 3px;
+}
+.mobile-eyebrow {
+  color: var(--mobile-green);
+  font-weight: 750;
+}
+.mobile-welcome {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.mobile-welcome > div {
+  flex: 1;
+}
+.mobile-welcome img {
+  width: clamp(90px, 22vw, 160px);
+  height: auto;
+}
+.mobile-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.mobile-choices a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 130px;
+  padding: 18px;
+  border: 2px solid #ded6ec;
+  border-radius: 22px;
+  text-decoration: none;
+  background: white;
+}
+.mobile-choices strong {
+  font: 700 2rem/1.5 var(--mobile-fidal);
+  color: var(--mobile-green);
+}
+.mobile-choices span {
+  font-weight: 800;
+  font-size: 1.15rem;
+}
+.mobile-choices small {
+  color: #435869;
+  font-size: 0.9rem;
+}
+.mobile-notice {
+  margin-top: 24px;
+  background: #fff3cf;
+  border: 1px solid #d9c487;
+  padding: 15px;
+  border-radius: 16px;
+  color: #634b1a;
+}
+.mobile-notice p {
+  margin: 6px 0;
+}
+.mobile-home button,
+.mobile-toolbar a {
+  min-width: 44px;
+  min-height: 48px;
+  box-sizing: border-box;
+  font: 750 1rem/1.4 system-ui;
+  border-radius: 12px;
+}
+.mobile-home button {
+  padding: 12px 16px;
+  border: 2px solid var(--mobile-green);
+  background: var(--mobile-green);
+  color: white;
+  cursor: pointer;
+}
+.mobile-home button:disabled {
+  background: #e4e8e5;
+  color: #46564c;
+  border-color: #89998d;
+  cursor: default;
+}
+.mobile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0;
+}
+.mobile-voice audio {
+  display: block;
+  width: 100%;
+  margin: 18px 0;
+}
+.mobile-voice audio[hidden] {
+  display: none;
+}
+.mobile-toolbar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: calc(8px + env(safe-area-inset-top))
+    max(16px, env(safe-area-inset-right)) 8px
+    max(16px, env(safe-area-inset-left));
+  background: #fffdf7;
+  border-bottom: 1px solid #ded6ec;
+  font: 700 0.9rem/1.4 system-ui;
+  color: #273849;
+}
+.mobile-toolbar a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  color: #176f58;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mobile-link-status {
+  margin: 0;
+  padding: 8px 20px;
+  background: #fff3cf;
+  color: #634b1a;
+  font: 1rem/1.5 system-ui;
+}
+.mobile-home :focus-visible,
+.mobile-toolbar :focus-visible {
+  outline: 3px solid #2657ba;
+  outline-offset: 4px;
+}
+[lang="ti"] {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+@media (max-width: 420px) {
+  .mobile-choices {
+    gap: 10px;
+  }
+  .mobile-choices a {
+    padding: 14px;
+    min-height: 135px;
+  }
+  .mobile-home {
+    padding-top: 18px;
+  }
+  .mobile-toolbar {
+    gap: 5px;
+  }
+  .mobile-toolbar span {
+    font-size: 0.8rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mobile-home * {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

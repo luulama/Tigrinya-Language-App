@@ -1,0 +1,176 @@
+[
+  {
+    "files": [
+      "index.html"
+    ],
+    "from": "</head>",
+    "to": "<!-- BEAR:BEGIN -->\n<link rel=\"stylesheet\" href=\"shared/mascot/neri.css\">\n<!-- BEAR:END -->\n</head>"
+  },
+  {
+    "files": [
+      "index.html"
+    ],
+    "from": "</body>",
+    "to": "<!-- BEAR:BEGIN -->\n<script src=\"shared/mascot/scenes.js\" data-neri-scene=\"home\"></script>\n<!-- BEAR:END -->\n</body>"
+  },
+  {
+    "files": [
+      "index.html"
+    ],
+    "from": "    <section class=\"units\"",
+    "to": "\n<!-- BEAR:BEGIN -->\n<figure class=\"neri-scene\" data-neri-scene=\"home\" data-neri-state=\"idle\"><img class=\"neri-scene-art\" data-neri-image src=\"shared/mascot/assets/neri-idle.svg\" alt=\"Neri the bear welcomes you.\" width=\"80\" height=\"86\"><figcaption><p>One small step at a time.</p><button type=\"button\" aria-pressed=\"false\" hidden>Quiet view</button></figcaption></figure>\n<!-- BEAR:END -->\n    <section class=\"units\""
+  },
+  {
+    "files": [
+      "unit-01-fidel-foundations/index.html"
+    ],
+    "from": "</head>",
+    "to": "<!-- BEAR:BEGIN -->\n<link rel=\"stylesheet\" href=\"../shared/mascot/neri.css\">\n<!-- BEAR:END -->\n</head>"
+  },
+  {
+    "files": [
+      "unit-01-fidel-foundations/index.html"
+    ],
+    "from": "</body>",
+    "to": "<!-- BEAR:BEGIN -->\n<script src=\"../shared/mascot/scenes.js\" data-neri-scene=\"unit1\"></script>\n<!-- BEAR:END -->\n</body>"
+  },
+  {
+    "files": [
+      "unit-01-fidel-foundations/index.html"
+    ],
+    "from": " <section id=\"home\"",
+    "to": "\n<!-- BEAR:BEGIN -->\n<figure class=\"neri-scene\" data-neri-scene=\"unit1\" data-neri-state=\"idle\" hidden><img class=\"neri-scene-art\" data-neri-image src=\"../shared/mascot/assets/neri-idle.svg\" alt=\"Neri the bear welcomes you.\" width=\"80\" height=\"86\"><figcaption><p>One small step at a time.</p><button type=\"button\" aria-pressed=\"false\" hidden>Quiet view</button></figcaption></figure>\n<!-- BEAR:END -->\n <section id=\"home\""
+  },
+  {
+    "files": [
+      "unit-01-fidel-foundations/index.html"
+    ],
+    "from": "<img src=\"assets/fidel-guide.png\" class=\"guide\" alt=\"Saba, the Tigrinya learning guide\">",
+    "to": "<img src=\"../shared/mascot/assets/neri-idle.svg\" class=\"guide\" data-neri-actor=\"idle\" alt=\"Neri the bear welcomes you.\">"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/unit2-child-shell.html",
+      "unit-02-first-words/index.html"
+    ],
+    "from": "</head>",
+    "to": "<!-- BEAR:BEGIN -->\n<link rel=\"stylesheet\" href=\"../shared/mascot/neri.css\">\n<!-- BEAR:END -->\n</head>"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/unit2-child-shell.html",
+      "unit-02-first-words/index.html"
+    ],
+    "from": "</body>",
+    "to": "<!-- BEAR:BEGIN -->\n<script src=\"../shared/mascot/scenes.js\" data-neri-scene=\"unit2\"></script>\n<!-- BEAR:END -->\n</body>"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/path-shell.html",
+      "unit-02-first-words/path.html"
+    ],
+    "from": "</head>",
+    "to": "<!-- BEAR:BEGIN -->\n<link rel=\"stylesheet\" href=\"../shared/mascot/neri.css\">\n<!-- BEAR:END -->\n</head>"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/path-shell.html",
+      "unit-02-first-words/path.html"
+    ],
+    "from": "</body>",
+    "to": "<!-- BEAR:BEGIN -->\n<script src=\"../shared/mascot/scenes.js\" data-neri-scene=\"path\"></script>\n<!-- BEAR:END -->\n</body>"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/path-shell.html",
+      "unit-02-first-words/path.html"
+    ],
+    "from": "  <main id=\"wordPath\"",
+    "to": "\n<!-- BEAR:BEGIN -->\n<figure class=\"neri-scene\" data-neri-scene=\"path\" data-neri-state=\"idle\"><img class=\"neri-scene-art\" data-neri-image src=\"../shared/mascot/assets/neri-idle.svg\" alt=\"Neri the bear welcomes you.\" width=\"80\" height=\"86\"><figcaption><p>One small step at a time.</p><button type=\"button\" aria-pressed=\"false\" hidden>Quiet view</button></figcaption></figure>\n<!-- BEAR:END -->\n  <main id=\"wordPath\""
+  },
+  {
+    "files": [
+      "games/src/shell.html",
+      "games/index.html"
+    ],
+    "from": "</head>",
+    "to": "<!-- BEAR:BEGIN -->\n<link rel=\"stylesheet\" href=\"../shared/mascot/neri.css\">\n<!-- BEAR:END -->\n</head>"
+  },
+  {
+    "files": [
+      "games/src/shell.html",
+      "games/index.html"
+    ],
+    "from": "</body>",
+    "to": "<!-- BEAR:BEGIN -->\n<script src=\"../shared/mascot/scenes.js\" data-neri-scene=\"games\"></script>\n<!-- BEAR:END -->\n</body>"
+  },
+  {
+    "files": [
+      "games/src/shell.html",
+      "games/index.html"
+    ],
+    "from": "  <main id=\"garden\"",
+    "to": "\n<!-- BEAR:BEGIN -->\n<figure class=\"neri-scene\" data-neri-scene=\"games\" data-neri-state=\"idle\"><img class=\"neri-scene-art\" data-neri-image src=\"../shared/mascot/assets/neri-idle.svg\" alt=\"Neri the bear welcomes you.\" width=\"80\" height=\"86\"><figcaption><p>One small step at a time.</p><button type=\"button\" aria-pressed=\"false\" hidden>Quiet view</button></figcaption></figure>\n<!-- BEAR:END -->\n  <main id=\"garden\""
+  },
+  {
+    "files": [
+      "stories/index.html"
+    ],
+    "from": "</head>",
+    "to": "<!-- BEAR:BEGIN -->\n<link rel=\"stylesheet\" href=\"../shared/mascot/neri.css\">\n<!-- BEAR:END -->\n</head>"
+  },
+  {
+    "files": [
+      "stories/index.html"
+    ],
+    "from": "</body>",
+    "to": "<!-- BEAR:BEGIN -->\n<script src=\"../shared/mascot/scenes.js\" data-neri-scene=\"stories\"></script>\n<!-- BEAR:END -->\n</body>"
+  },
+  {
+    "files": [
+      "stories/index.html"
+    ],
+    "from": "    <main id=\"storyMain\"",
+    "to": "\n<!-- BEAR:BEGIN -->\n<figure class=\"neri-scene\" data-neri-scene=\"stories\" data-neri-state=\"idle\"><img class=\"neri-scene-art\" data-neri-image src=\"../shared/mascot/assets/neri-idle.svg\" alt=\"Neri the bear welcomes you.\" width=\"80\" height=\"86\"><figcaption><p>One small step at a time.</p><button type=\"button\" aria-pressed=\"false\" hidden>Quiet view</button></figcaption></figure>\n<!-- BEAR:END -->\n    <main id=\"storyMain\""
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/unit2-child-shell.html",
+      "unit-02-first-words/index.html"
+    ],
+    "from": "<svg viewBox=\"0 0 260 240\" role=\"img\" aria-label=\"A friendly little lion waves hello\"><use href=\"#art-guide\"/></svg>",
+    "to": "<img src=\"../shared/mascot/assets/neri-idle.svg\" data-neri-actor=\"idle\" alt=\"Neri the bear waves hello.\">"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/unit2-child-shell.html",
+      "unit-02-first-words/index.html"
+    ],
+    "from": "<svg class=\"finish-guide one-shot-wave\" viewBox=\"0 0 260 240\" role=\"img\" aria-label=\"The little lion smiles\"><use href=\"#art-guide\"/></svg>",
+    "to": "<img class=\"finish-guide\" src=\"../shared/mascot/assets/neri-celebrating.svg\" data-neri-actor=\"celebrating\" alt=\"Neri the bear celebrates your practice.\">"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/unit2-child-shell.html",
+      "unit-02-first-words/index.html"
+    ],
+    "from": "<svg viewBox=\"0 0 260 240\" aria-hidden=\"true\"><use href=\"#art-guide\"/></svg>",
+    "to": "<img src=\"../shared/mascot/assets/neri-encouraging.svg\" data-neri-actor=\"help\" alt=\"\" aria-hidden=\"true\">"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/unit2-pairs-screen.html",
+      "unit-02-first-words/index.html"
+    ],
+    "from": "<svg viewBox=\"0 0 260 240\" aria-hidden=\"true\"><use href=\"#art-guide\"/></svg>",
+    "to": "<img src=\"../shared/mascot/assets/neri-encouraging.svg\" data-neri-actor=\"help\" alt=\"\" aria-hidden=\"true\">"
+  },
+  {
+    "files": [
+      "unit-02-first-words/src/unit2-child-app.js",
+      "unit-02-first-words/index.html"
+    ],
+    "from": "<svg viewBox=\"0 0 260 240\" role=\"img\" aria-label=\"The little lion waves\"><use href=\"#art-guide\"/></svg>",
+    "to": "<img src=\"../shared/mascot/assets/neri-encouraging.svg\" data-neri-actor=\"encouraging\" alt=\"Neri the bear encourages another try.\">"
+  }
+]

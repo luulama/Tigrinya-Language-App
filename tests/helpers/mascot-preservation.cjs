@@ -11,6 +11,7 @@ const tags = new Set([
   '<script src="../shared/mascot/neri.js"></script> <script src="../shared/mascot/articulation-data.js"></script> <script src="../shared/mascot/articulation-core.js"></script> <script src="../shared/mascot/practice.js"></script>',
 ]);
 module.exports = function withoutMascot(name, bytes) {
+  bytes = require("./bear-preservation.cjs")(name, bytes);
   if (
     ![
       "unit-01-fidel-foundations/pronunciation-app.js",

@@ -169,12 +169,15 @@ test("opt-in saved progress is versioned and malformed records do not unlock les
     ).lessons["u2-01"],
   );
 });
-test("Unit 1/shared baseline is preserved except the requested card link and isolated storage extension", () => {
+test("Unit 1/shared baseline is preserved through the card link, isolated storage extension and reversible bear appearance changes", () => {
   const baseline = JSON.parse(
     fs.readFileSync(path.join(__dirname, "fixtures/unit1-path-baseline.json")),
   );
   for (const [name, hash] of Object.entries(baseline)) {
-    let source = fs.readFileSync(path.join(root, name));
+    let source = require("./helpers/bear-preservation.cjs")(
+      name,
+      fs.readFileSync(path.join(root, name)),
+    );
     // A later explicit Unit 1 request authorises these additions. Keep the original hashes.
     if (name === "unit-01-fidel-foundations/index.html") {
       const link =

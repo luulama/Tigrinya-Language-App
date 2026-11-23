@@ -6,6 +6,7 @@ import { Button, Card } from "@polyglot/ui";
 import type { Profile } from "@polyglot/shared-types";
 import { request, signIn, signOut } from "../lib/api";
 import { QueryState } from "./learning";
+import { BearCompanion } from "./bear-companion";
 export function SignIn({ signup = false }: { signup?: boolean }) {
   const [busy, setBusy] = useState(false),
     [message, setMessage] = useState("");
@@ -144,6 +145,10 @@ export function ProgressPage() {
   return (
     <>
       <h1>Your practice.</h1>
+      <BearCompanion
+        state="encouraging"
+        caption="Practice grows one visit at a time."
+      />
       <p>
         See the evidence for each skill. Practice counts do not establish
         language proficiency.

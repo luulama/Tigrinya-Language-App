@@ -1,0 +1,17 @@
+<svg class="neri-art" data-neri-kind="bear" viewBox="0 70 300 240" role="img" aria-label="Neri: sleepy" focusable="false" xmlns="http://www.w3.org/2000/svg"><title>Neri: sleepy</title><desc>Original Neri bear artwork or separately labelled schematic human lip guide. Project-created SVG; no third-party illustration assets.</desc><g class="neri-body neri-curled"><ellipse cx="151" cy="274" rx="120" ry="10" fill="#273849" opacity=".09"/><circle cx="53" cy="239" r="17" fill="#a7643e"/><path d="M38 244 Q23 173 96 151 Q167 129 221 188 L229 256 Q139 291 70 273Z" fill="#b77349" stroke="#734b35" stroke-width="3"/><path d="M57 186 Q89 149 141 164 Q100 164 78 204" fill="#d79758" opacity=".65"/><g transform="translate(81 86) scale(.74)"><g class="neri-head" transform="rotate(0 150 145)">
+      <circle cx="84" cy="66" r="29" fill="#b77349" stroke="#734b35" stroke-width="3"/><circle cx="84" cy="67" r="17" fill="#895433"/>
+      <circle cx="216" cy="64" r="30" fill="#bd7b4c" stroke="#734b35" stroke-width="3"/><circle cx="217" cy="66" r="17" fill="#895433"/>
+      <path d="M202 39 Q219 25 233 42 Q221 34 211 48" fill="#efd09a"/>
+      <path d="M76 93 C80 69 102 49 128 50 L124 38 L139 44 L148 30 L156 44 L170 39 L169 51 C197 49 222 70 227 94 L235 104 L228 107 L235 119 L228 121 C233 153 215 176 190 185 Q150 204 109 184 C82 175 67 154 72 126 L65 119 L73 113 L65 106Z" fill="#bd7b4c" stroke="#734b35" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M173 54 Q211 65 221 103 Q215 77 185 70 Q137 54 100 78 Q122 49 146 52" fill="#d79758" opacity=".7"/>
+      <path d="M226 122 Q230 161 197 181 Q169 197 143 193 Q184 182 200 158Z" fill="#a7643e"/>
+      <path d="M110 105 Q122 100 134 105" fill="none" stroke="#644232" stroke-width="5" stroke-linecap="round"/><path d="M164 105 Q177 100 189 105" fill="none" stroke="#644232" stroke-width="5" stroke-linecap="round"/>
+      <path d="M111 119 Q122 129 133 119 M165 119 Q177 129 189 119" fill="none" stroke="#342e2a" stroke-width="3.5" stroke-linecap="round"/>
+      <ellipse cx="150" cy="151" rx="41" ry="29" fill="#f2d4a5"/>
+      <path d="M136 133 Q150 126 165 134 Q164 145 151 148 Q139 146 136 133Z" fill="#3f332b"/><path d="M140 134 Q150 131 158 134" fill="none" stroke="#756051" stroke-width="3" stroke-linecap="round"/>
+      <g data-neri-mouth=""><g class="neri-animal-mouth" data-neri-animal-expression="true"><path d="M150 146 L150 158" stroke="#644232" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M133 160 Q150 166 167 160" fill="none" stroke="#644232" stroke-width="3" stroke-linecap="round"/></g></g>
+      <path d="M83 137 L89 143 M80 146 L86 151 M216 140 L210 146" stroke="#d99c64" stroke-width="2.5" stroke-linecap="round"/>
+    </g></g><g class="neri-paw" transform="translate(167 260) rotate(-6)"><ellipse rx="31" ry="24" fill="#b77349" stroke="#734b35" stroke-width="3"/>
+      <path d="M-12 11 Q-10 5 -13 0 M0 14 Q3 8 0 3 M12 11 Q15 5 13 0" fill="none" stroke="#805035" stroke-width="2.5" stroke-linecap="round"/></g><g class="neri-paw" transform="translate(225 260) rotate(5)"><ellipse rx="31" ry="24" fill="#b77349" stroke="#734b35" stroke-width="3"/>
+      <path d="M-12 11 Q-10 5 -13 0 M0 14 Q3 8 0 3 M12 11 Q15 5 13 0" fill="none" stroke="#805035" stroke-width="2.5" stroke-linecap="round"/></g><path d="M63 249 Q92 271 125 264" stroke="#9b5c38" stroke-width="4" fill="none" stroke-linecap="round"/></g></svg>

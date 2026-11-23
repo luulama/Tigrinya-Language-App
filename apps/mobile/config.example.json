@@ -1,0 +1,7 @@
+{
+  "MOBILE_ENV": "offline",
+  "MOBILE_API_URL": "",
+  "MOBILE_ALLOW_PRODUCTION_API": "",
+  "MOBILE_APP_ID": "com.example.tigrinya.placeholder",
+  "MOBILE_APP_NAME": "Tigrinya Preview"
+}

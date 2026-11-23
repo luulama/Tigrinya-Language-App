@@ -52,4 +52,4 @@ print(f'Built Neri lip guides: {len(profiles)} sourced consonant components, {le
 subprocess.run(['node', str(root/'scripts/export_mascot.cjs')], cwd=root, check=True)
 for asset in (root/'shared/mascot/assets').glob('*.svg'):
     assert ElementTree.parse(asset).getroot().tag == '{http://www.w3.org/2000/svg}svg', f'Invalid standalone SVG: {asset.name}'
-print('Validated all 17 standalone mascot SVGs as XML, including their mouth groups.')
+print('Validated all 18 standalone bear and human-guide SVGs as XML, including their mouth groups.')

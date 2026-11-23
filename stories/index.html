@@ -6,7 +6,10 @@
     <meta name="color-scheme" content="light dark" />
     <title>Stories · Tigrinya</title>
     <link rel="stylesheet" href="stories.css" />
-  </head>
+  <!-- BEAR:BEGIN -->
+<link rel="stylesheet" href="../shared/mascot/neri.css">
+<!-- BEAR:END -->
+</head>
   <body>
     <a class="story-skip" href="#storyMain">Skip to stories</a>
     <header class="story-header">
@@ -31,6 +34,10 @@
     <p id="storySaveNote" class="story-save-note" role="status">
       Reading choices stay in this tab. Device saving is optional.
     </p>
+
+<!-- BEAR:BEGIN -->
+<figure class="neri-scene" data-neri-scene="stories" data-neri-state="idle"><img class="neri-scene-art" data-neri-image src="../shared/mascot/assets/neri-idle.svg" alt="Neri the bear welcomes you." width="80" height="86"><figcaption><p>One small step at a time.</p><button type="button" aria-pressed="false" hidden>Quiet view</button></figcaption></figure>
+<!-- BEAR:END -->
     <main id="storyMain" tabindex="-1">
       <div id="storyApp">
         <p role="status">Opening your story collection…</p>
@@ -82,5 +89,8 @@
     <script src="data.js"></script>
     <script src="core.js"></script>
     <script src="app.js"></script>
-  </body>
+  <!-- BEAR:BEGIN -->
+<script src="../shared/mascot/scenes.js" data-neri-scene="stories"></script>
+<!-- BEAR:END -->
+</body>
 </html>

@@ -228,7 +228,7 @@ test("title search handles Ethiopic and shelves filter the actual stored choice"
   );
   assert.equal(h.store.position(stories[0], 1000), false);
 });
-test("all 34 pre-Stories baselines remain unchanged apart from the later authorized optional mascot hooks", () => {
+test("all 34 pre-Stories baselines retain their content through the explicitly recorded mascot appearance additions", () => {
   const baseline = JSON.parse(
     fs.readFileSync(
       path.join(root, "tests/fixtures/stories-preservation.json"),

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Card } from "@polyglot/ui";
+import { BearCompanion } from "../components/bear-companion";
 export default function Landing() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Landing() {
           <p>
             Explore Fidäl, connect pictures and words, and practise writing.
           </p>
+          <BearCompanion large caption="I’m Neri. Let’s take a small step." />
           <div className="actions">
             <Link className="button button-primary" href="/learn">
               Begin learning →

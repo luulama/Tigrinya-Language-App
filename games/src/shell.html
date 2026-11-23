@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Game Garden · Tigrinya</title>
   <link rel="stylesheet" href="../shared/game-garden.css">
+<!-- BEAR:BEGIN -->
+<link rel="stylesheet" href="../shared/mascot/neri.css">
+<!-- BEAR:END -->
 </head>
 <body>
   __SPRITE__
@@ -13,6 +16,10 @@
     <a class="brand" href="../index.html">Tigrinya<span aria-hidden="true"> •</span></a>
     <a id="unitLink" href="../index.html">Back to lessons</a>
   </header>
+
+<!-- BEAR:BEGIN -->
+<figure class="neri-scene" data-neri-scene="games" data-neri-state="idle"><img class="neri-scene-art" data-neri-image src="../shared/mascot/assets/neri-idle.svg" alt="Neri the bear welcomes you." width="80" height="86"><figcaption><p>One small step at a time.</p><button type="button" aria-pressed="false" hidden>Quiet view</button></figcaption></figure>
+<!-- BEAR:END -->
   <main id="garden" tabindex="-1">
     <div id="gameRoot"><p role="status">Opening the garden…</p></div>
     <noscript><p>These games need JavaScript. <a href="../index.html">Back to lessons</a></p></noscript>
@@ -29,5 +36,8 @@
   <script src="../shared/game-content.js"></script>
   <script src="../shared/game-garden-core.js"></script>
   <script src="../shared/game-garden.js" onerror="document.getElementById('gameRoot').innerHTML='&lt;p role=&quot;alert&quot;&gt;The game could not load. Reload this page to try again, or use Back to lessons.&lt;/p&gt;'"></script>
+<!-- BEAR:BEGIN -->
+<script src="../shared/mascot/scenes.js" data-neri-scene="games"></script>
+<!-- BEAR:END -->
 </body>
 </html>

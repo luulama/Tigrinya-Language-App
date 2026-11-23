@@ -1,54 +1,51 @@
-/* Neri: original notebook explorer. No animation runs while the learner focuses. */
+/* Neri: an original cinnamon bear. Character acting is separate from human lip teaching. */
 (function (root) {
   "use strict";
   const states = {
     idle: [
-      "Ready to explore",
-      "M111 104 Q123 94 134 102",
-      "M165 102 Q176 96 187 105",
-      1,
+      "Welcoming you",
+      "M110 100 Q121 92 134 100",
+      "M164 100 Q177 92 189 100",
     ],
     listening: [
       "Listening attentively",
-      "M111 99 Q124 91 136 99",
-      "M164 98 Q177 89 189 98",
-      0,
+      "M110 96 Q122 90 134 98",
+      "M164 98 Q177 92 189 99",
     ],
     thinking: [
       "Thinking about a hint",
-      "M110 105 Q123 95 136 103",
-      "M164 91 Q177 89 189 97",
-      0,
+      "M110 103 Q122 96 134 102",
+      "M164 92 Q177 88 189 96",
     ],
     encouraging: [
       "Encouraging another try",
-      "M110 100 Q123 92 136 100",
-      "M164 100 Q177 92 189 100",
-      1,
+      "M110 99 Q122 92 134 99",
+      "M164 99 Q177 92 189 99",
     ],
     celebrating: [
       "Celebrating your practice",
-      "M110 98 Q123 88 136 98",
-      "M164 98 Q177 88 189 98",
-      2,
+      "M110 96 Q122 85 134 96",
+      "M164 96 Q177 85 189 96",
     ],
     kind: [
-      "Offering kind support",
-      "M110 104 Q123 98 136 97",
-      "M164 97 Q177 98 189 104",
-      1,
+      "Offering gentle support",
+      "M110 104 Q122 97 134 98",
+      "M164 98 Q177 97 189 104",
     ],
     demonstrating: [
-      "Showing a lip movement",
-      "M111 99 Q123 94 136 100",
-      "M164 100 Q177 94 189 99",
-      0,
+      "Helping you watch the lip guide",
+      "M110 100 Q122 93 134 100",
+      "M164 100 Q177 93 189 100",
     ],
     resting: [
       "Staying quiet while you focus",
-      "M111 105 Q123 100 136 105",
+      "M110 102 Q122 98 134 102",
+      "M164 102 Q177 98 189 102",
+    ],
+    sleepy: [
+      "Resting quietly for a bedtime story",
+      "M110 105 Q122 100 134 105",
       "M164 105 Q177 100 189 105",
-      0,
     ],
   };
   const esc = (s) =>
@@ -78,37 +75,59 @@
       <g opacity="${nasal}" class="neri-nasal"><path d="M145 135 Q126 130 123 115 M155 135 Q174 130 177 115" fill="none" stroke="#176f58" stroke-width="3" stroke-dasharray="4 5"/><path d="M119 120 L123 113 L129 119 M171 119 L177 113 L181 120" fill="none" stroke="#176f58" stroke-width="2.5"/></g>
     </g>`;
   }
+
+  function animalMouth(state, pose) {
+    const open = pose
+      ? Math.max(0, Math.min(0.8, Number(pose.open) || 0))
+      : state === "celebrating"
+        ? 0.65
+        : 0;
+    const curve = state === "resting" || state === "sleepy" ? 166 : 173;
+    return `<g class="neri-animal-mouth" data-neri-animal-expression="true"><path d="M150 146 L150 158" stroke="#644232" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      ${open > 0.04 ? `<path d="M133 160 Q150 168 167 160 Q165 ${166 + open * 31} 150 ${166 + open * 31} Q135 ${166 + open * 31} 133 160Z" fill="#50372e"/><path d="M142 ${165 + open * 25} Q150 ${161 + open * 25} 159 ${165 + open * 25}" stroke="#c58267" stroke-width="5" fill="none" stroke-linecap="round"/>` : `<path d="M133 160 Q150 ${curve} 167 160" fill="none" stroke="#644232" stroke-width="3" stroke-linecap="round"/>`}</g>`;
+  }
+  function head(state, pose) {
+    const s = states[state] || states.idle,
+      closed = ["celebrating", "resting", "sleepy"].includes(state),
+      tilt = state === "listening" ? -6 : state === "thinking" ? 5 : 0;
+    return `<g class="neri-head" transform="rotate(${tilt} 150 145)">
+      <circle cx="84" cy="66" r="29" fill="#b77349" stroke="#734b35" stroke-width="3"/><circle cx="84" cy="67" r="17" fill="#895433"/>
+      <circle cx="216" cy="64" r="30" fill="#bd7b4c" stroke="#734b35" stroke-width="3"/><circle cx="217" cy="66" r="17" fill="#895433"/>
+      <path d="M202 39 Q219 25 233 42 Q221 34 211 48" fill="#efd09a"/>
+      <path d="M76 93 C80 69 102 49 128 50 L124 38 L139 44 L148 30 L156 44 L170 39 L169 51 C197 49 222 70 227 94 L235 104 L228 107 L235 119 L228 121 C233 153 215 176 190 185 Q150 204 109 184 C82 175 67 154 72 126 L65 119 L73 113 L65 106Z" fill="#bd7b4c" stroke="#734b35" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M173 54 Q211 65 221 103 Q215 77 185 70 Q137 54 100 78 Q122 49 146 52" fill="#d79758" opacity=".7"/>
+      <path d="M226 122 Q230 161 197 181 Q169 197 143 193 Q184 182 200 158Z" fill="#a7643e"/>
+      <path d="${s[1]}" fill="none" stroke="#644232" stroke-width="5" stroke-linecap="round"/><path d="${s[2]}" fill="none" stroke="#644232" stroke-width="5" stroke-linecap="round"/>
+      ${closed ? '<path d="M111 119 Q122 129 133 119 M165 119 Q177 129 189 119" fill="none" stroke="#342e2a" stroke-width="3.5" stroke-linecap="round"/>' : `<path d="M108 121 Q119 103 134 117 Q130 133 119 134 Q111 132 108 121Z M164 117 Q180 103 191 121 Q187 133 178 134 Q168 132 164 117Z" fill="#fff1d6" stroke="#734b35" stroke-width="1.5"/><ellipse cx="${state === "thinking" ? 123 : 121}" cy="120" rx="7.5" ry="11" fill="#3c352b"/><ellipse cx="${state === "thinking" ? 179 : 176}" cy="120" rx="7.5" ry="11" fill="#3c352b"/><circle cx="124" cy="116" r="2.8" fill="#fffaf0"/><circle cx="179" cy="116" r="2.8" fill="#fffaf0"/>`}
+      <ellipse cx="150" cy="151" rx="41" ry="29" fill="#f2d4a5"/>
+      <path d="M136 133 Q150 126 165 134 Q164 145 151 148 Q139 146 136 133Z" fill="#3f332b"/><path d="M140 134 Q150 131 158 134" fill="none" stroke="#756051" stroke-width="3" stroke-linecap="round"/>
+      <g data-neri-mouth="">${animalMouth(state, pose)}</g>
+      <path d="M83 137 L89 143 M80 146 L86 151 M216 140 L210 146" stroke="#d99c64" stroke-width="2.5" stroke-linecap="round"/>
+    </g>`;
+  }
+  function paw(x, y, rotation = 0, raised = false) {
+    return `<g class="neri-paw" transform="translate(${x} ${y}) rotate(${rotation})"><ellipse rx="${raised ? 24 : 31}" ry="${raised ? 36 : 24}" fill="#b77349" stroke="#734b35" stroke-width="3"/>
+      ${raised ? '<ellipse cy="8" rx="13" ry="16" fill="#805035"/><ellipse cx="-12" cy="-17" rx="5" ry="7" fill="#805035"/><ellipse cy="-23" rx="5.5" ry="7" fill="#805035"/><ellipse cx="12" cy="-17" rx="5" ry="7" fill="#805035"/>' : '<path d="M-12 11 Q-10 5 -13 0 M0 14 Q3 8 0 3 M12 11 Q15 5 13 0" fill="none" stroke="#805035" stroke-width="2.5" stroke-linecap="round"/>'}</g>`;
+  }
   function svg(state = "idle", closeup = false, pose) {
-    const s = states[state] || states.idle;
-    const expressionMouth =
-      state === "celebrating"
-        ? '<path d="M134 150 Q150 157 167 150 Q164 172 150 170 Q137 168 134 150Z" fill="#603d36"/><path d="M141 165 Q150 160 160 165" fill="#c57a60"/>'
-        : `<path d="M137 153 Q150 ${state === "resting" || state === "listening" ? 157 : 164} 164 153" fill="none" stroke="#614837" stroke-width="3.5" stroke-linecap="round"/>`;
-    const rightArm = ["resting", "listening", "kind"].includes(state)
-      ? "M222 171 Q242 185 239 204 Q242 215 251 210 Q258 207 251 197 Q250 174 225 160"
-      : "M222 171 Q250 175 258 157 Q264 148 267 152 Q272 162 263 169 Q281 162 282 169 Q280 185 257 191 Q240 195 221 185";
-    return `<svg class="neri-art" viewBox="${closeup ? "99 112 103 75" : "0 0 300 320"}" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-    <g class="neri-body">
-      <ellipse cx="152" cy="298" rx="100" ry="10" fill="#273849" opacity=".08"/>
-      <path d="M113 240 L109 276 M186 239 L191 274" stroke="#d4aa7a" stroke-width="14" stroke-linecap="round"/>
-      <path d="M98 270 Q108 264 123 275 L128 289 Q106 299 84 290 Q82 280 98 270Z M180 274 Q191 264 202 273 L224 285 Q227 295 195 296 L180 289Z" fill="#614837" stroke="#273849" stroke-width="3"/>
-      <path d="M95 282 L117 281 M189 283 L206 283" stroke="#e5b66d" stroke-width="3" stroke-linecap="round"/>
-      <path class="neri-arm neri-left-arm" d="M75 168 Q41 170 40 199 Q41 211 51 210 Q58 207 51 198 Q52 184 78 184" fill="#f2d6a7" stroke="#9e6545" stroke-width="3"/>
-      <path class="neri-arm neri-right-arm" d="${rightArm}" fill="#f2d6a7" stroke="#9e6545" stroke-width="3"/>
-      <path d="M72 54 Q72 37 92 37 L202 37 L231 65 L231 227 Q231 247 211 250 L91 253 Q71 252 70 233Z" fill="#c86443" stroke="#8a4c36" stroke-width="3"/>
-      <path d="M91 236 L217 232 L216 243 L94 247Z" fill="#ddc7a2" stroke="#a58159" stroke-width="2"/>
-      <path d="M143 239 L143 281 L157 271 L171 279 L171 237Z" fill="#176f58" stroke="#115642" stroke-width="2"/>
-      <path d="M86 48 Q85 39 99 40 L194 40 L222 68 L222 225 Q222 236 210 237 L99 241 Q85 242 85 226Z" fill="#fff0cf" stroke="#9e6545" stroke-width="3"/>
-      <path d="M193 41 L193 70 L222 69" fill="#e9c895" stroke="#ae8051" stroke-width="2" stroke-linejoin="round"/>
-      <path d="M98 224 Q154 229 210 220" fill="none" stroke="#d9be91" stroke-width="2"/>
-      <path d="M79 71 C49 60 49 88 78 83 M79 119 C49 108 49 136 78 131 M79 167 C49 156 49 184 78 179" fill="none" stroke="#a66b38" stroke-width="9" stroke-linecap="round"/>
-      <path d="M78 69 C52 61 52 81 64 82 M78 117 C52 109 52 129 64 130 M78 165 C52 157 52 177 64 178" fill="none" stroke="#e5b66d" stroke-width="4" stroke-linecap="round"/>
-      <g class="neri-face">${closeup ? "" : `<path d="${s[1]}" fill="none" stroke="#614837" stroke-width="5" stroke-linecap="round"/><path d="${s[2]}" fill="none" stroke="#614837" stroke-width="5" stroke-linecap="round"/>`}
-      ${closeup ? "" : state === "celebrating" || state === "resting" ? '<path d="M113 122 Q124 112 135 122 M165 122 Q176 112 187 122" fill="none" stroke="#273849" stroke-width="4" stroke-linecap="round"/>' : '<ellipse cx="124" cy="121" rx="10" ry="13" fill="#273849"/><ellipse cx="176" cy="121" rx="10" ry="13" fill="#273849"/><circle cx="127" cy="117" r="3" fill="#fff8e9"/><circle cx="179" cy="117" r="3" fill="#fff8e9"/>'}
-      <path d="M147 133 Q143 138 148 139 M153 133 Q157 138 152 139" fill="none" stroke="#bd9570" stroke-width="2" stroke-linecap="round"/>
-      <g data-neri-mouth>${pose || state === "demonstrating" ? mouth(pose || { open: 0.1 }) : expressionMouth}</g>
-      <ellipse cx="110" cy="145" rx="8" ry="4" fill="#c86443" opacity=".16"/><ellipse cx="190" cy="145" rx="8" ry="4" fill="#c86443" opacity=".16"/>
-      </g><path d="M101 196 H113 M101 204 H109" stroke="#176f58" stroke-width="3" stroke-linecap="round"/>
+    if (!Object.hasOwn(states, state)) state = "idle";
+    if (closeup)
+      return `<svg class="neri-art neri-human-guide" data-neri-kind="human-lip-guide" viewBox="99 112 103 75" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect x="99" y="112" width="103" height="75" fill="#fff0cf"/><path d="M147 133 Q143 138 148 139 M153 133 Q157 138 152 139" fill="none" stroke="#bd9570" stroke-width="2" stroke-linecap="round"/><g data-neri-mouth="">${mouth(pose || { open: 0.1 })}</g></svg>`;
+    if (state === "sleepy")
+      return `<svg class="neri-art" data-neri-kind="bear" viewBox="0 70 300 240" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g class="neri-body neri-curled"><ellipse cx="151" cy="274" rx="120" ry="10" fill="#273849" opacity=".09"/><circle cx="53" cy="239" r="17" fill="#a7643e"/><path d="M38 244 Q23 173 96 151 Q167 129 221 188 L229 256 Q139 291 70 273Z" fill="#b77349" stroke="#734b35" stroke-width="3"/><path d="M57 186 Q89 149 141 164 Q100 164 78 204" fill="#d79758" opacity=".65"/><g transform="translate(81 86) scale(.74)">${head(state)}</g>${paw(167, 260, -6)}${paw(225, 260, 5)}<path d="M63 249 Q92 271 125 264" stroke="#9b5c38" stroke-width="4" fill="none" stroke-linecap="round"/></g></svg>`;
+    const wave = ["idle", "encouraging", "demonstrating"].includes(state),
+      celebrate = state === "celebrating",
+      think = state === "thinking";
+    return `<svg class="neri-art" data-neri-kind="bear" viewBox="0 0 300 320" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><g class="neri-body" data-neri-pose="${state}">
+      <ellipse cx="150" cy="294" rx="109" ry="10" fill="#273849" opacity=".09"/><circle cx="75" cy="242" r="20" fill="#a7643e" stroke="#734b35" stroke-width="3"/>
+      <path d="M100 168 Q148 148 197 171 Q233 203 223 255 Q210 290 151 290 Q92 290 76 257 Q65 207 100 168Z" fill="#b77349" stroke="#734b35" stroke-width="3"/>
+      <path d="M181 176 Q219 197 211 251 Q197 279 163 285 Q199 268 197 222Z" fill="#a7643e"/>
+      <path d="M117 173 Q148 184 181 173 L175 192 L161 189 L149 213 L138 191 L123 193Z" fill="#e4ba7f"/>
+      <ellipse cx="98" cy="268" rx="35" ry="28" transform="rotate(25 98 268)" fill="#b77349" stroke="#734b35" stroke-width="3"/><ellipse cx="201" cy="268" rx="35" ry="28" transform="rotate(-25 201 268)" fill="#b77349" stroke="#734b35" stroke-width="3"/>
+      <path d="M91 278 Q98 268 107 269 M191 270 Q201 268 208 278" fill="none" stroke="#805035" stroke-width="3" stroke-linecap="round"/>
+      ${celebrate ? paw(68, 173, -37, true) : `<path d="M105 185 Q86 205 94 263 Q107 277 126 263 L130 205" fill="#bd7b4c" stroke="#734b35" stroke-width="3" stroke-linejoin="round"/>${paw(109, 268, 0)}`}
+      ${wave || celebrate ? `<path d="M194 186 Q216 190 230 176 L251 187 Q238 221 211 221" fill="#b77349" stroke="#734b35" stroke-width="3"/>${paw(246, 164, celebrate ? 35 : 23, true)}` : think ? `<path d="M197 198 Q222 185 210 162 L190 165 Q203 196 181 210" fill="#b77349" stroke="#734b35" stroke-width="3"/>${paw(198, 166, 20, true)}` : `<path d="M187 187 Q210 206 204 263 Q194 277 175 264 L171 207" fill="#bd7b4c" stroke="#734b35" stroke-width="3"/>${paw(190, 268, 0)}`}
+      ${head(state, pose)}<path d="M87 229 L91 234 M212 231 L208 237" stroke="#d99c64" stroke-width="2.5" stroke-linecap="round"/>
     </g></svg>`;
   }
   function create(host, options = {}) {
@@ -122,11 +141,13 @@
         state = Object.hasOwn(states, next.state) ? next.state : state;
         caption = next.caption ?? caption;
         host.dataset.neriState = state;
-        host.innerHTML = `<div class="neri-picture" role="img" aria-label="${esc("Neri, the notebook explorer. " + states[state][0])}">${svg(state, options.closeup)}</div>${options.closeup ? "" : `<p class="neri-caption">${esc(caption)}</p>`}`;
+        host.innerHTML = `<div class="neri-picture" role="img" aria-label="${esc(options.closeup ? "Neri’s schematic human lip guide. " + states[state][0] : "Neri the bear. " + states[state][0])}">${svg(state, options.closeup)}</div>${options.closeup ? "" : `<p class="neri-caption">${esc(caption)}</p>`}`;
       },
       pose(value) {
         if (!destroyed)
-          host.querySelector("[data-neri-mouth]").innerHTML = mouth(value);
+          host.querySelector("[data-neri-mouth]").innerHTML = options.closeup
+            ? mouth(value)
+            : animalMouth(state, value);
       },
       destroy() {
         destroyed = true;

@@ -47,6 +47,7 @@ runtime = [
     'stories/entry.css', 'stories/data.js', 'stories/catalog.json', 'stories/STORY_REVIEW.md',
     'MASCOT.md', 'shared/mascot/neri.js', 'shared/mascot/neri.css',
     'shared/mascot/articulation-data.js', 'shared/mascot/articulation-core.js', 'shared/mascot/practice.js',
+    'shared/mascot/scenes.js',
 ]
 runtime += [str(p.relative_to(root)) for p in sorted((root / 'stories/assets').glob('*.svg'))]
 runtime += [str(p.relative_to(root)) for p in sorted((root / 'shared/mascot/assets').glob('*.svg'))]

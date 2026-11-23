@@ -26,11 +26,11 @@ function test(name, fn) {
   count++;
   console.log("PASS: " + name);
 }
-test("all eight original expressions render, switch and describe their meaning without color alone", () => {
+test("all nine animal expressions render, switch and describe their meaning without color alone", () => {
   const host = dom.window.document.querySelector("#host"),
     mascot = N.create(host, { state: "idle", caption: "One small step." }),
     hashes = new Set();
-  assert.equal(N.states.length, 8);
+  assert.equal(N.states.length, 9);
   for (const state of N.states) {
     mascot.update({ state, caption: "Caption " + state });
     assert.equal(host.dataset.neriState, state);
@@ -51,10 +51,10 @@ test("all eight original expressions render, switch and describe their meaning w
         .digest("hex"),
     );
   }
-  assert.equal(hashes.size, 8);
+  assert.equal(hashes.size, 9);
   mascot.update({ state: "bogus", caption: "<script>bad</script>" });
   assert.equal(host.querySelector("script"), null);
-  assert.equal(host.dataset.neriState, "resting");
+  assert.equal(host.dataset.neriState, "sleepy");
   mascot.destroy();
   assert.equal(host.children.length, 0);
 });
@@ -303,10 +303,10 @@ test("reduced motion never schedules automatic mouth frames, and mismatched dura
   assert.equal(g.states.at(-1), "unavailable");
   g.driver.stop();
 });
-test("17 static local exports have descriptive SVG metadata and match the live renderer", () => {
+test("18 static local exports have descriptive SVG metadata and match the live renderer", () => {
   const dir = path.join(root, "shared/mascot/assets"),
     files = fs.readdirSync(dir).filter((f) => f.endsWith(".svg"));
-  assert.equal(files.length, 17);
+  assert.equal(files.length, 18);
   for (const file of files) {
     const art = fs.readFileSync(path.join(dir, file), "utf8");
     assert(art.includes("<title>"));
@@ -316,7 +316,12 @@ test("17 static local exports have descriptive SVG metadata and match the live r
   }
 });
 test("the mascot adds no voice capture, recognition, synthetic speech, network or persistent child data", () => {
-  for (const file of ["neri.js", "articulation-core.js", "practice.js"]) {
+  for (const file of [
+    "neri.js",
+    "articulation-core.js",
+    "practice.js",
+    "scenes.js",
+  ]) {
     const code = fs.readFileSync(
       path.join(root, "shared/mascot", file),
       "utf8",
@@ -328,7 +333,7 @@ test("the mascot adds no voice capture, recognition, synthetic speech, network o
     );
   }
 });
-test("all 91 existing sources and story assets are preserved; only exact optional card hooks are allowed", () => {
+test("all 91 existing sources and story assets retain their original content through exact reversible mascot UI changes", () => {
   const baseline = JSON.parse(
     fs.readFileSync(path.join(root, "tests/fixtures/mascot-preservation.json")),
   );

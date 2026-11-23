@@ -18,7 +18,7 @@ function save(name, svg, title) {
       /(<svg[^>]*>)/,
       "$1<title>" +
         title +
-        "</title><desc>Original Neri notebook explorer artwork. Project-created SVG; no third-party illustration assets.</desc>",
+        "</title><desc>Original Neri bear artwork or separately labelled schematic human lip guide. Project-created SVG; no third-party illustration assets.</desc>",
     )
     .replace(/[ \t]+$/gm, "");
   fs.writeFileSync(path.join(dir, name + ".svg"), art + "\n");
@@ -44,5 +44,5 @@ for (const p of data.profiles)
     ),
   );
 console.log(
-  "Exported 8 expression and 9 still-step SVG assets from the production renderer.",
+  "Exported 9 bear expression and 9 human lip-step SVG assets from the production renderer.",
 );

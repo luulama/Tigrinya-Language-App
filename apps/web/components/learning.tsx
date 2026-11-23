@@ -12,6 +12,7 @@ import type {
 } from "@polyglot/shared-types";
 import { recordExposure, sawModel } from "../lib/exposures";
 import { ApiError, apiBase, request } from "../lib/api";
+import { BearCompanion } from "./bear-companion";
 export function QueryState({
   pending,
   error,
@@ -94,6 +95,10 @@ export function LearnHome() {
       <p className="eyebrow">One clear next step</p>
       <h1>Start with Fidäl.</h1>
       <p>Look at a form, practise writing, and find its match.</p>
+      <BearCompanion
+        caption="Look first. Try when you’re ready."
+        state="encouraging"
+      />
       <div className="grid">
         <Card>
           <div className="card-art" lang="ti" dir="ltr">
@@ -107,21 +112,30 @@ export function LearnHome() {
           >
             Begin Fidäl preview →
           </Link>
-          <p><Link href="/preview/games/index.html?unit=1">10 Fidäl games →</Link></p>
+          <p>
+            <Link href="/preview/games/index.html?unit=1">
+              10 Fidäl games →
+            </Link>
+          </p>
         </Card>
         <Card>
           <div className="card-art" lang="ti" dir="ltr">
             ቤት
           </div>
           <h2>Unit 2 onward · Your word path</h2>
-          <p>Short picture-word lessons, clear checkpoints, then reading and writing.</p>
+          <p>
+            Short picture-word lessons, clear checkpoints, then reading and
+            writing.
+          </p>
           <Link
             className="button button-outline"
             href="/preview/unit-02-first-words/path.html"
           >
             Follow the word path →
           </Link>
-          <p><Link href="/preview/games/index.html?unit=2">10 word games →</Link></p>
+          <p>
+            <Link href="/preview/games/index.html?unit=2">10 word games →</Link>
+          </p>
         </Card>
       </div>
       <p className="notice">
@@ -194,6 +208,30 @@ export function QuestionActivity({
     <Card>
       <p className="eyebrow">{question.skill} practice</p>
       <h2>{question.prompt}</h2>
+      <BearCompanion
+        state={
+          busy
+            ? "thinking"
+            : result
+              ? result.correct
+                ? "celebrating"
+                : "kind"
+              : error
+                ? "kind"
+                : "resting"
+        }
+        caption={
+          busy
+            ? "Take a moment."
+            : result
+              ? result.correct
+                ? "One small step completed."
+                : "Have another look. You can try again."
+              : error
+                ? "Your place is safe. Try again when you’re ready."
+                : "Take your time."
+        }
+      />
       {question.audioAssetId && (
         <audio
           controls
@@ -267,8 +305,7 @@ export function QuestionActivity({
         ) : null}
         {error && (
           <p>
-            {error}{" "}
-            {errorStatus === 401 && <Link href="/signin">Sign in</Link>}
+            {error} {errorStatus === 401 && <Link href="/signin">Sign in</Link>}
           </p>
         )}
       </div>

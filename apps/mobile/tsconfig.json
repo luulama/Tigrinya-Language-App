@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "noEmit": true,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["DOM", "ES2022"],
+    "skipLibCheck": true
+  },
+  "include": ["src/mobile/*.js"],
+  "exclude": ["www", "node_modules", "ios"]
+}

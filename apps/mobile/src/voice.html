@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My private voice practice</title>
+  </head>
+  <body>
+    <main class="mobile-home mobile-voice" id="main">
+      <p class="mobile-eyebrow">Listen to your own try</p>
+      <h1>My voice</h1>
+      <img
+        src="practice/shared/mascot/assets/neri-listening.svg"
+        width="150"
+        height="160"
+        alt="Neri the bear listens calmly"
+      />
+      <p>
+        Say a form or word you have studied. Listen to yourself, then try again.
+      </p>
+      <p>
+        This is private practice, with no pronunciation grade or approved model
+        recording.
+      </p>
+      <p id="voice-state" role="status" aria-live="polite">
+        Checking recording support…
+      </p>
+      <div class="mobile-actions">
+        <button type="button" id="voice-start" disabled>Record my try</button
+        ><button type="button" id="voice-stop" hidden>Stop</button
+        ><button type="button" id="voice-cancel" hidden>Cancel</button
+        ><button type="button" id="voice-delete" hidden>Delete my clip</button>
+      </div>
+      <audio
+        id="voice-playback"
+        controls
+        hidden
+        aria-label="Your temporary voice recording"
+      ></audio>
+      <p>
+        Eight seconds at most. Nothing is uploaded or kept in your practice
+        history. Leaving this page deletes the clip.
+      </p>
+      <p>
+        <a href="practice/unit-01-fidel-foundations/pronunciation.html"
+          >Open pronunciation cards</a
+        >
+        ·
+        <a href="practice/unit-01-fidel-foundations/index.html"
+          >Return to Fidäl</a
+        >
+      </p>
+    </main>
+    <script type="module" src="mobile/voice.js"></script>
+  </body>
+</html>

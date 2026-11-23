@@ -152,7 +152,7 @@ function renderGallery() {
   select('#galleryHeading').textContent = state.collection ? 'Kept pictures' : worldNames[state.category];
   if (!selectedWords.length) {
     select('#galleryGrid').className = 'empty-collection';
-    select('#galleryGrid').innerHTML = `<svg viewBox="0 0 260 240" role="img" aria-label="The little lion waves"><use href="#art-guide"/></svg><button class="play-button" data-action="play">Play ${icon('play')}</button>`;
+    select('#galleryGrid').innerHTML = `<img src="../shared/mascot/assets/neri-encouraging.svg" data-neri-actor="encouraging" alt="Neri the bear encourages another try."><button class="play-button" data-action="play">Play ${icon('play')}</button>`;
   } else {
     select('#galleryGrid').className = 'gallery-grid';
     select('#galleryGrid').innerHTML = selectedWords.slice(state.page*4,state.page*4+4).map(word => `<button class="picture-tile" data-word="${word.id}" aria-label="Play ${escapeText(word.concept)} word" aria-describedby="reviewNotice"><span class="tile-art" style="--tile-bg:${word.background}">${artwork(word)}</span>${native(word,'tile-word')}</button>`).join('');

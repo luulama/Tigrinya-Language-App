@@ -1,5 +1,7 @@
 # Neri mascot — implementation and verification
 
+Historical record of the superseded character. The current bear design and verification are documented in `BEAR_REDESIGN_TEST_REPORT.md`.
+
 Date: 2026-11-21. Local implementation only. No commit, push, PR or deployment.
 
 ## Product result

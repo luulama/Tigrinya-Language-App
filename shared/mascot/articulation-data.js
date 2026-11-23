@@ -77,7 +77,7 @@ globalThis.MascotArticulationData = {
           }
         }
       ],
-      "revision": "5f4025476790f77d6f7d"
+      "revision": "6b5c1a42c43f4ba103e0"
     },
     {
       "id": "m-lips",
@@ -127,7 +127,7 @@ globalThis.MascotArticulationData = {
           }
         }
       ],
-      "revision": "ded4bf3a34efc28936a5"
+      "revision": "588dbf6db80194b57b28"
     },
     {
       "id": "f-lips",
@@ -177,7 +177,7 @@ globalThis.MascotArticulationData = {
           }
         }
       ],
-      "revision": "ebdb434112e086ab6fbe"
+      "revision": "7b9adb5c82e802cc9e6b"
     }
   ],
   "bindings": [

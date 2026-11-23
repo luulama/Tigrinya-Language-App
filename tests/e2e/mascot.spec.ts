@@ -140,7 +140,7 @@ async function audioFixture(p: Page, aligned = true, fail = false) {
   });
 }
 
-test("Neri renders eight distinct accessible expressions at small and normal sizes", async ({
+test("Neri renders nine distinct accessible bear expressions at small and normal sizes", async ({
   page,
 }) => {
   await page.goto(url);
@@ -165,8 +165,8 @@ test("Neri renders eight distinct accessible expressions at small and normal siz
     host.remove();
     return result;
   });
-  expect(states).toHaveLength(8);
-  expect(new Set(states.map((s) => s.svg)).size).toBe(8);
+  expect(states).toHaveLength(9);
+  expect(new Set(states.map((s) => s.svg)).size).toBe(9);
   expect(states.every((s) => s.width === 64 && s.label?.includes("Neri"))).toBe(
     true,
   );
@@ -423,7 +423,7 @@ test("denied microphone and unavailable recognition remain optional, with no mas
   ).toEqual([]);
 });
 
-test("missing mascot code preserves the original card flow, and Stories has no mascot or voice controls", async ({
+test("missing mascot code preserves the original card flow; Stories has a quiet bear and no voice controls", async ({
   page,
 }) => {
   await only(page);
@@ -436,5 +436,8 @@ test("missing mascot code preserves the original card flow, and Stories has no m
   ).toBeVisible();
   await page.goto("/preview/stories/index.html");
   await expect(page.locator(".story-card")).toHaveCount(20);
-  await expect(page.locator(".neri, [data-neri], audio")).toHaveCount(0);
+  await expect(
+    page.locator('.neri-scene[data-neri-scene="stories"]'),
+  ).toBeVisible();
+  await expect(page.locator("audio")).toHaveCount(0);
 });

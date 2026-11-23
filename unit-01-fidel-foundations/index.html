@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="experience.css">
 <link rel="stylesheet" href="../shared/fidal-writing.css">
 <link rel="stylesheet" href="../shared/learning-path.css">
+<!-- BEAR:BEGIN -->
+<link rel="stylesheet" href="../shared/mascot/neri.css">
+<!-- BEAR:END -->
 </head>
 <body>
 <main class="app">
@@ -22,9 +25,13 @@
  <a class="course-link" href="pronunciation.html">Say &amp; remember · pronunciation cards →</a>
  <p class="prototype-note" id="reviewNotice">Preview · Native review pending · Audio unavailable</p>
 
+
+<!-- BEAR:BEGIN -->
+<figure class="neri-scene" data-neri-scene="unit1" data-neri-state="idle" hidden><img class="neri-scene-art" data-neri-image src="../shared/mascot/assets/neri-idle.svg" alt="Neri the bear welcomes you." width="80" height="86"><figcaption><p>One small step at a time.</p><button type="button" aria-pressed="false" hidden>Quiet view</button></figcaption></figure>
+<!-- BEAR:END -->
  <section id="home" class="screen show">
   <section id="learningPath" aria-label="Your learning plan"></section>
-  <div class="hero"><small>UNIT 1 · TIGRINYA FIDÄL</small><h1>Meet a Fidäl family.</h1><p>Explore its forms. Find them in words. Practise writing.</p><button class="primary" id="startBtn">Start with በ →</button><img src="assets/fidel-guide.png" class="guide" alt="Saba, the Tigrinya learning guide"></div>
+  <div class="hero"><small>UNIT 1 · TIGRINYA FIDÄL</small><h1>Meet a Fidäl family.</h1><p>Explore its forms. Find them in words. Practise writing.</p><button class="primary" id="startBtn">Start with በ →</button><img src="../shared/mascot/assets/neri-idle.svg" class="guide" data-neri-actor="idle" alt="Neri the bear welcomes you."></div>
   <div id="unitOverview"></div>
   <div class="journey"><article class="card progress-card"><span class="eyebrow">PRACTICE IN THIS TAB</span><br><strong id="journeyText">0 of 42 activities checked</strong><div class="progress-line" role="progressbar" id="journeyProgress" aria-label="Fidäl activities checked" aria-valuemin="0" aria-valuemax="42" aria-valuenow="0"><i id="journeyBar"></i></div><small id="nextFamily">Begin with the በ family.</small></article><article class="card today" hidden><button id="todayBtn">Meet the B family →</button></article></div>
   <div class="tabs" aria-label="Main sections"><button class="tab active" data-view="map">Fidäl families</button><button class="tab" data-view="review">Gentle review</button><button class="tab" data-view="parent">For grown-ups</button></div>
@@ -245,4 +252,7 @@ Object.entries(LearningPath.families).forEach(([id,summary])=>{if(lessons[id]&&s
 LearningPath.configure({unit:'shapes',refresh:updateProgress,reset(){checkedFamilies.clear();explored.clear();updateProgress()}});
 updateProgress();
 </script>
+<!-- BEAR:BEGIN -->
+<script src="../shared/mascot/scenes.js" data-neri-scene="unit1"></script>
+<!-- BEAR:END -->
 </body></html>
