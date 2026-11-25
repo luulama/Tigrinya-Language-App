@@ -1,0 +1,12 @@
+/* Generated from ../motion-tokens.json. Do not edit independently. */
+:root {
+  --motion-press: 80ms;
+  --motion-feedback: 140ms;
+  --motion-enter: 180ms;
+  --motion-exit: 140ms;
+  --motion-progress: 280ms;
+  --motion-celebrate: 480ms;
+  --motion-settle: cubic-bezier(0.2, 0, 0, 1);
+  --motion-leave: cubic-bezier(0.4, 0, 1, 1);
+  --motion-change: cubic-bezier(0.4, 0, 0.2, 1);
+}

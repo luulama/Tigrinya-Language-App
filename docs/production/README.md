@@ -6,6 +6,8 @@ The approved [FINAL_V1 vision](../../Product-Bible/01-Vision.md) governs this pl
 
 Detailed contracts: [Pronunciation and assessment](PRONUNCIATION_AND_ASSESSMENT.md), [Learning, analytics and culture](LEARNING_AND_EXPERIENCE.md), [Offline, security and operations](OFFLINE_AND_OPERATIONS.md), [Database design](DATABASE.md), [API specification](API.md), [cost model and sources](COSTS_AND_SOURCES.md), and [verification](VERIFICATION.md). The [requirements register](requirements.json) maps every requested capability to a concrete design and acceptance condition.
 
+The [animation system](../animation/README.md) adds a proposed twelve-part motion specification, Mele's state model, learning-purpose catalogue and isolated tested reference code. It does not enable unreviewed teaching media or change the current app.
+
 ## 1 Executive Summary
 
 Build a trustworthy, complete foundation course before a broad platform launch. The first customer situation remains a child aged 4–8 beginning Fidäl literacy with some oral Tigrinya, supported by a caregiver where needed. Adult beginners and heritage learners remain welcome; they do not silently become a different MVP curriculum.

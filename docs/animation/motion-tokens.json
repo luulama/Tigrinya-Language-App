@@ -1,0 +1,39 @@
+{
+  "version": "motion-v1-proposed",
+  "durationMs": {
+    "press": 80,
+    "feedback": 140,
+    "enter": 180,
+    "exit": 140,
+    "progress": 280,
+    "celebrate": 480
+  },
+  "easing": {
+    "settle": "cubic-bezier(0.2, 0, 0, 1)",
+    "leave": "cubic-bezier(0.4, 0, 1, 1)",
+    "change": "cubic-bezier(0.4, 0, 0.2, 1)"
+  },
+  "limits": {
+    "translationPx": 8,
+    "scale": 1.03,
+    "foregroundSequences": 1,
+    "particles": 8,
+    "particleDurationMs": 480,
+    "waveformFps": 30,
+    "waveformBins": 64,
+    "lowEndDevicePixelRatio": 1.5,
+    "automaticTeacherSequenceMs": 12000
+  },
+  "states": [
+    "idle",
+    "walking",
+    "talking",
+    "listening",
+    "thinking",
+    "teaching",
+    "celebrating",
+    "encouraging",
+    "waiting",
+    "sleeping"
+  ]
+}
