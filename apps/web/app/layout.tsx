@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Providers } from "../components/providers";
 import { Shell } from "../components/shell";
 import "./globals.css";
+import "./entry-systems.css";
 import "../../../shared/mascot/neri.css";
 export const metadata: Metadata = {
   title: { default: "Tigrinya · Small steps", template: "%s · Tigrinya" },

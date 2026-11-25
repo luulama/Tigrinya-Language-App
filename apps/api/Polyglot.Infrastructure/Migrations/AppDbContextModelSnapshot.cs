@@ -259,6 +259,51 @@ namespace Polyglot.Infrastructure.Migrations
                     b.ToTable("Learners");
                 });
 
+            modelBuilder.Entity("Polyglot.Domain.Identity.LearningStart", b =>
+                {
+                    b.Property<Guid>("LearnerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Goal")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Listening")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Pace")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<bool>("Quiet")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Reading")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<Guid>("Revision")
+                        .IsConcurrencyToken()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Speaking")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<long>("UpdatedAt")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("LearnerId");
+
+                    b.ToTable("LearningStarts");
+                });
+
             modelBuilder.Entity("Polyglot.Domain.Identity.Relationship", b =>
                 {
                     b.Property<Guid>("Id")
@@ -613,6 +658,15 @@ namespace Polyglot.Infrastructure.Migrations
                         .WithMany("Versions")
                         .HasForeignKey("ContentItemId")
                         .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Polyglot.Domain.Identity.LearningStart", b =>
+                {
+                    b.HasOne("Polyglot.Domain.Identity.Learner", null)
+                        .WithOne()
+                        .HasForeignKey("Polyglot.Domain.Identity.LearningStart", "LearnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 

@@ -15,6 +15,7 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
     public DbSet<LearningExposure> Exposures => Set<LearningExposure>();
     public DbSet<ReviewSession> ReviewSessions => Set<ReviewSession>(); public DbSet<ActivityEvent> Activities => Set<ActivityEvent>();
     public DbSet<Achievement> Achievements => Set<Achievement>(); public DbSet<Collection> Collections => Set<Collection>();
+    public DbSet<LearningStart> LearningStarts => Set<LearningStart>();
     protected override void OnModelCreating(ModelBuilder b)
     {
         b.Entity<Language>().HasKey(x => x.Tag);
@@ -34,6 +35,17 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
         b.Entity<ContentLink>(e => { e.HasKey(x => new { x.SourceId, x.TargetId, x.Relation }); e.HasOne<ContentItem>().WithMany().HasForeignKey(x => x.SourceId).OnDelete(DeleteBehavior.Restrict); e.HasOne<ContentItem>().WithMany().HasForeignKey(x => x.TargetId).OnDelete(DeleteBehavior.Restrict); });
         b.Entity<Learner>().HasIndex(x => x.Subject).IsUnique();
         b.Entity<Learner>().Property(x => x.Subject).HasMaxLength(200);
+        b.Entity<LearningStart>(e =>
+        {
+            e.HasKey(x => x.LearnerId);
+            e.HasOne<Learner>().WithOne().HasForeignKey<LearningStart>(x => x.LearnerId).OnDelete(DeleteBehavior.Cascade);
+            e.Property(x => x.Revision).IsConcurrencyToken();
+            e.Property(x => x.Listening).HasMaxLength(20);
+            e.Property(x => x.Speaking).HasMaxLength(20);
+            e.Property(x => x.Reading).HasMaxLength(20);
+            e.Property(x => x.Goal).HasMaxLength(20);
+            e.Property(x => x.Pace).HasMaxLength(20);
+        });
         b.Entity<Reviewer>().HasIndex(x => new { x.Subject, x.LanguageTag }).IsUnique();
         b.Entity<Relationship>().HasIndex(x => new { x.AdultSubject, x.LearnerSubject, x.Kind }).IsUnique();
         b.Entity<LearningState>(e => { e.HasIndex(x => new { x.LearnerSubject, x.ContentId, x.ContentRevision, x.Skill }).IsUnique(); e.HasIndex(x => new { x.LearnerSubject, x.DueAt }); e.Property(x => x.ConcurrencyStamp).IsConcurrencyToken(); e.Property(x => x.Skill).HasConversion<string>(); e.HasOne<ContentItem>().WithMany().HasForeignKey(x => x.ContentId).OnDelete(DeleteBehavior.Restrict); });

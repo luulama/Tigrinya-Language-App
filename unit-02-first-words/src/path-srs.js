@@ -109,6 +109,14 @@
     return result;
   }
   function context(history, lesson, at = Date.now()) {
+    if (root.DeveloperPreview?.readOnly)
+      return {
+        at,
+        lesson,
+        serial: serial(history),
+        session: "developer-preview",
+        prompt: history.srs?.prompt || 0,
+      };
     const s = state(history),
       old = s.session;
     if (!old || at - old.lastSeen > 30 * 60000)
@@ -432,4 +440,17 @@
       }
     },
   };
+  for (const name of [
+    "open",
+    "teach",
+    "form",
+    "itemFor",
+    "answer",
+    "advance",
+    "defer",
+  ]) {
+    const write = root.PathSRS[name];
+    root.PathSRS[name] = (...args) =>
+      root.DeveloperPreview?.readOnly ? false : write(...args);
+  }
 })(globalThis);

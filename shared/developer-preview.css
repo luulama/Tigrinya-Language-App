@@ -1,0 +1,80 @@
+.developer-preview-banner,
+.developer-preview-entry {
+  font:
+    16px/1.5 system-ui,
+    sans-serif;
+  box-sizing: border-box;
+  margin: 12px auto;
+  padding: 16px;
+  width: min(100% - 24px, 1120px);
+  color: #233948;
+  background: #f2f7ff;
+  border: 2px solid #345b99;
+  border-radius: 14px;
+  text-align: left;
+}
+.developer-preview-banner * {
+  box-sizing: border-box;
+}
+.developer-preview-entry {
+  background: transparent;
+  border: 1px solid #bdcbd6;
+  padding: 8px 16px;
+}
+.developer-preview-banner h2 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  color: #233948;
+}
+.developer-preview-banner p {
+  margin: 8px 0;
+  max-width: 85ch;
+}
+.developer-preview-banner button,
+.developer-preview-entry button,
+.developer-preview-banner select {
+  font: inherit;
+  min-height: 48px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #345b99;
+  background: white;
+  color: #233948;
+  cursor: pointer;
+  max-width: 100%;
+}
+.developer-preview-banner nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 12px 0;
+}
+.developer-preview-banner a {
+  color: #184d8b;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+.developer-preview-controls {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+  flex-wrap: wrap;
+}
+.developer-preview-controls label {
+  display: grid;
+  gap: 6px;
+  flex: 1 1 240px;
+  min-width: 0;
+}
+.developer-preview-banner :focus-visible,
+.developer-preview-entry :focus-visible {
+  outline: 3px solid #274ec2;
+  outline-offset: 3px;
+}
+.developer-preview-entry summary {
+  cursor: pointer;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}

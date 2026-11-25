@@ -214,4 +214,9 @@
     expose,
     next,
   };
+  for (const name of ["complete", "review", "expose"]) {
+    const write = root.WordPath[name];
+    root.WordPath[name] = (...args) =>
+      root.DeveloperPreview?.readOnly ? false : write(...args);
+  }
 })(globalThis);

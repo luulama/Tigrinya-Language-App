@@ -176,7 +176,10 @@ test("Unit 1/shared baseline is preserved through the card link, isolated storag
   for (const [name, hash] of Object.entries(baseline)) {
     let source = require("./helpers/bear-preservation.cjs")(
       name,
-      fs.readFileSync(path.join(root, name)),
+      require("./helpers/developer-preview-preservation.cjs")(
+        name,
+        fs.readFileSync(path.join(root, name)),
+      ),
     );
     // A later explicit Unit 1 request authorises these additions. Keep the original hashes.
     if (name === "unit-01-fidel-foundations/index.html") {

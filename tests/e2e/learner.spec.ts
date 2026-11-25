@@ -3,7 +3,10 @@ test("a learner can reach and use the complete Fidäl preview", async ({
   page,
 }) => {
   await page.goto("/");
-  await page.getByRole("link", { name: "Begin learning" }).click();
+  await page
+    .getByRole("navigation", { name: "Main navigation" })
+    .getByRole("link", { name: "Learn", exact: true })
+    .click();
   await page.getByRole("link", { name: "Begin Fidäl preview" }).click();
   await expect(
     page.getByRole("heading", { name: "Meet a Fidäl family." }),

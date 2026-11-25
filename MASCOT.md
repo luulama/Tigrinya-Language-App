@@ -2,6 +2,8 @@
 
 Neri is an original living animal companion for this Tigrinya app. The invented working name is a brand name, not a Tigrinya translation. Its design and prompts await cultural, fluent-speaker and age-suitability review; human articulation diagrams also need phonetics review before learner release.
 
+25 November 2026 adoption note: the Next.js wrapper now calls this original bear **Mele** and supports controlled quiet preferences for the [learning entry systems](docs/learning-experience/README.md). The standalone previews, source API and SVG filenames keep Neri; no asset, lip timeline or native review status was rewritten. The character description below records the original asset identity.
+
 ## Character and design
 
 The owner requested a warm bear to replace the previous object character. Neri now has a cinnamon coat, cream muzzle and chest tuft, rounded ears, a small crown tuft, a lighter patch at one ear and broad animal paws. It sits on its haunches, raises a forepaw, listens with a tilted head or curls up to rest. It has no clothing, shoes, human hands or object-shaped body. No claim is made that this fictional bear is a local species, cultural symbol or traditional character.

@@ -35,7 +35,9 @@
     message = "",
     storageMessage = "",
     drawing = null;
-  const notebook = globalThis.FidalWriting?.createNotebook();
+  let notebook = globalThis.FidalWriting?.createNotebook();
+  const preview = () => globalThis.DeveloperPreview?.enabled === true;
+  const readOnly = () => globalThis.DeveloperPreview?.readOnly === true;
   function say(text) {
     message = text;
     const visual = document.querySelector("#taskFeedback");
@@ -52,7 +54,7 @@
     host.innerHTML = `<section class="path-panel"><h1>Let’s try opening that again</h1><p role="alert">${esc(error.message || "The path is unavailable.")}</p>${button("reload", "Reload path", "", "primary")} <a href="index.html">Picture library</a></section>`;
   }
   function persist() {
-    if (!history.save) return;
+    if (readOnly() || !history.save) return;
     try {
       localStorage.setItem(
         KEY,
@@ -121,10 +123,13 @@
       data.lessons
         .filter((l) => l.unit === unit.number)
         .map((l, i) => {
-          const s = WordPath.status(l, history),
-            unavailable = s === "locked" || s === "content",
-            meta =
-              s === "complete"
+          const s = preview() ? "preview" : WordPath.status(l, history),
+            unavailable = !preview() && (s === "locked" || s === "content"),
+            meta = preview()
+              ? l.available
+                ? "Inspection only · no progress recorded"
+                : "Inspect outline · teaching material missing"
+              : s === "complete"
                 ? "Check passed · Replay"
                 : s === "retry"
                   ? "Practised · Check again"
@@ -138,7 +143,7 @@
         })
         .join("");
     host.innerHTML = `<section class="path-intro"><p class="eyebrow">From Fidäl to familiar words</p><h1 tabindex="-1">Your next<br><em>small step.</em></h1><p>Look. Build. Read. Come back and remember.</p><div class="route-summary"><span>Unit 1 · Fidäl</span><span aria-hidden="true">→</span>${activeUnit === 2 ? "<strong>2 · Words</strong>" : "<span>2 · Words</span>"}<span aria-hidden="true">→</span>${activeUnit === 3 ? "<strong>3 · Read & write</strong>" : "<span>3 · Read & write</span>"}</div></section><section class="next-card" aria-labelledby="nextHeading"><span class="next-flower" aria-hidden="true">✺</span><div><p class="eyebrow">YOUR NEXT STEP</p><h2 id="nextHeading">${esc(next.detail)}</h2><p>A few new words, with older ones returning along the way.</p></div>${button(next.action, next.label + " →", next.id || "", "primary")}${run && !run.finished ? button("abandon", "Leave unfinished lesson") : ""}</section>${!history.save ? `<p class="save-nudge">Keep your learning history for another day. ${button("save", "Save on this device")}</p>` : ""}<div class="path-progress"><label for="courseProgress">${done} of ${all.length} visual checks passed</label><progress id="courseProgress" max="${all.length}" value="${done}"></progress><span>${remembered} words matched in a later-day review</span></div><section class="review-strip"><h2>Keep familiar words close</h2><p>${WordPath.due(data, history).length ? "A few words are ready to revisit." : "You can revisit any taught words. Later-day reviews will appear here."}</p>${button("review", "Review taught words", "", "", !Object.keys(history.review).length)}</section>${data.units
-      .filter((u) => !u.contentBlocked)
+      .filter((u) => preview() || !u.contentBlocked)
       .map(
         (u) =>
           `<section class="unit-path" aria-labelledby="unit-${u.number}"><div class="unit-heading"><span class="unit-badge">${u.number}</span><div><p class="eyebrow">${completeCount(u.number)} checks passed</p><h2 id="unit-${u.number}">${esc(u.title)}</h2><p>${esc(u.goal)}</p></div></div><div class="node-trail">${nodes(u)}</div></section>`,
@@ -223,7 +228,7 @@
   }
   function checkTasks(l) {
     const kind = l.kind;
-    return shuffle(run.words).flatMap((w) =>
+    return (preview() ? run.words : shuffle(run.words)).flatMap((w) =>
       kind === "positions"
         ? [
             task("position", w, { position: 0 }),
@@ -250,8 +255,13 @@
   }
   function start(id) {
     const l = data.lessons.find((l) => l.id === id);
-    if (!l || ["locked", "content"].includes(WordPath.status(l, history)))
+    if (
+      !l ||
+      (!preview() &&
+        ["locked", "content"].includes(WordPath.status(l, history)))
+    )
       return;
+    if (preview()) globalThis.DeveloperPreview.select(id);
     run = {
       lesson: l,
       words: PathSRS.focus(data, l).map((id) =>
@@ -264,14 +274,23 @@
       finished: false,
       isReview: false,
     };
-    if (WordPath.status(l, history) === "retry") {
+    if (preview() && !l.available) {
+      run.phase = "outline";
+      view = "lesson";
+      message = "";
+      render(true);
+      return;
+    }
+    if (!preview() && WordPath.status(l, history) === "retry") {
       run.phase = "check";
       run.tasks = checkTasks(l);
     }
-    run.mixed = PathSRS.plan(data, history, {
-      lesson: l.id,
-      exclude: run.words.map((w) => w.id),
-    });
+    run.mixed = preview()
+      ? []
+      : PathSRS.plan(data, history, {
+          lesson: l.id,
+          exclude: run.words.map((w) => w.id),
+        });
     run.revisitAdded = false;
     view = "lesson";
     message = "";
@@ -283,7 +302,9 @@
       return;
     }
     const candidates = WordPath.due(data, history),
-      taught = data.words.filter((w) => history.review[w.id]);
+      taught = preview()
+        ? data.words
+        : data.words.filter((w) => history.review[w.id]);
     const selected = [
       ...candidates,
       ...taught.filter((w) => !candidates.some((due) => due.id === w.id)),
@@ -357,6 +378,10 @@
   }
   function body() {
     const l = run.lesson;
+    if (preview() && run.phase === "outline")
+      return `<p class="eyebrow">Content outline · not implemented or assessed</p><h1 tabindex="-1">${esc(l.title)}</h1><p>${esc(l.goal)}</p><p class="notice">${esc(l.blockedReason)}</p><h2>Planned teaching steps</h2><ol>${l.recipe.map((step, i) => `<li${run.outlineStep === i ? ' aria-current="step"' : ""}>${esc(step)}</li>`).join("")}</ol><p>${esc(l.languageScope)}</p>${run.words.length ? models(true) : "<p>No authored sentence content exists for this lesson yet.</p>"}<p>${esc(l.completionRule)}</p>${button("map", "Back to all lessons")}`;
+    if (preview() && run.phase === "done")
+      return `<h1 tabindex="-1">End screen preview</h1><p>No lesson was marked completed. Progress and achievements are unchanged.</p>${button("map", "Back to all lessons", "", "primary")}${button("replay", "Inspect this lesson again")}`;
     if (run.phase === "intro")
       return `<p class="eyebrow">Look first · ${esc(l.chapter || "Review")}</p><h1 tabindex="-1">${esc(l.title)}</h1><p class="lesson-goal">${esc(l.goal)}</p>${l.kind === "family" ? familyModel() : ""}${l.kind === "checkpoint" ? "<p>These are familiar words. Try without the written model, or choose help.</p>" : models(true)}<div class="actions">${button("begin", l.kind === "checkpoint" ? "Try the check" : "Try it →", "", "primary")}</div><details><summary>Before this lesson</summary><p>${esc(l.prerequisiteKnowledge)}</p><a href="../unit-01-fidel-foundations/index.html">Return to the unchanged Fidäl unit</a></details>`;
     if (run.phase === "recap")
@@ -485,6 +510,10 @@
       else
         host.innerHTML = `<div class="lesson-top">${button("leave", "← My path")}<span>${run.isReview ? "Review" : `Unit ${run.lesson.unit}`} · ${esc(run.lesson.title)}</span></div><section class="lesson-panel">${body()}</section>`;
       if (view === "lesson") mountWriting();
+      if (preview())
+        host
+          .querySelectorAll('[data-path="save"]')
+          .forEach((b) => (b.disabled = true));
       warnAboutStorage();
       if (focus) {
         window.scrollTo({ top: 0, behavior: "instant" });
@@ -496,6 +525,7 @@
     }
   }
   function recordRecall(t, outcome) {
+    if (readOnly()) return;
     const ctx = PathSRS.context(history, run.lesson.id),
       id =
         t.srsId ||
@@ -622,9 +652,11 @@
     message = "";
     render(true);
     say(
-      run.helped.size
-        ? "Practice completed with help."
-        : "Visual check completed.",
+      preview()
+        ? "Preview ended. Learner progress is unchanged."
+        : run.helped.size
+          ? "Practice completed with help."
+          : "Visual check completed.",
     );
   }
   function action(name, id) {
@@ -633,7 +665,7 @@
       return;
     }
     if (name === "start") {
-      if (run && !run.finished) {
+      if (!preview() && run && !run.finished) {
         say(
           "Continue your current lesson, or leave it before starting another.",
         );
@@ -676,6 +708,10 @@
       return;
     }
     if (name === "save") {
+      if (readOnly()) {
+        say("Saving is disabled in Developer Preview Mode.");
+        return;
+      }
       if (history.save) {
         try {
           localStorage.removeItem(KEY);
@@ -877,6 +913,98 @@
     PathSRS.open(data, history);
     persist();
     render();
+    let learnerView = null;
+    function inspect(id, step) {
+      const lesson = data.lessons.find((l) => l.id === id);
+      if (!preview() || !lesson) return;
+      run = null;
+      start(id);
+      const [phase, number] = step.split(":");
+      if (!lesson.available) {
+        run.phase = "outline";
+        run.outlineStep = Number.isInteger(Number(number))
+          ? Number(number)
+          : -1;
+      } else if (["practice", "check"].includes(phase)) {
+        run.tasks =
+          phase === "practice" ? practiceTasks(lesson) : checkTasks(lesson);
+        if (!run.tasks.length) return;
+        run.phase = phase;
+        run.index = Math.min(
+          run.tasks.length - 1,
+          Number.isInteger(Number(number)) ? Math.max(0, Number(number)) : 0,
+        );
+      } else if (["intro", "recap", "done"].includes(phase)) run.phase = phase;
+      render(true);
+      globalThis.DeveloperPreview.select(id, step);
+    }
+    globalThis.DeveloperPreview?.register({
+      lessons: () =>
+        data.lessons.map((l) => ({
+          id: l.id,
+          label: `Unit ${l.unit} · ${l.title}${l.kind === "checkpoint" ? " · checkpoint" : ""}`,
+        })),
+      steps(id) {
+        const l = data.lessons.find((l) => l.id === id);
+        if (!l) return [];
+        if (!l.available)
+          return [
+            { id: "outline", label: "Content outline and missing material" },
+            ...l.recipe.map((s, i) => ({
+              id: `outline:${i}`,
+              label: `Planned step ${i + 1} · ${s}`,
+            })),
+          ];
+        const previous = run;
+        try {
+          run = {
+            lesson: l,
+            words: PathSRS.focus(data, l).map((id) =>
+              data.words.find((w) => w.id === id),
+            ),
+          };
+          return [
+            { id: "intro", label: "Introduction" },
+            ...practiceTasks(l).map((t, i) => ({
+              id: `practice:${i}`,
+              label: `Practice ${i + 1} · ${t.kind} · ${t.word.word}`,
+            })),
+            { id: "recap", label: "Recap" },
+            ...checkTasks(l).map((t, i) => ({
+              id: `check:${i}`,
+              label: `Check ${i + 1} · ${t.kind} · ${t.word.word}`,
+            })),
+            { id: "done", label: "End screen · no completion" },
+          ];
+        } finally {
+          run = previous;
+        }
+      },
+      navigate: inspect,
+      onChange(active) {
+        destroyDrawing();
+        if (active) {
+          learnerView = {
+            history,
+            run,
+            view,
+            message,
+            storageMessage,
+            notebook,
+          };
+          history = JSON.parse(JSON.stringify(history));
+          run = null;
+          view = "map";
+          message = "";
+          notebook = globalThis.FidalWriting?.createNotebook();
+        } else if (learnerView) {
+          ({ history, run, view, message, storageMessage, notebook } =
+            learnerView);
+          learnerView = null;
+        }
+        render();
+      },
+    });
   } catch (error) {
     failed(error);
   }

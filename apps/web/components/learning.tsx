@@ -94,6 +94,12 @@ export function LearnHome() {
     <>
       <p className="eyebrow">One clear next step</p>
       <h1>Start with Fidäl.</h1>
+      <div className="actions">
+        <Link className="button button-primary" href="/first-lesson">
+          Try one form first
+        </Link>
+        <Link href="/onboarding">Choose my starting plan</Link>
+      </div>
       <p>Look at a form, practise writing, and find its match.</p>
       <BearCompanion
         caption="Look first. Try when you’re ready."
@@ -142,6 +148,19 @@ export function LearnHome() {
         These existing activities are visual prototypes. Native language review
         and recordings are pending.
       </p>
+      <details>
+        <summary>Development tools</summary>
+        <p>
+          Inspect all path nodes and lesson steps without recording learner
+          progress.
+        </p>
+        <Link
+          className="button button-outline"
+          href="/preview/unit-02-first-words/path.html?developerPreview=1"
+        >
+          Enable Developer Preview
+        </Link>
+      </details>
       <details>
         <summary>Published lessons</summary>
         <Library

@@ -15,16 +15,13 @@ export default function Landing() {
           <p>
             Explore Fidäl, connect pictures and words, and practise writing.
           </p>
-          <BearCompanion large caption="I’m Neri. Let’s take a small step." />
+          <BearCompanion large caption="I’m Mele. Let’s take a small step." />
           <div className="actions">
-            <Link className="button button-primary" href="/learn">
-              Begin learning →
+            <Link className="button button-primary" href="/first-lesson">
+              Try the first small lesson →
             </Link>
-            <Link
-              className="button button-outline"
-              href="/preview/unit-01-fidel-foundations/index.html"
-            >
-              Open Fidäl preview
+            <Link className="button button-outline" href="/onboarding">
+              Find my starting point
             </Link>
           </div>
         </div>

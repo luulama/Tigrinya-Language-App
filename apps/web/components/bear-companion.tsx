@@ -16,12 +16,19 @@ export function BearCompanion({
   state = "idle",
   caption = "One small step at a time.",
   large = false,
+  name = "Mele",
+  quiet: controlledQuiet,
+  onQuietChange,
 }: {
   state?: BearState;
   caption?: string;
   large?: boolean;
+  name?: string;
+  quiet?: boolean;
+  onQuietChange?: (quiet: boolean) => void;
 }) {
-  const [quiet, setQuiet] = useState(false);
+  const [localQuiet, setQuiet] = useState(false);
+  const quiet = controlledQuiet ?? localQuiet;
   return (
     <figure
       className={`neri-scene${large ? " neri-scene-large" : ""}`}
@@ -31,7 +38,7 @@ export function BearCompanion({
       <img
         className="neri-scene-art"
         src={`/preview/shared/mascot/assets/neri-${state}.svg`}
-        alt={`Neri the bear, ${state === "kind" ? "offering gentle support" : state}.`}
+        alt={`${name} the bear, ${state === "kind" ? "offering gentle support" : state}.`}
         width={large ? 148 : 80}
         height={large ? 158 : 86}
         onError={(event) => {
@@ -46,9 +53,11 @@ export function BearCompanion({
         <button
           type="button"
           aria-pressed={quiet}
-          onClick={() => setQuiet(!quiet)}
+          onClick={() =>
+            onQuietChange ? onQuietChange(!quiet) : setQuiet(!quiet)
+          }
         >
-          {quiet ? "Show Neri" : "Quiet view"}
+          {quiet ? `Show ${name}` : "Quiet view"}
         </button>
       </figcaption>
     </figure>

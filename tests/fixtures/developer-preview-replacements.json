@@ -1,0 +1,242 @@
+[
+  {
+    "file": "shared/learning-path.js",
+    "from": "  function persist(){if(!data.save)return;try{root.localStorage.setItem(KEY,JSON.stringify(data));storageError=false}catch(error){data.save=false;storageError=true}}\n",
+    "to": "  function persist(){if(root.DeveloperPreview?.readOnly||!data.save)return;try{root.localStorage.setItem(KEY,JSON.stringify(data));storageError=false}catch(error){data.save=false;storageError=true}}\n"
+  },
+  {
+    "file": "shared/learning-path.js",
+    "from": "",
+    "to": "    if(root.DeveloperPreview?.readOnly)return;\n"
+  },
+  {
+    "file": "shared/learning-path.js",
+    "from": "  function saveFamily(id,summary){data.families[id]={...summary};persist()}\n",
+    "to": "  function saveFamily(id,summary){if(root.DeveloperPreview?.readOnly)return;data.families[id]={...summary};persist()}\n"
+  },
+  {
+    "file": "shared/learning-path.js",
+    "from": "    if(mode)mode.onchange=()=>{data.mode=mode.value;persist();if(doc.documentElement)doc.documentElement.dataset.learnerMode=data.mode};\n    if(minutes)minutes.onchange=()=>{data.minutes=Number(minutes.value);persist();if(adapter&&adapter.refresh){adapter.refresh();const details=host.querySelector&&host.querySelector('.path-details');if(details)details.open=true;const control=doc.querySelector('#pathMinutes');if(control)control.focus()}};\n",
+    "to": "    if(mode)mode.onchange=()=>{if(root.DeveloperPreview?.readOnly)return;data.mode=mode.value;persist();if(doc.documentElement)doc.documentElement.dataset.learnerMode=data.mode};\n    if(minutes)minutes.onchange=()=>{if(root.DeveloperPreview?.readOnly)return;data.minutes=Number(minutes.value);persist();if(adapter&&adapter.refresh){adapter.refresh();const details=host.querySelector&&host.querySelector('.path-details');if(details)details.open=true;const control=doc.querySelector('#pathMinutes');if(control)control.focus()}};\n    if(root.DeveloperPreview?.enabled)host.querySelectorAll?.('select, [data-path-action]').forEach(control=>control.disabled=true);\n"
+  },
+  {
+    "file": "shared/learning-path.js",
+    "from": "",
+    "to": "      if(root.DeveloperPreview?.readOnly)return;\n"
+  },
+  {
+    "file": "shared/learning-path.js",
+    "from": "    write(value){data.pronunciation=JSON.parse(JSON.stringify(value));persist()},\n",
+    "to": "    write(value){if(root.DeveloperPreview?.readOnly)return;data.pronunciation=JSON.parse(JSON.stringify(value));persist()},\n"
+  },
+  {
+    "file": "shared/learning-path.js",
+    "from": "",
+    "to": "      if(root.DeveloperPreview?.readOnly)return data.save;\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "",
+    "to": "<link rel=\"stylesheet\" href=\"../shared/developer-preview.css\">\n<script src=\"../shared/developer-preview.js\"></script>\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "const practisedForms=new Map();\nconst checkedFamilies=new Map();\nconst familyJourney={phase:'none',check:null};\n",
+    "to": "let practisedForms=new Map();\nlet checkedFamilies=new Map();\nlet familyJourney={phase:'none',check:null};\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "const writingNotebook=FidalWriting.createNotebook();\n",
+    "to": "let writingNotebook=FidalWriting.createNotebook();\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": " const ready=checkedFamilies.has('በ');\n",
+    "to": " const ready=globalThis.DeveloperPreview?.enabled||checkedFamilies.has('በ');\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "  shapeMatched=true;practisedForms.get(activeLetter).add(index);button.classList.add('selected');\n",
+    "to": "  shapeMatched=true;if(!globalThis.DeveloperPreview?.readOnly)practisedForms.get(activeLetter).add(index);button.classList.add('selected');\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "",
+    "to": " if(globalThis.DeveloperPreview?.enabled){familyJourney.phase='recap';renderFamilyJourney();return}\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "",
+    "to": " }else if(familyJourney.phase==='result'&&globalThis.DeveloperPreview?.enabled){\n  config={label:'INSPECTION ONLY',title:'Preview checkpoint ended',body:'<p>No family was marked completed. Learner progress is unchanged.</p>',primary:{action:'home',label:'Back to families'}};\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "  if(familyJourney.check.complete){LearningPath.record('shapes',familyJourney.check.itemResults);LearningPath.saveFamily(activeLetter,familyJourney.check.summary);checkedFamilies.set(activeLetter,familyJourney.check.summary);familyJourney.phase='result';updateProgress()}\n",
+    "to": "  if(familyJourney.check.complete){if(!globalThis.DeveloperPreview?.readOnly){LearningPath.record('shapes',familyJourney.check.itemResults);LearningPath.saveFamily(activeLetter,familyJourney.check.summary);checkedFamilies.set(activeLetter,familyJourney.check.summary)}familyJourney.phase='result';updateProgress()}\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": " if(!checkedFamilies.has('በ')||button.disabled)return;\n",
+    "to": " if((!globalThis.DeveloperPreview?.enabled&&!checkedFamilies.has('በ'))||button.disabled)return;\n"
+  },
+  {
+    "file": "unit-01-fidel-foundations/index.html",
+    "from": "",
+    "to": "<script src=\"developer-preview.js\"></script>\n"
+  },
+  {
+    "file": "unit-02-first-words/index.html",
+    "from": "  function persist(){if(!data.save)return;try{root.localStorage.setItem(KEY,JSON.stringify(data));storageError=false}catch(error){data.save=false;storageError=true}}\n",
+    "to": "  function persist(){if(root.DeveloperPreview?.readOnly||!data.save)return;try{root.localStorage.setItem(KEY,JSON.stringify(data));storageError=false}catch(error){data.save=false;storageError=true}}\n"
+  },
+  {
+    "file": "unit-02-first-words/index.html",
+    "from": "",
+    "to": "    if(root.DeveloperPreview?.readOnly)return;\n"
+  },
+  {
+    "file": "unit-02-first-words/index.html",
+    "from": "  function saveFamily(id,summary){data.families[id]={...summary};persist()}\n",
+    "to": "  function saveFamily(id,summary){if(root.DeveloperPreview?.readOnly)return;data.families[id]={...summary};persist()}\n"
+  },
+  {
+    "file": "unit-02-first-words/index.html",
+    "from": "    if(mode)mode.onchange=()=>{data.mode=mode.value;persist();if(doc.documentElement)doc.documentElement.dataset.learnerMode=data.mode};\n    if(minutes)minutes.onchange=()=>{data.minutes=Number(minutes.value);persist();if(adapter&&adapter.refresh){adapter.refresh();const details=host.querySelector&&host.querySelector('.path-details');if(details)details.open=true;const control=doc.querySelector('#pathMinutes');if(control)control.focus()}};\n",
+    "to": "    if(mode)mode.onchange=()=>{if(root.DeveloperPreview?.readOnly)return;data.mode=mode.value;persist();if(doc.documentElement)doc.documentElement.dataset.learnerMode=data.mode};\n    if(minutes)minutes.onchange=()=>{if(root.DeveloperPreview?.readOnly)return;data.minutes=Number(minutes.value);persist();if(adapter&&adapter.refresh){adapter.refresh();const details=host.querySelector&&host.querySelector('.path-details');if(details)details.open=true;const control=doc.querySelector('#pathMinutes');if(control)control.focus()}};\n    if(root.DeveloperPreview?.enabled)host.querySelectorAll?.('select, [data-path-action]').forEach(control=>control.disabled=true);\n"
+  },
+  {
+    "file": "unit-02-first-words/index.html",
+    "from": "",
+    "to": "      if(root.DeveloperPreview?.readOnly)return;\n"
+  },
+  {
+    "file": "unit-02-first-words/index.html",
+    "from": "    write(value){data.pronunciation=JSON.parse(JSON.stringify(value));persist()},\n",
+    "to": "    write(value){if(root.DeveloperPreview?.readOnly)return;data.pronunciation=JSON.parse(JSON.stringify(value));persist()},\n"
+  },
+  {
+    "file": "unit-02-first-words/index.html",
+    "from": "",
+    "to": "      if(root.DeveloperPreview?.readOnly)return data.save;\n"
+  },
+  {
+    "file": "unit-02-first-words/path.html",
+    "from": "",
+    "to": "  <link rel=\"stylesheet\" href=\"../shared/developer-preview.css\">\n"
+  },
+  {
+    "file": "unit-02-first-words/path.html",
+    "from": "",
+    "to": "  <script src=\"../shared/developer-preview.js\"></script>\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "  const notebook = globalThis.FidalWriting?.createNotebook();\n",
+    "to": "  let notebook = globalThis.FidalWriting?.createNotebook();\n  const preview = () => globalThis.DeveloperPreview?.enabled === true;\n  const readOnly = () => globalThis.DeveloperPreview?.readOnly === true;\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "    if (!history.save) return;\n",
+    "to": "    if (readOnly() || !history.save) return;\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "          const s = WordPath.status(l, history),\n            unavailable = s === \"locked\" || s === \"content\",\n            meta =\n              s === \"complete\"\n",
+    "to": "          const s = preview() ? \"preview\" : WordPath.status(l, history),\n            unavailable = !preview() && (s === \"locked\" || s === \"content\"),\n            meta = preview()\n              ? l.available\n                ? \"Inspection only · no progress recorded\"\n                : \"Inspect outline · teaching material missing\"\n              : s === \"complete\"\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "      .filter((u) => !u.contentBlocked)\n",
+    "to": "      .filter((u) => preview() || !u.contentBlocked)\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "    return shuffle(run.words).flatMap((w) =>\n",
+    "to": "    return (preview() ? run.words : shuffle(run.words)).flatMap((w) =>\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "    if (!l || [\"locked\", \"content\"].includes(WordPath.status(l, history)))\n",
+    "to": "    if (\n      !l ||\n      (!preview() &&\n        [\"locked\", \"content\"].includes(WordPath.status(l, history)))\n    )\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "    if (preview()) globalThis.DeveloperPreview.select(id);\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "    if (WordPath.status(l, history) === \"retry\") {\n",
+    "to": "    if (preview() && !l.available) {\n      run.phase = \"outline\";\n      view = \"lesson\";\n      message = \"\";\n      render(true);\n      return;\n    }\n    if (!preview() && WordPath.status(l, history) === \"retry\") {\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "    run.mixed = PathSRS.plan(data, history, {\n      lesson: l.id,\n      exclude: run.words.map((w) => w.id),\n    });\n",
+    "to": "    run.mixed = preview()\n      ? []\n      : PathSRS.plan(data, history, {\n          lesson: l.id,\n          exclude: run.words.map((w) => w.id),\n        });\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "      taught = data.words.filter((w) => history.review[w.id]);\n",
+    "to": "      taught = preview()\n        ? data.words\n        : data.words.filter((w) => history.review[w.id]);\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "    if (preview() && run.phase === \"outline\")\n      return `<p class=\"eyebrow\">Content outline · not implemented or assessed</p><h1 tabindex=\"-1\">${esc(l.title)}</h1><p>${esc(l.goal)}</p><p class=\"notice\">${esc(l.blockedReason)}</p><h2>Planned teaching steps</h2><ol>${l.recipe.map((step, i) => `<li${run.outlineStep === i ? ' aria-current=\"step\"' : \"\"}>${esc(step)}</li>`).join(\"\")}</ol><p>${esc(l.languageScope)}</p>${run.words.length ? models(true) : \"<p>No authored sentence content exists for this lesson yet.</p>\"}<p>${esc(l.completionRule)}</p>${button(\"map\", \"Back to all lessons\")}`;\n    if (preview() && run.phase === \"done\")\n      return `<h1 tabindex=\"-1\">End screen preview</h1><p>No lesson was marked completed. Progress and achievements are unchanged.</p>${button(\"map\", \"Back to all lessons\", \"\", \"primary\")}${button(\"replay\", \"Inspect this lesson again\")}`;\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "      if (preview())\n        host\n          .querySelectorAll('[data-path=\"save\"]')\n          .forEach((b) => (b.disabled = true));\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "    if (readOnly()) return;\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "      run.helped.size\n        ? \"Practice completed with help.\"\n        : \"Visual check completed.\",\n",
+    "to": "      preview()\n        ? \"Preview ended. Learner progress is unchanged.\"\n        : run.helped.size\n          ? \"Practice completed with help.\"\n          : \"Visual check completed.\",\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "      if (run && !run.finished) {\n",
+    "to": "      if (!preview() && run && !run.finished) {\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "      if (readOnly()) {\n        say(\"Saving is disabled in Developer Preview Mode.\");\n        return;\n      }\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "    let learnerView = null;\n    function inspect(id, step) {\n      const lesson = data.lessons.find((l) => l.id === id);\n      if (!preview() || !lesson) return;\n      run = null;\n      start(id);\n      const [phase, number] = step.split(\":\");\n      if (!lesson.available) {\n        run.phase = \"outline\";\n        run.outlineStep = Number.isInteger(Number(number))\n          ? Number(number)\n          : -1;\n      } else if ([\"practice\", \"check\"].includes(phase)) {\n        run.tasks =\n          phase === \"practice\" ? practiceTasks(lesson) : checkTasks(lesson);\n        if (!run.tasks.length) return;\n        run.phase = phase;\n        run.index = Math.min(\n          run.tasks.length - 1,\n          Number.isInteger(Number(number)) ? Math.max(0, Number(number)) : 0,\n        );\n      } else if ([\"intro\", \"recap\", \"done\"].includes(phase)) run.phase = phase;\n      render(true);\n      globalThis.DeveloperPreview.select(id, step);\n    }\n    globalThis.DeveloperPreview?.register({\n      lessons: () =>\n        data.lessons.map((l) => ({\n          id: l.id,\n          label: `Unit ${l.unit} · ${l.title}${l.kind === \"checkpoint\" ? \" · checkpoint\" : \"\"}`,\n        })),\n      steps(id) {\n        const l = data.lessons.find((l) => l.id === id);\n        if (!l) return [];\n        if (!l.available)\n          return [\n            { id: \"outline\", label: \"Content outline and missing material\" },\n            ...l.recipe.map((s, i) => ({\n              id: `outline:${i}`,\n              label: `Planned step ${i + 1} · ${s}`,\n            })),\n          ];\n        const previous = run;\n        try {\n          run = {\n            lesson: l,\n            words: PathSRS.focus(data, l).map((id) =>\n              data.words.find((w) => w.id === id),\n            ),\n          };\n          return [\n            { id: \"intro\", label: \"Introduction\" },\n            ...practiceTasks(l).map((t, i) => ({\n              id: `practice:${i}`,\n              label: `Practice ${i + 1} · ${t.kind} · ${t.word.word}`,\n            })),\n            { id: \"recap\", label: \"Recap\" },\n            ...checkTasks(l).map((t, i) => ({\n              id: `check:${i}`,\n              label: `Check ${i + 1} · ${t.kind} · ${t.word.word}`,\n            })),\n            { id: \"done\", label: \"End screen · no completion\" },\n          ];\n        } finally {\n          run = previous;\n        }\n      },\n      navigate: inspect,\n      onChange(active) {\n        destroyDrawing();\n        if (active) {\n          learnerView = {\n            history,\n            run,\n            view,\n            message,\n            storageMessage,\n            notebook,\n          };\n          history = JSON.parse(JSON.stringify(history));\n          run = null;\n          view = \"map\";\n          message = \"\";\n          notebook = globalThis.FidalWriting?.createNotebook();\n        } else if (learnerView) {\n          ({ history, run, view, message, storageMessage, notebook } =\n            learnerView);\n          learnerView = null;\n        }\n        render();\n      },\n    });\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-core.js",
+    "from": "",
+    "to": "  for (const name of [\"complete\", \"review\", \"expose\"]) {\n    const write = root.WordPath[name];\n    root.WordPath[name] = (...args) =>\n      root.DeveloperPreview?.readOnly ? false : write(...args);\n  }\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-shell.html",
+    "from": "",
+    "to": "  <link rel=\"stylesheet\" href=\"../shared/developer-preview.css\">\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-shell.html",
+    "from": "",
+    "to": "  <script src=\"../shared/developer-preview.js\"></script>\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-srs.js",
+    "from": "",
+    "to": "    if (root.DeveloperPreview?.readOnly)\n      return {\n        at,\n        lesson,\n        serial: serial(history),\n        session: \"developer-preview\",\n        prompt: history.srs?.prompt || 0,\n      };\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-srs.js",
+    "from": "",
+    "to": "  for (const name of [\n    \"open\",\n    \"teach\",\n    \"form\",\n    \"itemFor\",\n    \"answer\",\n    \"advance\",\n    \"defer\",\n  ]) {\n    const write = root.PathSRS[name];\n    root.PathSRS[name] = (...args) =>\n      root.DeveloperPreview?.readOnly ? false : write(...args);\n  }\n"
+  }
+]

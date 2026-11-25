@@ -17,6 +17,7 @@ namespace Polyglot.Tests;
 
 public sealed class ApiFactory : WebApplicationFactory<Program>
 {
+    private static readonly object InitialisationLock = new();
     private readonly SqliteConnection connection = new("Data Source=:memory:");
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
@@ -46,11 +47,16 @@ public sealed class ApiFactory : WebApplicationFactory<Program>
         var client = CreateClient();
         using var scope = Services.CreateScope();
         var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-        db.Database.EnsureCreated();
-        if (!db.Languages.Any(x => x.Tag == "en"))
+        // Test classes can create factories concurrently against the same isolated
+        // PostgreSQL cluster. Seed the shared reference row once, without races.
+        lock (InitialisationLock)
         {
-            db.Languages.Add(new Language { Tag = "en", Name = "English", Script = "Latn", Direction = "ltr", ScriptModel = "alphabet" });
-            db.SaveChanges();
+            db.Database.EnsureCreated();
+            if (!db.Languages.Any(x => x.Tag == "en"))
+            {
+                db.Languages.Add(new Language { Tag = "en", Name = "English", Script = "Latn", Direction = "ltr", ScriptModel = "alphabet" });
+                db.SaveChanges();
+            }
         }
         if (subject is not null)
         {

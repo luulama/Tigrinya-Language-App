@@ -4,6 +4,7 @@ import shutil
 import subprocess
 import sys
 root=Path(__file__).resolve().parents[1]
+subprocess.run([sys.executable,str(root/'scripts/build_first_lesson.py')],cwd=root,check=True)
 subprocess.run([sys.executable,str(root/'scripts/build_site.py')],cwd=root,check=True)
 for path in (root/'dist').rglob('*'):
     if path.is_file():

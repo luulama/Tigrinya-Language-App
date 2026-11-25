@@ -443,3 +443,33 @@ BEGIN
 END $EF$;
 COMMIT;
 
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261125132652_LearningStartPreferences') THEN
+    CREATE TABLE "LearningStarts" (
+        "LearnerId" uuid NOT NULL,
+        "Listening" character varying(20) NOT NULL,
+        "Speaking" character varying(20) NOT NULL,
+        "Reading" character varying(20) NOT NULL,
+        "Goal" character varying(20) NOT NULL,
+        "Pace" character varying(20) NOT NULL,
+        "Quiet" boolean NOT NULL,
+        "Revision" uuid NOT NULL,
+        "UpdatedAt" bigint NOT NULL,
+        CONSTRAINT "PK_LearningStarts" PRIMARY KEY ("LearnerId"),
+        CONSTRAINT "FK_LearningStarts_Learners_LearnerId" FOREIGN KEY ("LearnerId") REFERENCES "Learners" ("Id") ON DELETE CASCADE
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261125132652_LearningStartPreferences') THEN
+    INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+    VALUES ('20261125132652_LearningStartPreferences', '10.0.15');
+    END IF;
+END $EF$;
+COMMIT;
+

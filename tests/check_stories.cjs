@@ -239,7 +239,7 @@ test("all 34 pre-Stories baselines retain their content through the explicitly r
     assert.equal(
       crypto
         .createHash("sha256")
-        .update(withoutMascot(name, fs.readFileSync(path.join(root, name))))
+        .update(withoutMascot(name, require("./helpers/developer-preview-preservation.cjs")(name, fs.readFileSync(path.join(root, name)))))
         .digest("hex"),
       hash,
       name,

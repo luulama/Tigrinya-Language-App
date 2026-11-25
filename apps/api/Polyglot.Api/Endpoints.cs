@@ -28,6 +28,7 @@ public static class Endpoints
     public static void MapPolyglotEndpoints(this WebApplication app)
     {
         var api = app.MapGroup("/api").RequireRateLimiting("api");
+        api.MapLearningStartEndpoints();
         api.MapGet("/languages", async (AppDbContext db, CancellationToken ct) => Results.Ok(await db.Languages.AsNoTracking().OrderBy(x => x.Tag).ToListAsync(ct)));
         var kinds = new Dictionary<string, ContentKind> { { "courses", ContentKind.Course }, { "lessons", ContentKind.Lesson }, { "words", ContentKind.Word }, { "stories", ContentKind.Story }, { "dialogs", ContentKind.Dialogue }, { "audio", ContentKind.AudioAsset }, { "images", ContentKind.ImageAsset } };
         foreach (var entry in kinds)

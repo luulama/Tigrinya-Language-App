@@ -18,11 +18,11 @@ it("keeps quiet mode and readable feedback while the bear changes expression", (
     "true",
   );
   expect(screen.getByText("Have another look.")).toBeInTheDocument();
-  expect(screen.getByRole("button", { name: "Show Neri" })).toHaveAttribute(
+  expect(screen.getByRole("button", { name: "Show Mele" })).toHaveAttribute(
     "aria-pressed",
     "true",
   );
-  fireEvent.click(screen.getByRole("button", { name: "Show Neri" }));
+  fireEvent.click(screen.getByRole("button", { name: "Show Mele" }));
   expect(container.querySelector("figure")).toHaveAttribute(
     "data-quiet",
     "false",

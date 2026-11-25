@@ -1,4 +1,4 @@
-import { ProfilePage } from "../../components/accounts";
+import { StartingPlanPage } from "../../components/starting-plan";
 export default function Page() {
-  return <ProfilePage onboarding />;
+  return <StartingPlanPage />;
 }

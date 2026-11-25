@@ -29,7 +29,7 @@ test("the animal welcomes learners on the main, Learn and Progress screens with 
     await bear.getByRole("button", { name: "Quiet view" }).click();
     await expect(bear.locator("img")).toBeHidden();
     await expect(bear.locator("figcaption p")).toBeVisible();
-    await bear.getByRole("button", { name: "Show Neri" }).click();
+    await bear.getByRole("button", { name: "Show Mele" }).click();
     await expect(bear.locator("img")).toBeVisible();
     await noOverflow(page);
   }

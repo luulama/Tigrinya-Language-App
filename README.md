@@ -14,6 +14,10 @@ bash scripts/tool.sh npm run dev
 
 Open http://127.0.0.1:3000. The existing Fidäl and word previews work without an account. Published course data requires the API/database; sign-in requires real Entra configuration. AI is interfaces only, and dictionary imports remain unapproved drafts. No Azure resources or hosted-site changes are created by these commands.
 
+The [learning entry systems](docs/learning-experience/README.md) add `/first-lesson`, `/onboarding` and `/parents`: account-free shape practice, independent listening/speaking/reading starting choices, Mele's calm guide and truthful family summaries. These are implemented runtime features; native sound/directions and formal placement remain review/evaluation gaps. Existing standalone teaching content and normal progression are preserved.
+
+For content inspection, [Developer Preview Mode](docs/engineering/DEVELOPER_PREVIEW.md) temporarily opens every existing path node and step. Use **Learn → Development tools**, then return to normal gating with one click; no completion, schedule or saved learner data is written by preview.
+
 ## Project direction
 
 The [complete Product Bible V2.0](Product-Bible/Product-Bible-V2.0.md), [Curriculum Bible](Curriculum-Bible.md), [Technical Bible](Technical-Bible.md), and [Design Bible](Design-Bible.md) are prepared as a review-ready blueprint package. Only the company vision is currently approved; see the [approval register and workflow](Product-Bible/README.md). Further app implementation remains gated on explicit adoption or an owner-approved workflow change.

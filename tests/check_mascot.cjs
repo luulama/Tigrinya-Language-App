@@ -342,7 +342,15 @@ test("all 91 existing sources and story assets retain their original content thr
     assert.equal(
       crypto
         .createHash("sha256")
-        .update(withoutMascot(file, fs.readFileSync(path.join(root, file))))
+        .update(
+          withoutMascot(
+            file,
+            require("./helpers/developer-preview-preservation.cjs")(
+              file,
+              fs.readFileSync(path.join(root, file)),
+            ),
+          ),
+        )
         .digest("hex"),
       hash,
       file,

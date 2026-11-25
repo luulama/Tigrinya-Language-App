@@ -1,0 +1,238 @@
+.entry-shell {
+  width: min(100%, 740px);
+  margin: 20px auto 44px;
+}
+.entry-shell h1 {
+  font-size: clamp(1.9rem, 5vw, 3rem);
+}
+.entry-shell h1:focus {
+  outline-offset: 8px;
+}
+.entry-panel {
+  background: white;
+  border: 2px solid var(--line);
+  border-radius: 24px;
+  padding: clamp(18px, 4vw, 30px);
+  margin: 20px 0;
+}
+.entry-progress {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+  max-width: 300px;
+}
+.entry-progress span {
+  width: 48px;
+  height: 7px;
+  background: #e0e4de;
+  border-radius: 8px;
+}
+.entry-progress span[data-done="true"] {
+  background: var(--green);
+}
+.entry-fidal {
+  font-family: "Noto Sans Ethiopic", "Kefa III", Kefa, Nyala, sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+.first-form {
+  font-size: clamp(100px, 23vw, 170px);
+  text-align: center;
+  min-height: 180px;
+}
+.first-model {
+  text-align: center;
+  font-size: 76px;
+  margin-bottom: 18px;
+}
+.first-choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0;
+}
+.first-choices button {
+  min-height: 94px;
+  padding: 12px;
+}
+.first-choices .entry-fidal {
+  font-size: 48px;
+}
+.entry-options {
+  display: grid;
+  gap: 12px;
+}
+.entry-options button {
+  min-height: 56px;
+  text-align: left;
+  white-space: normal;
+}
+.entry-options button[aria-pressed="true"] {
+  border-color: var(--green);
+  background: #e9f4ed;
+  color: #164c3c;
+  box-shadow: inset 4px 0 var(--green);
+}
+.entry-next {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  min-height: 56px;
+}
+.entry-note {
+  padding: 14px 18px;
+  background: #fff2ce;
+  border: 1px solid #e1c580;
+  border-radius: 14px;
+  font-size: 0.95rem;
+}
+.entry-details {
+  margin-top: 26px;
+}
+.entry-details summary {
+  min-height: 48px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.first-pad {
+  display: block;
+  width: 100%;
+  max-height: 330px;
+  border: 2px solid #97afa2;
+  border-radius: 20px;
+  touch-action: none;
+  user-select: none;
+}
+.first-pad .entry-fidal {
+  font-size: 240px;
+}
+.first-writing input {
+  font-family: "Noto Sans Ethiopic", "Kefa III", Kefa, sans-serif;
+  font-size: 44px;
+  min-height: 70px;
+}
+.first-writing .actions {
+  margin-top: 12px;
+}
+.journey-companion .neri-scene {
+  margin: 12px 0 18px;
+}
+.journey-companion .neri-scene-art {
+  width: 88px;
+  height: 94px;
+}
+.journey-companion .neri-scene button {
+  min-height: 48px;
+  font-size: 14px;
+}
+.parent-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.parent-cards .card {
+  margin: 0;
+}
+.entry-next-action {
+  border-left: 6px solid var(--green);
+}
+.entry-shell label {
+  display: block;
+  margin: 16px 0;
+}
+.entry-shell select,
+.entry-shell input {
+  width: 100%;
+  margin-top: 8px;
+}
+.entry-shell .button {
+  min-height: 48px;
+}
+.entry-shell button:focus-visible,
+.entry-shell a:focus-visible,
+.entry-shell summary:focus-visible {
+  outline: 3px solid #2657ba;
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  [data-entry-focus="true"] .site-header {
+    flex-wrap: nowrap;
+    min-height: 64px;
+    padding: 8px 0;
+  }
+  [data-entry-focus="true"] .site-header nav {
+    order: 0;
+    width: auto;
+  }
+  [data-entry-focus="true"] main {
+    padding-top: 8px;
+  }
+  [data-entry-focus="true"] .entry-shell {
+    margin-top: 4px;
+  }
+  [data-entry-focus="true"] .entry-shell h1 {
+    margin: 10px 0 16px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"]
+    .journey-companion
+    .neri-scene {
+    padding: 8px 12px;
+    gap: 10px;
+    margin: 8px 0;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .neri-scene-art {
+    width: 60px;
+    height: 64px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .journey-companion details {
+    margin: 0;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .entry-panel {
+    margin: 12px 0;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .first-pad {
+    max-height: 230px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .first-writing .actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .entry-shell[aria-label="First Fidäl practice"]
+    .first-writing
+    .actions
+    .button {
+    padding: 8px;
+    overflow-wrap: anywhere;
+  }
+  .parent-cards {
+    grid-template-columns: 1fr;
+  }
+  .entry-panel {
+    border-radius: 20px;
+  }
+  .entry-shell .actions {
+    gap: 12px;
+  }
+  .entry-shell .actions .button {
+    flex: 1 1 150px;
+  }
+  .first-choices {
+    gap: 8px;
+  }
+  .first-choices button {
+    padding: 8px;
+  }
+  .first-choices .entry-fidal {
+    font-size: 42px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .entry-shell * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

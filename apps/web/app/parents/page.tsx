@@ -1,4 +1,4 @@
-import { Supervision } from "../../components/accounts";
+import { ParentExperience } from "../../components/parent-experience";
 export default function Page() {
-  return <Supervision kind="parents" />;
+  return <ParentExperience />;
 }

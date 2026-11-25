@@ -50,6 +50,8 @@
  <section id="journeyScreen" class="screen unit-panel" aria-label="Family recap and shape check"></section>
  <div class="footer">No accounts or tracking · Optional device-only saving in My practice & settings</div>
 </main>
+<link rel="stylesheet" href="../shared/developer-preview.css">
+<script src="../shared/developer-preview.js"></script>
 <script src="../shared/learning-path.js"></script>
 <script src="../shared/unit-journey.js"></script>
 <script src="../shared/fidal-text.js"></script>
@@ -63,11 +65,11 @@ const legacyLessons={
 };
 const lessons=Object.fromEntries(FidalContent.families.map(group=>[group.family,{...group,name:group.label,forms:group.forms.map(form=>form.character),orders:group.forms.map(form=>form.order),sounds:legacyLessons[group.family]?.sounds||[],examples:legacyLessons[group.family]?.examples||[]} ]));
 let explored=new Set(), active=null, activeLetter=null, index=0, learnerMode='explorer', breakOn=true, checking=false, shapeMatched=false;
-const practisedForms=new Map();
-const checkedFamilies=new Map();
-const familyJourney={phase:'none',check:null};
+let practisedForms=new Map();
+let checkedFamilies=new Map();
+let familyJourney={phase:'none',check:null};
 const fidalProfiles=new Map(FidalContent.families.flatMap(family=>family.forms).map(form=>[form.character,form]));
-const writingNotebook=FidalWriting.createNotebook();
+let writingNotebook=FidalWriting.createNotebook();
 let writingController=null;
 const qs=s=>document.querySelector(s), qsa=s=>[...document.querySelectorAll(s)];
 function show(id){
@@ -94,7 +96,7 @@ function updateProgress(){
  const unfinished=active && !['none','result'].includes(familyJourney.phase);
  qs('#startBtn').textContent=unfinished?`Continue ${activeLetter} family`:next?`Start with ${next}`:'Review በ family';
  qs('#nextFamily').textContent=unfinished?`${practisedForms.get(activeLetter).size} of ${active.forms.length} forms practised.`:next?'Explore the family, write, then find each matching form.':'All Fidäl activities checked. Try picture words next.';
- const ready=checkedFamilies.has('በ');
+ const ready=globalThis.DeveloperPreview?.enabled||checkedFamilies.has('በ');
  qs('#reviewGate').textContent=ready?'Revisit the በ-family forms and pictures.':'Explore and check the በ family first.';
  qs('#reviewStart').hidden=ready;
  qsa('.review-layout').forEach(section=>section.hidden=!ready);
@@ -171,7 +173,7 @@ function chooseShape(button){
  if(!checking||shapeMatched||!active.forms.includes(button.dataset.tile))return;
  qsa('#buildTiles button').forEach(tile=>{tile.classList.remove('selected');tile.classList.remove('hint')});
  if(button.dataset.tile===active.forms[index]){
-  shapeMatched=true;practisedForms.get(activeLetter).add(index);button.classList.add('selected');
+  shapeMatched=true;if(!globalThis.DeveloperPreview?.readOnly)practisedForms.get(activeLetter).add(index);button.classList.add('selected');
   qs('#message').textContent='Same shape!';qs('#nextBtn').disabled=false;qs('#nextBtn').textContent=index===active.forms.length-1?'Recap':'Next shape';renderDots();qs('#nextBtn').focus({preventScroll:true});
  }else{
   qs('#message').textContent='Look at the big shape. Try this match.';
@@ -182,6 +184,7 @@ function advanceShape(){
  if(!checking){startShapeMatch();return}
  if(!shapeMatched)return;
  if(index<active.forms.length-1){index++;renderLesson();qs('#lessonHeading').focus({preventScroll:true});return}
+ if(globalThis.DeveloperPreview?.enabled){familyJourney.phase='recap';renderFamilyJourney();return}
  const missing=active.forms.findIndex((_,n)=>!practisedForms.get(activeLetter).has(n));
  if(missing!==-1){index=missing;renderLesson();qs('#message').textContent='One more shape to practise.';return}
  explored.add(activeLetter);familyJourney.phase='recap';renderFamilyJourney();
@@ -196,6 +199,8 @@ function renderFamilyJourney(){
   const check=familyJourney.check,entry=check.current,assisted=check.helped&&!entry.solved;
   const body=`<p class="unit-time">${entry.repeat?'Revisit':'Shape '+(check.position+1)+' of '+forms.length}</p><p>Two are the same. Find the different one.</p><div class="journey-choices" role="group" aria-label="Choose the different shape">${entry.question.options.map(option=>`<button class="journey-choice" data-shape-check="${option.key}" ${entry.solved?'aria-disabled="true"':''} ${assisted&&option.key===entry.question.correctKey?'data-hint="true"':''} ${entry.solved&&option.key===entry.question.correctKey?'data-result="correct"':''} aria-label="Choose shape ${option.label}"><span lang="ti" dir="ltr">${option.label}</span>${entry.solved&&option.key===entry.question.correctKey?'<span class="check-mark" aria-hidden="true">✓</span>':''}</button>`).join('')}</div><p class="journey-feedback" id="shapeCheckFeedback" role="status" aria-live="polite">${entry.solved?'Different shape found.':assisted?'Two match. The highlighted shape is different.':''}</p>`;
   config={label:`${activeLetter} FIDÄL FAMILY · FORM CHECK`,title:'Spot the difference',body,primary:{action:'advance-shape-check',label:'Continue'},disabled:!entry.solved,secondary:entry.solved?'':'<button class="journey-help" data-journey-action="shape-help">Show me</button>'};
+ }else if(familyJourney.phase==='result'&&globalThis.DeveloperPreview?.enabled){
+  config={label:'INSPECTION ONLY',title:'Preview checkpoint ended',body:'<p>No family was marked completed. Learner progress is unchanged.</p>',primary:{action:'home',label:'Back to families'}};
  }else if(familyJourney.phase==='result'){
   const next=nextFamily();
   config={label:`${activeLetter} FIDÄL FAMILY · COMPLETE`,title:'You checked '+forms.length+' Fidäl forms',body:`${UnitJourney.outcome(familyJourney.check.summary,'form differences')}<p>${breakOn?'Take a stretch break, or choose what comes next.':'Choose what comes next.'}</p>`,primary:{action:'next-family',label:next?'Next family':'Review በ family'},secondary:'<a class="journey-secondary" href="../unit-02-first-words/index.html">Picture words</a>'};
@@ -222,7 +227,7 @@ function handleFamilyJourney(action){
   familyJourney.check.help();renderFamilyJourney();qs(`[data-shape-check="${familyJourney.check.current.question.correctKey}"]`).focus({preventScroll:true});
  }
  if(action==='advance-shape-check'&&familyJourney.phase==='check'&&familyJourney.check.advance()){
-  if(familyJourney.check.complete){LearningPath.record('shapes',familyJourney.check.itemResults);LearningPath.saveFamily(activeLetter,familyJourney.check.summary);checkedFamilies.set(activeLetter,familyJourney.check.summary);familyJourney.phase='result';updateProgress()}
+  if(familyJourney.check.complete){if(!globalThis.DeveloperPreview?.readOnly){LearningPath.record('shapes',familyJourney.check.itemResults);LearningPath.saveFamily(activeLetter,familyJourney.check.summary);checkedFamilies.set(activeLetter,familyJourney.check.summary)}familyJourney.phase='result';updateProgress()}
   renderFamilyJourney();
  }
  if(action==='next-family'&&familyJourney.phase==='result')openFamily(nextFamily()||'በ');
@@ -234,7 +239,7 @@ qs('#readyFamilies').onclick=qs('#familyGrid').onclick;
 qs('#startBtn').onclick=startLearning;qs('#todayBtn').onclick=()=>openFamily('በ');qs('#reviewStart').onclick=()=>openFamily('በ');qs('#homeBtn').onclick=()=>show('home');qs('#parentBtn').onclick=()=>{show('home');qsa('.tab').find(t=>t.dataset.view==='parent').click()};qs('#lessonBack').onclick=()=>show('home');
 qs('#traceAction').onclick=toggleWriting;qs('#buildAction').onclick=startShapeMatch;qs('#nextBtn').onclick=advanceShape;qs('#finishBtn').onclick=()=>openFamily(nextFamily()||'በ');qs('#explorerMode').onclick=()=>setMode('explorer');qs('#builderMode').onclick=()=>setMode('builder');qsa('[data-set-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.setMode));qs('#breakToggle').onclick=()=>{breakOn=!breakOn;qs('#breakToggle').textContent=breakOn?'On':'Off'};
 function reviewAnswer(button,result,correctModel){
- if(!checkedFamilies.has('በ')||button.disabled)return;
+ if((!globalThis.DeveloperPreview?.enabled&&!checkedFamilies.has('በ'))||button.disabled)return;
  qs(result).textContent=button.dataset.correct?'That matches!':`Look again: ${correctModel}`;
  if(!button.dataset.correct){const group=button.closest('.choice-grid');group.querySelector('[data-correct]').classList.add('hint')}
 }
@@ -252,6 +257,7 @@ Object.entries(LearningPath.families).forEach(([id,summary])=>{if(lessons[id]&&s
 LearningPath.configure({unit:'shapes',refresh:updateProgress,reset(){checkedFamilies.clear();explored.clear();updateProgress()}});
 updateProgress();
 </script>
+<script src="developer-preview.js"></script>
 <!-- BEAR:BEGIN -->
 <script src="../shared/mascot/scenes.js" data-neri-scene="unit1"></script>
 <!-- BEAR:END -->

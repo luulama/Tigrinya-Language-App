@@ -4,6 +4,8 @@ The implementation is a modular monolith: Next.js web client, ASP.NET Core API, 
 
 The [production platform blueprint](../production/README.md) extends this baseline with proposed pronunciation, assessment, offline and operating contracts. It includes the twenty requested design deliverables, SQL/API specifications and checked cost arithmetic. It is a proposed design package, not implemented runtime features or approval of learning content.
 
+The [learning entry systems](../learning-experience/README.md) are a subsequent implemented increment: first visual practice, heritage starting recommendations, Mele preferences and protected parent summaries, with an additive EF migration and [separate validation record](../learning-experience/VALIDATION.md). It introduces no pronunciation scorer or native-content approval.
+
 | Guide | Purpose |
 | --- | --- |
 | [Development](DEVELOPMENT.md) | Install, run, import drafts and test |
@@ -14,6 +16,7 @@ The [production platform blueprint](../production/README.md) extends this baseli
 | [Deployment](DEPLOYMENT.md) | Containers, Azure, identities and release procedure |
 | [Verification record](VALIDATION.md) | Local build, database, browser and security check results |
 | [Testing](TESTING.md) | Unit, component, API, real database and browser checks |
+| [Developer Preview Mode](DEVELOPER_PREVIEW.md) | Temporary access to all existing path nodes/steps without recording learner progress |
 | [Contributing](CONTRIBUTING.md) | Change, review and content standards |
 
 ## Foundation phases

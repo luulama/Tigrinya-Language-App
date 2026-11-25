@@ -8,6 +8,8 @@ Detailed contracts: [Pronunciation and assessment](PRONUNCIATION_AND_ASSESSMENT.
 
 The [animation system](../animation/README.md) adds a proposed twelve-part motion specification, Mele's state model, learning-purpose catalogue and isolated tested reference code. It does not enable unreviewed teaching media or change the current app.
 
+Subsequent runtime adoption: the [four learning entry systems](../learning-experience/README.md) implement a bounded visual first lesson, self-described starting plan, Mele guide/preferences and parent evidence summaries. Their status and validation are separate from this proposed blueprint; advanced assessment/audio/operating contracts here remain proposals.
+
 ## 1 Executive Summary
 
 Build a trustworthy, complete foundation course before a broad platform launch. The first customer situation remains a child aged 4–8 beginning Fidäl literacy with some oral Tigrinya, supported by a caregiver where needed. Adult beginners and heritage learners remain welcome; they do not silently become a different MVP curriculum.

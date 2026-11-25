@@ -2,6 +2,8 @@
 
 Checked on 25 November 2026 against repository baseline `491719f`. This update adds a twelve-part specification, 32-item animation catalogue, Mele/Rive strategy, tokens, typed reference code and an isolated lab. The only existing-document change is a link from the production blueprint. It changes no live lesson, mascot asset, Next.js component, mobile configuration, review record, backend or database.
 
+Historical scope note: the later [entry-systems increment](../learning-experience/README.md) adopts Mele's name in the Next.js app. The tests below describe the original animation package, not that later implementation or a complete Rive adoption.
+
 ## Completed checks
 
 | Check | Result and actual scope |
