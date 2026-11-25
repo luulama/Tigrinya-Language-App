@@ -2,6 +2,8 @@
 
 The implementation is a modular monolith: Next.js web client, ASP.NET Core API, PostgreSQL persistence and separate shared packages. The original standalone Tigrinya app remains available and is copied into the new web app as an explicitly pending-review practice preview.
 
+The [production platform blueprint](../production/README.md) extends this baseline with proposed pronunciation, assessment, offline and operating contracts. It includes the twenty requested design deliverables, SQL/API specifications and checked cost arithmetic. It is a proposed design package, not implemented runtime features or approval of learning content.
+
 | Guide | Purpose |
 | --- | --- |
 | [Development](DEVELOPMENT.md) | Install, run, import drafts and test |

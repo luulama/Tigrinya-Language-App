@@ -1,0 +1,558 @@
+{
+  "status": "proposed-not-implemented-or-approved",
+  "baselineCommit": "48c0b21337c331e2480281dd061b0932d4dc5e10",
+  "visionSha256": "8dc45861ef7edcd1f20db25ac07a29372659e854b261f88a2b2b6fbdccf865af",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Executive Summary",
+      "location": "README.md#1-executive-summary"
+    },
+    {
+      "number": 2,
+      "title": "Product Vision",
+      "location": "README.md#2-product-vision"
+    },
+    {
+      "number": 3,
+      "title": "Architecture Diagrams",
+      "location": "README.md#3-architecture-diagrams"
+    },
+    {
+      "number": 4,
+      "title": "Domain Model",
+      "location": "README.md#4-domain-model"
+    },
+    {
+      "number": 5,
+      "title": "Database Design",
+      "location": "README.md#5-database-design"
+    },
+    {
+      "number": 6,
+      "title": "API Specifications",
+      "location": "README.md#6-api-specifications"
+    },
+    {
+      "number": 7,
+      "title": "UI and UX Flows",
+      "location": "README.md#7-ui-and-ux-flows"
+    },
+    {
+      "number": 8,
+      "title": "Security Architecture",
+      "location": "README.md#8-security-architecture"
+    },
+    {
+      "number": 9,
+      "title": "Testing Strategy",
+      "location": "README.md#9-testing-strategy"
+    },
+    {
+      "number": 10,
+      "title": "Telemetry Strategy",
+      "location": "README.md#10-telemetry-strategy"
+    },
+    {
+      "number": 11,
+      "title": "Scalability Strategy",
+      "location": "README.md#11-scalability-strategy"
+    },
+    {
+      "number": 12,
+      "title": "Cost Estimates",
+      "location": "README.md#12-cost-estimates"
+    },
+    {
+      "number": 13,
+      "title": "Implementation Roadmap",
+      "location": "README.md#13-implementation-roadmap"
+    },
+    {
+      "number": 14,
+      "title": "Technical Risks",
+      "location": "README.md#14-technical-risks"
+    },
+    {
+      "number": 15,
+      "title": "Product Risks",
+      "location": "README.md#15-product-risks"
+    },
+    {
+      "number": 16,
+      "title": "Team Requirements",
+      "location": "README.md#16-team-requirements"
+    },
+    {
+      "number": 17,
+      "title": "MVP Definition",
+      "location": "README.md#17-mvp-definition"
+    },
+    {
+      "number": 18,
+      "title": "Version 2 Definition",
+      "location": "README.md#18-version-2-definition"
+    },
+    {
+      "number": 19,
+      "title": "Version 3 Definition",
+      "location": "README.md#19-version-3-definition"
+    },
+    {
+      "number": 20,
+      "title": "Success Metrics",
+      "location": "README.md#20-success-metrics"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "AUDIO-01",
+      "group": "audio",
+      "title": "Fidäl, word and sentence tap-to-hear models",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#teaching-audio-and-playback",
+      "acceptance": [
+        "Only exact approved target/variety/served hashes play.",
+        "Missing media offers a truthful supported activity; no Amharic fallback."
+      ]
+    },
+    {
+      "id": "AUDIO-02",
+      "group": "audio",
+      "title": "Normal, slow and repeat controls",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#teaching-audio-and-playback",
+      "acceptance": [
+        "Normal/slow labels distinguish recorded slow speech from pitch-preserving speed changes.",
+        "Repeat is bounded and stoppable; retries do not become recall evidence."
+      ]
+    },
+    {
+      "id": "AUDIO-03",
+      "group": "audio",
+      "title": "Waveforms and reviewed segment timing",
+      "phase": "V2",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#teaching-audio-and-playback",
+      "acceptance": [
+        "Waveform has static/reduced-motion alternative and no pronunciation grade.",
+        "Only reviewed segment boundaries accompany sentence models."
+      ]
+    },
+    {
+      "id": "MEDIA-01",
+      "group": "media",
+      "title": "Speaker, variety, rights and immutable recording/rendition data",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "DATABASE.md#aggregate-and-table-map",
+      "acceptance": [
+        "Private speaker evidence is not in public DTOs.",
+        "Every asset binds exact target, variety, rights and byte hashes."
+      ]
+    },
+    {
+      "id": "MEDIA-02",
+      "group": "media",
+      "title": "Upload, technical validation and compression",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#recording-catalogue-and-contributor-pipeline",
+      "acceptance": [
+        "Decode bounded quarantined uploads without arbitrary network access.",
+        "Capture/encoder/hash/quality revisions are retained; technical QA is not native approval."
+      ]
+    },
+    {
+      "id": "MEDIA-03",
+      "group": "media",
+      "title": "Independent native review and versioned publication",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "DATABASE.md#invariants-beyond-row-checks",
+      "acceptance": [
+        "Author cannot approve own material.",
+        "All core scopes plus two independent native audio decisions gate release.",
+        "Changed approval digests require re-review; recalls stop delivery."
+      ]
+    },
+    {
+      "id": "MEDIA-04",
+      "group": "media",
+      "title": "CDN, licensed delivery and offline audio",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "OFFLINE_AND_OPERATIONS.md#download-model-and-asset-versioning",
+      "acceptance": [
+        "Only approved teaching media enters CDN.",
+        "Signed manifests and hashes verify dependencies; interrupted updates preserve active bundles."
+      ]
+    },
+    {
+      "id": "SPEECH-01",
+      "group": "speech",
+      "title": "Local recording, playback and self-comparison",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#learner-recording-and-comparison",
+      "acceptance": [
+        "Microphone refusal and interruption have usable fallback.",
+        "No upload or correctness claim occurs from local self-reflection."
+      ]
+    },
+    {
+      "id": "SPEECH-02",
+      "group": "speech",
+      "title": "Consent-bound cloud processing and qualified human feedback",
+      "phase": "V2",
+      "status": "specified",
+      "location": "API.md#learner-speech-and-feedback",
+      "acceptance": [
+        "Purpose/relationship/target eligibility checked before processing and result access.",
+        "Expiry, deletion and callback race tests prevent resurrecting recordings."
+      ]
+    },
+    {
+      "id": "SPEECH-03",
+      "group": "speech",
+      "title": "Correct, Close, Needs improvement and honest abstention",
+      "phase": "V2",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#feedback-engine",
+      "acceptance": [
+        "Assessed labels require qualified human or validated-model rubric evidence.",
+        "Unsupported/silent/error conditions return not_assessed without a score."
+      ]
+    },
+    {
+      "id": "SPEECH-04",
+      "group": "speech",
+      "title": "Azure, Realtime, Whisper and hybrid evaluation",
+      "phase": "V3",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#provider-comparison-and-build-versus-buy",
+      "acceptance": [
+        "Language support is checked for the exact feature.",
+        "No transcription-only pronunciation grade or unmeasured provider accuracy ranking."
+      ]
+    },
+    {
+      "id": "SPEECH-05",
+      "group": "speech",
+      "title": "Held-out quality, subgroup calibration and confidence",
+      "phase": "V3",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#automation-release-gate",
+      "acceptance": [
+        "Native reference agreement and held-out speaker/item splits exist.",
+        "False correction/acceptance confidence bounds and abstention meet adopted gates."
+      ]
+    },
+    {
+      "id": "PLACEMENT-01",
+      "group": "placement",
+      "title": "Skill-profile placement and heritage background",
+      "phase": "V2",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#placement-model-and-ux",
+      "acceptance": [
+        "Reading, listening, speaking and vocabulary remain separate.",
+        "Heritage is optional background, not an ordinal proficiency rank.",
+        "Missing skills/bank calibration return insufficient evidence."
+      ]
+    },
+    {
+      "id": "PLACEMENT-02",
+      "group": "placement",
+      "title": "Bayesian adaptive item selection and retest",
+      "phase": "V2",
+      "status": "specified",
+      "location": "PRONUNCIATION_AND_ASSESSMENT.md#placement-model-and-ux",
+      "acceptance": [
+        "Pin calibrated bank, standard setting and posterior model.",
+        "Coverage/access/fatigue constrain selection; report 90% credible intervals.",
+        "Alternate-form retest does not reuse exposed items."
+      ]
+    },
+    {
+      "id": "REVIEW-01",
+      "group": "review",
+      "title": "SM-2/FSRS/hybrid decision and service boundaries",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#review-architecture-and-algorithm-choice",
+      "acceptance": [
+        "Keep current server SM-2 authority.",
+        "Use curriculum queue policy around a pinned model; avoid premature microservices."
+      ]
+    },
+    {
+      "id": "REVIEW-02",
+      "group": "review",
+      "title": "Vocabulary, Fidäl, listening, pronunciation and patterns",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#evidence-and-progress-levels",
+      "acceptance": [
+        "Evidence identifies target version, skill, task and assistance.",
+        "Recognition never fills speaking or transfer axes."
+      ]
+    },
+    {
+      "id": "REVIEW-03",
+      "group": "review",
+      "title": "Retention, difficulty and forgetting-curve validity",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#evidence-and-progress-levels",
+      "acceptance": [
+        "Eligible delayed independent denominator is explicit.",
+        "Predicted recall/difficulty/curves require calibrated models and uncertainty."
+      ]
+    },
+    {
+      "id": "REVIEW-04",
+      "group": "review",
+      "title": "FSRS persistence, shadow replay and rollback",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#state-and-migration",
+      "acceptance": [
+        "Complete state/parameter/event provenance persisted.",
+        "No silent historical state rewrite or same-day interval inflation."
+      ]
+    },
+    {
+      "id": "ANALYTICS-01",
+      "group": "analytics",
+      "title": "Daily, weekly, monthly calendars and practice time",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#learner-analytics-and-calendars",
+      "acceptance": [
+        "Optional nonpunitive adult calendars; no child streak pressure.",
+        "Adopted purpose/idle policy precedes study-time collection."
+      ]
+    },
+    {
+      "id": "ANALYTICS-02",
+      "group": "analytics",
+      "title": "Heatmap, trajectory, skill tree and goals",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#learner-analytics-and-calendars",
+      "acceptance": [
+        "Heatmap intensity has a stated measure, not a mastery label.",
+        "Skill progression and goals use distinct independent/delayed evidence."
+      ]
+    },
+    {
+      "id": "ANALYTICS-03",
+      "group": "analytics",
+      "title": "Words, fluency, listening, pronunciation and confidence",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#learner-analytics-and-calendars",
+      "acceptance": [
+        "Report scoped evidence, sample/date and missing assessments.",
+        "No universal fluency percentage or self-confidence-as-correctness."
+      ]
+    },
+    {
+      "id": "PARENT-01",
+      "group": "parents",
+      "title": "Verified relationship dashboard and safety",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#parent-dashboard-and-safety-controls",
+      "acceptance": [
+        "Show strengths, revisit needs, evidence and useful shared action.",
+        "Raw voice is not automatically shared with a dashboard role."
+      ]
+    },
+    {
+      "id": "PRIVACY-01",
+      "group": "privacy",
+      "title": "Purpose, COPPA/GDPR review and deletion",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "OFFLINE_AND_OPERATIONS.md#consent-purpose-and-deletion",
+      "acceptance": [
+        "Complete jurisdiction/legal-basis review before child cloud accounts.",
+        "Consent, rights and deletion are auditable; training/sharing are separate purposes."
+      ]
+    },
+    {
+      "id": "SCENARIO-01",
+      "group": "scenarios",
+      "title": "Seven bounded communication contexts",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#interactive-scenarios",
+      "acceptance": [
+        "Family, airport, restaurant, shopping, taxi, healthcare and school each have reviewed objectives and prerequisites.",
+        "No invented Tigrinya branches ship."
+      ]
+    },
+    {
+      "id": "SCENARIO-02",
+      "group": "scenarios",
+      "title": "Branching, feedback, reinforcement and rules/LLM/hybrid tradeoffs",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#interactive-scenarios",
+      "acceptance": [
+        "Reachability/termination/allowed-response tests validate deterministic graphs.",
+        "Later constrained language assistance cannot invent graded answers."
+      ]
+    },
+    {
+      "id": "OFFLINE-01",
+      "group": "offline",
+      "title": "Lessons, stories, audio and incremental bundles",
+      "phase": "V2",
+      "status": "specified",
+      "location": "OFFLINE_AND_OPERATIONS.md#download-model-and-asset-versioning",
+      "acceptance": [
+        "Signed manifest, storage/cancel state, staged verified objects and atomic activation.",
+        "Release and entitlement leases fail safely without deleting learner work."
+      ]
+    },
+    {
+      "id": "OFFLINE-02",
+      "group": "offline",
+      "title": "Sync, duplicates, two devices and clock conflicts",
+      "phase": "V2",
+      "status": "specified",
+      "location": "OFFLINE_AND_OPERATIONS.md#offline-progress-and-conflict-resolution",
+      "acceptance": [
+        "Server grades idempotent typed events; client mastery is never authoritative.",
+        "Uncertain offline timing/performance remains provisional."
+      ]
+    },
+    {
+      "id": "OFFLINE-03",
+      "group": "offline",
+      "title": "Revocation, logout and key lifecycle",
+      "phase": "V2",
+      "status": "specified",
+      "location": "OFFLINE_AND_OPERATIONS.md#offline-leases-and-revocation",
+      "acceptance": [
+        "Disconnected takedown limits and lease policy are explicit.",
+        "Reconnection, expiry, device/account revocation and protected-cache purge are tested."
+      ]
+    },
+    {
+      "id": "GOVERNANCE-01",
+      "group": "governance",
+      "title": "Contributor, Reviewer, Linguist, Moderator, Administrator",
+      "phase": "V2",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#native-contributor-governance",
+      "acceptance": [
+        "Capabilities/qualifications and conflicts distinguish all roles.",
+        "Scope decisions, adjudication, attribution, payment and appeals have owners."
+      ]
+    },
+    {
+      "id": "CULTURE-01",
+      "group": "culture",
+      "title": "Culture integrated into teaching",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "LEARNING_AND_EXPERIENCE.md#culture-across-the-curriculum",
+      "acceptance": [
+        "Traditions, music, food, holidays, proverbs, stories and history link to reviewed relevant language contexts.",
+        "Rights, age suitability, source perspective and regional variation are explicit."
+      ]
+    },
+    {
+      "id": "ACCESS-01",
+      "group": "accessibility",
+      "title": "Fidäl, left-to-right text and multimodal access",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "README.md#7-ui-and-ux-flows",
+      "acceptance": [
+        "Ethiopic rendering/input/NFC, wrapping and device fonts are checked.",
+        "Keyboard, screen reader, captions, motion and 44–48px controls have real validation before release."
+      ]
+    },
+    {
+      "id": "SECURITY-01",
+      "group": "security",
+      "title": "Secure boundaries and child-safe operations",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "OFFLINE_AND_OPERATIONS.md#security-controls-and-trust-boundaries",
+      "acceptance": [
+        "Principal/relationship authorization, isolated uploads, managed identities and private storage.",
+        "No raw child speech/text/tokens in logs or unrelated project env use."
+      ]
+    },
+    {
+      "id": "OPERATIONS-01",
+      "group": "operations",
+      "title": "Outbox, retries, restore and service targets",
+      "phase": "V2",
+      "status": "specified",
+      "location": "OFFLINE_AND_OPERATIONS.md#worker-reliability-and-delivery",
+      "acceptance": [
+        "Idempotent jobs, bounded retries and billing reconciliation.",
+        "Restore/deletion drills establish any RPO/RTO/availability claim."
+      ]
+    },
+    {
+      "id": "ECONOMICS-01",
+      "group": "economics",
+      "title": "Costs, sustainable revenue and build versus buy",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "COSTS_AND_SOURCES.md#reproducible-monthly-illustration",
+      "acceptance": [
+        "Checked rates separate from unquoted allowances and excluded staffing/rights.",
+        "Native-first product stays viable when automated scoring is unsupported."
+      ]
+    },
+    {
+      "id": "DELIVERY-01",
+      "group": "delivery",
+      "title": "Roadmap, team, MVP/V2/V3 and risk ownership",
+      "phase": "MVP",
+      "status": "specified",
+      "location": "README.md#13-implementation-roadmap",
+      "acceptance": [
+        "Phase exits require content/learning/privacy evidence, not generated screens.",
+        "Owner adoption, real staffing/identities/budgets and independent content review remain explicit gaps."
+      ]
+    }
+  ],
+  "adoptionInputs": [
+    {
+      "owner": "Product owner",
+      "decision": "Adopt proposed operational decisions without silently revising locked FINAL_V1."
+    },
+    {
+      "owner": "Qualified Tigrinya curriculum lead and native reviewers",
+      "decision": "Select release objectives, varieties, transcripts, rights-cleared recordings, review roster and rubrics."
+    },
+    {
+      "owner": "Privacy/legal lead and product owner",
+      "decision": "Choose launch jurisdictions, verified guardianship, legal bases, retention, processor agreements and child notices."
+    },
+    {
+      "owner": "Operations owner",
+      "decision": "Supply actual Azure/Entra region, tenant, audience, origins, budgets, signing keys and restore/service targets."
+    },
+    {
+      "owner": "Assessment lead",
+      "decision": "Calibrate placement bank/cutpoints and separate speech evaluation benchmark before any automatic level/grade."
+    },
+    {
+      "owner": "Engineering and QA owners",
+      "decision": "Adopt schema/API migrations, canonical signing protocol, actual handlers and release tests; document physical-device checks."
+    }
+  ]
+}
