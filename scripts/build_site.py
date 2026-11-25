@@ -31,6 +31,7 @@ runtime = [
     'unit-02-first-words/path.html', 'unit-02-first-words/path-content.js',
     'unit-02-first-words/path-curriculum.json', 'unit-02-first-words/src/path-app.js',
     'unit-02-first-words/src/path-core.js', 'unit-02-first-words/src/path-srs.js', 'unit-02-first-words/src/path.css',
+    'unit-02-first-words/src/word-routine.js', 'unit-02-first-words/src/word-routine.css',
     'unit-02-first-words/unit-2-content-review.json',
     'unit-02-first-words/unit-2-two-letter-words.md',
     'unit-02-first-words/unit-2-plan.md',

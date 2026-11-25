@@ -1,0 +1,67 @@
+[
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "      keys: shuffle([\n        ...new Set([...word.letters, ...run.words.flatMap((w) => w.letters)]),\n      ]),\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "    if (l.kind === \"introduce\") {\n      if (!globalThis.WordRoutine)\n        throw Error(\n          \"The word-practice tools did not load. Reload the path; saved progress is unchanged.\",\n        );\n      const routine = WordRoutine.plan(l, run.words, data.words);\n      if (routine.status !== \"ready\") throw Error(routine.reason);\n      return routine.tasks.map((spec) =>\n        task(spec.kind, spec.word, {\n          model: spec.model,\n          routine: spec.routine,\n        }),\n      );\n    }\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "  function routineReference() {\n    const formNote = (ch) => {\n      const family = FidalContent.families.find((f) =>\n        f.forms.some((form) => form.character === ch),\n      );\n      const form = family?.forms.find((form) => form.character === ch);\n      return `${ti(ch, \"inline-script\")} ${form && Number.isInteger(form.order) ? `· recorded order ${form.order} in ${ti(family.family, \"inline-script\")}` : \"· sourced form\"}`;\n    };\n    return `<details class=\"routine-reference\"><summary>Words and Fidäl reference</summary><p>${esc(run.lesson.prerequisiteKnowledge)}</p><p>Existing source candidates · spellings, meanings and picture associations still need qualified native Tigrinya review.</p><ul>${run.words.map((w) => `<li>${ti(w.word, \"inline-script\")} · ${esc(w.concept)}<div>${w.letters.map(formNote).join(\"; \")}</div>${typeof w.sourceUrl === \"string\" && w.sourceUrl.startsWith(\"https://en.wiktionary.org/\") ? `<a href=\"${esc(w.sourceUrl)}\">Dictionary source</a>` : \"\"}</li>`).join(\"\")}</ul><p>Reviewed native sound, teacher strokes and sentence examples are not available. This reference supplies no pronunciation rule.</p></details>`;\n  }\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "    if (run.phase === \"intro\" && l.kind === \"introduce\")\n      return `<p class=\"eyebrow\">Look first · ${esc(l.chapter || \"Review\")}</p><h1 tabindex=\"-1\">${esc(l.title)}</h1><p class=\"lesson-goal\">${esc(l.goal)}</p><ol class=\"routine-route\" aria-label=\"Practice sequence\"><li>Look</li><li>Build</li><li>Read</li><li>Recall</li></ol>${models(true)}<p>Meet and build the words first. Then try reading and entering them with the model hidden.</p><div class=\"actions\">${button(\"begin\", \"Try it →\", \"\", \"primary\")}</div>${routineReference()}`;\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "    const pool = shuffle([\n      ...new Set([...w.letters, ...run.words.flatMap((w) => w.letters)]),\n    ]);\n",
+    "to": "    const pool = t.keys;\n    const routine = t.routine && globalThis.WordRoutine?.stages[t.routine];\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "                  : check\n",
+    "to": "                  : check || t.routine === \"recall\"\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "    if (routine)\n      html += `<p class=\"routine-stage\">${esc(routine.label)} · ${canSee || k === \"look\" ? \"Model visible\" : \"Model hidden · help available\"}</p><p class=\"routine-cue\">${esc(routine.instruction)}</p>`;\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "      '</div><p class=\"small\">No native audio available. Visual practice remains usable.</p>'\n",
+    "to": "      `</div>${routine ? `<details class=\"routine-reference\"><summary>Goal and support</summary><p>${esc(routine.objective)}</p><p>Before this step: ${esc(routine.prerequisite)}</p><p>This is same-visit practice. Text entry does not assess handwriting or pronunciation.</p></details>` : \"\"}<p class=\"small\">No native audio available. Visual practice remains usable.</p>`\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-app.js",
+    "from": "",
+    "to": "      if (t.routine && !t.typed.trim()) {\n        say(\"Enter the two forms, or choose Show the model.\");\n        return;\n      }\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-shell.html",
+    "from": "",
+    "to": "  <link rel=\"stylesheet\" href=\"src/word-routine.css\">\n"
+  },
+  {
+    "file": "unit-02-first-words/src/path-shell.html",
+    "from": "",
+    "to": "  <script src=\"src/word-routine.js\"></script>\n"
+  },
+  {
+    "file": "unit-02-first-words/path.html",
+    "from": "",
+    "to": "  <link rel=\"stylesheet\" href=\"src/word-routine.css\">\n"
+  },
+  {
+    "file": "unit-02-first-words/path.html",
+    "from": "",
+    "to": "  <script src=\"src/word-routine.js\"></script>\n"
+  }
+]

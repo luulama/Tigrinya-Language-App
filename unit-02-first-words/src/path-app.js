@@ -192,9 +192,26 @@
       placed: [],
       typed: "",
       helped: false,
+      keys: shuffle([
+        ...new Set([...word.letters, ...run.words.flatMap((w) => w.letters)]),
+      ]),
     };
   }
   function practiceTasks(l) {
+    if (l.kind === "introduce") {
+      if (!globalThis.WordRoutine)
+        throw Error(
+          "The word-practice tools did not load. Reload the path; saved progress is unchanged.",
+        );
+      const routine = WordRoutine.plan(l, run.words, data.words);
+      if (routine.status !== "ready") throw Error(routine.reason);
+      return routine.tasks.map((spec) =>
+        task(spec.kind, spec.word, {
+          model: spec.model,
+          routine: spec.routine,
+        }),
+      );
+    }
     if (l.kind === "checkpoint") return [];
     if (l.kind === "positions")
       return run.words.flatMap((w) => [
@@ -376,12 +393,24 @@
     persist();
     return `<div class="lesson-models ${compact ? "compact" : ""}" style="--model-count:${run.words.length}">${run.words.map((w) => `<div>${image(w)}${ti(w.word)}<span>${esc(w.concept)}</span><div class="form-order">${w.letters.map((c, i) => `<span>${i + 1}. ${ti(c, "inline-script")}</span>`).join("")}</div></div>`).join("")}</div>`;
   }
+  function routineReference() {
+    const formNote = (ch) => {
+      const family = FidalContent.families.find((f) =>
+        f.forms.some((form) => form.character === ch),
+      );
+      const form = family?.forms.find((form) => form.character === ch);
+      return `${ti(ch, "inline-script")} ${form && Number.isInteger(form.order) ? `· recorded order ${form.order} in ${ti(family.family, "inline-script")}` : "· sourced form"}`;
+    };
+    return `<details class="routine-reference"><summary>Words and Fidäl reference</summary><p>${esc(run.lesson.prerequisiteKnowledge)}</p><p>Existing source candidates · spellings, meanings and picture associations still need qualified native Tigrinya review.</p><ul>${run.words.map((w) => `<li>${ti(w.word, "inline-script")} · ${esc(w.concept)}<div>${w.letters.map(formNote).join("; ")}</div>${typeof w.sourceUrl === "string" && w.sourceUrl.startsWith("https://en.wiktionary.org/") ? `<a href="${esc(w.sourceUrl)}">Dictionary source</a>` : ""}</li>`).join("")}</ul><p>Reviewed native sound, teacher strokes and sentence examples are not available. This reference supplies no pronunciation rule.</p></details>`;
+  }
   function body() {
     const l = run.lesson;
     if (preview() && run.phase === "outline")
       return `<p class="eyebrow">Content outline · not implemented or assessed</p><h1 tabindex="-1">${esc(l.title)}</h1><p>${esc(l.goal)}</p><p class="notice">${esc(l.blockedReason)}</p><h2>Planned teaching steps</h2><ol>${l.recipe.map((step, i) => `<li${run.outlineStep === i ? ' aria-current="step"' : ""}>${esc(step)}</li>`).join("")}</ol><p>${esc(l.languageScope)}</p>${run.words.length ? models(true) : "<p>No authored sentence content exists for this lesson yet.</p>"}<p>${esc(l.completionRule)}</p>${button("map", "Back to all lessons")}`;
     if (preview() && run.phase === "done")
       return `<h1 tabindex="-1">End screen preview</h1><p>No lesson was marked completed. Progress and achievements are unchanged.</p>${button("map", "Back to all lessons", "", "primary")}${button("replay", "Inspect this lesson again")}`;
+    if (run.phase === "intro" && l.kind === "introduce")
+      return `<p class="eyebrow">Look first · ${esc(l.chapter || "Review")}</p><h1 tabindex="-1">${esc(l.title)}</h1><p class="lesson-goal">${esc(l.goal)}</p><ol class="routine-route" aria-label="Practice sequence"><li>Look</li><li>Build</li><li>Read</li><li>Recall</li></ol>${models(true)}<p>Meet and build the words first. Then try reading and entering them with the model hidden.</p><div class="actions">${button("begin", "Try it →", "", "primary")}</div>${routineReference()}`;
     if (run.phase === "intro")
       return `<p class="eyebrow">Look first · ${esc(l.chapter || "Review")}</p><h1 tabindex="-1">${esc(l.title)}</h1><p class="lesson-goal">${esc(l.goal)}</p>${l.kind === "family" ? familyModel() : ""}${l.kind === "checkpoint" ? "<p>These are familiar words. Try without the written model, or choose help.</p>" : models(true)}<div class="actions">${button("begin", l.kind === "checkpoint" ? "Try the check" : "Try it →", "", "primary")}</div><details><summary>Before this lesson</summary><p>${esc(l.prerequisiteKnowledge)}</p><a href="../unit-01-fidel-foundations/index.html">Return to the unchanged Fidäl unit</a></details>`;
     if (run.phase === "recap")
@@ -396,9 +425,8 @@
       k = t.kind,
       check = run.phase === "check",
       canSee = t.model || t.helped;
-    const pool = shuffle([
-      ...new Set([...w.letters, ...run.words.flatMap((w) => w.letters)]),
-    ]);
+    const pool = t.keys;
+    const routine = t.routine && globalThis.WordRoutine?.stages[t.routine];
     if ((k === "position" || k === "locate") && t.model)
       PathSRS.form(
         history,
@@ -420,10 +448,12 @@
                 ? `Find the ${t.position === 0 ? "first" : "last"} form`
                 : k === "locate"
                   ? `Find this form: ${t.character}`
-                  : check
+                  : check || t.routine === "recall"
                     ? "Remember and write"
                     : "Copy the word";
     let html = `<p class="eyebrow">${t.srs ? (t.corrective ? "A familiar word · supported revisit" : "Remember this? · from an earlier lesson") : check ? "Visual check · answer model hidden" : "Practise with support"} · ${run.index + 1} of ${run.tasks.length}</p><progress aria-label="Lesson steps" value="${run.index}" max="${run.tasks.length}"></progress><h1 tabindex="-1">${esc(prompt)}</h1><p class="small">${esc(l.goal)}</p><div class="lesson-task" data-kind="${k}">`;
+    if (routine)
+      html += `<p class="routine-stage">${esc(routine.label)} · ${canSee || k === "look" ? "Model visible" : "Model hidden · help available"}</p><p class="routine-cue">${esc(routine.instruction)}</p>`;
     if (k === "read") {
       if (canSee)
         PathSRS.teach(
@@ -472,7 +502,7 @@
       html += button("skip-mixed", "Keep going · revisit later");
     return (
       html +
-      '</div><p class="small">No native audio available. Visual practice remains usable.</p>'
+      `</div>${routine ? `<details class="routine-reference"><summary>Goal and support</summary><p>${esc(routine.objective)}</p><p>Before this step: ${esc(routine.prerequisite)}</p><p>This is same-visit practice. Text entry does not assess handwriting or pronunciation.</p></details>` : ""}<p class="small">No native audio available. Visual practice remains usable.</p>`
     );
   }
   function mountWriting() {
@@ -835,6 +865,10 @@
       return;
     }
     if (name === "compare") {
+      if (t.routine && !t.typed.trim()) {
+        say("Enter the two forms, or choose Show the model.");
+        return;
+      }
       if (t.composing) {
         say("Finish entering the form, then check the word.");
         return;

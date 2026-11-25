@@ -1,0 +1,60 @@
+.routine-route {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+.routine-route li {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #edf3e9;
+  color: #17634f;
+  font-weight: 700;
+}
+.routine-cue {
+  border-left: 4px solid #17634f;
+  padding: 10px 14px;
+  background: #f2f6ef;
+  border-radius: 0 12px 12px 0;
+}
+.routine-reference {
+  margin: 20px 0;
+  border: 1px solid #dedfd6;
+  border-radius: 14px;
+  padding: 8px 16px;
+}
+.routine-reference summary {
+  min-height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.routine-reference ul {
+  padding-left: 22px;
+}
+.routine-reference li {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+.routine-reference [lang="ti"] {
+  font-family: "Noto Sans Ethiopic", "Kefa III", Kefa, Nyala, sans-serif;
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-size: 1.4em;
+}
+.routine-stage {
+  font-weight: 700;
+  color: #17634f;
+}
+.routine-reference a {
+  color: #17634f;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+}
+.routine-reference :focus-visible {
+  outline: 3px solid #2657ba;
+  outline-offset: 3px;
+}

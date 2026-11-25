@@ -17,6 +17,7 @@ The [learning entry systems](../learning-experience/README.md) are a subsequent 
 | [Verification record](VALIDATION.md) | Local build, database, browser and security check results |
 | [Testing](TESTING.md) | Unit, component, API, real database and browser checks |
 | [Developer Preview Mode](DEVELOPER_PREVIEW.md) | Temporary access to all existing path nodes/steps without recording learner progress |
+| [Learning variety audit](LEARNING_VARIETY.md) | Existing activity map, research rationale and the implemented Unit 2 model-fading routine |
 | [Contributing](CONTRIBUTING.md) | Change, review and content standards |
 
 ## Foundation phases

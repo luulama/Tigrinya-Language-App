@@ -2,6 +2,7 @@
 const assert = require("node:assert/strict");
 const patches = require("../fixtures/developer-preview-replacements.json");
 module.exports = function withoutDeveloperPreview(file, bytes) {
+  bytes = require("./word-routine-preservation.cjs")(file, bytes);
   const replacements = patches.filter((p) => p.file === file);
   if (!replacements.length) return bytes;
   let text = bytes.toString();

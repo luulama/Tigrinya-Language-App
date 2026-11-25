@@ -23,6 +23,8 @@ commands = [
     [args.node, '--check', 'shared/developer-preview.js'],
     [args.node, '--check', 'unit-01-fidel-foundations/developer-preview.js'],
     [args.node, 'tests/check_developer_preview.cjs'],
+    [args.node, '--check', 'unit-02-first-words/src/word-routine.js'],
+    [args.node, 'tests/check_word_routine.cjs'],
     [args.node, '--check', 'stories/app.js'],
     [args.node, '--check', 'stories/core.js'],
     [args.node, '--check', 'shared/mascot/neri.js'],
