@@ -7,11 +7,12 @@ Run commands from the repository root. `bash scripts/tool.sh` selects workspace-
 ```sh
 bash scripts/tool.sh npm ci --ignore-scripts
 bash scripts/tool.sh dotnet restore --locked-mode
-python3 scripts/prepare_web_preview.py
 bash scripts/tool.sh npm run dev
 ```
 
 The web app opens at http://127.0.0.1:3000. Fidäl and word previews work without an account. Published libraries need the API and database. Account tools explain when sign-in has not been configured; no demonstration account is created.
+
+The root `npm run dev` and `npm run build` commands automatically prepare the source-bound standalone previews before Next.js starts or builds. The mascot exporter uses the same `scripts/tool.sh` tool selection as the other development commands, including when preparation is invoked directly from Python on a Mac without global Node on `PATH`. To prepare assets alone, run `python3 scripts/prepare_web_preview.py` or `bash scripts/tool.sh npm run prepare:preview`. Preparation preserves content approval states and learner data.
 
 For a complete local API/database without Docker, first build the .NET solution, then run `bash scripts/tool.sh npm run dev:api` in another terminal. It creates a loopback-only PostgreSQL 16 database with a randomly generated password kept in a mode-600 ignored file, applies migrations and imports drafts. Existing local data is retained on stop/restart; no production account is created.
 

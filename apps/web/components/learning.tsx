@@ -35,14 +35,17 @@ export function Library({
   resource,
   title,
   description,
+  enabled = true,
 }: {
   resource: string;
   title: string;
   description: string;
+  enabled?: boolean;
 }) {
   const [search, setSearch] = useState("");
   const query = useQuery({
     queryKey: [resource, search],
+    enabled,
     queryFn: () =>
       request<ContentPage>(
         `/api/${resource}?language=ti&limit=24&q=${encodeURIComponent(search)}`,
@@ -90,6 +93,7 @@ export function Library({
   );
 }
 export function LearnHome() {
+  const [publishedOpen, setPublishedOpen] = useState(false);
   return (
     <>
       <p className="eyebrow">One clear next step</p>
@@ -161,12 +165,13 @@ export function LearnHome() {
           Enable Developer Preview
         </Link>
       </details>
-      <details>
+      <details onToggle={(event) => setPublishedOpen(event.currentTarget.open)}>
         <summary>Published lessons</summary>
         <Library
           resource="lessons"
           title="Your lessons"
           description="Only published, reviewed content appears here."
+          enabled={publishedOpen}
         />
       </details>
     </>

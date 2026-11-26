@@ -10,7 +10,9 @@
     "packages/*"
   ],
   "scripts": {
+    "predev": "npm run prepare:preview",
     "dev": "npm run dev --workspace @polyglot/web",
+    "prebuild": "npm run prepare:preview",
     "build": "npm run build --workspace @polyglot/web",
     "typecheck": "tsc --noEmit -p apps/web/tsconfig.json",
     "test": "vitest run",

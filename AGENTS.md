@@ -44,6 +44,24 @@ This is the master app folder. Unit 1 is Fidel Foundations; Unit 2 is First Word
 - Test the changed behavior first, preserve corpus and review checks, and report any unperformed browser, accessibility or child-usability validation honestly.
 - Do not publish learner-facing content or spend on infrastructure as an incidental step in a local prototype task.
 
+## Required engineering verification
+
+For each engineering task, inspect the current architecture, dependencies, routes, build/test setup and Git status before editing. Search for existing implementations, duplicate logic and dead code; reuse working solutions and fix a reproduced root cause rather than a symptom. Keep refactors and maintenance scoped to the task.
+
+After the final change, run all three commands from the repository root, using `bash scripts/tool.sh` when this machine needs its workspace-local tools:
+
+```sh
+npm run typecheck
+npm run test
+npm run build
+```
+
+Fix failures and rerun affected checks, then complete the full validation before committing or pushing. Run additional content, backend and browser tests when relevant. The root dev/build commands prepare the standalone learning assets; do not replace their build steps with a second packaging implementation.
+
+Start the resulting app locally with the detected project command. Check the affected learner flow, relevant onboarding/path/lesson/motion states, mobile layout, keyboard/access behavior and browser console. Verify the intended change in the running app. A successful file edit or build alone does not establish implementation. Record which checks were automated, which UI interactions were inspected and any access or environment blocker; do not claim an unperformed check passed.
+
+Finish with what changed, why, modified files, test/build/runtime results, risks and recommended next actions. Preserve privacy, native-content approval and existing learner data. Commit and push only verified work, following the secret-file exclusions below; do not deploy implicitly.
+
 ## Automatic GitHub sync after verified changes
 
 Every time you finish creating or modifying files and verify there are no syntax errors, automatically stage all changes (`git add .`), commit them with a clear short message (`git commit -m "..."`), and push them to GitHub (`git push`).
