@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Button } from "@polyglot/ui";
+import { Badge, Button } from "@polyglot/ui";
 import { request } from "../lib/api";
 import {
   DEFAULT_PLAN,
@@ -10,7 +10,13 @@ import {
   type Familiarity,
   type SavedStartingPlan,
 } from "../lib/learning-start";
-import { MeleCompanion, useJourney } from "./learning-journey";
+import { usePreferences } from "../lib/preferences";
+import {
+  MeleCompanion,
+  useJourney,
+  type GuideLanguage,
+} from "./learning-journey";
+import { ArrowRightIcon, CheckIcon, ClockIcon } from "./icons";
 
 export function PlanMemoryControls() {
   const { plan, setPlan, reset } = useJourney();
@@ -113,6 +119,7 @@ export function PlanMemoryControls() {
       <div className="actions">
         <Button
           variant="outline"
+          size="sm"
           disabled={working}
           onClick={() => perform("save")}
         >
@@ -120,6 +127,7 @@ export function PlanMemoryControls() {
         </Button>
         <Button
           variant="outline"
+          size="sm"
           disabled={working}
           onClick={() => perform("load")}
         >
@@ -127,6 +135,7 @@ export function PlanMemoryControls() {
         </Button>
         <Button
           variant="quiet"
+          size="sm"
           disabled={working}
           onClick={() => perform("forget")}
         >
@@ -134,6 +143,7 @@ export function PlanMemoryControls() {
         </Button>
         <Button
           variant="quiet"
+          size="sm"
           disabled={working}
           onClick={() => {
             reset();
@@ -145,58 +155,128 @@ export function PlanMemoryControls() {
           Clear this visit
         </Button>
       </div>
-      <p role="status">{message}</p>
+      <p className="small" role="status">
+        {message}
+      </p>
       <Link href="/signin">Sign in to an existing account</Link>
     </details>
   );
 }
 
+const FAMILIARITY_LABELS: Record<Familiarity, string> = {
+  new: "New to me",
+  some: "Some familiarity",
+  comfortable: "Comfortable",
+  unsure: "Not sure yet",
+};
+
+const BACKGROUND_LABELS: Record<string, string> = {
+  starting_fresh: "Starting fresh",
+  heritage_listener: "Heritage listener · bridging to script",
+  heritage_speaker: "Heritage speaker · building reading & writing",
+  literate_speaker: "Familiar reader & speaker",
+  mixed_or_unsure: "Flexible starting point",
+};
+
 export function StartingPlanPage() {
-  const { plan, setPlan, records } = useJourney();
+  const { plan, setPlan, records, guideLanguage, setGuideLanguage } =
+    useJourney();
+  const preferences = usePreferences();
   const [step, setStep] = useState(0);
   const heading = useRef<HTMLHeadingElement>(null);
   const fields = [
     {
       key: "listening",
       title: "When you hear Tigrinya…",
+      lead: "Many learners understand Tigrinya at home before they ever read it.",
       choices: [
-        "It is new to me",
-        "I understand some",
-        "I understand comfortably",
-        "I’m not sure",
+        {
+          label: "It is new to me",
+          hint: "I am meeting the sounds for the first time.",
+        },
+        {
+          label: "I understand some",
+          hint: "I catch familiar words or phrases from family or friends.",
+        },
+        {
+          label: "I understand comfortably",
+          hint: "Everyday spoken Tigrinya already makes sense to me.",
+        },
+        {
+          label: "I’m not sure",
+          hint: "We can explore gently and see what feels familiar.",
+        },
       ],
     },
     {
       key: "speaking",
       title: "When you speak Tigrinya…",
+      lead: "Understanding and speaking grow at different speeds—both are completely natural.",
       choices: [
-        "I haven’t started",
-        "I use some words",
-        "I speak comfortably",
-        "I’m not sure",
+        {
+          label: "I haven’t started",
+          hint: "I haven’t tried speaking Tigrinya yet.",
+        },
+        {
+          label: "I use some words",
+          hint: "I know greetings or short everyday expressions.",
+        },
+        {
+          label: "I speak comfortably",
+          hint: "I hold conversations and want to strengthen reading or writing.",
+        },
+        {
+          label: "I’m not sure",
+          hint: "Skip the label—we will keep everything welcoming.",
+        },
       ],
     },
     {
       key: "reading",
       title: "When you see Fidäl…",
+      lead: "The Ethiopic script is beautifully patterned once you meet one family at a time.",
       choices: [
-        "The forms are new",
-        "I recognise some",
-        "I read comfortably",
-        "I’m not sure",
+        {
+          label: "The forms are new",
+          hint: "Start calmly with a single shape and clear models.",
+        },
+        {
+          label: "I recognise some",
+          hint: "A few shapes look familiar, and I want steady fluency.",
+        },
+        {
+          label: "I read comfortably",
+          hint: "Jump into words, families, or review whenever you like.",
+        },
+        {
+          label: "I’m not sure",
+          hint: "We can open with one gentle form and adjust from there.",
+        },
       ],
     },
   ] as const;
+
   const recommendation = startingRecommendation(plan, records.at(-1));
+
   useEffect(() => {
     heading.current?.focus();
   }, [step]);
+
   function move(next: number) {
     setStep(next);
   }
+
   return (
     <section className="entry-shell">
       <p className="eyebrow">YOUR STARTING PLAN · NO ACCOUNT NEEDED</p>
+      <div
+        className="entry-progress"
+        aria-label={`Step ${step + 1} of 5`}
+      >
+        {[0, 1, 2, 3, 4].map((n) => (
+          <span key={n} data-done={n <= step} />
+        ))}
+      </div>
       <h1 ref={heading} tabIndex={-1}>
         {step < 3
           ? fields[step].title
@@ -204,33 +284,51 @@ export function StartingPlanPage() {
             ? "What would you like to practise?"
             : "A place to begin."}
       </h1>
+      {step < 3 && <p>{fields[step].lead}</p>}
       <MeleCompanion
+        state={step === 4 ? "celebrating" : "encouraging"}
         caption={
           step < 3
             ? "You can be familiar with the sounds and new to reading. Both are welcome."
-            : "This is a starting suggestion. You can change it."
+            : step === 3
+              ? "Shape the look and rhythm to fit your day. You can change any of this later."
+              : "This is a starting suggestion. You can change it."
         }
       />
+
       {step < 3 ? (
-        <div className="entry-panel">
+        <div className="entry-panel animate-panel" key={`step-${step}`}>
           <div
             className="entry-options"
             role="group"
             aria-label={fields[step].title}
           >
             {(["new", "some", "comfortable", "unsure"] as Familiarity[]).map(
-              (level, i) => (
-                <Button
-                  key={level}
-                  variant="outline"
-                  aria-pressed={plan[fields[step].key] === level}
-                  onClick={() =>
-                    setPlan({ ...plan, [fields[step].key]: level })
-                  }
-                >
-                  {fields[step].choices[i]}
-                </Button>
-              ),
+              (level, i) => {
+                const choice = fields[step].choices[i];
+                const selected = plan[fields[step].key] === level;
+                return (
+                  <Button
+                    key={level}
+                    variant="outline"
+                    aria-label={choice.label}
+                    aria-pressed={selected}
+                    onClick={() =>
+                      setPlan({ ...plan, [fields[step].key]: level })
+                    }
+                  >
+                    <span className="option-card-content">
+                      <span className="option-card-title">{choice.label}</span>
+                      <span className="option-card-hint" aria-hidden="true">
+                        {choice.hint}
+                      </span>
+                    </span>
+                    <span className="option-check" aria-hidden="true">
+                      <CheckIcon size={14} />
+                    </span>
+                  </Button>
+                );
+              },
             )}
           </div>
           <div className="actions">
@@ -241,7 +339,7 @@ export function StartingPlanPage() {
             )}
             <Button onClick={() => move(step + 1)}>Next</Button>
             <Button
-              variant="quiet"
+              variant="ghost"
               onClick={() => {
                 setPlan({ ...plan, [fields[step].key]: "unsure" });
                 move(step + 1);
@@ -252,35 +350,137 @@ export function StartingPlanPage() {
           </div>
         </div>
       ) : step === 3 ? (
-        <div className="entry-panel">
-          <div className="entry-options">
+        <div className="entry-panel animate-panel" key="step-3">
+          <div
+            className="entry-options"
+            role="group"
+            aria-label="Choose your focus"
+          >
             <Button
               variant="outline"
+              aria-label="Read and write Fidäl"
               aria-pressed={plan.goal === "reading"}
               onClick={() => setPlan({ ...plan, goal: "reading" })}
             >
-              Read and write Fidäl
+              <span className="option-card-content">
+                <span className="option-card-title">Read and write Fidäl</span>
+                <span className="option-card-hint" aria-hidden="true">
+                  Meet shapes, trace over printed forms, and explore families.
+                </span>
+              </span>
+              <span className="option-check" aria-hidden="true">
+                <CheckIcon size={14} />
+              </span>
             </Button>
             <Button
               variant="outline"
+              aria-label="Connect pictures and words"
               aria-pressed={plan.goal === "words"}
               onClick={() => setPlan({ ...plan, goal: "words" })}
             >
-              Connect pictures and words
+              <span className="option-card-content">
+                <span className="option-card-title">
+                  Connect pictures and words
+                </span>
+                <span className="option-card-hint" aria-hidden="true">
+                  Build everyday two-character words with illustrations and
+                  gentle checkpoints.
+                </span>
+              </span>
+              <span className="option-check" aria-hidden="true">
+                <CheckIcon size={14} />
+              </span>
             </Button>
           </div>
-          <label>
-            How shall we go?
-            <select
-              value={plan.pace}
-              onChange={(e) =>
-                setPlan({ ...plan, pace: e.target.value as "step" | "explore" })
-              }
-            >
-              <option value="step">One step at a time</option>
-              <option value="explore">Let me explore</option>
-            </select>
-          </label>
+
+          <div className="plan-prefs-section">
+            <div>
+              <p className="chip-group-label">Who is learning? (look & feel)</p>
+              <div
+                className="chip-row"
+                role="group"
+                aria-label="Learner presentation"
+              >
+                {(
+                  [
+                    ["child", "Young learner (4–8 · Pictures first)"],
+                    ["teen", "Teen (9–15)"],
+                    ["adult", "Adult learner"],
+                  ] as const
+                ).map(([value, label]) => (
+                  <button
+                    key={value}
+                    type="button"
+                    className="chip-btn"
+                    aria-pressed={preferences.presentation === value}
+                    onClick={() => preferences.set({ presentation: value })}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="chip-group-label">Guide language</p>
+              <div
+                className="chip-row"
+                role="group"
+                aria-label="Guide language"
+              >
+                {(
+                  [
+                    ["en", "English"],
+                    ["sv", "Svenska (Swedish)"],
+                  ] as [GuideLanguage, string][]
+                ).map(([value, label]) => (
+                  <button
+                    key={value}
+                    type="button"
+                    className="chip-btn"
+                    aria-pressed={guideLanguage === value}
+                    onClick={() => setGuideLanguage(value)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p className="chip-group-label">Daily rhythm (no timers)</p>
+              <div className="chip-row" role="group" aria-label="Daily rhythm">
+                {[3, 5, 10, 15, 30].map((minutes) => (
+                  <button
+                    key={minutes}
+                    type="button"
+                    className="chip-btn"
+                    aria-pressed={preferences.minutes === minutes}
+                    onClick={() => preferences.set({ minutes })}
+                  >
+                    {minutes} min
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <label>
+              How shall we go?
+              <select
+                value={plan.pace}
+                onChange={(e) =>
+                  setPlan({
+                    ...plan,
+                    pace: e.target.value as "step" | "explore",
+                  })
+                }
+              >
+                <option value="step">One step at a time</option>
+                <option value="explore">Let me explore</option>
+              </select>
+            </label>
+          </div>
+
           <div className="actions">
             <Button variant="quiet" onClick={() => move(2)}>
               Back
@@ -289,33 +489,69 @@ export function StartingPlanPage() {
           </div>
         </div>
       ) : (
-        <div className="entry-panel">
+        <div className="entry-panel animate-panel" key="step-4">
           <p className="eyebrow">BASED ON YOUR CHOICES</p>
+          <div className="today-meta">
+            <Badge tone="sage">
+              {BACKGROUND_LABELS[recommendation.background] ??
+                "Your starting plan"}
+            </Badge>
+            <Badge tone="warm">
+              <ClockIcon size={14} /> {preferences.minutes} min · no timer
+            </Badge>
+            {guideLanguage === "sv" && (
+              <Badge tone="explore">Svenska guide noted</Badge>
+            )}
+          </div>
           <h2>{recommendation.title}</h2>
           <p>{recommendation.why}</p>
-          <p>
+          <div className="plan-summary-grid">
+            <div className="plan-summary-chip">
+              <span>Listening</span>
+              <strong>{FAMILIARITY_LABELS[plan.listening]}</strong>
+            </div>
+            <div className="plan-summary-chip">
+              <span>Speaking</span>
+              <strong>{FAMILIARITY_LABELS[plan.speaking]}</strong>
+            </div>
+            <div className="plan-summary-chip">
+              <span>Fidäl reading</span>
+              <strong>{FAMILIARITY_LABELS[plan.reading]}</strong>
+            </div>
+          </div>
+          <p className="small">
             No level has been assigned. Listening, speaking and reading can be
             at different starting points.
           </p>
           <div className="actions">
-            <Link className="button button-primary" href={recommendation.href}>
+            <Link
+              className="button button-primary button-lg"
+              href={recommendation.href}
+            >
               {recommendation.href === "/first-lesson"
                 ? "Try one small practice"
                 : recommendation.title}
             </Link>
-            <Link href="/first-lesson">Try the first form</Link>
-            <Link href="/learn">Explore both units</Link>
-            <Button variant="quiet" onClick={() => move(0)}>
+            <Link className="button button-outline" href="/first-lesson">
+              Try the first form
+            </Link>
+            <Link className="button button-quiet" href="/learn">
+              Explore both units
+            </Link>
+            <Button variant="ghost" onClick={() => move(0)}>
               Change my choices
             </Button>
           </div>
         </div>
       )}
+
       <p className="small">
         You can skip this and start. This is a starting plan, not a listening or
         speaking test.
       </p>
-      <Link href="/first-lesson">Start without questions</Link>
+      <Link className="inline-link" href="/first-lesson">
+        Start without questions <ArrowRightIcon size={15} />
+      </Link>
       <PlanMemoryControls />
     </section>
   );

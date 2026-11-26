@@ -1,200 +1,504 @@
+/* ==========================================================================
+   ENTRY SYSTEMS: ONBOARDING, FIRST LESSON, PARENT EXPERIENCE
+   Focused, low-cognitive-load educational surfaces. 320px+ mobile-first.
+   ========================================================================== */
+
 .entry-shell {
-  width: min(100%, 740px);
-  margin: 20px auto 44px;
+  width: min(100%, 720px);
+  margin: var(--space-4) auto var(--space-12);
 }
+
 .entry-shell h1 {
-  font-size: clamp(1.9rem, 5vw, 3rem);
+  font-size: clamp(1.75rem, 4.6vw, 2.75rem);
+  margin: var(--space-2) 0 var(--space-3);
+  scroll-margin-top: 96px;
 }
+
 .entry-shell h1:focus {
-  outline-offset: 8px;
+  outline: none;
 }
+
 .entry-panel {
-  background: white;
-  border: 2px solid var(--line);
-  border-radius: 24px;
+  background: var(--surface-card);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-xl);
   padding: clamp(18px, 4vw, 30px);
-  margin: 20px 0;
+  margin: var(--space-4) 0;
+  box-shadow: var(--shadow-sm);
 }
+
+/* Smooth Segmented Step Progress */
 .entry-progress {
   display: flex;
   gap: 8px;
-  margin: 16px 0;
-  max-width: 300px;
+  margin: var(--space-2) 0 var(--space-4);
+  max-width: 340px;
 }
+
 .entry-progress span {
-  width: 48px;
-  height: 7px;
-  background: #e0e4de;
-  border-radius: 8px;
+  flex: 1;
+  height: 8px;
+  background: var(--surface-inset);
+  border-radius: var(--radius-pill);
+  transition: background-color var(--dur-base) var(--ease-gentle);
 }
+
 .entry-progress span[data-done="true"] {
   background: var(--green);
 }
+
 .entry-fidal {
-  font-family: "Noto Sans Ethiopic", "Kefa III", Kefa, Nyala, sans-serif;
-  line-height: 1.4;
-  font-weight: 500;
+  font-family: var(--font-fidal);
+  line-height: 1.38;
+  font-weight: 600;
   direction: ltr;
   unicode-bidi: isolate;
 }
-.first-form {
-  font-size: clamp(100px, 23vw, 170px);
-  text-align: center;
-  min-height: 180px;
+
+/* First Lesson Specimen Stage */
+.first-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, transparent 74%, rgba(20, 97, 76, 0.08) 74.5%, transparent 75.5%),
+    linear-gradient(145deg, #fdfbf6, var(--green-soft));
+  border: 1.5px solid var(--green-border);
+  padding: var(--space-4) var(--space-3);
+  margin-bottom: var(--space-4);
 }
+
+.first-form {
+  font-size: clamp(88px, 22vw, 154px);
+  text-align: center;
+  min-height: 132px;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.first-model-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-3) var(--space-8);
+  border-radius: var(--radius-lg);
+  background: var(--surface-tinted);
+  border: 1.5px solid var(--line);
+  margin: 0 auto var(--space-4);
+}
+
+.first-model-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
 .first-model {
   text-align: center;
-  font-size: 76px;
-  margin-bottom: 18px;
+  font-size: 68px;
+  line-height: 1.25;
+  color: var(--green);
 }
+
+.first-model-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* Tactile Fidäl Choice Tiles */
 .first-choices {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-  margin: 22px 0;
+  gap: 12px;
+  margin: var(--space-4) 0;
 }
+
 .first-choices button {
-  min-height: 94px;
+  min-height: 96px;
   padding: 12px;
+  border-radius: 20px;
+  border: 2px solid var(--line-strong);
+  background: var(--surface-card);
+  box-shadow: 0 3px 0 rgba(29, 47, 45, 0.1);
 }
+
 .first-choices .entry-fidal {
-  font-size: 48px;
+  font-size: 46px;
+  color: var(--ink);
 }
+
+/* Tactile Onboarding Choice Cards */
 .entry-options {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
+
 .entry-options button {
-  min-height: 56px;
+  min-height: 58px;
+  padding: 12px 18px;
   text-align: left;
+  justify-content: space-between;
   white-space: normal;
+  border-radius: 18px;
 }
+
 .entry-options button[aria-pressed="true"] {
   border-color: var(--green);
-  background: #e9f4ed;
-  color: #164c3c;
-  box-shadow: inset 4px 0 var(--green);
+  background: var(--green-soft);
+  color: var(--green-depth);
+  box-shadow:
+    inset 5px 0 0 var(--green),
+    var(--shadow-xs);
 }
-.entry-next {
+
+.option-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  text-align: left;
+}
+
+.option-card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: inherit;
+}
+
+.option-card-hint {
+  font-weight: 500;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.entry-options button[aria-pressed="true"] .option-card-hint {
+  color: var(--green);
+}
+
+.option-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--line-strong);
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: transparent;
+}
+
+.entry-options button[aria-pressed="true"] .option-check {
+  background: var(--green);
+  border-color: var(--green);
+  color: #ffffff;
+}
+
+/* Onboarding Quick Preferences Strip (Learner Type, Guide Language, Rhythm) */
+.plan-prefs-section {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.chip-group-label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 var(--space-2);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip-btn {
+  min-height: 44px;
+  padding: 7px 14px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--line-strong);
+  background: var(--surface-card);
+  color: var(--ink-secondary);
+  font-size: 0.88rem;
+  font-weight: 650;
+  transition:
+    background-color var(--dur-fast) var(--ease-gentle),
+    border-color var(--dur-fast) var(--ease-gentle),
+    color var(--dur-fast) var(--ease-gentle);
+}
+
+.chip-btn[aria-pressed="true"] {
+  background: var(--green-soft);
+  border-color: var(--green);
+  color: var(--green);
+}
+
+/* Plan Summary Badges */
+.plan-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-4) 0;
+}
+
+.plan-summary-chip {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-tinted);
+  border: 1px solid var(--line);
+}
+
+.plan-summary-chip span {
   display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.plan-summary-chip strong {
+  display: block;
+  font-size: 0.96rem;
+  color: var(--ink);
+  margin-top: 2px;
+}
+
+.entry-next {
+  display: flex;
   width: 100%;
-  margin-top: 24px;
-  min-height: 56px;
+  margin-top: var(--space-4);
+  min-height: 54px;
 }
+
 .entry-note {
-  padding: 14px 18px;
-  background: #fff2ce;
-  border: 1px solid #e1c580;
+  padding: var(--space-3) var(--space-4);
+  background: var(--review-bg);
+  border: 1.5px solid var(--review-border);
   border-radius: 14px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin: var(--space-3) 0 0;
 }
+
 .entry-details {
-  margin-top: 26px;
+  margin-top: var(--space-5);
 }
+
 .entry-details summary {
   min-height: 48px;
   cursor: pointer;
   font-weight: 700;
   padding: 10px 0;
 }
+
+/* Studio Trace Pad */
 .first-pad {
   display: block;
   width: 100%;
-  max-height: 330px;
-  border: 2px solid #97afa2;
+  max-height: 300px;
+  border: 2px solid var(--green-border);
   border-radius: 20px;
+  background: #fffdf8;
   touch-action: none;
   user-select: none;
+  box-shadow: inset 0 2px 6px rgba(29, 47, 45, 0.05);
 }
+
 .first-pad .entry-fidal {
   font-size: 240px;
 }
+
 .first-writing input {
-  font-family: "Noto Sans Ethiopic", "Kefa III", Kefa, sans-serif;
-  font-size: 44px;
-  min-height: 70px;
+  font-family: var(--font-fidal);
+  font-size: 40px;
+  min-height: 68px;
 }
+
 .first-writing .actions {
   margin-top: 12px;
 }
+
+/* Phase 10: Restrained Milestone Celebration Card */
+.milestone-emblem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-4);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(155deg, var(--green-soft), var(--review-bg));
+  border: 1.5px solid var(--review-border);
+  margin-bottom: var(--space-4);
+}
+
+.recap-checklist {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.recap-checklist li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--surface-tinted);
+  border: 1px solid var(--line);
+  font-size: 0.94rem;
+  color: var(--ink);
+}
+
+.recap-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--green-soft);
+  color: var(--green);
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+/* Journey Companion in Entry Flows */
 .journey-companion .neri-scene {
-  margin: 12px 0 18px;
+  margin: var(--space-3) 0 !important;
 }
+
 .journey-companion .neri-scene-art {
-  width: 88px;
-  height: 94px;
+  width: 78px;
+  height: 84px;
 }
+
 .journey-companion .neri-scene button {
-  min-height: 48px;
-  font-size: 14px;
+  min-height: 44px;
+  font-size: 13px;
 }
+
+.journey-companion details {
+  margin: var(--space-2) 0 var(--space-3);
+  padding: 2px var(--space-4);
+}
+
+/* Parent Experience */
 .parent-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
 }
+
 .parent-cards .card {
   margin: 0;
 }
+
 .entry-next-action {
   border-left: 6px solid var(--green);
+  padding-left: var(--space-5);
 }
+
 .entry-shell label {
   display: block;
-  margin: 16px 0;
+  margin: var(--space-4) 0;
 }
+
 .entry-shell select,
 .entry-shell input {
   width: 100%;
   margin-top: 8px;
 }
+
 .entry-shell .button {
   min-height: 48px;
 }
-.entry-shell button:focus-visible,
-.entry-shell a:focus-visible,
-.entry-shell summary:focus-visible {
-  outline: 3px solid #2657ba;
-  outline-offset: 4px;
-}
+
+/* Narrow-Screen Budget (320×720 verified: keeps form + Try the shape in viewport) */
 @media (max-width: 600px) {
-  [data-entry-focus="true"] .site-header {
+  [data-entry-focus="true"] .site-header-inner {
     flex-wrap: nowrap;
-    min-height: 64px;
-    padding: 8px 0;
+    min-height: 54px;
+    padding: 4px 0;
   }
   [data-entry-focus="true"] .site-header nav {
     order: 0;
     width: auto;
   }
+  [data-entry-focus="true"] .site-header nav a {
+    padding: 8px 10px;
+    min-height: 44px;
+    font-size: 0.86rem;
+  }
   [data-entry-focus="true"] main {
-    padding-top: 8px;
+    padding-top: 6px;
+    padding-bottom: var(--space-8);
   }
   [data-entry-focus="true"] .entry-shell {
-    margin-top: 4px;
+    margin-top: 2px;
   }
   [data-entry-focus="true"] .entry-shell h1 {
-    margin: 10px 0 16px;
+    font-size: 1.55rem;
+    margin: 4px 0 8px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .eyebrow {
+    margin-bottom: 4px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .entry-progress {
+    margin: 4px 0 6px;
   }
   .entry-shell[aria-label="First Fidäl practice"]
     .journey-companion
     .neri-scene {
-    padding: 8px 12px;
-    gap: 10px;
-    margin: 8px 0;
+    padding: 8px 10px !important;
+    gap: 10px !important;
+    margin: 6px 0 !important;
   }
   .entry-shell[aria-label="First Fidäl practice"] .neri-scene-art {
-    width: 60px;
-    height: 64px;
+    width: 52px;
+    height: 56px;
   }
   .entry-shell[aria-label="First Fidäl practice"] .journey-companion details {
-    margin: 0;
+    margin: 0 0 6px;
+    padding: 0 12px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .journey-companion summary {
+    padding: 8px 0;
+    min-height: 44px;
+    font-size: 0.88rem;
   }
   .entry-shell[aria-label="First Fidäl practice"] .entry-panel {
-    margin: 12px 0;
+    margin: 8px 0;
+    padding: 14px;
+    border-radius: 20px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .first-stage {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .first-form {
+    font-size: 84px;
+    min-height: 98px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .entry-note {
+    padding: 10px 12px;
+    font-size: 0.84rem;
+    margin-top: 6px;
+  }
+  .entry-shell[aria-label="First Fidäl practice"] .entry-next {
+    margin-top: 10px;
+    min-height: 48px;
   }
   .entry-shell[aria-label="First Fidäl practice"] .first-pad {
-    max-height: 230px;
+    max-height: 220px;
   }
   .entry-shell[aria-label="First Fidäl practice"] .first-writing .actions {
     display: grid;
@@ -206,6 +510,7 @@
     .button {
     padding: 8px;
     overflow-wrap: anywhere;
+    font-size: 0.85rem;
   }
   .parent-cards {
     grid-template-columns: 1fr;
@@ -214,21 +519,23 @@
     border-radius: 20px;
   }
   .entry-shell .actions {
-    gap: 12px;
+    gap: 10px;
   }
   .entry-shell .actions .button {
-    flex: 1 1 150px;
+    flex: 1 1 135px;
   }
   .first-choices {
     gap: 8px;
   }
   .first-choices button {
     padding: 8px;
+    min-height: 82px;
   }
   .first-choices .entry-fidal {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .entry-shell * {
     animation: none !important;
