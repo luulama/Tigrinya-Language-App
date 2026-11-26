@@ -18,6 +18,7 @@ The [learning entry systems](../learning-experience/README.md) are a subsequent 
 | [Testing](TESTING.md) | Unit, component, API, real database and browser checks |
 | [Developer Preview Mode](DEVELOPER_PREVIEW.md) | Temporary access to all existing path nodes/steps without recording learner progress |
 | [Learning variety audit](LEARNING_VARIETY.md) | Existing activity map, research rationale and the implemented Unit 2 model-fading routine |
+| [Outcome-based learning path design](../learning-path/README.md) | Current readiness audit, heritage literacy route, all 31 lesson recommendations and six-mode coverage for 293 source forms; design only |
 | [Contributing](CONTRIBUTING.md) | Change, review and content standards |
 
 ## Foundation phases

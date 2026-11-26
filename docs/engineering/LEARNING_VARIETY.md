@@ -25,7 +25,7 @@ All visual Tigrinya activities below remain **awaiting qualified native review**
 | Embedded / manual spaced review | Revisit only taught items with separate recognition/reading/entry/construction/locating records | Task-specific retrieval; support and delayed sessions distinguished | Implemented; retain existing time/gap/budget and anti-inflation rules |
 | Unit 4: listening / pronunciation | Planned sound-to-meaning and spoken response | Listening / speaking | Content-blocked: native recordings, rights, directions and human rubric missing |
 | Unit 5: message / reply | Planned reviewed sentence and response | Grammar / communication | Content-blocked: native-authored constructions, translations, answers and recordings missing |
-| Game Garden, pronunciation cards, Stories | Existing side activities and reading material | Varies; current English Stories are not Tigrinya sentence instruction | Preserve; games do not replace a coherent teaching sequence or certify proficiency |
+| Game Garden, pronunciation cards, Stories | Existing side activities and reading material | Varies; Stories contains 20 Tigrinya drafts awaiting qualified review, without integrated comprehension/speaking tasks | Preserve; games and marked-read states do not certify proficiency or approve language content |
 
 The principal gap is response variety inside early word learning: recognizing a displayed answer is repeatedly treated as the main interaction. The existing renderer already supports reverse reading and text entry, so new game mechanics, content imports and backend algorithms are unnecessary.
 

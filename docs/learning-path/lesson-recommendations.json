@@ -1,0 +1,285 @@
+{
+  "status": "design-proposal-not-runtime-content",
+  "baselineCommit": "adf5d79",
+  "lessons": [
+    {
+      "lessonId": "u2-01",
+      "learningObjective": "Connect the first three known meanings to print in both directions.",
+      "recommendation": "Keep the new Look-Build-Read-Recall routine; confirm the pictures are understood before interpreting a reading error.",
+      "teachingStep": "Model each existing target and its two source forms, then fade the printed answer.",
+      "independentCheck": "Read from print and enter from meaning in separate short attempts; retain the existing recognition gate.",
+      "correction": "Reveal the exact target word and compare the source forms left to right; make the retry supported.",
+      "review": "Later reading and entry on the same three IDs, separately from recognition."
+    },
+    {
+      "lessonId": "u2-02",
+      "learningObjective": "Check the first word relationships without overclaiming written competence.",
+      "recommendation": "Keep the recognition check; add a clearly separate optional written-recall observation, not retroactive completion credit.",
+      "teachingStep": "Offer a model refresher before the check, recording that support.",
+      "independentCheck": "Fresh picture-to-word check; any entry result receives its own task label.",
+      "correction": "Show the selected and target association and offer retry with the model.",
+      "review": "Return the least secure of these three targets through another skill on a later visit."
+    },
+    {
+      "lessonId": "u2-03",
+      "learningObjective": "Read and reconstruct the two new source targets after a familiar anchor.",
+      "recommendation": "Use the older anchor only when due; avoid repeating it as a fixed warm-up every time.",
+      "teachingStep": "Demonstrate new word-picture relationships, construction and the reading direction.",
+      "independentCheck": "Model-hidden reading then picture-cued entry for the two new IDs.",
+      "correction": "Identify the first differing source-form position in text; do not invent a sound rule.",
+      "review": "Review a new target plus one actually due older item within the existing budget."
+    },
+    {
+      "lessonId": "u2-04",
+      "learningObjective": "Notice source-form reuse across familiar and new words.",
+      "recommendation": "Let the learner locate an identical taught form across source words where present; equality is visual, not a pronunciation claim.",
+      "teachingStep": "Show complete source words first, then highlight the actual matching codepoint/form.",
+      "independentCheck": "Reconstruct a newly taught word without a complete-word model; record any revealing keys.",
+      "correction": "Restore the two complete models and the shared visible form before retry.",
+      "review": "Later whole-word reading and entry; do not score shared-form tapping as whole-word recall."
+    },
+    {
+      "lessonId": "u2-05",
+      "learningObjective": "Read familiar meanings while keeping vocabulary knowledge separate from print.",
+      "recommendation": "Check the picture/sense association for each new target before a print task; extra meaning support is permitted.",
+      "teachingStep": "Introduce the existing sourced meaning and form model with a reviewed association.",
+      "independentCheck": "Read one target from print and recall another from meaning after an intervening task.",
+      "correction": "If the picture is unclear, explain the reviewed association and retry a supported task.",
+      "review": "Keep meaning uncertainty distinct from a later failed print response."
+    },
+    {
+      "lessonId": "u2-06",
+      "learningObjective": "Retrieve the final table-group word forms with reduced model support.",
+      "recommendation": "Retain two new targets and bounded review; avoid a long all-group drill at the end.",
+      "teachingStep": "Model and build before reading and recall; pause is always available.",
+      "independentCheck": "Separate word-to-meaning and meaning-to-text attempts without the answer visible.",
+      "correction": "Reveal only the relevant source model and offer another supported attempt.",
+      "review": "Distribute the table-group targets across later visits rather than repeat all immediately."
+    },
+    {
+      "lessonId": "u2-07",
+      "learningObjective": "Sample table-group reading and recall honestly.",
+      "recommendation": "Current focus contains three words, not every table-group target; do not call this complete group mastery.",
+      "teachingStep": "Offer an optional refresher using exactly the current focus; support is recorded.",
+      "independentCheck": "Keep the current gate; propose a bounded future coverage queue for all introduced group targets by skill.",
+      "correction": "Correct the actual missed association before continuing; never add an unseen answer key.",
+      "review": "Cover unobserved introduced targets over later reviews, without increasing the per-session budget."
+    },
+    {
+      "lessonId": "u2-08",
+      "learningObjective": "Connect new home-group print forms to familiar meanings.",
+      "recommendation": "Keep Look-Build-Read-Recall; a real-world label activity needs reviewed contextual assets before release.",
+      "teachingStep": "Model the actual candidate sense and picture, then its source-form order.",
+      "independentCheck": "Identify meaning from print before picture-cued entry.",
+      "correction": "Return the target word-picture model, then invite retry.",
+      "review": "Later review in another approved depiction only after its association is reviewed."
+    },
+    {
+      "lessonId": "u2-09",
+      "learningObjective": "Read household-group labels without relying on answer position.",
+      "recommendation": "Vary answer positions between tasks and retain stable form-key layout within correction.",
+      "teachingStep": "Demonstrate a complete source target before learners assemble it.",
+      "independentCheck": "Read and enter each new word with full-word model hidden.",
+      "correction": "Show the entered sequence beside the source model; locate the first mismatch or missing form.",
+      "review": "Revisit by reading and entry; do not infer label use in a sentence."
+    },
+    {
+      "lessonId": "u2-10",
+      "learningObjective": "Retrieve a single new target across visits.",
+      "recommendation": "This lesson introduces only one new word, so avoid claiming within-lesson interleaving is equivalent to spaced review.",
+      "teachingStep": "Show and construct the target, then use another eligible item if one is due.",
+      "independentCheck": "One model-hidden reading and one cued entry attempt, with support labeled.",
+      "correction": "Restore the complete target and give a supported retry without inflating independent success.",
+      "review": "Prioritize a later-visit retrieval opportunity; do not generate extra filler to simulate spacing."
+    },
+    {
+      "lessonId": "u2-11",
+      "learningObjective": "Check sampled home-group associations and find coverage gaps.",
+      "recommendation": "Preserve the three current focus IDs; label the check as a sample and track other introduced targets separately.",
+      "teachingStep": "Optional model recap without converting it into independent evidence.",
+      "independentCheck": "Recognition gate remains; a future reading/entry sample uses only taught IDs.",
+      "correction": "Specific source association and retry for the failed target.",
+      "review": "Use a bounded queue to revisit group targets omitted by the sample."
+    },
+    {
+      "lessonId": "u2-12",
+      "learningObjective": "Interpret the first outside-group source words from print.",
+      "recommendation": "Keep the familiar anchor separate from two new targets; do not turn chapter naming into a cultural claim.",
+      "teachingStep": "Introduce reviewed meaning/picture links, then source forms and complete words.",
+      "independentCheck": "Reverse reading and picture-cued entry after model fading.",
+      "correction": "Compare the actual source word to the response and allow a supported retry.",
+      "review": "Revisit new words in a later eligible task; scenery alone supplies no extra evidence."
+    },
+    {
+      "lessonId": "u2-13",
+      "learningObjective": "Relate a source family form across words without guessing sound.",
+      "recommendation": "Reference only actual source family/order records; prepare a reviewer-approved sound comparison as a blocked extension.",
+      "teachingStep": "Show the whole words before the relevant family relationship.",
+      "independentCheck": "Locate the sourced target, then retrieve its complete taught word from meaning.",
+      "correction": "Reopen the family reference and exact word model; keep pronunciation unassessed.",
+      "review": "Schedule whole-word reading separately from locating a family form."
+    },
+    {
+      "lessonId": "u2-14",
+      "learningObjective": "Recognize and retrieve two new source word meanings.",
+      "recommendation": "Prevent picture-only success from standing in for reading; remove meaning cues before the print response.",
+      "teachingStep": "Model existing meanings and source forms with reviewed visuals.",
+      "independentCheck": "Read one word to meaning, then enter a different taught target from meaning.",
+      "correction": "Demonstrate the correct link before the supported retry.",
+      "review": "Later parallel visual depiction requires its own review; otherwise reuse the existing reviewed association."
+    },
+    {
+      "lessonId": "u2-15",
+      "learningObjective": "Recall forms in the correct source order across new words.",
+      "recommendation": "Use the actual two-form sequences; a puzzle edit must remain clearly synthetic task material, not a new word.",
+      "teachingStep": "Build each complete approved target before a model-hidden entry attempt.",
+      "independentCheck": "Enter a taught word without a visible answer, with native input or disclosed form-key support.",
+      "correction": "Show the existing source target, mark a positional mismatch and retry; do not pronounce puzzle strings.",
+      "review": "Return entry and reading separately in the existing scheduler."
+    },
+    {
+      "lessonId": "u2-16",
+      "learningObjective": "Remember a single new word without excessive immediate repetition.",
+      "recommendation": "As in u2-10, there is one new target; prefer a genuine later revisit to more same-screen repetitions.",
+      "teachingStep": "Introduce, build, read and recall, offering a natural stop.",
+      "independentCheck": "One independent attempt under recorded conditions, followed by ordinary recap.",
+      "correction": "Return the source model and permit a supported retry or pause.",
+      "review": "Later-visit recall is the key next observation; no same-day mastery label."
+    },
+    {
+      "lessonId": "u2-17",
+      "learningObjective": "Check an outside-group sample and organize later coverage.",
+      "recommendation": "Current three-word focus omits other introduced outside targets; keep the gate narrow and plan distributed coverage.",
+      "teachingStep": "Optional recap of missed models before restarting a check.",
+      "independentCheck": "Recognition now; future mixed reading/entry sample only on previously taught targets.",
+      "correction": "Reveal the actual missed source association and offer retry without shame.",
+      "review": "Rotate unobserved introduced outside targets through future bounded sessions."
+    },
+    {
+      "lessonId": "u2-18",
+      "learningObjective": "Map people/body-group source meanings to print.",
+      "recommendation": "Prioritize review of visual sense clarity and child suitability; do not infer meaning from an unfamiliar illustration.",
+      "teachingStep": "Establish the candidate sense through its reviewed association before showing source forms.",
+      "independentCheck": "Read and then retrieve new target words with model fading.",
+      "correction": "If meaning is uncertain, teach it again and record support instead of calling it a reading failure.",
+      "review": "Keep later meaning, reading and entry observations distinguishable."
+    },
+    {
+      "lessonId": "u2-19",
+      "learningObjective": "Read familiar people-related concepts without identity assumptions.",
+      "recommendation": "Use only current source senses; do not prescribe a household structure or family-role convention.",
+      "teachingStep": "Show reviewed association and full target, then two-form construction.",
+      "independentCheck": "Model-hidden word-to-meaning and picture-cued entry.",
+      "correction": "Use the exact approved source association and permit help or skip to another target.",
+      "review": "Later reuse needs a reviewed context, not an invented personal family sentence."
+    },
+    {
+      "lessonId": "u2-20",
+      "learningObjective": "Connect the final two new source candidates to reading and recall.",
+      "recommendation": "Review potentially abstract associations for clarity; dictionary inclusion alone does not establish a child-friendly picture.",
+      "teachingStep": "Teach the existing source sense with a reviewer-approved model before removing cues.",
+      "independentCheck": "Read then enter each new target without answer-revealing help, recorded by skill.",
+      "correction": "Reintroduce the correct meaning/form model before another attempt.",
+      "review": "Later review should include earlier new targets, not just the last two in the chapter."
+    },
+    {
+      "lessonId": "u2-21",
+      "learningObjective": "Consolidate the sampled word relationships before Unit 3.",
+      "recommendation": "Current three-word sample is not evidence for all 31 words; expose the evidence gap in the recap.",
+      "teachingStep": "Optional refresher of actual focus targets; no new vocabulary.",
+      "independentCheck": "Preserve recognition unlock; maintain separate reading and entry observations over subsequent visits.",
+      "correction": "Give the source model for the specific miss and allow a fresh supported run.",
+      "review": "Continue the distributed target/skill coverage queue without forcing one 31-word exam."
+    },
+    {
+      "lessonId": "u3-01",
+      "learningObjective": "Locate first and last Fidäl forms inside taught words.",
+      "recommendation": "Connect positional recognition to rebuilding the complete familiar word, not just tapping a highlighted answer.",
+      "teachingStep": "Show source order left to right, then cover the target position during a practice example.",
+      "independentCheck": "Locate a requested form without its highlight, then reconstruct the already taught word.",
+      "correction": "Show complete source word and highlight the requested position before retry.",
+      "review": "Review locating separately from complete-word entry and reading."
+    },
+    {
+      "lessonId": "u3-02",
+      "learningObjective": "Use sourced family relationships in actual taught words.",
+      "recommendation": "Preserve the current family and word set; expand examples only after their sources and teaching purpose are reviewed.",
+      "teachingStep": "Model related source forms in whole words; reviewed sound comparison remains a gated extension.",
+      "independentCheck": "Locate the family form and then read the complete word to meaning.",
+      "correction": "Restore the family/whole-word reference and show the actual matching target.",
+      "review": "Return both form-location and word-reading tasks after a delay."
+    },
+    {
+      "lessonId": "u3-03",
+      "learningObjective": "Distinguish copying from independent word production.",
+      "recommendation": "Add a copy-beside-model stage to a future verified writing adapter; keep text input and handwriting records separate.",
+      "teachingStep": "Current source model/text copying remains; teacher strokes wait for verified provenance and approval.",
+      "independentCheck": "After copying, optionally hide the model for a separate cued-entry attempt.",
+      "correction": "Compare with exact source word; replay only the learner marks unless a teacher sequence is approved.",
+      "review": "Later text entry is available; delayed handwriting judgment needs a qualified rubric."
+    },
+    {
+      "lessonId": "u3-04",
+      "learningObjective": "Read familiar print without a picture cue supplying the answer.",
+      "recommendation": "Use changed reviewed depictions for transfer only when available; do not randomize into unreviewed art.",
+      "teachingStep": "Demonstrate full word meaning before the reading task.",
+      "independentCheck": "Written word to meaning with the picture/model cue removed; no speech requirement.",
+      "correction": "Reveal the matching source picture and word, then retry after another item.",
+      "review": "A later parallel reading task is stronger evidence than repeated same-layout tapping."
+    },
+    {
+      "lessonId": "u3-05",
+      "learningObjective": "Recall a taught word from meaning without its printed model.",
+      "recommendation": "Make independent text recall explicit; offer memory handwriting as a separately gated, non-scored extension.",
+      "teachingStep": "Brief supported copy first when needed, then hide the answer and accept actual Ethiopic input.",
+      "independentCheck": "Picture-cued entry before reveal, support and input method recorded.",
+      "correction": "Compare first differing source form or missing position, provide the target model and retry.",
+      "review": "Return memory entry on a later visit; optional paper sample requires human review."
+    },
+    {
+      "lessonId": "u3-06",
+      "learningObjective": "Combine familiar reading and text recall while preserving skill evidence.",
+      "recommendation": "Broaden future cumulative coverage beyond the present three targets over several visits, not one long test.",
+      "teachingStep": "Optional separate refreshers for reading and entry.",
+      "independentCheck": "Mixed reading and entry with each result attributed to its own target/skill; no combined fluency score.",
+      "correction": "Use the correction belonging to the failed mode, then a bounded retry.",
+      "review": "Carry the distributed review queue forward; listening/speaking stay unassessed."
+    },
+    {
+      "lessonId": "u4-01",
+      "learningObjective": "Understand approved familiar words before seeing text.",
+      "recommendation": "Build the listening-first bridge only after native audio, directions and reviewed answer associations are available.",
+      "teachingStep": "Approved native audio and meaning model, then a supported example.",
+      "independentCheck": "Audio-first meaning choice without transcript; reveal print only after the response.",
+      "correction": "Replay and show the approved match; a text-revealed retry is supported, not independent listening.",
+      "review": "Later listening separate from reading; failed or missing audio cannot count as a language error."
+    },
+    {
+      "lessonId": "u4-02",
+      "learningObjective": "Try a familiar spoken response with safe, honest feedback.",
+      "recommendation": "Use voluntary rehearsal and optional local replay; no automatic pronunciation percentage or forced microphone.",
+      "teachingStep": "Approved whole-word model and reviewer-authored articulation guidance where supported.",
+      "independentCheck": "Optional spoken attempt under a qualified human rubric; self-report is not phonetic accuracy.",
+      "correction": "Replay the correct model and one rubric-backed cue; offer another try, silent practice or stop.",
+      "review": "Later voluntary rehearsal and human-scored parallel task only when the rubric is approved."
+    },
+    {
+      "lessonId": "u5-01",
+      "learningObjective": "Interpret a short purposeful message using taught language.",
+      "recommendation": "Keep blocked until a native author supplies the actual message, sense, syntax, media and accepted answers.",
+      "teachingStep": "Work through one reviewed message in context, including unfamiliar language before testing.",
+      "independentCheck": "Interpret a parallel approved message with one changed detail.",
+      "correction": "Return the approved message model and explain the intended meaning before retry.",
+      "review": "Later message comprehension plus known-word review; no sentence assembled from dictionary fragments."
+    },
+    {
+      "lessonId": "u5-02",
+      "learningObjective": "Choose or produce a meaningful short reply.",
+      "recommendation": "Keep blocked until a native-reviewed exchange and acceptable response variants exist.",
+      "teachingStep": "Model intent and an appropriate reply, then rehearse a supported exchange.",
+      "independentCheck": "Respond to a parallel approved prompt; selection, text production and spoken production receive different labels.",
+      "correction": "Explain why the approved reply fits the situation; accept reviewed alternatives and allow retry.",
+      "review": "Revisit the exchange in a later approved context; maintain separate reading/listening/production evidence."
+    }
+  ]
+}
