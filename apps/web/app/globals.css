@@ -150,6 +150,8 @@ a {
   min-height: 44px;
 }
 
+
+
 a,
 button {
   touch-action: manipulation;
@@ -921,7 +923,7 @@ main {
 }
 
 @media (hover: hover) {
-  a.path-step:hover {
+  .path-step:not([data-state="locked"]):hover {
     transform: translateY(-2px);
     border-color: var(--green);
     box-shadow: var(--shadow-md);
@@ -1020,6 +1022,14 @@ main {
   font-size: 0.9rem;
   color: var(--green);
   white-space: nowrap;
+  text-decoration: none;
+}
+
+a.path-step-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
 }
 
 .path-step[data-state="locked"] .path-step-cta {

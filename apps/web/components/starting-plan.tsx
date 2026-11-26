@@ -258,7 +258,12 @@ export function StartingPlanPage() {
 
   const recommendation = startingRecommendation(plan, records.at(-1));
 
+  const mounted = useRef(false);
   useEffect(() => {
+    if (!mounted.current) {
+      mounted.current = true;
+      return;
+    }
     heading.current?.focus();
   }, [step]);
 
@@ -464,21 +469,31 @@ export function StartingPlanPage() {
               </div>
             </div>
 
-            <label>
-              How shall we go?
-              <select
-                value={plan.pace}
-                onChange={(e) =>
-                  setPlan({
-                    ...plan,
-                    pace: e.target.value as "step" | "explore",
-                  })
-                }
+            <div>
+              <p className="chip-group-label">How shall we go?</p>
+              <div
+                className="chip-row"
+                role="group"
+                aria-label="How shall we go?"
               >
-                <option value="step">One step at a time</option>
-                <option value="explore">Let me explore</option>
-              </select>
-            </label>
+                {(
+                  [
+                    ["step", "One step at a time"],
+                    ["explore", "Let me explore"],
+                  ] as const
+                ).map(([value, label]) => (
+                  <button
+                    key={value}
+                    type="button"
+                    className="chip-btn"
+                    aria-pressed={plan.pace === value}
+                    onClick={() => setPlan({ ...plan, pace: value })}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="actions">

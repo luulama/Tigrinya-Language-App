@@ -206,8 +206,13 @@ export function LearnHome() {
                         ? "active"
                         : "ready";
 
-                  const body = (
-                    <>
+                  return (
+                    <article
+                      key={milestone.id}
+                      className="path-step"
+                      data-state={state}
+                      aria-disabled={!milestone.available || undefined}
+                    >
                       <span
                         className="path-node-orb"
                         lang={milestone.available ? "ti" : undefined}
@@ -249,30 +254,16 @@ export function LearnHome() {
                           </div>
                         )}
                       </div>
-                      <span className="path-step-cta">
-                        {milestone.ctaLabel}
-                      </span>
-                    </>
-                  );
-
-                  return milestone.available && milestone.href ? (
-                    <Link
-                      key={milestone.id}
-                      className="path-step"
-                      data-state={state}
-                      href={milestone.href}
-                    >
-                      {body}
-                    </Link>
-                  ) : (
-                    <div
-                      key={milestone.id}
-                      className="path-step"
-                      data-state="locked"
-                      aria-disabled="true"
-                    >
-                      {body}
-                    </div>
+                      {milestone.available && milestone.href ? (
+                        <Link className="path-step-cta" href={milestone.href}>
+                          {milestone.ctaLabel}
+                        </Link>
+                      ) : (
+                        <span className="path-step-cta">
+                          {milestone.ctaLabel}
+                        </span>
+                      )}
+                    </article>
                   );
                 })}
               </div>

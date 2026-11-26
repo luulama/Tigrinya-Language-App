@@ -240,8 +240,13 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
   useEffect(() => {
     session.current = crypto.randomUUID();
   }, []);
+  const mounted = useRef(false);
   useEffect(() => {
-    heading.current?.focus();
+    if (!mounted.current) {
+      mounted.current = true;
+    } else {
+      heading.current?.focus();
+    }
     const media = audio.current;
     return () => media?.pause();
   }, [state.step, paused]);

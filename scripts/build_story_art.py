@@ -99,7 +99,8 @@ def scene(index):
     if index==12:
         return hills('#7e9c89','#496e6a')+tree(157,254,1.0,'#609080')+fox(664,428,1.17)+bird(375,265,.9)+g(489,362,1.2,'<path d="M-64 71Q-92-39 49-76Q91 4 12 64Z" fill="#a0bb8c"/><path d="M-59 71L48-74M-29 25L-53-7M-3-8L36-2" stroke="#d3d8a4" stroke-width="3" fill="none"/><path d="M-13 7V-32M-13-32L-30-43-13-53 4-43Z" stroke="#657c66" stroke-width="3" fill="none"/>')+ground('#415f52')
     if index==13:
-        mane=''.join(f'<circle cx="{math.cos(a*math.pi/6)*77}" cy="{math.sin(a*math.pi/6)*77}" r="34" fill="#b78754"/>' for a in range(12))
+        mane_points=(('77.0','0.0'),('66.68395609140178','38.49999999999999'),('38.50000000000001','66.68395609140177'),('4.7148901767173095e-15','77.0'),('-38.499999999999986','66.68395609140178'),('-66.68395609140178','38.49999999999999'),('-77.0','9.429780353434619e-15'),('-66.68395609140178','-38.499999999999986'),('-38.500000000000036','-66.68395609140175'),('-1.4144670530151929e-14','-77.0'),('38.50000000000001','-66.68395609140177'),('66.68395609140175','-38.500000000000036'))
+        mane=''.join(f'<circle cx="{cx}" cy="{cy}" r="34" fill="#b78754"/>' for cx,cy in mane_points)
         lion=g(337,430,1.05,'<ellipse cx="-61" cy="22" rx="139" ry="68" fill="#d1a061"/>'+mane+'<circle r="66" fill="#dbb578"/><path d="M-35-3Q-22 8-7-3M10-3Q24 8 38-3" stroke="#67544a" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M-8 18H12L2 28Z" fill="#846348"/><ellipse cx="-102" cy="74" rx="63" ry="16" fill="#dabb86"/>')
         return moon(815,117,46)+tree(228,248,1.35,'#516f6a')+ground('#516e5a')+'<path d="M480 640Q610 449 960 439" fill="none" stroke="#a4a68a" stroke-width="74"/>'+lion+goat(724,419,.75)+bird(623,367,.54)+''.join(g(x,y,.6,'<ellipse rx="33" ry="13" transform="rotate(-30)" fill="#a8bd8c"/>') for x,y in [(560,590),(608,536),(663,503),(726,476)])
     if index==14:
