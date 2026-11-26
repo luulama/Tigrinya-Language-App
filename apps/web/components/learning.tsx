@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useEffect, useRef, useState } from "react";
-import { Button, Card } from "@polyglot/ui";
+import { Badge, Button, Card } from "@polyglot/ui";
 import { languageDirection } from "@polyglot/content-engine";
 import type {
   ContentItem,
@@ -12,7 +12,22 @@ import type {
 } from "@polyglot/shared-types";
 import { recordExposure, sawModel } from "../lib/exposures";
 import { ApiError, apiBase, request } from "../lib/api";
+import { LEARNING_PATH_UNITS } from "../lib/learning-path-data";
+import { startingRecommendation } from "../lib/learning-start";
+import { usePreferences } from "../lib/preferences";
 import { BearCompanion } from "./bear-companion";
+import { useJourney } from "./learning-journey";
+import { MELE_EMPTY_STATES } from "./mele-system";
+import {
+  ArrowRightIcon,
+  BookOpenIcon,
+  CheckIcon,
+  ClockIcon,
+  LockIcon,
+  RefreshIcon,
+  SparklesIcon,
+} from "./icons";
+
 export function QueryState({
   pending,
   error,
@@ -31,6 +46,7 @@ export function QueryState({
     </div>
   ) : null;
 }
+
 export function Library({
   resource,
   title,
@@ -60,6 +76,7 @@ export function Library({
         Find content
         <input
           type="search"
+          placeholder="Search published titles…"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           maxLength={100}
@@ -67,21 +84,27 @@ export function Library({
       </label>
       <QueryState pending={query.isPending} error={query.error} />
       {query.data?.items.length === 0 && (
-        <Card>
+        <Card variant="tinted">
+          <BearCompanion
+            state={MELE_EMPTY_STATES.library.state}
+            caption={MELE_EMPTY_STATES.library.caption}
+          />
           <h2>Reviewed content comes first</h2>
           <p>
             No published {resource} are available yet. You can use the existing
             visual practice preview while Tigrinya material is reviewed.
           </p>
-          <Link className="button button-primary" href="/preview/index.html">
-            Open practice preview
-          </Link>
+          <div className="actions">
+            <Link className="button button-primary" href="/preview/index.html">
+              Open practice preview
+            </Link>
+          </div>
         </Card>
       )}
       <div className="grid">
         {query.data?.items.map((item) => (
-          <Card key={item.id}>
-            <span className="pill">{item.kind}</span>
+          <Card key={item.id} variant="interactive">
+            <Badge tone="sage">{item.kind}</Badge>
             <h2>{item.title}</h2>
             <Link className="button button-outline" href={`/learn/${item.id}`}>
               Open →
@@ -92,66 +115,206 @@ export function Library({
     </>
   );
 }
+
 export function LearnHome() {
   const [publishedOpen, setPublishedOpen] = useState(false);
+  const { plan, records } = useJourney();
+  const preferences = usePreferences();
+  const completedFirst = records.length > 0;
+  const recommendation = startingRecommendation(plan, records.at(-1));
+  const activeMilestoneId = completedFirst
+    ? plan.goal === "words"
+      ? "u2-familiar"
+      : "u1-families"
+    : "u1-first";
+
   return (
     <>
-      <p className="eyebrow">One clear next step</p>
-      <h1>Start with Fidäl.</h1>
-      <div className="actions">
-        <Link className="button button-primary" href="/first-lesson">
-          Try one form first
-        </Link>
-        <Link href="/onboarding">Choose my starting plan</Link>
-      </div>
-      <p>Look at a form, practise writing, and find its match.</p>
-      <BearCompanion
-        caption="Look first. Try when you’re ready."
-        state="encouraging"
-      />
-      <div className="grid">
-        <Card>
-          <div className="card-art" lang="ti" dir="ltr">
-            በ ቡ ቢ
-          </div>
-          <h2>Fidäl families</h2>
-          <p>Explore 293 forms, one group at a time.</p>
-          <Link
-            className="button button-primary"
-            href="/preview/unit-01-fidel-foundations/index.html"
-          >
-            Begin Fidäl preview →
-          </Link>
+      <section className="learn-hero-grid" aria-label="Recommended next step">
+        <div className="today-card">
+          <p className="eyebrow">One clear next step</p>
+          <h1>Start with Fidäl.</h1>
           <p>
-            <Link href="/preview/games/index.html?unit=1">
-              10 Fidäl games →
+            Look at a form, practise writing, and find its match. Every step
+            begins with a clear model—never a guess.
+          </p>
+          <div className="today-meta">
+            <Badge tone="sage">
+              <ClockIcon size={14} /> {preferences.minutes} min pace · no timer
+            </Badge>
+            {completedFirst && (
+              <Badge tone="review">
+                <CheckIcon size={14} /> First form practised this visit
+              </Badge>
+            )}
+          </div>
+          <div className="actions">
+            <Link
+              className="button button-primary button-lg"
+              href="/first-lesson"
+            >
+              Try one form first
             </Link>
-          </p>
-        </Card>
-        <Card>
-          <div className="card-art" lang="ti" dir="ltr">
-            ቤት
+            <Link className="button button-outline" href="/onboarding">
+              Choose my starting plan
+            </Link>
           </div>
-          <h2>Unit 2 onward · Your word path</h2>
-          <p>
-            Short picture-word lessons, clear checkpoints, then reading and
-            writing.
+        </div>
+
+        <aside aria-label="Mele companion and quick review">
+          <BearCompanion
+            caption="Look first. Try when you’re ready."
+            state="encouraging"
+          />
+          <Card variant="tinted">
+            <p className="eyebrow">Suggested for you</p>
+            <h3>{recommendation.title}</h3>
+            <p className="small">{recommendation.why}</p>
+            <div className="actions">
+              <Link
+                className="button button-quiet button-sm"
+                href={recommendation.href}
+              >
+                Open suggestion <ArrowRightIcon size={15} />
+              </Link>
+            </div>
+          </Card>
+        </aside>
+      </section>
+
+      <div className="path-layout">
+        <section className="path-units" aria-label="Tigrinya learning path">
+          {LEARNING_PATH_UNITS.map((unit) => (
+            <div key={unit.id} className="path-unit" data-tone={unit.tone}>
+              <div className="path-unit-header">
+                <div>
+                  <p className="eyebrow">{unit.badge}</p>
+                  <h2>{unit.title}</h2>
+                  <p>{unit.goal}</p>
+                </div>
+              </div>
+              <div className="path-track">
+                {unit.milestones.map((milestone) => {
+                  const isCompleted =
+                    milestone.id === "u1-first" && completedFirst;
+                  const isActive = milestone.id === activeMilestoneId;
+                  const state = !milestone.available
+                    ? "locked"
+                    : isCompleted
+                      ? "completed"
+                      : isActive
+                        ? "active"
+                        : "ready";
+
+                  return (
+                    <article
+                      key={milestone.id}
+                      className="path-step"
+                      data-state={state}
+                      aria-disabled={!milestone.available || undefined}
+                    >
+                      <span
+                        className="path-node-orb"
+                        lang={milestone.available ? "ti" : undefined}
+                        dir="ltr"
+                        aria-hidden="true"
+                      >
+                        {!milestone.available ? (
+                          <LockIcon size={20} />
+                        ) : isCompleted ? (
+                          <CheckIcon size={22} />
+                        ) : (
+                          milestone.orb
+                        )}
+                      </span>
+                      <div className="path-step-body">
+                        <p className="path-step-kicker">
+                          {isCompleted
+                            ? "Practised this visit"
+                            : isActive
+                              ? `Up next · ${milestone.kicker}`
+                              : milestone.kicker}
+                        </p>
+                        <h3 className="path-step-title">{milestone.title}</h3>
+                        <p className="path-step-desc">
+                          {milestone.description}
+                        </p>
+                        {milestone.glyphs && (
+                          <div
+                            className="path-step-glyphs"
+                            lang="ti"
+                            dir="ltr"
+                            aria-hidden="true"
+                          >
+                            {milestone.glyphs.map((g) => (
+                              <span className="path-glyph-chip" key={g}>
+                                {g}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                      {milestone.available && milestone.href ? (
+                        <Link className="path-step-cta" href={milestone.href}>
+                          {milestone.ctaLabel}
+                        </Link>
+                      ) : (
+                        <span className="path-step-cta">
+                          {milestone.ctaLabel}
+                        </span>
+                      )}
+                    </article>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </section>
+
+        <aside className="path-rail" aria-label="Review and extra practice">
+          <Card variant="elevated">
+            <Badge tone="review">
+              <RefreshIcon size={14} /> Gentle review
+            </Badge>
+            <h3>Revisit familiar shapes</h3>
+            <p className="small">
+              Returning to familiar material on another day builds steady
+              recognition without pressure.
+            </p>
+            <div className="actions">
+              <Link className="button button-outline button-sm" href="/review">
+                Open review queue
+              </Link>
+            </div>
+          </Card>
+
+          <Card variant="default">
+            <Badge tone="explore">
+              <SparklesIcon size={14} /> Explore
+            </Badge>
+            <h3>Games & quiet stories</h3>
+            <p className="small">
+              Twenty calm visual games and twenty illustrated stories, kept
+              separate from course progress.
+            </p>
+            <div className="actions">
+              <Link className="button button-quiet button-sm" href="/games">
+                Game Garden
+              </Link>
+              <Link className="button button-outline button-sm" href="/stories">
+                <BookOpenIcon size={15} /> Stories
+              </Link>
+            </div>
+          </Card>
+
+          <p className="notice">
+            <strong>Visual practice preview.</strong> These existing activities
+            are visual prototypes. Native language review and recordings are
+            pending.
           </p>
-          <Link
-            className="button button-outline"
-            href="/preview/unit-02-first-words/path.html"
-          >
-            Follow the word path →
-          </Link>
-          <p>
-            <Link href="/preview/games/index.html?unit=2">10 word games →</Link>
-          </p>
-        </Card>
+        </aside>
       </div>
-      <p className="notice">
-        These existing activities are visual prototypes. Native language review
-        and recordings are pending.
-      </p>
+
       <details>
         <summary>Development tools</summary>
         <p>
@@ -159,7 +322,7 @@ export function LearnHome() {
           progress.
         </p>
         <Link
-          className="button button-outline"
+          className="button button-outline button-sm"
           href="/preview/unit-02-first-words/path.html?developerPreview=1"
         >
           Enable Developer Preview
@@ -177,6 +340,7 @@ export function LearnHome() {
     </>
   );
 }
+
 export function QuestionActivity({
   question,
   onComplete,
@@ -199,6 +363,7 @@ export function QuestionActivity({
     helped: boolean;
     confidence: string;
   } | null>(null);
+
   async function submit() {
     if (!answer || busy) return;
     setBusy(true);
@@ -228,8 +393,9 @@ export function QuestionActivity({
       setBusy(false);
     }
   }
+
   return (
-    <Card>
+    <Card variant="elevated" className="animate-panel">
       <p className="eyebrow">{question.skill} practice</p>
       <h2>{question.prompt}</h2>
       <BearCompanion
@@ -317,25 +483,31 @@ export function QuestionActivity({
       </div>
       <div className="message" role="status" aria-live="polite">
         {result?.correct ? (
-          <p>Matched.{result.helped ? " You practised with help." : ""}</p>
+          <div className="feedback-banner feedback-banner-success">
+            <p>Matched.{result.helped ? " You practised with help." : ""}</p>
+          </div>
         ) : result ? (
-          <>
+          <div className="feedback-banner feedback-banner-kind">
             <p>Compare with the model:</p>
             <p className="native" lang="ti" dir="ltr">
               {result.model}
             </p>
             <p>{result.explanation}</p>
-          </>
+          </div>
         ) : null}
         {error && (
-          <p>
-            {error} {errorStatus === 401 && <Link href="/signin">Sign in</Link>}
-          </p>
+          <div className="feedback-banner feedback-banner-error">
+            <p>
+              {error}{" "}
+              {errorStatus === 401 && <Link href="/signin">Sign in</Link>}
+            </p>
+          </div>
         )}
       </div>
     </Card>
   );
 }
+
 function QuestionContent({
   item,
   onComplete,
@@ -361,6 +533,7 @@ function QuestionContent({
     />
   );
 }
+
 function Target({ id, onComplete }: { id: string; onComplete: () => void }) {
   const query = useQuery({
     queryKey: ["content", id],
@@ -373,12 +546,15 @@ function Target({ id, onComplete }: { id: string; onComplete: () => void }) {
     return <QuestionContent item={item} onComplete={onComplete} />;
   }
   return (
-    <>
+    <Card variant="elevated" className="animate-panel">
       <ContentBody item={item} />
-      <Button onClick={onComplete}>Continue</Button>
-    </>
+      <div className="actions">
+        <Button onClick={onComplete}>Continue</Button>
+      </div>
+    </Card>
   );
 }
+
 function ContentBody({ item }: { item: ContentItem }) {
   const p = item.payload;
   const direction = languageDirection(item.languageTag);
@@ -413,7 +589,7 @@ function ContentBody({ item }: { item: ContentItem }) {
             imageAssetId?: string;
           };
           return (
-            <Card key={index}>
+            <Card key={index} variant="tinted">
               <p lang={item.languageTag} dir={direction}>
                 {part.text}
               </p>
@@ -449,6 +625,7 @@ function ContentBody({ item }: { item: ContentItem }) {
     </article>
   );
 }
+
 export function ContentReader({ id }: { id: string }) {
   const query = useQuery({
     queryKey: ["content", id],
@@ -460,31 +637,56 @@ export function ContentReader({ id }: { id: string }) {
   const item = query.data;
   if (item.kind === "Question")
     return (
-      <>
+      <section className="entry-shell">
         <h1>{item.title}</h1>
         <QuestionContent item={item} />
-        <Link href="/learn">Back to learning</Link>
-      </>
+        <div className="actions">
+          <Link className="button button-quiet" href="/learn">
+            Back to learning
+          </Link>
+        </div>
+      </section>
     );
   const activities = item.payload.activities as
     { kind: string; targetId: string; instruction: string }[] | undefined;
   if (item.kind === "Lesson" && activities) {
     if (step >= activities.length)
       return (
-        <>
-          <h1>Activity complete.</h1>
-          <p>You practised this lesson. Checks record support separately.</p>
-          <Link className="button button-primary" href="/review">
-            Review familiar material
-          </Link>
-        </>
+        <section className="entry-shell">
+          <Card variant="elevated" className="animate-panel">
+            <BearCompanion
+              state="celebrating"
+              caption="You finished this lesson step by step. Rest or revisit whenever you like."
+            />
+            <h1>Activity complete.</h1>
+            <p>You practised this lesson. Checks record support separately.</p>
+            <div className="actions">
+              <Link className="button button-primary" href="/review">
+                Review familiar material
+              </Link>
+              <Link className="button button-outline" href="/learn">
+                Back to learning path
+              </Link>
+            </div>
+          </Card>
+        </section>
       );
     const activity = activities[step];
+    const progressPct = Math.round(((step + 1) / activities.length) * 100);
     return (
-      <>
+      <section className="entry-shell">
         <p className="eyebrow">
           Step {step + 1} of {activities.length}
         </p>
+        <div
+          className="meter-track"
+          role="progressbar"
+          aria-valuenow={step + 1}
+          aria-valuemin={1}
+          aria-valuemax={activities.length}
+        >
+          <div className="meter-fill" style={{ width: `${progressPct}%` }} />
+        </div>
         <h1>{item.title}</h1>
         <p>{activity.instruction}</p>
         <Target
@@ -492,7 +694,7 @@ export function ContentReader({ id }: { id: string }) {
           id={activity.targetId}
           onComplete={() => setStep(step + 1)}
         />
-      </>
+      </section>
     );
   }
   const ids = (item.payload.unitIds ??
@@ -502,7 +704,7 @@ export function ContentReader({ id }: { id: string }) {
     item.payload.familyIds ??
     item.payload.letterIds) as string[] | undefined;
   return (
-    <>
+    <section className="entry-shell">
       <h1>{item.title}</h1>
       <ContentBody item={item} />
       {ids && (
@@ -527,10 +729,15 @@ export function ContentReader({ id }: { id: string }) {
             onComplete={() => {}}
           />
         ))}
-      <Link href="/learn">Back to learning</Link>
-    </>
+      <div className="actions">
+        <Link className="button button-quiet" href="/learn">
+          Back to learning
+        </Link>
+      </div>
+    </section>
   );
 }
+
 export function ReviewPage() {
   const query = useQuery({
     queryKey: ["reviews"],
@@ -540,7 +747,7 @@ export function ReviewPage() {
   const [index, setIndex] = useState(0);
   const question = query.data?.[index];
   return (
-    <>
+    <section className="entry-shell">
       <p className="eyebrow">Remember at your pace</p>
       <h1>A little review.</h1>
       <QueryState pending={query.isPending} error={query.error} />
@@ -552,15 +759,28 @@ export function ReviewPage() {
         />
       ) : (
         query.data && (
-          <Card>
+          <Card variant="elevated">
+            <BearCompanion
+              state={index ? "celebrating" : MELE_EMPTY_STATES.review.state}
+              caption={
+                index
+                  ? "Nice quiet review. You can rest here or explore a new step."
+                  : MELE_EMPTY_STATES.review.caption
+              }
+            />
             <h2>{index ? "Review complete" : "Nothing is due"}</h2>
             <p>Choose a lesson or stop here.</p>
-            <Link className="button button-primary" href="/learn">
-              Choose a lesson
-            </Link>
+            <div className="actions">
+              <Link className="button button-primary" href="/learn">
+                Choose a lesson
+              </Link>
+              <Link className="button button-outline" href="/first-lesson">
+                Revisit the first form
+              </Link>
+            </div>
           </Card>
         )
       )}
-    </>
+    </section>
   );
 }

@@ -1,4 +1,5 @@
 import "@testing-library/jest-dom/vitest";
+import { StrictMode } from "react";
 import { afterEach, beforeEach, it, expect, vi } from "vitest";
 import {
   cleanup,
@@ -33,16 +34,17 @@ const content = {
   audioUrl: null,
   pendingReview: true,
 };
-function show(children: React.ReactNode) {
-  return render(
+function show(children: React.ReactNode, strict = false) {
+  const tree = (
     <QueryClientProvider
       client={
         new QueryClient({ defaultOptions: { queries: { retry: false } } })
       }
     >
       <LearningJourneyProvider>{children}</LearningJourneyProvider>
-    </QueryClientProvider>,
+    </QueryClientProvider>
   );
+  return render(strict ? <StrictMode>{tree}</StrictMode> : tree);
 }
 function complete() {
   const lesson = within(
@@ -60,6 +62,43 @@ function complete() {
   fireEvent.click(lesson.getByRole("button", { name: "በ" }));
   fireEvent.click(lesson.getByRole("button", { name: "See my practice" }));
 }
+
+it.each([
+  [
+    "onboarding",
+    <StartingPlanPage />,
+    "Skip this question",
+    "When you speak Tigrinya…",
+  ],
+  [
+    "first practice",
+    <FirstLesson content={content} />,
+    "Try the shape",
+    "Try its shape",
+  ],
+])(
+  "%s preserves initial focus during Strict Mode hydration and focuses real step changes",
+  (_name, component, action, nextHeading) => {
+    const existingControl = document.createElement("button");
+    existingControl.textContent = "Existing navigation control";
+    document.body.append(existingControl);
+    existingControl.focus();
+    try {
+      show(component, true);
+      expect(existingControl).toHaveFocus();
+      fireEvent.click(
+        screen.getByRole("button", { name: action as string }),
+      );
+      expect(
+        screen.getByRole("heading", {
+          name: nextHeading as string,
+        }),
+      ).toHaveFocus();
+    } finally {
+      existingControl.remove();
+    }
+  },
+);
 it("finishes a supported visual practice and a truthful parent recap without an account", async () => {
   show(
     <>

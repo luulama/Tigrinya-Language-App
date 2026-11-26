@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useReducer, useRef, useState } from "react";
-import { Button } from "@polyglot/ui";
+import { Badge, Button } from "@polyglot/ui";
 import { firstPractice, firstTransition } from "../lib/learning-start";
 import type { FirstLessonContent } from "../lib/first-lesson-content";
 import { MeleCompanion, useJourney } from "./learning-journey";
+import { CheckIcon, PauseIcon, SparklesIcon } from "./icons";
 
 type Point = [number, number];
 function TracePad({
@@ -93,13 +94,31 @@ function TracePad({
               if (active.current) cancel();
             }}
           >
-            <rect width="400" height="300" rx="20" fill="#fff" />
+            <rect width="400" height="300" rx="18" fill="#fffdf8" />
+            <line
+              x1="28"
+              y1="72"
+              x2="372"
+              y2="72"
+              stroke="#e5dfd1"
+              strokeWidth="1.5"
+              strokeDasharray="6 6"
+            />
+            <line
+              x1="28"
+              y1="235"
+              x2="372"
+              y2="235"
+              stroke="#d5cdb9"
+              strokeWidth="1.5"
+            />
             <text
               x="200"
               y="235"
               textAnchor="middle"
               className="entry-fidal"
-              fill="#6f8c7c"
+              fill="#7d9a8b"
+              opacity="0.72"
               fontSize="240"
               lang="ti"
               direction="ltr"
@@ -113,8 +132,8 @@ function TracePad({
                   .map((p, n) => `${n ? "L" : "M"}${p[0]},${p[1]}`)
                   .join(" ")}
                 fill="none"
-                stroke="#17634f"
-                strokeWidth="9"
+                stroke="#14614c"
+                strokeWidth="10"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
@@ -127,6 +146,7 @@ function TracePad({
           <div className="actions">
             <Button
               variant="outline"
+              size="sm"
               onClick={() => {
                 const old = history.current.pop();
                 if (old) {
@@ -140,6 +160,7 @@ function TracePad({
             </Button>
             <Button
               variant="outline"
+              size="sm"
               onClick={() => {
                 remember();
                 setPaths([]);
@@ -151,6 +172,7 @@ function TracePad({
             </Button>
             <Button
               variant="quiet"
+              size="sm"
               onClick={() => {
                 cancel();
                 setTyping(true);
@@ -164,7 +186,7 @@ function TracePad({
         <>
           <label>
             Enter the form{" "}
-            <span lang="ti" dir="ltr">
+            <span className="entry-fidal" lang="ti" dir="ltr">
               {target}
             </span>
             <input
@@ -194,8 +216,10 @@ function TracePad({
           </div>
         </>
       )}
-      <p role="status">{message}</p>
-      <Button variant="quiet" onClick={() => onTried("skipped")}>
+      <p className="small" role="status">
+        {message}
+      </p>
+      <Button variant="quiet" size="sm" onClick={() => onTried("skipped")}>
         Choose a shape instead of drawing
       </Button>
     </div>
@@ -216,8 +240,15 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
   useEffect(() => {
     session.current = crypto.randomUUID();
   }, []);
+  const previousPosition = useRef({ step: state.step, paused });
   useEffect(() => {
-    heading.current?.focus();
+    if (
+      previousPosition.current.step !== state.step ||
+      previousPosition.current.paused !== paused
+    ) {
+      previousPosition.current = { step: state.step, paused };
+      heading.current?.focus();
+    }
     const media = audio.current;
     return () => media?.pause();
   }, [state.step, paused]);
@@ -249,9 +280,13 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
       <section className="entry-panel">
         <h1>First practice is unavailable.</h1>
         <p>No usable source form was found.</p>
-        <Link href="/learn">Choose another activity</Link>
+        <Link className="button button-outline" href="/learn">
+          Choose another activity
+        </Link>
       </section>
     );
+  const stepOrder = ["meet", "trace", "match", "recall", "recap"] as const;
+  const stepIndex = stepOrder.indexOf(state.step);
   const nextAllowed =
     state.step === "meet" ||
     (state.step === "trace" && state.drawing !== "not_tried") ||
@@ -261,24 +296,20 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
     state.step === "match"
       ? [content.options[1], content.options[0], content.options[2]]
       : [content.options[2], content.options[1], content.options[0]];
+
+  const feedbackTone = state.needsRetry
+    ? "feedback-banner feedback-banner-kind"
+    : (state.step === "match" && state.matched) ||
+        (state.step === "recall" && state.recalled)
+      ? "feedback-banner feedback-banner-success"
+      : "";
+
   return (
     <section className="entry-shell" aria-label="First Fidäl practice">
       <p className="eyebrow">ONE FORM · YOUR PACE</p>
-      <div
-        className="entry-progress"
-        aria-label={`Step ${["meet", "trace", "match", "recall", "recap"].indexOf(state.step) + 1} of 5`}
-      >
+      <div className="entry-progress" aria-label={`Step ${stepIndex + 1} of 5`}>
         {[1, 2, 3, 4, 5].map((n) => (
-          <span
-            key={n}
-            data-done={
-              n <=
-              ["meet", "trace", "match", "recall", "recap"].indexOf(
-                state.step,
-              ) +
-                1
-            }
-          />
+          <span key={n} data-done={n <= stepIndex + 1} />
         ))}
       </div>
       <h1 ref={heading} tabIndex={-1}>
@@ -301,18 +332,28 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
         }}
       />
       {paused ? (
-        <div className="actions">
-          <Button onClick={() => setPaused(false)}>
-            Continue this practice
-          </Button>
-          <Link href="/learn">Leave for now</Link>
+        <div className="entry-panel animate-panel">
+          <p>
+            Your place in this small practice is saved for this visit. Take all
+            the time you need.
+          </p>
+          <div className="actions">
+            <Button onClick={() => setPaused(false)}>
+              Continue this practice
+            </Button>
+            <Link className="button button-outline" href="/learn">
+              Leave for now
+            </Link>
+          </div>
         </div>
       ) : (
-        <div className="entry-panel">
+        <div className="entry-panel animate-panel" key={state.step}>
           {state.step === "meet" && (
             <>
-              <div className="first-form entry-fidal" lang="ti" dir="ltr">
-                {content.target}
+              <div className="first-stage">
+                <div className="first-form entry-fidal" lang="ti" dir="ltr">
+                  {content.target}
+                </div>
               </div>
               {content.audioUrl ? (
                 <>
@@ -340,7 +381,9 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
                   >
                     Hear the form
                   </Button>
-                  <p role="status">{soundError}</p>
+                  <p className="small" role="status">
+                    {soundError}
+                  </p>
                 </>
               ) : (
                 <p className="entry-note">
@@ -360,13 +403,18 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
               {(state.step === "match" ||
                 state.recallHelp ||
                 state.needsRetry) && (
-                <div
-                  className="first-model entry-fidal"
-                  lang="ti"
-                  dir="ltr"
-                  aria-label="Model"
-                >
-                  {content.target}
+                <div className="first-model-center">
+                  <div className="first-model-wrap">
+                    <span className="first-model-label">Model</span>
+                    <div
+                      className="first-model entry-fidal"
+                      lang="ti"
+                      dir="ltr"
+                      aria-label="Model"
+                    >
+                      {content.target}
+                    </div>
+                  </div>
                 </div>
               )}
               <div
@@ -398,12 +446,13 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
               {state.step === "recall" && !state.recalled && (
                 <Button
                   variant="quiet"
+                  size="sm"
                   onClick={() => dispatch({ type: "help" })}
                 >
                   Show the model
                 </Button>
               )}
-              <p role="status">
+              <p className={feedbackTone || "small"} role="status">
                 {state.needsRetry
                   ? "Here is the model. Have another look, then try again."
                   : state.step === "match" && state.matched
@@ -415,35 +464,62 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
                       : ""}
               </p>
               {state.needsRetry && (
-                <Button onClick={() => dispatch({ type: "retry" })}>
-                  Try again
-                </Button>
+                <div className="actions">
+                  <Button onClick={() => dispatch({ type: "retry" })}>
+                    Try again
+                  </Button>
+                </div>
               )}
             </>
           )}
           {state.step === "recap" ? (
             <>
-              <div className="first-form entry-fidal" lang="ti" dir="ltr">
-                {content.target}
+              <div className="milestone-emblem">
+                <Badge tone="review">
+                  <SparklesIcon size={14} /> First Fidäl met
+                </Badge>
+                <div className="first-form entry-fidal" lang="ti" dir="ltr">
+                  {content.target}
+                </div>
               </div>
-              <ul>
-                <li>Found the form with a model.</li>
+              <ul className="recap-checklist">
                 <li>
-                  {state.drawing === "drawn"
-                    ? "Tried drawing its shape."
-                    : state.drawing === "text"
-                      ? "Used text instead of drawing."
-                      : "Used a visual alternative to drawing."}
+                  <span className="recap-dot" aria-hidden="true">
+                    <CheckIcon size={14} />
+                  </span>
+                  <span>Found the form with a model.</span>
                 </li>
                 <li>
-                  {state.recallHelp
-                    ? "Found it again with help."
-                    : "Found it with the model hidden."}
+                  <span className="recap-dot" aria-hidden="true">
+                    <CheckIcon size={14} />
+                  </span>
+                  <span>
+                    {state.drawing === "drawn"
+                      ? "Tried drawing its shape."
+                      : state.drawing === "text"
+                        ? "Used text instead of drawing."
+                        : "Used a visual alternative to drawing."}
+                  </span>
                 </li>
                 <li>
-                  {state.heard
-                    ? "The reviewed model played."
-                    : "Sound wasn’t practised."}
+                  <span className="recap-dot" aria-hidden="true">
+                    <CheckIcon size={14} />
+                  </span>
+                  <span>
+                    {state.recallHelp
+                      ? "Found it again with help."
+                      : "Found it with the model hidden."}
+                  </span>
+                </li>
+                <li>
+                  <span className="recap-dot" aria-hidden="true">
+                    <CheckIcon size={14} />
+                  </span>
+                  <span>
+                    {state.heard
+                      ? "The reviewed model played."
+                      : "Sound wasn’t practised."}
+                  </span>
                 </li>
               </ul>
               <p className="small">
@@ -452,7 +528,7 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
               </p>
               <div className="actions">
                 <Link
-                  className="button button-primary"
+                  className="button button-primary button-lg"
                   href={
                     plan.goal === "words"
                       ? "/preview/unit-02-first-words/path.html"
@@ -461,8 +537,12 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
                 >
                   Choose the next small step
                 </Link>
-                <Link href="/parents">Show a grown-up</Link>
-                <Link href="/learn">Stop here</Link>
+                <Link className="button button-outline" href="/parents">
+                  Show a grown-up
+                </Link>
+                <Link className="button button-quiet" href="/learn">
+                  Stop here
+                </Link>
               </div>
             </>
           ) : (
@@ -483,12 +563,13 @@ export function FirstLesson({ content }: { content: FirstLessonContent }) {
       {!paused && state.step !== "recap" && (
         <Button
           variant="quiet"
+          size="sm"
           onClick={() => {
             audio.current?.pause();
             setPaused(true);
           }}
         >
-          Pause
+          <PauseIcon size={15} /> Pause
         </Button>
       )}
       <details className="entry-details">

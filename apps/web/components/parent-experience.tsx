@@ -2,12 +2,13 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { Button, Card } from "@polyglot/ui";
+import { Badge, Button, Card } from "@polyglot/ui";
 import { request } from "../lib/api";
 import { visitSummary } from "../lib/learning-start";
 import { useJourney } from "./learning-journey";
 import { PlanMemoryControls } from "./starting-plan";
 import { QueryState } from "./learning";
+import { HeartHandshakeIcon, ShieldIcon } from "./icons";
 
 interface FamilySummary {
   from: string;
@@ -25,6 +26,7 @@ interface FamilySummary {
   studyTime: null;
   nextAction: string;
 }
+
 function SharedSummary({ subject }: { subject: string }) {
   const query = useQuery({
     queryKey: ["parent-summary", subject],
@@ -48,7 +50,11 @@ function SharedSummary({ subject }: { subject: string }) {
         </Button>
       )}
       {query.data && !query.error && !query.isFetching && (
-        <section className="entry-panel" aria-label="Last seven days summary">
+        <section
+          className="entry-panel animate-panel"
+          aria-label="Last seven days summary"
+        >
+          <Badge tone="sage">Verified account summary</Badge>
           <h2>Last 7 days</h2>
           <p className="small">
             {new Date(query.data.from).toLocaleDateString()} –{" "}
@@ -67,6 +73,20 @@ function SharedSummary({ subject }: { subject: string }) {
             </p>
           ) : (
             <>
+              <div className="plan-summary-grid">
+                <div className="plan-summary-chip">
+                  <span>Practice checks</span>
+                  <strong>{query.data.checks}</strong>
+                </div>
+                <div className="plan-summary-chip">
+                  <span>With help</span>
+                  <strong>{query.data.matchedWithHelp}</strong>
+                </div>
+                <div className="plan-summary-chip">
+                  <span>Without answer help</span>
+                  <strong>{query.data.matchedWithoutAnswerHelp}</strong>
+                </div>
+              </div>
               <p>
                 {query.data.checks} practice checks.{" "}
                 {query.data.matchedWithHelp} matched with help;{" "}
@@ -90,10 +110,14 @@ function SharedSummary({ subject }: { subject: string }) {
               </p>
             </>
           )}
-          <div className="entry-next-action">
+          <div className="entry-panel entry-next-action">
             <h3>One useful next action</h3>
             <p>{query.data.nextAction}</p>
-            <Link href="/review">Open the reviewed practice queue</Link>
+            <div className="actions">
+              <Link className="button button-primary button-sm" href="/review">
+                Open the reviewed practice queue
+              </Link>
+            </div>
           </div>
           <details>
             <summary>What these records can tell us</summary>
@@ -114,6 +138,7 @@ function SharedSummary({ subject }: { subject: string }) {
     </>
   );
 }
+
 function LinkedFamily() {
   const [selected, setSelected] = useState("");
   const query = useQuery({
@@ -128,13 +153,15 @@ function LinkedFamily() {
     <>
       <QueryState pending={query.isFetching} error={query.error} />
       {query.error && (
-        <p>
-          <Link href="/signin">Sign in with a verified parent account</Link>.
-          This visit’s summary is still available.
-        </p>
+        <Card variant="tinted">
+          <p>
+            <Link href="/signin">Sign in with a verified parent account</Link>.
+            This visit’s summary is still available.
+          </p>
+        </Card>
       )}
       {!query.error && !query.isFetching && query.data?.length === 0 && (
-        <Card>
+        <Card variant="tinted">
           <h2>No linked learners yet</h2>
           <p>
             A verified parent relationship is needed before account records can
@@ -178,19 +205,21 @@ export function ParentExperience() {
     latest = records.at(-1);
   return (
     <section className="entry-shell parent-experience">
-      <p className="eyebrow">FOR GROWN-UPS</p>
+      <p className="eyebrow">
+        <HeartHandshakeIcon size={14} /> FOR GROWN-UPS
+      </p>
       <h1>Small steps you can see.</h1>
       <p>What was tried, what needed help, and one useful thing to do next.</p>
       <div className="actions" role="group" aria-label="Choose summary">
         <Button
-          variant="outline"
+          variant={!account ? "default" : "outline"}
           aria-pressed={!account}
           onClick={() => setAccount(false)}
         >
           This visit
         </Button>
         <Button
-          variant="outline"
+          variant={account ? "default" : "outline"}
           aria-pressed={account}
           onClick={() => setAccount(true)}
         >
@@ -206,12 +235,14 @@ export function ParentExperience() {
             inferred.
           </p>
           <div className="parent-cards">
-            <Card>
+            <Card variant="elevated">
+              <Badge tone="sage">Observed practice</Badge>
               <h2>What was tried</h2>
               <p>{summary.what}</p>
               <p>{summary.progress}</p>
             </Card>
-            <Card>
+            <Card variant="elevated">
+              <Badge tone="warm">Gentle follow-up</Badge>
               <h2>What to revisit</h2>
               <p>{summary.review}</p>
               {latest && (
@@ -230,9 +261,11 @@ export function ParentExperience() {
                 ? "Ask them to find the form again another day. Show the model whenever they want help."
                 : "Sit together for one small shape activity. You can stop after that."}
             </p>
-            <Link className="button button-primary" href={summary.next}>
-              {latest ? "Revisit the first form" : "Try the first practice"}
-            </Link>
+            <div className="actions">
+              <Link className="button button-primary" href={summary.next}>
+                {latest ? "Revisit the first form" : "Try the first practice"}
+              </Link>
+            </div>
           </div>
           <p className="entry-note">
             These are practice observations, not proof of lasting reading or
@@ -243,7 +276,9 @@ export function ParentExperience() {
       )}
       <PlanMemoryControls />
       <details className="entry-details">
-        <summary>Privacy and shared devices</summary>
+        <summary>
+          <ShieldIcon size={17} /> Privacy and shared devices
+        </summary>
         <p>
           This visit uses memory only and clears on reload. Account summaries
           require sign-in and a current verified parent relationship checked by
